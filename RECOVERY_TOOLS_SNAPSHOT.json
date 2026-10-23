@@ -242,6 +242,11 @@
       "sha256": "71e54c54ac7419b24733506b74c19b8ff124ee0e17aa1b58198318ead720e9c7"
     },
     {
+      "path": "tools/recovery/CustomUrpInitializerSeventeen.v3.template.cs",
+      "bytes": 29333,
+      "sha256": "51084f4b37390797ea548f4d5c57394fdeb636fe0a937a3a1d71ab9b8a8ae7df"
+    },
+    {
       "path": "tools/recovery/CustomUrpInitializerTwelveMonoSmoke.cs",
       "bytes": 20597,
       "sha256": "02ec1ef2af4307c974d52bc155aa1508ec65e8221c776fa35126f7c54e2f8b94"
@@ -325,6 +330,11 @@
       "path": "tools/recovery/InspectCombinedBootIteratorBindings.cs",
       "bytes": 8526,
       "sha256": "4940f148c1f423ad54e07e47277db90014fed2d8dd4d41b522732e0666344f9b"
+    },
+    {
+      "path": "tools/recovery/InspectCustomUrpInitializerSeventeen.v8.template.cs",
+      "bytes": 21459,
+      "sha256": "3624da6f69239431909e38a2184a16fe7f9b93092aba7de7372894056dcf21d9"
     },
     {
       "path": "tools/recovery/InspectDecompilerEventCollision.cs",
@@ -2592,6 +2602,11 @@
       "sha256": "1abaa729b88136b5477f5d1ce3f2c542ac621552b8d00deebe1b6885bf3458cf"
     },
     {
+      "path": "tools/recovery/run_custom_urp_initializer_seventeen_controls_v9.py",
+      "bytes": 20558,
+      "sha256": "5204fffce3727201221abf5efd10126681497dc4dd5ae0562b31334334c0705b"
+    },
+    {
       "path": "tools/recovery/run_custom_urp_initializer_twelve_mono_smoke.py",
       "bytes": 17924,
       "sha256": "eef5617392e8486e5eb7615d683fa2f0dc20b267b9dda1df3974464615c9bc03"
@@ -3452,5 +3467,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 690
+  "count": 693
 }
