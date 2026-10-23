@@ -18,6 +18,35 @@ using UnityEngine.SceneManagement;
 
 public class SessionManager : InjectedSingletonMonoBehaviour<FMONDJELBAI, SessionManager>, FMONDJELBAI
 {
+	[Serializable]
+	[CompilerGenerated]
+	private sealed class RecoveredStaticCallbacks
+	{
+		public static readonly RecoveredStaticCallbacks Instance = new RecoveredStaticCallbacks();
+		public static Func<bool> Cache_160_0;
+		public static Func<bool> Cache_160_1;
+		public static Func<CDHHOMFONIA, bool> Cache_167_4;
+		public static Func<int[], global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM>> Cache_188_2;
+		public static Func<bool> Cache_226_3;
+		public static Func<int, int> Cache_271_0;
+		public static Func<CHILKDJABBF, int> Cache_275_0;
+		public static Predicate<DFDECAEJBIO> Cache_292_1;
+
+		public RecoveredStaticCallbacks()
+		{
+		}
+
+		internal global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM> JoinDormIgnoringInput(int[] ignored)
+		{
+			return Matchmaking.FGKJLHAEJAL();
+		}
+
+		internal int SelectActorNumber(CHILKDJABBF player)
+		{
+			return player.EGDFBECEPMF;
+		}
+	}
+
 	public class BEJCOLBHFDI
 	{
 		private bool FKKHLCMKOGO;
@@ -935,7 +964,7 @@ get 			{
 		internal void _003CRunJoinDormRoom_003Eb__0(bool bypassMovementModeRestriction)
 		{
 			this._003C_003E4__this.APFMLJLPMJD = this.loadSceneSourceData;
-			var joinPromise = this._003C_003E4__this.CKIFCJCBNLA("Going to ^DormRoom", PFPFLMJDKIB.LeaveParty, global::SolarNet.Recovery.OriginalDelegateCompatibility.IgnoreInput<int[], global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM>>(Matchmaking.FGKJLHAEJAL));
+			var joinPromise = this._003C_003E4__this.CKIFCJCBNLA("Going to ^DormRoom", PFPFLMJDKIB.LeaveParty, RecoveredStaticCallbacks.Cache_188_2 ?? (RecoveredStaticCallbacks.Cache_188_2 = new Func<int[], global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM>>(RecoveredStaticCallbacks.Instance.JoinDormIgnoringInput)));
 			this._003C_003E4__this.MLGHBPFMFNL(joinPromise, this.onResponseCallback);
 		}
 
