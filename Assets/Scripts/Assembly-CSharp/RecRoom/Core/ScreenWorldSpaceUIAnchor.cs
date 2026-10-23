@@ -126,7 +126,7 @@ private set {
 public GameObject AttachedGameObject
 {
 get 		{
-			return null;
+			return this.CDLPNIKNKPB;
 		}
 
 private set {

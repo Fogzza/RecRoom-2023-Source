@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11264,
-  "bytes": 121430573,
+  "bytes": 121432152,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -1136,8 +1136,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll",
-      "bytes": 6144,
-      "sha256": "c24b477ce06386978e451bf0d288b9238bfda95403f5231b9e96ffa3f63045e6"
+      "bytes": 6656,
+      "sha256": "a23ba0d28cd224d0a81f553dd6fce8388199c3bffdfcba95e88ff4e94ef29b04"
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll.meta",
@@ -2576,8 +2576,8 @@
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
-      "bytes": 11264,
-      "sha256": "ec31f5c016ca6eb09015e485f80e98bd105964606850bfa7d6dfb91f928f10a4"
+      "bytes": 12288,
+      "sha256": "52f22297e5ace97330cf797ca390a30d384947e6e134321240a41b3fed0763bc"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
@@ -41181,8 +41181,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/ScreenHUD.cs",
-      "bytes": 13884,
-      "sha256": "20e075477623fe49bf14e6c2435e24ef9dabf8cfcf5bf1d287642bbe63943dc0"
+      "bytes": 13903,
+      "sha256": "adaf6889b585be8357976f22ec509f8d2aa89da94bf16d6c344778f8c028f715"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/ScreenHUD.cs.meta",
@@ -41251,8 +41251,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/ScreenWorldSpaceUIAnchor.cs",
-      "bytes": 3522,
-      "sha256": "c7de6428fac1fd9d2d1f3d5915ef8d78d8776f04f537b0afa2afb78d7cd97b4f"
+      "bytes": 3534,
+      "sha256": "b6ffdd370da5daa4b08543fdb80ce32eff4046d4210ffc1ee129dfc5f43e4bf1"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/ScreenWorldSpaceUIAnchor.cs.meta",
@@ -41791,8 +41791,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/UI/UIInputModule.cs",
-      "bytes": 11712,
-      "sha256": "21ae994144d1f9a9a530b4fa3ff5bf7d9f4ba0a34de4e360299dd106020ad31f"
+      "bytes": 11724,
+      "sha256": "1c7590ac6028fe42f0a2bd2292f8874213666a17cbc2d840c9f346d4f3972c2a"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RecRoom/Core/UI/UIInputModule.cs.meta",

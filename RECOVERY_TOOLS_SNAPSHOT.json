@@ -82,6 +82,16 @@
       "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
     },
     {
+      "path": "tools/recovery/ContainerLowerAllocationSmoke.cs",
+      "bytes": 7494,
+      "sha256": "880ba83979edca5c35f023b2e438679fc7f3455e73fb8cb2a0ff55f4179c7d3c"
+    },
+    {
+      "path": "tools/recovery/ContainerLowerEffects.template.cs",
+      "bytes": 15631,
+      "sha256": "55804826ad9714865e14481ce425b6661ca1b73e93db933dec94a2b3deaab983"
+    },
+    {
       "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
       "bytes": 12110,
       "sha256": "dfa14b41d1aafbacefa71c32576462a02b34e260a8250c76de9b0bafec02ccaf"
@@ -342,6 +352,11 @@
       "sha256": "a9cfd70c06fc8146553b1fe432f5b6888b3f6aadf291bcd4f753b53ec13fb456"
     },
     {
+      "path": "tools/recovery/RecoveredInitializationLowerDonor.v2.cs",
+      "bytes": 1237,
+      "sha256": "02f41dd1bfcf4a2eef0b42b6b7fe1976fbca786b0537bffe57811f728fe28df9"
+    },
+    {
       "path": "tools/recovery/RecoveredSingletonAccessorDonor.cs",
       "bytes": 519,
       "sha256": "9ad67f31bd70093f639a38a7ddcf3c2df363f325e42dde06ea151e81dcb5247c"
@@ -355,6 +370,11 @@
       "path": "tools/recovery/RecoveredSingletonStartupDonor.cs",
       "bytes": 797,
       "sha256": "0b8834d4d6aafffef23477c9820a3eda440554b8c9a4923281d9e16e3d3ad049"
+    },
+    {
+      "path": "tools/recovery/RecoveredUjectContainerLowerDonor.v3.cs",
+      "bytes": 4373,
+      "sha256": "34bf367bcb9897c0b9e7cf087359d4abb2865b05fc191e570718d8b91540ce39"
     },
     {
       "path": "tools/recovery/ReviveSourceEffectProof.cs",
@@ -422,6 +442,11 @@
       "sha256": "31f0d8c02a2e4fd519a6394f217b6ce4881141919f5c1fd83fd9ecc0d6c02700"
     },
     {
+      "path": "tools/recovery/StageContainerLowerBodies.v3.cs",
+      "bytes": 22643,
+      "sha256": "f7df0905759686f65829d677c4ddda985ffa4b87f7f51d7942758254f6d24e5d"
+    },
+    {
       "path": "tools/recovery/StageSingletonAccessorBodies.cs",
       "bytes": 16114,
       "sha256": "a6c36c03952913960f963134a10594fa2060704a8899d8b4334097f7753fb1d8"
@@ -465,6 +490,16 @@
       "path": "tools/recovery/SteamworksBodyInventory.cs",
       "bytes": 9119,
       "sha256": "232ab4d11ef22964d6bcfd2e0012031fe9c278a29b89940bfe5e6ee87c2e7ef4"
+    },
+    {
+      "path": "tools/recovery/TitleDependencyLeafEffects.template.cs",
+      "bytes": 8964,
+      "sha256": "c8ef8776dd1d98dc5700ecc33455bbf4e2684c83d946bbdeb32ab3582419f19e"
+    },
+    {
+      "path": "tools/recovery/TitleDependencyLeafEffects.v2.template.cs",
+      "bytes": 11752,
+      "sha256": "ea1fb8be8c119a985f40c48f8525689f5148c6153b1ad75f2041b74c70d3853b"
     },
     {
       "path": "tools/recovery/TitleDisplayCallbackEffects.template.cs",
@@ -542,6 +577,11 @@
       "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
     },
     {
+      "path": "tools/recovery/apply_container_lower_bodies_reviewed.py",
+      "bytes": 15213,
+      "sha256": "1a49c635c38e2edd04986cf15c1274f1f1a1abcd6f47e93b5e78f9a2f351af0c"
+    },
+    {
       "path": "tools/recovery/apply_original_shader_launcher_amendment.py",
       "bytes": 11087,
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
@@ -555,6 +595,11 @@
       "path": "tools/recovery/apply_startup_three_member_bodies_reviewed_v2.py",
       "bytes": 13893,
       "sha256": "ba3afbf8989a36f599061c92603bddb467e6cfe3e1a8004497aa79bb19daf029"
+    },
+    {
+      "path": "tools/recovery/apply_title_dependency_leaf_properties_reviewed.py",
+      "bytes": 11475,
+      "sha256": "c9efc228eb183eac79f7458578f602ee8e37ea73e0cca1163b0a82d25f2aa62f"
     },
     {
       "path": "tools/recovery/apply_title_display_callback_reviewed.py",
@@ -1267,6 +1312,11 @@
       "sha256": "1b152b4c3bdf8c6b6ac39d6b5a4d6eccd0d7e7aa8416d5b7091a523b4bd7fe0b"
     },
     {
+      "path": "tools/recovery/prepare_container_lower_donors_v2.py",
+      "bytes": 8304,
+      "sha256": "f915ef30b79793dc87bd149ceb37f20a53ce158b178c3c7231e4e82103335fff"
+    },
+    {
       "path": "tools/recovery/prepare_current_core.py",
       "bytes": 54146,
       "sha256": "a4ad08aeddaa1ed37634f1e54dba370148920640e1aefca11c1b3197e66c15fe"
@@ -1652,6 +1702,11 @@
       "sha256": "2a8fb3b2045f39bd0f6c3f173abf856f6c092f7595ed206b0066ca9ba204dc07"
     },
     {
+      "path": "tools/recovery/prove_container_logging_reference_scope.py",
+      "bytes": 5675,
+      "sha256": "44e1b8a3877452ed5a8ebae43108e8962470ea86250c2f32c5fb4844e158cf3a"
+    },
+    {
       "path": "tools/recovery/prove_container_small_initializers_native.py",
       "bytes": 7621,
       "sha256": "bc01b3c96cd6f8648de55e9bf59784ecdf3381b3514f5d47ea9fbc89214c3ec5"
@@ -1745,6 +1800,11 @@
       "path": "tools/recovery/prove_startup_singleton_and_disposed_members.py",
       "bytes": 19535,
       "sha256": "d9b539424c70b2d42ac514ed54597491878f564338c99197f94a3cb70f26dfb1"
+    },
+    {
+      "path": "tools/recovery/prove_title_leaf_generic_name_normalization.py",
+      "bytes": 4603,
+      "sha256": "facdcac748a31102bffcb1787e56d9e42060bd78b7d5e93fb4a46066e73233c3"
     },
     {
       "path": "tools/recovery/prove_tmp_native_product_version.py",
@@ -1905,6 +1965,16 @@
       "path": "tools/recovery/run_cli_marker_void_fixtures.py",
       "bytes": 2058,
       "sha256": "ae457e405cdcb8ec5a81ed5331a26744ec735fb8fe615592e080b0e5acdbe778"
+    },
+    {
+      "path": "tools/recovery/run_container_lower_allocation_smoke.py",
+      "bytes": 16263,
+      "sha256": "7a80a70293a1990ee4d865e2ef5e12780748c457d4e6bf24586c53606398f206"
+    },
+    {
+      "path": "tools/recovery/run_container_lower_member_harness_v3.py",
+      "bytes": 11659,
+      "sha256": "00c86676b113d720082f0df8032d49d0fd95fd4c9953eca290f10e819c22f2a1"
     },
     {
       "path": "tools/recovery/run_core_field_attribute_witness.py",
@@ -2232,6 +2302,16 @@
       "sha256": "52466ae7156b2884d2a69aec47ff737deb82c3d801d8b49ce014c093657a207c"
     },
     {
+      "path": "tools/recovery/run_title_dependency_leaf_harness.py",
+      "bytes": 10126,
+      "sha256": "2a7d6dfba9a3faa553c0793c108a28b28d139a61d96e080b811c18ad199aa0d4"
+    },
+    {
+      "path": "tools/recovery/run_title_dependency_leaf_harness_v2.py",
+      "bytes": 9804,
+      "sha256": "75fd275a7f12a8ca73f2d5b307fc3a12e858ed2ff9f818837e7f3d8e124e1959"
+    },
+    {
       "path": "tools/recovery/run_title_display_callback_decode.py",
       "bytes": 5202,
       "sha256": "2fd95029ceb191030e23d49012ead1760b1ddc1a2fceaea94f8ea8b01ec10e93"
@@ -2315,6 +2395,11 @@
       "path": "tools/recovery/stage_captured_20230414_backend_scope.py",
       "bytes": 13400,
       "sha256": "ca8aa02093925ed5d5de46ee42d0fdb6581b9fa31879ce9abddb6295a7b6bb26"
+    },
+    {
+      "path": "tools/recovery/stage_container_lower_bodies_v3.py",
+      "bytes": 16242,
+      "sha256": "6ca35cbe3c76242301bed5de845e3e776f392d151db2e1abea0da9f4213dcd55"
     },
     {
       "path": "tools/recovery/stage_editor_shader_native_input.py",
@@ -2450,6 +2535,11 @@
       "path": "tools/recovery/stage_startup_three_member_bodies_v3.py",
       "bytes": 10145,
       "sha256": "3b3228fef77f21fe8b725eb19d8a88bb4e5c84e2194b952ea52b30c01e324285"
+    },
+    {
+      "path": "tools/recovery/stage_title_dependency_leaf_properties.py",
+      "bytes": 4891,
+      "sha256": "c484733084255b9e1e85611d85b6242a6c2efb0871e91552b13e142cc7903889"
     },
     {
       "path": "tools/recovery/stage_title_display_callback_slice.py",
@@ -2612,5 +2702,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 522
+  "count": 540
 }

@@ -239,7 +239,7 @@ get 		{
 public ScreenWorldSpaceUIAnchor WorldSpaceUIAnchor
 {
 get 		{
-			return null;
+			return this.worldSpaceUIAnchor;
 		}
 
 }

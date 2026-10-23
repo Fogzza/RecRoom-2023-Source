@@ -351,7 +351,7 @@ get 		{
 public Camera ControllerCamera
 {
 get 		{
-			return null;
+			return this.COMLJLOEGCA;
 		}
 
 private set {
