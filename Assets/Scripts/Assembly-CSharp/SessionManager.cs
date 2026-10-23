@@ -935,7 +935,7 @@ get 			{
 		internal void _003CRunJoinDormRoom_003Eb__0(bool bypassMovementModeRestriction)
 		{
 			this._003C_003E4__this.APFMLJLPMJD = this.loadSceneSourceData;
-			var joinPromise = this._003C_003E4__this.CKIFCJCBNLA("Going to ^DormRoom", PFPFLMJDKIB.LeaveParty, _ => Matchmaking.FGKJLHAEJAL());
+			var joinPromise = this._003C_003E4__this.CKIFCJCBNLA("Going to ^DormRoom", PFPFLMJDKIB.LeaveParty, global::SolarNet.Recovery.OriginalDelegateCompatibility.IgnoreInput<int[], global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM>>(Matchmaking.FGKJLHAEJAL));
 			this._003C_003E4__this.MLGHBPFMFNL(joinPromise, this.onResponseCallback);
 		}
 

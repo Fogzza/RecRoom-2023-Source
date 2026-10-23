@@ -1,8 +1,8 @@
 {
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
-  "count": 11271,
-  "bytes": 122676646,
+  "count": 11277,
+  "bytes": 122684637,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -424,7 +424,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "a3a49dd882de0e20b497fe4adcc86d0cc6c50bf49eeb4502409952724d5918f0",
+      "sha256": "7c4fed735ca0147740fec23402a01926544feabd9d60ae568b65bab10a1188d2",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -1916,7 +1916,7 @@
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
       "bytes": 1782784,
-      "sha256": "a6ea8b4faea6df2fced63ecbe24e32005830cb40d3672141b0a6f82adbed6bce",
+      "sha256": "e453fa46a96c50804ddfda5f9e0b53542494f8787edfef60a586a7ee9e204f1d",
       "reasons": [
         "complete_required_SDK_plugin_subtree"
       ]
@@ -23227,8 +23227,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/GONBPKCPFNK.cs",
-      "bytes": 2232,
-      "sha256": "45c295b925dab977bdb4874760a0dcd3343b1910ad84fa31c3bdc1650490f2a2",
+      "bytes": 6793,
+      "sha256": "d4ac84d4c707b451d753679542460570d5419c049efd99d6ac7be3fb25213961",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -33483,8 +33483,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/MDEJADHJOEJ.cs",
-      "bytes": 283,
-      "sha256": "d2991b8a68310a650ef5192820227a2788882e228f6fbcc98088ab68a46442dc",
+      "bytes": 434,
+      "sha256": "59e74a23d0d989a3e1d4fffb02986444160064190e36acd7004a6d4cae4a5384",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -38203,8 +38203,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/OOMEAMBGFPG.cs",
-      "bytes": 806,
-      "sha256": "d569fe51810012d9a388ab29ea7d999fef76f28ecec17ae915a708790979bfa3",
+      "bytes": 1165,
+      "sha256": "081993266a557ce9dd5481efce1d2c0ee4f6dbfa0a00f8d008a3cb83a1a847de",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -79123,8 +79123,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/SessionManager.cs",
-      "bytes": 55845,
-      "sha256": "3d0f3061a1aac0308c7aede1f19ec1f8ad7ca07d3e509f2b5e25d5aa48456d7a",
+      "bytes": 55960,
+      "sha256": "910aa599339bb70e5869f8c5b0447909cf0aaaeb9a3a6f7e2a7e0d6dda23138c",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -88399,6 +88399,54 @@
       "sha256": "2bb0f9300af311ac12fed792c0658382f66b27a10eb11c6125f8f9bcc8577615",
       "reasons": [
         "matching_original_asset_meta"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime.meta",
+      "bytes": 172,
+      "sha256": "0b97a31c7065f76c690decaebd9362674f28e1288ba9ed5f89a99c1e9ae8a747",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime/DelegateCompatibility.meta",
+      "bytes": 172,
+      "sha256": "2b1efa122f66cdb1942e8c78518ddb101e1375507f8d5b0158b671edab42932c",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime/DelegateCompatibility/OriginalDelegateCompatibility.cs",
+      "bytes": 1735,
+      "sha256": "8f9e4959cb570ca532c80e3d7bfff9e231b945362e53e17be863a5ac951d2f6d",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime/DelegateCompatibility/OriginalDelegateCompatibility.cs.meta",
+      "bytes": 243,
+      "sha256": "8b221707a871e021de30e9a48c9de681ef8f18e89edb042aeaa54621aa8f0a14",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime/DelegateCompatibility/SolarNet.Recovery.Compatibility.asmdef",
+      "bytes": 317,
+      "sha256": "cbba6cd02115b8b597c4c0ddd3fd756477d7562c43fff0833e6a1a4113c7e7ab",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
+      ]
+    },
+    {
+      "path": "Assets/SolarNetRecoveryRuntime/DelegateCompatibility/SolarNet.Recovery.Compatibility.asmdef.meta",
+      "bytes": 166,
+      "sha256": "2ac7046c21aae33394ee67539e605dad06be67cf6e1a2ca74efb206493cfac8a",
+      "reasons": [
+        "owned_recovery_runtime_source_or_matching_metadata"
       ]
     },
     {
