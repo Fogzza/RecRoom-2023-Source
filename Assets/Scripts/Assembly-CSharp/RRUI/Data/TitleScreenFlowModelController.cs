@@ -54,10 +54,14 @@ namespace RRUI.Data
 		{
 			protected override void NGFFCLPHKJN()
 			{
+				var target = this.button;
+				bool enabled = this.Model.HasManualLoginInformation;
+				target.interactable = enabled;
 			}
 
 			protected override void BNFEJGHHHLO()
 			{
+				this.Model.ManuallyLogin();
 			}
 		}
 
@@ -114,10 +118,12 @@ namespace RRUI.Data
 		{
 			protected override void NGFFCLPHKJN()
 			{
+				this.button.interactable = true;
 			}
 
 			protected override void BNFEJGHHHLO()
 			{
+				this.Model.GoToLogin();
 			}
 		}
 

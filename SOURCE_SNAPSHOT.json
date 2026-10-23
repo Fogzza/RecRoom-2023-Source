@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122714920,
+  "bytes": 122716681,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "62130dc23c254d39a5840073d32ee0dcb8dc0dbd5053124e4d1b12fed8067a08"
+      "sha256": "ce726df2b5d9f5ee22a07ac79e72a680eb9e4906a17b7c466078ad796bca71c4"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1461,8 +1461,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Runtime.dll",
-      "bytes": 68608,
-      "sha256": "53c5304e9eb824f3d2665d7d757683018e172640ede02975c521bc87c04245e0"
+      "bytes": 70144,
+      "sha256": "41147ae0295276159c42ce83930520fa3948a2a5793ae9244a7e462c23245a3e"
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Runtime.dll.meta",
@@ -30436,8 +30436,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RRUI/Data/TitleScreenFlowModelController.cs",
-      "bytes": 24699,
-      "sha256": "6b5f5a980178ddd1e6e28d0155a40f2e8832319994e59988ffbc6e9b2f9432b1"
+      "bytes": 24924,
+      "sha256": "c966e6bb329a403321b3e3b0d5b2f3a119a3a4244ae763f02f0e6c2c707bae16"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RRUI/Data/TitleScreenFlowModelController.cs.meta",
