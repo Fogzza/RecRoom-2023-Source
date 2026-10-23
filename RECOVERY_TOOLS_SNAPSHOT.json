@@ -332,6 +332,16 @@
       "sha256": "a9cfd70c06fc8146553b1fe432f5b6888b3f6aadf291bcd4f753b53ec13fb456"
     },
     {
+      "path": "tools/recovery/RecoveredSingletonAccessorDonor.cs",
+      "bytes": 519,
+      "sha256": "9ad67f31bd70093f639a38a7ddcf3c2df363f325e42dde06ea151e81dcb5247c"
+    },
+    {
+      "path": "tools/recovery/RecoveredSingletonAccessorMembers.cs",
+      "bytes": 298,
+      "sha256": "f849c5784c428b233c9208a61c96bfc8e29a59a0bc617c270636579641cf0fa5"
+    },
+    {
       "path": "tools/recovery/RecoveredSingletonStartupDonor.cs",
       "bytes": 797,
       "sha256": "0b8834d4d6aafffef23477c9820a3eda440554b8c9a4923281d9e16e3d3ad049"
@@ -392,9 +402,29 @@
       "sha256": "23120432a73e95f8563a123618b5dcdd03d95945963ba949da5c9cef0969a424"
     },
     {
+      "path": "tools/recovery/SingletonAccessorEffects.template.cs",
+      "bytes": 8283,
+      "sha256": "53c0c184b22ce6f93c21bacd42cd482f0da1770d90254cbbacf245e155718644"
+    },
+    {
+      "path": "tools/recovery/SingletonAccessorEffects.v2.template.cs",
+      "bytes": 8882,
+      "sha256": "31f0d8c02a2e4fd519a6394f217b6ce4881141919f5c1fd83fd9ecc0d6c02700"
+    },
+    {
+      "path": "tools/recovery/StageSingletonAccessorBodies.cs",
+      "bytes": 16114,
+      "sha256": "a6c36c03952913960f963134a10594fa2060704a8899d8b4334097f7753fb1d8"
+    },
+    {
       "path": "tools/recovery/StageStartupThreeMemberBodies.v3.cs",
       "bytes": 14709,
       "sha256": "b645b1bc92d5fed2ed6712e931032872ec311fc48156c2c145ceb58b8a934252"
+    },
+    {
+      "path": "tools/recovery/StartupSdkLifecycleAccessorSmoke.cs",
+      "bytes": 11947,
+      "sha256": "1223fb0ec82d562015f4afa26736b4468ece9dc198c453bc896c7c770be58f3a"
     },
     {
       "path": "tools/recovery/StartupSdkLifecycleSmoke.v2.cs",
@@ -440,6 +470,16 @@
       "path": "tools/recovery/TitleManagerAwakeEffects.template.cs",
       "bytes": 15201,
       "sha256": "42911dd8ecadc7a2a984efa910bfe8f69990e5a96294b73e431d513bd86a5b72"
+    },
+    {
+      "path": "tools/recovery/TitleManagerStartEffects.template.cs",
+      "bytes": 19739,
+      "sha256": "ef6dff174deada5094b803a044228a6f41362e1caaceb9a609c9bbc403f19ab4"
+    },
+    {
+      "path": "tools/recovery/TitleManagerStartEffects.v2.template.cs",
+      "bytes": 19730,
+      "sha256": "3b91987a9c98b69af1f903b4cc5bc9c58f2cce94c16e4b7be3337af7278f43b9"
     },
     {
       "path": "tools/recovery/TitlePageRouteEffects.v2.template.cs",
@@ -492,6 +532,11 @@
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
     },
     {
+      "path": "tools/recovery/apply_singleton_accessor_bodies_reviewed.py",
+      "bytes": 13821,
+      "sha256": "587a117f5d8c77f485b21a80b4f3edb981e9885b61d90a42eb4ff16c9bcb2f93"
+    },
+    {
       "path": "tools/recovery/apply_startup_three_member_bodies_reviewed_v2.py",
       "bytes": 13893,
       "sha256": "ba3afbf8989a36f599061c92603bddb467e6cfe3e1a8004497aa79bb19daf029"
@@ -505,6 +550,11 @@
       "path": "tools/recovery/apply_title_manager_awake_reviewed.py",
       "bytes": 10218,
       "sha256": "cb2070079be4f86e0957fe6af5ad2617da8f58b735e7fff91ec4fdbdb2351e0b"
+    },
+    {
+      "path": "tools/recovery/apply_title_manager_start_reviewed.py",
+      "bytes": 11279,
+      "sha256": "8688c870cf88fa00bcb40c5e3ba7b7461de03aaaac79fbfa7953526df04edfb9"
     },
     {
       "path": "tools/recovery/apply_title_page_route_reviewed_v2.py",
@@ -735,6 +785,16 @@
       "path": "tools/recovery/collect_title_page_route_native.py",
       "bytes": 6778,
       "sha256": "bc639eb54f8038dcc3de0a8b9cfee52f737d64894595f079c6d20f91e8174344"
+    },
+    {
+      "path": "tools/recovery/collect_title_start_dispatch_joins.py",
+      "bytes": 3580,
+      "sha256": "658ba015ffb771e1671c33a5e9112494ac22d98e9e729f64fa3197b0f16e5984"
+    },
+    {
+      "path": "tools/recovery/collect_title_start_typed_joins.py",
+      "bytes": 5860,
+      "sha256": "6b8cd66a83979689bdf1f0ae38eefbacfdcd25db41ded6163b7cff929916303f"
     },
     {
       "path": "tools/recovery/collect_win32_marshal_wrappers.py",
@@ -1397,6 +1457,11 @@
       "sha256": "1273c730f989d369a8c347549145f66dbc6e459462d818ace0bc135c74f5735b"
     },
     {
+      "path": "tools/recovery/prepare_singleton_accessor_decode.py",
+      "bytes": 4174,
+      "sha256": "72fcd2f6dd33268928ba3e17d9ea395e8b32ab8d82359f56813ee5bc86d9661f"
+    },
+    {
       "path": "tools/recovery/prepare_solarnet_solution_platform_mapping.py",
       "bytes": 1966,
       "sha256": "26a4e94c8e940341f672b4e35c5bbe44d806410c162fcadc49a3550f4ec82d0e"
@@ -1440,6 +1505,11 @@
       "path": "tools/recovery/prepare_title_awake_chained_native.py",
       "bytes": 6278,
       "sha256": "e4ded8e012619900589e939a3fce03334bbc384bd380e3fd9f6be76e8ff75fb3"
+    },
+    {
+      "path": "tools/recovery/prepare_title_manager_start_native.py",
+      "bytes": 6252,
+      "sha256": "8a29a58bf83227a16c53881bd657a01749cd1a4a6d298d331daa67f31dbc654c"
     },
     {
       "path": "tools/recovery/prepare_unrun_harness_revision_helper.py",
@@ -1605,6 +1675,11 @@
       "path": "tools/recovery/prove_service_container_getter_native.py",
       "bytes": 11853,
       "sha256": "68a0e331872782ad426351b4cd0b77019a848935cd50330bb3c3f21db35db28d"
+    },
+    {
+      "path": "tools/recovery/prove_singleton_accessor_members.py",
+      "bytes": 13029,
+      "sha256": "2ac9789d3e644e76f164e089d2b54d700775d80772d83a9a790c5cc8df978fdf"
     },
     {
       "path": "tools/recovery/prove_startup_container_resolver_member.py",
@@ -2027,9 +2102,24 @@
       "sha256": "20c092b8ffbe59605ed4a52081f9a8f281f9eeccd4e33c62f7f06c850a80e839"
     },
     {
+      "path": "tools/recovery/run_singleton_accessor_harness.py",
+      "bytes": 9904,
+      "sha256": "09857e59042dd906381ae15947f1bb51db39c9d5de3501b054d3fd5e8f2a29a9"
+    },
+    {
+      "path": "tools/recovery/run_singleton_accessor_harness_v2.py",
+      "bytes": 11548,
+      "sha256": "0557753cd3cf8d6643a95af73c2b1390df6a3398ffbbdc39589e7e0cd3a15b71"
+    },
+    {
       "path": "tools/recovery/run_startup_foundation_decode.py",
       "bytes": 6252,
       "sha256": "e64411ff3ee934e33d34608791dafaf09b91f60a5a9fd4f3e4b5f8f59b055ed6"
+    },
+    {
+      "path": "tools/recovery/run_startup_sdk_lifecycle_accessor_smoke.py",
+      "bytes": 16679,
+      "sha256": "0755b96918b356e455a315d899960f74872075ee8bac2fa92bf886cbbeaf66f0"
     },
     {
       "path": "tools/recovery/run_startup_sdk_lifecycle_smoke_v2.py",
@@ -2090,6 +2180,21 @@
       "path": "tools/recovery/run_title_manager_awake_harness.py",
       "bytes": 9358,
       "sha256": "d084fbaf4843f02dae9c1e7c088a86a64223aefdb6d53485452b0bda0311afe2"
+    },
+    {
+      "path": "tools/recovery/run_title_manager_start_decode.py",
+      "bytes": 5156,
+      "sha256": "65e6070d3e40ec07b29a91fb04c936b171f8cf53c8c0f4b19c83412637800126"
+    },
+    {
+      "path": "tools/recovery/run_title_manager_start_harness.py",
+      "bytes": 9501,
+      "sha256": "1fb2744a189177f623b362d58b4660d2b4e6e2a21f1c8c37ff75fbed7568e1e4"
+    },
+    {
+      "path": "tools/recovery/run_title_manager_start_harness_v2.py",
+      "bytes": 8952,
+      "sha256": "8a2c129ba9a3fe73f33bb9c3ea0b07c4a2149e5cada44fee5eb40814b04daa72"
     },
     {
       "path": "tools/recovery/run_title_page_route_harness_v2.py",
@@ -2257,6 +2362,11 @@
       "sha256": "46d8c056346ff8cd30504be03c31054d7c93b1ba64b46a5b8f23ecc54e44d3db"
     },
     {
+      "path": "tools/recovery/stage_singleton_accessor_bodies.py",
+      "bytes": 10936,
+      "sha256": "f91d5a66114933ac3c1e9cbdc4b19b24403513429a95e7b4f04c4249d164b933"
+    },
+    {
       "path": "tools/recovery/stage_startup_three_member_bodies_v3.py",
       "bytes": 10145,
       "sha256": "3b3228fef77f21fe8b725eb19d8a88bb4e5c84e2194b952ea52b30c01e324285"
@@ -2270,6 +2380,11 @@
       "path": "tools/recovery/stage_title_manager_awake_slice.py",
       "bytes": 13491,
       "sha256": "91f933ab1cd44ef24a5c27c1970b23953d75b59e250139d2f8e82428de5101a8"
+    },
+    {
+      "path": "tools/recovery/stage_title_manager_start_slice.py",
+      "bytes": 25733,
+      "sha256": "0999896ebd2a4a36c00627a2f56e84a6fac664cc68e12bcd5e5ac7327ad99d4f"
     },
     {
       "path": "tools/recovery/stage_title_page_route_slice.py",
@@ -2407,5 +2522,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 481
+  "count": 504
 }

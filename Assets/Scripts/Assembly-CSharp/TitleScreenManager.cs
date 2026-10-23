@@ -242,6 +242,23 @@ get 	{
 
 	private void Start()
 	{
+		mainCanvas.renderMode = RenderMode.WorldSpace;
+		mainCanvas.worldCamera = RecRoom.Core.UI.UIInputModule.Instance.ControllerCamera;
+		AFFEJPNPKPM = mainCanvas.transform.position;
+		AHAPJIODLLJ = mainCanvas.transform.localScale;
+		BGMCKGNIMKN = mainCanvas.transform.rotation;
+		if (otherCanvases != null)
+		{
+			for (int i = 0; i < otherCanvases.Length; i++)
+			{
+				otherCanvases[i].renderMode = RenderMode.WorldSpace;
+				otherCanvases[i].worldCamera = RecRoom.Core.UI.UIInputModule.Instance.ControllerCamera;
+			}
+		}
+		LIPCPJMCHDF.DisplayModeChange += PMNJIOHDABB;
+		PMNJIOHDABB();
+		IBDKAJJPLGA.LEODHBOENKA(PlatformManager.Instance.DefaultLayout, true);
+		JHIKKDDFDGA.PEOPJAFNOBD(this, NMJIFHLPFNP, true);
 	}
 
 	private void Update()
