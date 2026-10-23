@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122703998,
+  "bytes": 122706046,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -424,7 +424,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "04494d500eee2121b0878471d6b6240e46601b08dd92a2fc64ef0df80b9e2941",
+      "sha256": "7ca55d32dac3bfd1260ce46fcd5aa7a475f3c568fd2c7261ecf736cf6497d84f",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -1456,8 +1456,8 @@
     },
     {
       "path": "Assets/Plugins/Codestage.Anticheattoolkit.Runtime.dll",
-      "bytes": 48640,
-      "sha256": "25a567661712a51e72ee4f8d1c50843b2adfb2cebac4e35e85952dc047fe860c",
+      "bytes": 50176,
+      "sha256": "e0aac1d8cd1390a9d71bbac394fc070ac767c9dae971fe6c4195a8ef044ededc",
       "reasons": [
         "complete_required_SDK_plugin_subtree"
       ]
@@ -1915,8 +1915,8 @@
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
-      "bytes": 1782784,
-      "sha256": "81af48be206236bbf56278e54644ef3e6cfd12ec859ece9f0596acb94c9466f3",
+      "bytes": 1783296,
+      "sha256": "e54e56f97750c413275f35430f72d772690eab93a6b4bb7717d2fb80c074725e",
       "reasons": [
         "complete_required_SDK_plugin_subtree"
       ]
