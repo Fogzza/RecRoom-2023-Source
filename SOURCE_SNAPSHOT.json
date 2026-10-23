@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11264,
-  "bytes": 121427989,
+  "bytes": 121428886,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -1436,8 +1436,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll",
-      "bytes": 3584,
-      "sha256": "5c58d338afe2c0d8887291d8572fa8dc34c18b551a9f3c17b2e8a88558752668"
+      "bytes": 4096,
+      "sha256": "007f050bfa218e371f716e8f5a5517e340efee710e2911dcf4114fcf86074c06"
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll.meta",
@@ -2577,7 +2577,7 @@
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
       "bytes": 11264,
-      "sha256": "e86cc2f7c05eb5b7dec176443edff813bd96c1e56f87bcf3a3d7672558ba0a2b"
+      "sha256": "ec31f5c016ca6eb09015e485f80e98bd105964606850bfa7d6dfb91f928f10a4"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
@@ -54116,8 +54116,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs",
-      "bytes": 5721,
-      "sha256": "f550ce67d9fc737584f79fe96897d572209bf08dde0002f97c85ed54a752922a"
+      "bytes": 6106,
+      "sha256": "423e772f68dcc826d63c0d1d76bac2232f9bdacd3522fefac197690e1f0b39ba"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs.meta",

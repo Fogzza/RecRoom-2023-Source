@@ -2,14 +2,489 @@
   "schema": "SolarNet-reviewed-recovery-tool-snapshot/v1",
   "files": [
     {
-      "path": "tools/recovery/account_current_original_sources.py",
-      "bytes": 8692,
-      "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
-    },
-    {
       "path": "tools/recovery/ActualCoreFieldSelectorInventory.cs",
       "bytes": 2468,
       "sha256": "bc8ab7f8d3fff9be46ac602f30e67196218f1113ae3f91fe8bca38809cd859fb"
+    },
+    {
+      "path": "tools/recovery/AttributeScopeLazyAudit.cs",
+      "bytes": 1727,
+      "sha256": "b0288789c51f7416a2f97d74fd13bd6e6e0f33066f0f4caf904ace9549c80e85"
+    },
+    {
+      "path": "tools/recovery/BootCallbacksEffectProof.cs",
+      "bytes": 9162,
+      "sha256": "718a7fe685027e39a035719fbb3ff9eb5042ea3b5f025ee1d75bb377e110e0f6"
+    },
+    {
+      "path": "tools/recovery/BootThreeMethodsEffectProof.cs",
+      "bytes": 11399,
+      "sha256": "3c4ce3368955e49d538eaa7a078436fb350b4822991095559f404b60f64162bf"
+    },
+    {
+      "path": "tools/recovery/BuildAllOriginalShaderNullDependencyFixture.cs",
+      "bytes": 27543,
+      "sha256": "47fd7d09259670dcffdf1b18218d15446cb126718957b1fcad4a180459f01e81"
+    },
+    {
+      "path": "tools/recovery/BuildBuiltinMaterialIdentityFixture.cs",
+      "bytes": 19921,
+      "sha256": "57c9e6a782ebec0af33708555dfd77a2b0f040e532e4cb32d237c553987b1c26"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalAGDependencyFixture.cs",
+      "bytes": 9604,
+      "sha256": "40138abb2af91cf4c8ae35c1072d1cec0e73fdf5b1b83a967b3a14ea61b5e399"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderBuiltinIdentityFixture.cs",
+      "bytes": 19768,
+      "sha256": "99afdb63efa0579d31330ecd50c0b61c8ece2d9d56e3f8ddd4bdd7a4fffcd24c"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderCollectionFixture.cs",
+      "bytes": 16881,
+      "sha256": "2f8f9d324539d7a8b7cb58fc12c0560b01ab42d0697a46051cf4c889914b70c6"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderNullDependencyFixture.cs",
+      "bytes": 20167,
+      "sha256": "92a5dd65c4fb8d3f5be6671c8b8482ebd9443bd787a42691e457a67ca4d21c6b"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderPrograms.cs",
+      "bytes": 7902,
+      "sha256": "b82806fad5115f0484e15f7e6ad0f355381e74061f58dc4fff13026de1af1c40"
+    },
+    {
+      "path": "tools/recovery/BuildRecoveredWindows.cs",
+      "bytes": 4608,
+      "sha256": "46f1ac502289988e25afc6c0a9b0137960081a626297c4e279c626cea821c114"
+    },
+    {
+      "path": "tools/recovery/BuildStartupSdkLifecycleSmoke.cs",
+      "bytes": 3508,
+      "sha256": "b128fe805bd82fa59f12bef23b8917176d4a62b34ebe967e75a2034131d9a588"
+    },
+    {
+      "path": "tools/recovery/CanonicalMarshallingContracts.cs",
+      "bytes": 7358,
+      "sha256": "34e2ee9a315a042ff092f43c8fc15ca5326eb838dde5fe19dae24a13d4e33ba6"
+    },
+    {
+      "path": "tools/recovery/CanonicalMarshallingFixtures.cs",
+      "bytes": 9208,
+      "sha256": "a39fdf46ff483fae14f240d22e180f73e4fce8cd3cb8ace317ffb1c131c4a6c8"
+    },
+    {
+      "path": "tools/recovery/CliMarkerVoidFixtures.cs",
+      "bytes": 5728,
+      "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
+      "bytes": 12110,
+      "sha256": "dfa14b41d1aafbacefa71c32576462a02b34e260a8250c76de9b0bafec02ccaf"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderCollectionToEditor.cs",
+      "bytes": 14256,
+      "sha256": "b21a3c0d59faad1906a58ecd79be8cbd8c4ecb4f8f4ce55e232f3e6b8039a5f3"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderPairToEditor.cs",
+      "bytes": 9922,
+      "sha256": "97c772330ff9caeaa3251893bcc7f17405ea2ea58df309e6b2bb5a00d15c9f04"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditor.cs",
+      "bytes": 6192,
+      "sha256": "152b26f86db074791f532341f39f86012b9e8057f4e6e4fac879d9835ff0a4fb"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditorDiagnostic.cs",
+      "bytes": 8349,
+      "sha256": "b70dee8a34e31b367d8575d26754ef8ae2a056c62ac225691f260c9f9ebd30e7"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditorNormalized.cs",
+      "bytes": 9274,
+      "sha256": "56bc9daa1314c4c389f5eb7c731f7eca93e7c9778241f638a0bc7fb0ba1144ba"
+    },
+    {
+      "path": "tools/recovery/CoreFieldAttributeWitnessInventory.cs",
+      "bytes": 5970,
+      "sha256": "2dc9caf9a82c1abebd03e7f4811dbfc5b735f22d8e75d6d60452cfe34b953fe8"
+    },
+    {
+      "path": "tools/recovery/CoreMethodFlagsInventory.cs",
+      "bytes": 6914,
+      "sha256": "32a231a8a7d632c498400c9f96370f4bb103a1ac946d6029d74a087edda6a0fe"
+    },
+    {
+      "path": "tools/recovery/CurrentCoreChecks.cs",
+      "bytes": 3109,
+      "sha256": "a7765ded9e28af28ee17669bda1b8a6dbdd24acffcaca416da9bb248d31df877"
+    },
+    {
+      "path": "tools/recovery/CurrentScriptMetadataInventory.cs",
+      "bytes": 6891,
+      "sha256": "b7bf770dd68876e10946e42abe3dc811f2e76a2632be0ae01b3fec62a0514e13"
+    },
+    {
+      "path": "tools/recovery/DisassembleOculusVersion.cs",
+      "bytes": 1724,
+      "sha256": "6fe4f5ecd39321311a037973dfd33229faca9f2015dce1496e64db72be0cd9c8"
+    },
+    {
+      "path": "tools/recovery/DisassemblePInvokeWrappers.cs",
+      "bytes": 3711,
+      "sha256": "c0b6c17d2264e1b787eb5643b544a47599519e434625b226d405c92042eccbf0"
+    },
+    {
+      "path": "tools/recovery/EmittedOriginalMethodSubsetPolicy.cs",
+      "bytes": 2976,
+      "sha256": "fd05a9ac71d8083ed067ac6a2d4f3a0e75f1ff61c4b40908a23ee1f84d78424f"
+    },
+    {
+      "path": "tools/recovery/EmittedReferencePlanCompletion.cs",
+      "bytes": 2912,
+      "sha256": "11218ca1b24d57300a75c917b737cab0bb2de2bb153b98bd962b6b89ac48a736"
+    },
+    {
+      "path": "tools/recovery/ExactCliMarkerConstructor.cs",
+      "bytes": 2009,
+      "sha256": "99d5bd1fe1991f741b855a19d8d9878bcc3f7d402ec5d1e9d2afad9aacbc0ba0"
+    },
+    {
+      "path": "tools/recovery/ExactMetadataReferenceResolver.cs",
+      "bytes": 5950,
+      "sha256": "e22c2cef40e7db6702f5e7ce6cbd855083ee683f90294612cf0a0660da68df3c"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalFrameworkScopes.cs",
+      "bytes": 4360,
+      "sha256": "901eae6ac308ac22604792d5e7d0b4422577fbd749b073003de378ee822046fd"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalPropertyRestoration.cs",
+      "bytes": 5998,
+      "sha256": "af3e4f1a7af26981f030264f6656d555d8b543863d0d98fad9a9122b0588bfe3"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalTypeFlagRestoration.cs",
+      "bytes": 1922,
+      "sha256": "eab7d1b4cb014b79a581324d952f6977816493c1a4058f317629c6842cf78766"
+    },
+    {
+      "path": "tools/recovery/ExtractSdkMarshalling.cs",
+      "bytes": 2498,
+      "sha256": "2ae0766212deec89e6dfcdf58421565657d1be845b9467e1661e48d295d1d282"
+    },
+    {
+      "path": "tools/recovery/FiniteAOTResolverFixtures.cs",
+      "bytes": 3509,
+      "sha256": "3533176e018ebdcb8f93aa26faa7fdba4032be1ce52e36b3db1b9065a61b3c4c"
+    },
+    {
+      "path": "tools/recovery/FrameworkScopeFixtures.cs",
+      "bytes": 3697,
+      "sha256": "ac45699fa9172b85bdc9497ef29e6c47f4a57c575dee72e1df5faf7c203a3181"
+    },
+    {
+      "path": "tools/recovery/InspectDecompilerEventCollision.cs",
+      "bytes": 2722,
+      "sha256": "9aad05beeefc6b6f6d8f26c33ace9838c971a52113c928fa4f4d6fb8d301da15"
+    },
+    {
+      "path": "tools/recovery/InspectPInvokeBlocks.cs",
+      "bytes": 1828,
+      "sha256": "fddb7b323f86b514553c446f2a55ab1288d87ca2ca04ce362393be3c84e74ac5"
+    },
+    {
+      "path": "tools/recovery/InspectSinglePropertySemantics.cs",
+      "bytes": 1502,
+      "sha256": "c31d6324c24c790b7e180e9967e1e0b0c99e714fea8ed26a194125277b14ac1e"
+    },
+    {
+      "path": "tools/recovery/ManagedTypeInventory.cs",
+      "bytes": 1431,
+      "sha256": "a53bb9895248ebd28395e0128e6229747bd6bf5fc6db134a54f35292c4e7b72c"
+    },
+    {
+      "path": "tools/recovery/ManifestStreamingFixtures.cs",
+      "bytes": 10916,
+      "sha256": "a02b951e89cc6191b52eff161c73d176956519beda99386a423469cdc9a18ab7"
+    },
+    {
+      "path": "tools/recovery/MetadataRoundTripDiagnostics.cs",
+      "bytes": 12595,
+      "sha256": "fcca910800146473c3e59d2afec1d2a940dcf1b9e4f6f7db730618c2b3dd0e0f"
+    },
+    {
+      "path": "tools/recovery/MetadataRoundTripDiagnosticsFixtures.cs",
+      "bytes": 3248,
+      "sha256": "d0eb51c44cbf63c97f7e10b717af71707d98188d23d63107167269aaede61a6f"
+    },
+    {
+      "path": "tools/recovery/MissingOriginalMethods.cs",
+      "bytes": 7879,
+      "sha256": "f2505915a4dd3631e27d6753ffbd11ef4895558809a4f8a5e61dd03fb6a88eaf"
+    },
+    {
+      "path": "tools/recovery/NullImportMapProbe.cs",
+      "bytes": 1365,
+      "sha256": "4cdf299b858e2124614586cb78e615cc00ebc77e7911c12bfbc5a7bca4259ea3"
+    },
+    {
+      "path": "tools/recovery/OculusEmbeddedMarshalStage.cs",
+      "bytes": 13836,
+      "sha256": "e115bfa3a9766d11dbc22515f69e342316a9b4fdfce7b4374578bfec11f159bf"
+    },
+    {
+      "path": "tools/recovery/OfficialSteamMarshalSource.cs",
+      "bytes": 4057,
+      "sha256": "bc494ed72fe0a7663a733ed3bb37534b6ca01292e4e05cf01cb8119269771166"
+    },
+    {
+      "path": "tools/recovery/OpenVrMarshalStage.cs",
+      "bytes": 12225,
+      "sha256": "6f7111f5caa3022257c65f87405e056c7d48f93e499873501113831f084f9d59"
+    },
+    {
+      "path": "tools/recovery/OpenVrMetadataInventory.cs",
+      "bytes": 4100,
+      "sha256": "0487f4a6ac130c8b292e53b72bc09761c243c22704e9420b98224f985aa0eba7"
+    },
+    {
+      "path": "tools/recovery/OpenVrSourceMarshalOwnership.cs",
+      "bytes": 4286,
+      "sha256": "cfc78b3e2852a242b098df56a2881aa607e8e5a3c438ba883e02ab7bcb64628f"
+    },
+    {
+      "path": "tools/recovery/OriginalEmptyExternRestoration.cs",
+      "bytes": 3268,
+      "sha256": "02cff7c89bd80ff8391947876c11ba40e1716d3bef8031e3eb1f38416cb82378"
+    },
+    {
+      "path": "tools/recovery/OriginalMaterialShaderPointerProbe.cs",
+      "bytes": 4305,
+      "sha256": "274936db54fc30727d0572b4078e29443a95cc0c55f637d1461b72ae4fa59480"
+    },
+    {
+      "path": "tools/recovery/OriginalRuntimeMetadataReferenceInputs.cs",
+      "bytes": 30811,
+      "sha256": "70dded8c6b838bbab1227f4d526ed2f351898fc1ac6e4a81b3ff5c42660af37d"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderObjectProbe.cs",
+      "bytes": 6477,
+      "sha256": "c10e692d0d482e9a55ede144f2ceb89e7622d7dce4bcc8b9af7adadc345858c3"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderRuntimeProbe.cs",
+      "bytes": 10554,
+      "sha256": "25b558ca00b10fe774c8c692825fd220ea8cb0f96ceafbbe032957597df1937c"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderRuntimeProbeWithPipelineTag.cs",
+      "bytes": 11613,
+      "sha256": "4aedcbce38d4e503efd19b81a203417aabfbaa3fceba9a758e75f4951ab6b144"
+    },
+    {
+      "path": "tools/recovery/OriginalTypeContractChecks.cs",
+      "bytes": 4184,
+      "sha256": "099af1f8f134568e148a7a2f0352c465a325f35b29ac583fa5d3a5675e217498"
+    },
+    {
+      "path": "tools/recovery/PlayerReferenceRootFixtures.cs",
+      "bytes": 7420,
+      "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
+    },
+    {
+      "path": "tools/recovery/ProveEmptyVersionMarker.cs",
+      "bytes": 3232,
+      "sha256": "6d1484414bf6f53ce0da4c9b8c1a5c8c05d89adfa00488df0f70f1448d0ae1ef"
+    },
+    {
+      "path": "tools/recovery/ProvenMarshallingOverlay.cs",
+      "bytes": 16349,
+      "sha256": "26cec834b8da58371d1c7d2b1239fa4d4116b67fa89b506ea795f1cf13cfc906"
+    },
+    {
+      "path": "tools/recovery/ProvenMarshallingOverlayFixtures.cs",
+      "bytes": 2457,
+      "sha256": "cfa1dffc171ce0a81c9b48de7f8979a27982de6716eea4af40e9052f1d4ca827"
+    },
+    {
+      "path": "tools/recovery/QuickNativeScopeCandidate.cs",
+      "bytes": 2712,
+      "sha256": "56e077cbbcc3e6619f9fd945312eac9ff7a41ff8e331ccce57a2c45e31415524"
+    },
+    {
+      "path": "tools/recovery/RebaseBodySourceProjection.cs",
+      "bytes": 5516,
+      "sha256": "899a54691355c71c31fc17816367a0a3f3627140401b7db22080b77111a67dc6"
+    },
+    {
+      "path": "tools/recovery/RecoveredDisposedGuardDonor.cs",
+      "bytes": 345,
+      "sha256": "a9cfd70c06fc8146553b1fe432f5b6888b3f6aadf291bcd4f753b53ec13fb456"
+    },
+    {
+      "path": "tools/recovery/RecoveredSingletonStartupDonor.cs",
+      "bytes": 797,
+      "sha256": "0b8834d4d6aafffef23477c9820a3eda440554b8c9a4923281d9e16e3d3ad049"
+    },
+    {
+      "path": "tools/recovery/ReviveSourceEffectProof.cs",
+      "bytes": 7376,
+      "sha256": "70466a884eb8547e752b019c25ac4b8b4e9aceb565d52ddfa9576eda6c108e82"
+    },
+    {
+      "path": "tools/recovery/SDKContractAudit.cs",
+      "bytes": 14772,
+      "sha256": "45374a525371e24f6d0254d4f0ca3561d25cefa78d6a5c23faf82700c1ae4eac"
+    },
+    {
+      "path": "tools/recovery/SDKContractFixtures.cs",
+      "bytes": 8129,
+      "sha256": "44b5ad8c500a70049c6e5a893b9dafd17699b074792875512547e3215f36dfad"
+    },
+    {
+      "path": "tools/recovery/SDKReferenceAudit.cs",
+      "bytes": 5646,
+      "sha256": "f434e5fdc62c409760498055080581022883634a1c53881b3cb60af37fc5260f"
+    },
+    {
+      "path": "tools/recovery/SDKReferenceFixtures.cs",
+      "bytes": 4818,
+      "sha256": "54fe2cdc9997b49543a76bd7b174d445b1c9c3386aab005f1f85ae375e102e01"
+    },
+    {
+      "path": "tools/recovery/SDKTextureLoadFixture.cs",
+      "bytes": 5583,
+      "sha256": "d15ebb542c58d2c56d4872a393accd488832e9503168cf6db523cef07d93592c"
+    },
+    {
+      "path": "tools/recovery/ScopedVtableAudit.cs",
+      "bytes": 2983,
+      "sha256": "15d7f0be8daca107def97343239da0491c126647896762a800a013b38a545a70"
+    },
+    {
+      "path": "tools/recovery/SerializationFieldIdentityWitness.cs",
+      "bytes": 2775,
+      "sha256": "a572e4431a32746290e361f7c044f9453ecef086365cdf716a7566123abb9113"
+    },
+    {
+      "path": "tools/recovery/SerializationFieldWitnessFixtures.cs",
+      "bytes": 5738,
+      "sha256": "af3c9fc2a347a6978c006bcb6e0d2ea5ad3774392ea3329a18e05a0e146b658f"
+    },
+    {
+      "path": "tools/recovery/ShaderPackedBuildReportCapture.cs",
+      "bytes": 2119,
+      "sha256": "4eb9668be244d14c609d6b99635198526261ac568f426e4d5b00c157f28dcb81"
+    },
+    {
+      "path": "tools/recovery/ShaderProbeModuleInstaller.cs",
+      "bytes": 1484,
+      "sha256": "23120432a73e95f8563a123618b5dcdd03d95945963ba949da5c9cef0969a424"
+    },
+    {
+      "path": "tools/recovery/StageStartupThreeMemberBodies.v3.cs",
+      "bytes": 14709,
+      "sha256": "b645b1bc92d5fed2ed6712e931032872ec311fc48156c2c145ceb58b8a934252"
+    },
+    {
+      "path": "tools/recovery/StartupSdkLifecycleSmoke.v2.cs",
+      "bytes": 7806,
+      "sha256": "ee2a3bcbe746a3ada5d64320828a4a3929e30465a83864a3ccfdd9d36432525c"
+    },
+    {
+      "path": "tools/recovery/StartupSdkSingletonA.cs",
+      "bytes": 170,
+      "sha256": "a651b9ba2e487d6c712a26110a8fbb36101612616735b857f65a7671b8995fd4"
+    },
+    {
+      "path": "tools/recovery/StartupSdkSingletonB.cs",
+      "bytes": 161,
+      "sha256": "6fa10fddf2dcb272bb9d372f5033db79d191068d24815c5cb307435d5684f7f3"
+    },
+    {
+      "path": "tools/recovery/StartupSingletonDisposedEffects.v2.template.cs",
+      "bytes": 13406,
+      "sha256": "a772f7011029fdde2d353cef086f1b906fadc8c2b4d17491e9141c331afe7cd9"
+    },
+    {
+      "path": "tools/recovery/Steamworks14SourceBodyStage.cs",
+      "bytes": 28225,
+      "sha256": "276008190b4ad7e0c0ca529f72b02b1e5299e75680e289aa7893d54711e6c867"
+    },
+    {
+      "path": "tools/recovery/SteamworksBodyInventory.cs",
+      "bytes": 9119,
+      "sha256": "232ab4d11ef22964d6bcfd2e0012031fe9c278a29b89940bfe5e6ee87c2e7ef4"
+    },
+    {
+      "path": "tools/recovery/TitleLoginSliceEffects.template.cs",
+      "bytes": 8035,
+      "sha256": "7e68554dae22fdf3e572d946142a342b6616e55692b982319eb6e5a74937bbab"
+    },
+    {
+      "path": "tools/recovery/TitleLoginSliceEffects.v3.template.cs",
+      "bytes": 8510,
+      "sha256": "6ddc7cf69083ef1c1160a636bf0629ea7e4124a5bcf4c6795f039a39175e57a3"
+    },
+    {
+      "path": "tools/recovery/TitleManagerAwakeEffects.template.cs",
+      "bytes": 15201,
+      "sha256": "42911dd8ecadc7a2a984efa910bfe8f69990e5a96294b73e431d513bd86a5b72"
+    },
+    {
+      "path": "tools/recovery/TitlePageRouteEffects.v2.template.cs",
+      "bytes": 9326,
+      "sha256": "ee5b9d5220d5befeea479b0c4ba523eacf4d1cb81a338f2896884324e54b98ca"
+    },
+    {
+      "path": "tools/recovery/TypeContractFixtures.cs",
+      "bytes": 14694,
+      "sha256": "b4ac1fc1645944176157c814044554507a8c0ae761e0594d6ae553ce29cd4ee2"
+    },
+    {
+      "path": "tools/recovery/TypeContractInventory.cs",
+      "bytes": 7680,
+      "sha256": "3217d607cc3c07de894442a9c25b1506af0a3d53dd7719e9ec91739d90d35a41"
+    },
+    {
+      "path": "tools/recovery/VerifyBodyDeclarations.cs",
+      "bytes": 2472,
+      "sha256": "aadd5fa1b2787ae4f44165e76fb80d92db85781a879a8f214ab60ee62b5b844f"
+    },
+    {
+      "path": "tools/recovery/VerifyOriginalShaderImport.cs",
+      "bytes": 18967,
+      "sha256": "f768aa9cd21a97d36a1f09737d5a653de1f1c6d264d45e2551d88764cfb316b1"
+    },
+    {
+      "path": "tools/recovery/VerifyOriginalStartupPlay.cs",
+      "bytes": 7154,
+      "sha256": "ce6aa600e5e6fc4c006d12005c245403b3b310b6dc8724f8be87d17dc11c8963"
+    },
+    {
+      "path": "tools/recovery/WindowsDevelopmentDefineProbe.cs",
+      "bytes": 5466,
+      "sha256": "9da6d997a3fd5f6447188ac8e4fec8da854df0fd662a8dfcea75665464de5e2b"
+    },
+    {
+      "path": "tools/recovery/WindowsDevelopmentDefineRecorder.cs",
+      "bytes": 3162,
+      "sha256": "4fc6394e595f8f538ad5c68d26de5a6e239ee08d760bd5b4f34abd77b387217b"
+    },
+    {
+      "path": "tools/recovery/account_current_original_sources.py",
+      "bytes": 8692,
+      "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
     },
     {
       "path": "tools/recovery/apply_original_shader_launcher_amendment.py",
@@ -17,19 +492,29 @@
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
     },
     {
+      "path": "tools/recovery/apply_startup_three_member_bodies_reviewed_v2.py",
+      "bytes": 13893,
+      "sha256": "ba3afbf8989a36f599061c92603bddb467e6cfe3e1a8004497aa79bb19daf029"
+    },
+    {
       "path": "tools/recovery/apply_title_login_slice_reviewed.py",
       "bytes": 9374,
       "sha256": "0a589e6f1428b86fab6e8614a6bd35dd5bfa907df52b4b95cb3b8bf02eec80a3"
     },
     {
+      "path": "tools/recovery/apply_title_manager_awake_reviewed.py",
+      "bytes": 10218,
+      "sha256": "cb2070079be4f86e0957fe6af5ad2617da8f58b735e7fff91ec4fdbdb2351e0b"
+    },
+    {
+      "path": "tools/recovery/apply_title_page_route_reviewed_v2.py",
+      "bytes": 10106,
+      "sha256": "498bbf0839faae0ab5ba67a7c626d8e5fc310b5cf919a909acc503f52d07a755"
+    },
+    {
       "path": "tools/recovery/archive_sdk_audit_inputs.py",
       "bytes": 1849,
       "sha256": "c5b4d7792b80649dde5ba5726840c01bb6ccedd7c38fc5fcc3df334589f1060b"
-    },
-    {
-      "path": "tools/recovery/AttributeScopeLazyAudit.cs",
-      "bytes": 1727,
-      "sha256": "b0288789c51f7416a2f97d74fd13bd6e6e0f33066f0f4caf904ace9549c80e85"
     },
     {
       "path": "tools/recovery/audit_accessibility_error_coverage.py",
@@ -207,16 +692,6 @@
       "sha256": "b660e7a874f8a3b649a21181b8636cb1731cb65f049ec680a60587c544a5502a"
     },
     {
-      "path": "tools/recovery/BootCallbacksEffectProof.cs",
-      "bytes": 9162,
-      "sha256": "718a7fe685027e39a035719fbb3ff9eb5042ea3b5f025ee1d75bb377e110e0f6"
-    },
-    {
-      "path": "tools/recovery/BootThreeMethodsEffectProof.cs",
-      "bytes": 11399,
-      "sha256": "3c4ce3368955e49d538eaa7a078436fb350b4822991095559f404b60f64162bf"
-    },
-    {
       "path": "tools/recovery/build_official_addressables.py",
       "bytes": 10552,
       "sha256": "b162d2aed99ea6126fcc4e62e5df57a9d9172ac537f03e99972b106545bb8840"
@@ -225,51 +700,6 @@
       "path": "tools/recovery/build_stage_guarded.py",
       "bytes": 8152,
       "sha256": "fa927e0ea8b54b8454c4b8df22a2f2947d71566d69080187f06f486b733b8ba6"
-    },
-    {
-      "path": "tools/recovery/BuildBuiltinMaterialIdentityFixture.cs",
-      "bytes": 19921,
-      "sha256": "57c9e6a782ebec0af33708555dfd77a2b0f040e532e4cb32d237c553987b1c26"
-    },
-    {
-      "path": "tools/recovery/BuildOriginalAGDependencyFixture.cs",
-      "bytes": 9604,
-      "sha256": "40138abb2af91cf4c8ae35c1072d1cec0e73fdf5b1b83a967b3a14ea61b5e399"
-    },
-    {
-      "path": "tools/recovery/BuildOriginalShaderBuiltinIdentityFixture.cs",
-      "bytes": 19768,
-      "sha256": "99afdb63efa0579d31330ecd50c0b61c8ece2d9d56e3f8ddd4bdd7a4fffcd24c"
-    },
-    {
-      "path": "tools/recovery/BuildOriginalShaderCollectionFixture.cs",
-      "bytes": 16881,
-      "sha256": "2f8f9d324539d7a8b7cb58fc12c0560b01ab42d0697a46051cf4c889914b70c6"
-    },
-    {
-      "path": "tools/recovery/BuildOriginalShaderNullDependencyFixture.cs",
-      "bytes": 20167,
-      "sha256": "92a5dd65c4fb8d3f5be6671c8b8482ebd9443bd787a42691e457a67ca4d21c6b"
-    },
-    {
-      "path": "tools/recovery/BuildOriginalShaderPrograms.cs",
-      "bytes": 7902,
-      "sha256": "b82806fad5115f0484e15f7e6ad0f355381e74061f58dc4fff13026de1af1c40"
-    },
-    {
-      "path": "tools/recovery/BuildRecoveredWindows.cs",
-      "bytes": 4608,
-      "sha256": "46f1ac502289988e25afc6c0a9b0137960081a626297c4e279c626cea821c114"
-    },
-    {
-      "path": "tools/recovery/CanonicalMarshallingContracts.cs",
-      "bytes": 7358,
-      "sha256": "34e2ee9a315a042ff092f43c8fc15ca5326eb838dde5fe19dae24a13d4e33ba6"
-    },
-    {
-      "path": "tools/recovery/CanonicalMarshallingFixtures.cs",
-      "bytes": 9208,
-      "sha256": "a39fdf46ff483fae14f240d22e180f73e4fce8cd3cb8ace317ffb1c131c4a6c8"
     },
     {
       "path": "tools/recovery/check_installed_original_sdk_dependencies.py",
@@ -287,11 +717,6 @@
       "sha256": "7f4e2cc6e1f58fb895a763002d8de84b12a1e032c8b252aa3e8b9475e07c5666"
     },
     {
-      "path": "tools/recovery/CliMarkerVoidFixtures.cs",
-      "bytes": 5728,
-      "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
-    },
-    {
       "path": "tools/recovery/collect_all_pinvoke_native.py",
       "bytes": 3524,
       "sha256": "de3b2c1a26876d76451456f1ca54aa0fb051acd20a2bf89d3089af9ec85486b3"
@@ -300,6 +725,11 @@
       "path": "tools/recovery/collect_nameserver_request_factory_native.py",
       "bytes": 5715,
       "sha256": "7b7cd608852f12ee3d55b25e40559f7b8c994863d488fc1896b496885931a0e4"
+    },
+    {
+      "path": "tools/recovery/collect_title_awake_typed_joins.py",
+      "bytes": 5333,
+      "sha256": "97961bd50efa34670be464257e8d69b18fe7fff264872385cad377cc18cd118f"
     },
     {
       "path": "tools/recovery/collect_title_page_route_native.py",
@@ -362,56 +792,6 @@
       "sha256": "c8be164bf2e8ff5751ea68eddf01e27873a1751438fd497e1074e3c05ee022bc"
     },
     {
-      "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
-      "bytes": 12110,
-      "sha256": "dfa14b41d1aafbacefa71c32576462a02b34e260a8250c76de9b0bafec02ccaf"
-    },
-    {
-      "path": "tools/recovery/ConvertOriginalShaderCollectionToEditor.cs",
-      "bytes": 14256,
-      "sha256": "b21a3c0d59faad1906a58ecd79be8cbd8c4ecb4f8f4ce55e232f3e6b8039a5f3"
-    },
-    {
-      "path": "tools/recovery/ConvertOriginalShaderPairToEditor.cs",
-      "bytes": 9922,
-      "sha256": "97c772330ff9caeaa3251893bcc7f17405ea2ea58df309e6b2bb5a00d15c9f04"
-    },
-    {
-      "path": "tools/recovery/ConvertOriginalShaderToEditor.cs",
-      "bytes": 6192,
-      "sha256": "152b26f86db074791f532341f39f86012b9e8057f4e6e4fac879d9835ff0a4fb"
-    },
-    {
-      "path": "tools/recovery/ConvertOriginalShaderToEditorDiagnostic.cs",
-      "bytes": 8349,
-      "sha256": "b70dee8a34e31b367d8575d26754ef8ae2a056c62ac225691f260c9f9ebd30e7"
-    },
-    {
-      "path": "tools/recovery/ConvertOriginalShaderToEditorNormalized.cs",
-      "bytes": 9274,
-      "sha256": "56bc9daa1314c4c389f5eb7c731f7eca93e7c9778241f638a0bc7fb0ba1144ba"
-    },
-    {
-      "path": "tools/recovery/CoreFieldAttributeWitnessInventory.cs",
-      "bytes": 5970,
-      "sha256": "2dc9caf9a82c1abebd03e7f4811dbfc5b735f22d8e75d6d60452cfe34b953fe8"
-    },
-    {
-      "path": "tools/recovery/CoreMethodFlagsInventory.cs",
-      "bytes": 6914,
-      "sha256": "32a231a8a7d632c498400c9f96370f4bb103a1ac946d6029d74a087edda6a0fe"
-    },
-    {
-      "path": "tools/recovery/CurrentCoreChecks.cs",
-      "bytes": 3109,
-      "sha256": "a7765ded9e28af28ee17669bda1b8a6dbdd24acffcaca416da9bb248d31df877"
-    },
-    {
-      "path": "tools/recovery/CurrentScriptMetadataInventory.cs",
-      "bytes": 6891,
-      "sha256": "b7bf770dd68876e10946e42abe3dc811f2e76a2632be0ae01b3fec62a0514e13"
-    },
-    {
       "path": "tools/recovery/decode_oculus_version.py",
       "bytes": 2071,
       "sha256": "d043379e6400a87d794542e1bbe0a6b96159e92540538fd7bd30a43eaaeb5584"
@@ -427,54 +807,9 @@
       "sha256": "e68208dcb888c3466a1d1c80af26f43519c36bf07271e2d6ebef5f7d99006159"
     },
     {
-      "path": "tools/recovery/DisassembleOculusVersion.cs",
-      "bytes": 1724,
-      "sha256": "6fe4f5ecd39321311a037973dfd33229faca9f2015dce1496e64db72be0cd9c8"
-    },
-    {
-      "path": "tools/recovery/DisassemblePInvokeWrappers.cs",
-      "bytes": 3711,
-      "sha256": "c0b6c17d2264e1b787eb5643b544a47599519e434625b226d405c92042eccbf0"
-    },
-    {
-      "path": "tools/recovery/EmittedOriginalMethodSubsetPolicy.cs",
-      "bytes": 2976,
-      "sha256": "fd05a9ac71d8083ed067ac6a2d4f3a0e75f1ff61c4b40908a23ee1f84d78424f"
-    },
-    {
-      "path": "tools/recovery/EmittedReferencePlanCompletion.cs",
-      "bytes": 2912,
-      "sha256": "11218ca1b24d57300a75c917b737cab0bb2de2bb153b98bd962b6b89ac48a736"
-    },
-    {
       "path": "tools/recovery/enrich_missing_subset.py",
       "bytes": 3429,
       "sha256": "746c9a81d91367d113063347e365349cd5b7ca6fda1cf7158fa647338ce4f2ca"
-    },
-    {
-      "path": "tools/recovery/ExactCliMarkerConstructor.cs",
-      "bytes": 2009,
-      "sha256": "99d5bd1fe1991f741b855a19d8d9878bcc3f7d402ec5d1e9d2afad9aacbc0ba0"
-    },
-    {
-      "path": "tools/recovery/ExactMetadataReferenceResolver.cs",
-      "bytes": 5950,
-      "sha256": "e22c2cef40e7db6702f5e7ce6cbd855083ee683f90294612cf0a0660da68df3c"
-    },
-    {
-      "path": "tools/recovery/ExactOriginalFrameworkScopes.cs",
-      "bytes": 4360,
-      "sha256": "901eae6ac308ac22604792d5e7d0b4422577fbd749b073003de378ee822046fd"
-    },
-    {
-      "path": "tools/recovery/ExactOriginalPropertyRestoration.cs",
-      "bytes": 5998,
-      "sha256": "af3e4f1a7af26981f030264f6656d555d8b543863d0d98fad9a9122b0588bfe3"
-    },
-    {
-      "path": "tools/recovery/ExactOriginalTypeFlagRestoration.cs",
-      "bytes": 1922,
-      "sha256": "eab7d1b4cb014b79a581324d952f6977816493c1a4058f317629c6842cf78766"
     },
     {
       "path": "tools/recovery/expand_original_shader_native_index.py",
@@ -485,11 +820,6 @@
       "path": "tools/recovery/expand_original_shader_native_index_v2.py",
       "bytes": 7591,
       "sha256": "2edeb061be12f2f51ea133a5b1d33c89b620159244df01e1c516072bee08aa94"
-    },
-    {
-      "path": "tools/recovery/ExtractSdkMarshalling.cs",
-      "bytes": 2498,
-      "sha256": "2ae0766212deec89e6dfcdf58421565657d1be845b9467e1661e48d295d1d282"
     },
     {
       "path": "tools/recovery/fetch_oculus_embedded_openvr_source.py",
@@ -547,19 +877,14 @@
       "sha256": "a9cbb4f676535e2541ba5f54160f3ee643c34144d0291c60c6bacc56c51ab81c"
     },
     {
-      "path": "tools/recovery/FiniteAOTResolverFixtures.cs",
-      "bytes": 3509,
-      "sha256": "3533176e018ebdcb8f93aa26faa7fdba4032be1ce52e36b3db1b9065a61b3c4c"
-    },
-    {
-      "path": "tools/recovery/FrameworkScopeFixtures.cs",
-      "bytes": 3697,
-      "sha256": "ac45699fa9172b85bdc9497ef29e6c47f4a57c575dee72e1df5faf7c203a3181"
-    },
-    {
       "path": "tools/recovery/inspect_container_registration_dependencies.py",
       "bytes": 3062,
       "sha256": "5c1f880c6c65921832e3d27daf417a52acb59f9482dfe561082d00f1ae4f7e5f"
+    },
+    {
+      "path": "tools/recovery/inspect_eight_shader_dependency_namespace.py",
+      "bytes": 6454,
+      "sha256": "0a7143df5aecbd493a6fcb54847444def075a8bce0143144df998b8abd4d759d"
     },
     {
       "path": "tools/recovery/inspect_native_oculus_contracts.py",
@@ -575,21 +900,6 @@
       "path": "tools/recovery/inspect_revive_button_native.py",
       "bytes": 3914,
       "sha256": "00676b470c0d4ef7d4188964d96b518b485c6f45705883619b870a38a3d1410a"
-    },
-    {
-      "path": "tools/recovery/InspectDecompilerEventCollision.cs",
-      "bytes": 2722,
-      "sha256": "9aad05beeefc6b6f6d8f26c33ace9838c971a52113c928fa4f4d6fb8d301da15"
-    },
-    {
-      "path": "tools/recovery/InspectPInvokeBlocks.cs",
-      "bytes": 1828,
-      "sha256": "fddb7b323f86b514553c446f2a55ab1288d87ca2ca04ce362393be3c84e74ac5"
-    },
-    {
-      "path": "tools/recovery/InspectSinglePropertySemantics.cs",
-      "bytes": 1502,
-      "sha256": "c31d6324c24c790b7e180e9967e1e0b0c99e714fea8ed26a194125277b14ac1e"
     },
     {
       "path": "tools/recovery/inventory_all_original_scripts.py",
@@ -672,16 +982,6 @@
       "sha256": "88e41db98d4cc46bbd06e250a2f26902e790af94478b2cdb64a01646e5b37d45"
     },
     {
-      "path": "tools/recovery/ManagedTypeInventory.cs",
-      "bytes": 1431,
-      "sha256": "a53bb9895248ebd28395e0128e6229747bd6bf5fc6db134a54f35292c4e7b72c"
-    },
-    {
-      "path": "tools/recovery/ManifestStreamingFixtures.cs",
-      "bytes": 10916,
-      "sha256": "a02b951e89cc6191b52eff161c73d176956519beda99386a423469cdc9a18ab7"
-    },
-    {
       "path": "tools/recovery/map_builtin_material_shader_targets.py",
       "bytes": 11395,
       "sha256": "92241ff0bc026bc6ec87f2b391f38a74b3b8cbedca51ecee33b92e7b425e7810"
@@ -702,54 +1002,14 @@
       "sha256": "ac10513a14f48593d52523027518f4114d6cc5855fb391a614555d6c835aae26"
     },
     {
-      "path": "tools/recovery/MetadataRoundTripDiagnostics.cs",
-      "bytes": 12595,
-      "sha256": "fcca910800146473c3e59d2afec1d2a940dcf1b9e4f6f7db730618c2b3dd0e0f"
-    },
-    {
-      "path": "tools/recovery/MetadataRoundTripDiagnosticsFixtures.cs",
-      "bytes": 3248,
-      "sha256": "d0eb51c44cbf63c97f7e10b717af71707d98188d23d63107167269aaede61a6f"
-    },
-    {
-      "path": "tools/recovery/MissingOriginalMethods.cs",
-      "bytes": 7879,
-      "sha256": "f2505915a4dd3631e27d6753ffbd11ef4895558809a4f8a5e61dd03fb6a88eaf"
-    },
-    {
       "path": "tools/recovery/native_dumpbin_help_guarded.py",
       "bytes": 801,
       "sha256": "e17e0641e95c214e2f9742ba0c24368f8418ff5db31af31dc13fdd5c1d6ad5c5"
     },
     {
-      "path": "tools/recovery/NullImportMapProbe.cs",
-      "bytes": 1365,
-      "sha256": "4cdf299b858e2124614586cb78e615cc00ebc77e7911c12bfbc5a7bca4259ea3"
-    },
-    {
-      "path": "tools/recovery/OculusEmbeddedMarshalStage.cs",
-      "bytes": 13836,
-      "sha256": "e115bfa3a9766d11dbc22515f69e342316a9b4fdfce7b4374578bfec11f159bf"
-    },
-    {
-      "path": "tools/recovery/OfficialSteamMarshalSource.cs",
-      "bytes": 4057,
-      "sha256": "bc494ed72fe0a7663a733ed3bb37534b6ca01292e4e05cf01cb8119269771166"
-    },
-    {
-      "path": "tools/recovery/OpenVrMarshalStage.cs",
-      "bytes": 12225,
-      "sha256": "6f7111f5caa3022257c65f87405e056c7d48f93e499873501113831f084f9d59"
-    },
-    {
-      "path": "tools/recovery/OpenVrMetadataInventory.cs",
-      "bytes": 4100,
-      "sha256": "0487f4a6ac130c8b292e53b72bc09761c243c22704e9420b98224f985aa0eba7"
-    },
-    {
-      "path": "tools/recovery/OpenVrSourceMarshalOwnership.cs",
-      "bytes": 4286,
-      "sha256": "cfc78b3e2852a242b098df56a2881aa607e8e5a3c438ba883e02ab7bcb64628f"
+      "path": "tools/recovery/orchestrate_eight_original_shader_restoration.py",
+      "bytes": 20656,
+      "sha256": "eb4ee9dece3bbcda760f931c482c086003774172b009cd41f791d6bf8c9f014d"
     },
     {
       "path": "tools/recovery/original_ag_guid_dependency_conversion.py",
@@ -780,41 +1040,6 @@
       "path": "tools/recovery/original_shader_pair_editor_conversion.py",
       "bytes": 13102,
       "sha256": "f7d75d1b99bf241df9871291cf22eecbf6ce2596f42174fc2b37cdac2b75ce66"
-    },
-    {
-      "path": "tools/recovery/OriginalEmptyExternRestoration.cs",
-      "bytes": 3268,
-      "sha256": "02cff7c89bd80ff8391947876c11ba40e1716d3bef8031e3eb1f38416cb82378"
-    },
-    {
-      "path": "tools/recovery/OriginalMaterialShaderPointerProbe.cs",
-      "bytes": 4305,
-      "sha256": "274936db54fc30727d0572b4078e29443a95cc0c55f637d1461b72ae4fa59480"
-    },
-    {
-      "path": "tools/recovery/OriginalRuntimeMetadataReferenceInputs.cs",
-      "bytes": 30811,
-      "sha256": "70dded8c6b838bbab1227f4d526ed2f351898fc1ac6e4a81b3ff5c42660af37d"
-    },
-    {
-      "path": "tools/recovery/OriginalShaderObjectProbe.cs",
-      "bytes": 6477,
-      "sha256": "c10e692d0d482e9a55ede144f2ceb89e7622d7dce4bcc8b9af7adadc345858c3"
-    },
-    {
-      "path": "tools/recovery/OriginalShaderRuntimeProbe.cs",
-      "bytes": 10554,
-      "sha256": "25b558ca00b10fe774c8c692825fd220ea8cb0f96ceafbbe032957597df1937c"
-    },
-    {
-      "path": "tools/recovery/OriginalShaderRuntimeProbeWithPipelineTag.cs",
-      "bytes": 11613,
-      "sha256": "4aedcbce38d4e503efd19b81a203417aabfbaa3fceba9a758e75f4951ab6b144"
-    },
-    {
-      "path": "tools/recovery/OriginalTypeContractChecks.cs",
-      "bytes": 4184,
-      "sha256": "099af1f8f134568e148a7a2f0352c465a325f35b29ac583fa5d3a5675e217498"
     },
     {
       "path": "tools/recovery/owned_suspended_launch.py",
@@ -857,9 +1082,9 @@
       "sha256": "fbba70a207bf76f82f1257ef238e1b7c1858ae115b58f8fd1e8e47afd18b295f"
     },
     {
-      "path": "tools/recovery/PlayerReferenceRootFixtures.cs",
-      "bytes": 7420,
-      "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
+      "path": "tools/recovery/patch_original_shader_collection_with_external_extension.py",
+      "bytes": 34058,
+      "sha256": "885b2e830af7987aa4f10d9f79b5096de7ff7def8e3dc604b26926ef80a30c4f"
     },
     {
       "path": "tools/recovery/postprocess_builtin_shader_control.py",
@@ -900,6 +1125,11 @@
       "path": "tools/recovery/prepare_all_original_shader_editor_manifest.py",
       "bytes": 23814,
       "sha256": "f5921de1afed4ea77ec0f81cc2b79f22ab4662dac935356a7cd767e45e3fb7c9"
+    },
+    {
+      "path": "tools/recovery/prepare_all_shader_null_dependency_expansion.py",
+      "bytes": 13594,
+      "sha256": "6361bd3159dc9612a3268baa18cb76004f65da272c789e27f858da36d1fb7d0c"
     },
     {
       "path": "tools/recovery/prepare_ar_helper_input_guard_candidate.py",
@@ -960,6 +1190,16 @@
       "path": "tools/recovery/prepare_direct_stream_offline_gates.py",
       "bytes": 3256,
       "sha256": "3061173d78f9e8e3327a051d041105d2ca89ba6921ad441962a07d6f46f52fff"
+    },
+    {
+      "path": "tools/recovery/prepare_eight_original_shader_gpu_fixture.py",
+      "bytes": 16281,
+      "sha256": "f7cb540ea39e5878c8d371f89fff92d81fc5acada52acaf8798e166a9799e528"
+    },
+    {
+      "path": "tools/recovery/prepare_eight_shader_external_extension_patch.py",
+      "bytes": 10921,
+      "sha256": "ca1d73ed8d6f6faa09faddf100a5d5701f119fba91e52c47b8cd6d33df151bef"
     },
     {
       "path": "tools/recovery/prepare_exact_aot_scope_resolver.py",
@@ -1197,6 +1437,11 @@
       "sha256": "fdea513b67360ac1a4d71f8af11275752177c31a1e724e4d43f4d358c4378995"
     },
     {
+      "path": "tools/recovery/prepare_title_awake_chained_native.py",
+      "bytes": 6278,
+      "sha256": "e4ded8e012619900589e939a3fce03334bbc384bd380e3fd9f6be76e8ff75fb3"
+    },
+    {
       "path": "tools/recovery/prepare_unrun_harness_revision_helper.py",
       "bytes": 5582,
       "sha256": "6bd3471f8649659ebbf576fecf9a8b0b5f8480191fa71da9941a0e667f5a4d1c"
@@ -1255,6 +1500,11 @@
       "path": "tools/recovery/prove_all_pinvoke_resolver_args.py",
       "bytes": 15845,
       "sha256": "d4c341b4c2794c508bb46c6f2f700c159282f9aa781d876592af00fe45330716"
+    },
+    {
+      "path": "tools/recovery/prove_built_standard_pass_layout.py",
+      "bytes": 8741,
+      "sha256": "fcef3108bccd37434abc611a9bc14bee0851913faa99587bf4d7e606ebaa9942"
     },
     {
       "path": "tools/recovery/prove_cli_marker_void_encoding.py",
@@ -1317,6 +1567,11 @@
       "sha256": "bd681d512e72b8a0c43cd0da98a5c9cac15a42fa6f81539eec95735c6bd7e6ce"
     },
     {
+      "path": "tools/recovery/prove_probuilder_native_fallback_gpu.py",
+      "bytes": 12887,
+      "sha256": "857061789adb7a254ca850f0df8cbbfc84e72d17ccade2781a08c891b72c3c50"
+    },
+    {
       "path": "tools/recovery/prove_recroom_awake_native_cfg.py",
       "bytes": 7261,
       "sha256": "b083d20a9a37263473045d7e730a17aa0f49e305d4cb696b7ba2c4ba56553b91"
@@ -1367,26 +1622,6 @@
       "sha256": "c4177f6db3349b6e530eeef89936cdf122ef361c448d2cc29f0f6fe10041b220"
     },
     {
-      "path": "tools/recovery/ProveEmptyVersionMarker.cs",
-      "bytes": 3232,
-      "sha256": "6d1484414bf6f53ce0da4c9b8c1a5c8c05d89adfa00488df0f70f1448d0ae1ef"
-    },
-    {
-      "path": "tools/recovery/ProvenMarshallingOverlay.cs",
-      "bytes": 16349,
-      "sha256": "26cec834b8da58371d1c7d2b1239fa4d4116b67fa89b506ea795f1cf13cfc906"
-    },
-    {
-      "path": "tools/recovery/ProvenMarshallingOverlayFixtures.cs",
-      "bytes": 2457,
-      "sha256": "cfa1dffc171ce0a81c9b48de7f8979a27982de6716eea4af40e9052f1d4ca827"
-    },
-    {
-      "path": "tools/recovery/QuickNativeScopeCandidate.cs",
-      "bytes": 2712,
-      "sha256": "56e077cbbcc3e6619f9fd945312eac9ff7a41ff8e331ccce57a2c45e31415524"
-    },
-    {
       "path": "tools/recovery/read_original_ag_shader_models.py",
       "bytes": 7936,
       "sha256": "9505086d9c6a6e40c9617a520d8d3bbadf7ab6f29734821250eeeec3d0fa0957"
@@ -1395,11 +1630,6 @@
       "path": "tools/recovery/read_other_original_shader_models.py",
       "bytes": 11574,
       "sha256": "0c8c0123435172d1f60a004bca757b8fd12dd1d6efd470bb27e1ebd8693b8479"
-    },
-    {
-      "path": "tools/recovery/RebaseBodySourceProjection.cs",
-      "bytes": 5516,
-      "sha256": "899a54691355c71c31fc17816367a0a3f3627140401b7db22080b77111a67dc6"
     },
     {
       "path": "tools/recovery/record_actual_unity_metadata_oom.py",
@@ -1457,14 +1687,19 @@
       "sha256": "254620fe83af4c3ee543be27bfd64c3c2586b208739ccfb648c4cd7d60aa02b2"
     },
     {
-      "path": "tools/recovery/ReviveSourceEffectProof.cs",
-      "bytes": 7376,
-      "sha256": "70466a884eb8547e752b019c25ac4b8b4e9aceb565d52ddfa9576eda6c108e82"
-    },
-    {
       "path": "tools/recovery/run_actual_core_field_selector_audit.py",
       "bytes": 8031,
       "sha256": "936287218698cd275989a9e9b075d6e75409a53d127545aa4625af1f14c9eea5"
+    },
+    {
+      "path": "tools/recovery/run_all_null_dependency_fixture_offline_controls.py",
+      "bytes": 1211,
+      "sha256": "cff39fadb9de0a64bc8b16bf74a14cce1bd5d156cf141fadfaf279e258f46ce4"
+    },
+    {
+      "path": "tools/recovery/run_all_original_shader_null_dependency_fixture.py",
+      "bytes": 23279,
+      "sha256": "fc913264ab1ac7ab18ff7af8bb5f3d4ac6909a7a367ce706fb26d93a0e62b142"
     },
     {
       "path": "tools/recovery/run_approved_x64_mono_fixture_host.py",
@@ -1545,6 +1780,11 @@
       "path": "tools/recovery/run_current_script_metadata_inventory.py",
       "bytes": 3686,
       "sha256": "6562e0bd768b847d5aef6bb6a678a062f4c49ecf6f443f0c57248ebd2f53f300"
+    },
+    {
+      "path": "tools/recovery/run_eight_original_shader_gpu_probes.py",
+      "bytes": 6923,
+      "sha256": "2f5cf0ce512343510637b76377582723d8413fa343c4d650301c2441b4a05ff2"
     },
     {
       "path": "tools/recovery/run_empty_marker_proof.py",
@@ -1792,6 +2032,21 @@
       "sha256": "e64411ff3ee934e33d34608791dafaf09b91f60a5a9fd4f3e4b5f8f59b055ed6"
     },
     {
+      "path": "tools/recovery/run_startup_sdk_lifecycle_smoke_v2.py",
+      "bytes": 14904,
+      "sha256": "b689ffce79157f0088d8397557d0f23ab2e3b8a408e65ab6be201ddc75982767"
+    },
+    {
+      "path": "tools/recovery/run_startup_sdk_runtime_d3d11_retest.py",
+      "bytes": 11017,
+      "sha256": "85d3d6629f11f045706a7a54aec842187950508e3f3a566e3ee8444aec0ac84b"
+    },
+    {
+      "path": "tools/recovery/run_startup_three_member_harness_v2.py",
+      "bytes": 11539,
+      "sha256": "2773cd0295d1f70fc93462822013db6080b5c5bb4f409fdd67cfdfc1c8ce0a51"
+    },
+    {
       "path": "tools/recovery/run_steamworks_body_inventory.py",
       "bytes": 4762,
       "sha256": "42342d5bc1bcfb1bd59ef52e130d139261ce5cc4cb228fd66ef2a845ad901066"
@@ -1812,6 +2067,11 @@
       "sha256": "58facad763dcd65d4cacf667dfd054084a00eee0aaeb48d536de7d555e97af7f"
     },
     {
+      "path": "tools/recovery/run_title_awake_chained_decode.py",
+      "bytes": 5153,
+      "sha256": "52466ae7156b2884d2a69aec47ff737deb82c3d801d8b49ce014c093657a207c"
+    },
+    {
       "path": "tools/recovery/run_title_login_slice_harness.py",
       "bytes": 11578,
       "sha256": "64dbb2cbbb175bb0c478b3e664fea893f246edf0f9067834a0f8fce001f73345"
@@ -1825,6 +2085,16 @@
       "path": "tools/recovery/run_title_login_slice_harness_v3.py",
       "bytes": 13771,
       "sha256": "9db2c8af76a04e8f7fc9643f528f5b170521148b447b51291720bfca2f922674"
+    },
+    {
+      "path": "tools/recovery/run_title_manager_awake_harness.py",
+      "bytes": 9358,
+      "sha256": "d084fbaf4843f02dae9c1e7c088a86a64223aefdb6d53485452b0bda0311afe2"
+    },
+    {
+      "path": "tools/recovery/run_title_page_route_harness_v2.py",
+      "bytes": 9328,
+      "sha256": "0fc1d9d614b9738e0ac0cfd4d0a325b9a1bf5161dce96b2e925e564c84aa37e7"
     },
     {
       "path": "tools/recovery/run_type_contract_inventory.py",
@@ -1842,64 +2112,14 @@
       "sha256": "685f87ada7d4c10a09421e11b59466b3e19e817bfdaabd5a233c0192f17529fc"
     },
     {
-      "path": "tools/recovery/ScopedVtableAudit.cs",
-      "bytes": 2983,
-      "sha256": "15d7f0be8daca107def97343239da0491c126647896762a800a013b38a545a70"
-    },
-    {
-      "path": "tools/recovery/SDKContractAudit.cs",
-      "bytes": 14772,
-      "sha256": "45374a525371e24f6d0254d4f0ca3561d25cefa78d6a5c23faf82700c1ae4eac"
-    },
-    {
-      "path": "tools/recovery/SDKContractFixtures.cs",
-      "bytes": 8129,
-      "sha256": "44b5ad8c500a70049c6e5a893b9dafd17699b074792875512547e3215f36dfad"
-    },
-    {
-      "path": "tools/recovery/SDKReferenceAudit.cs",
-      "bytes": 5646,
-      "sha256": "f434e5fdc62c409760498055080581022883634a1c53881b3cb60af37fc5260f"
-    },
-    {
-      "path": "tools/recovery/SDKReferenceFixtures.cs",
-      "bytes": 4818,
-      "sha256": "54fe2cdc9997b49543a76bd7b174d445b1c9c3386aab005f1f85ae375e102e01"
-    },
-    {
-      "path": "tools/recovery/SDKTextureLoadFixture.cs",
-      "bytes": 5583,
-      "sha256": "d15ebb542c58d2c56d4872a393accd488832e9503168cf6db523cef07d93592c"
-    },
-    {
       "path": "tools/recovery/select_sdk_texture_fixture.py",
       "bytes": 8516,
       "sha256": "6683c66dae1c662823b79b214ad60bef688e7c4fa9859ba97a1970cd8d082035"
     },
     {
-      "path": "tools/recovery/SerializationFieldIdentityWitness.cs",
-      "bytes": 2775,
-      "sha256": "a572e4431a32746290e361f7c044f9453ecef086365cdf716a7566123abb9113"
-    },
-    {
-      "path": "tools/recovery/SerializationFieldWitnessFixtures.cs",
-      "bytes": 5738,
-      "sha256": "af3c9fc2a347a6978c006bcb6e0d2ea5ad3774392ea3329a18e05a0e146b658f"
-    },
-    {
       "path": "tools/recovery/shader_program_data.py",
       "bytes": 4386,
       "sha256": "3ddf0ff619d804db1720832db489a7d14fa3c2d44647068c4e45a2c43c643809"
-    },
-    {
-      "path": "tools/recovery/ShaderPackedBuildReportCapture.cs",
-      "bytes": 2119,
-      "sha256": "4eb9668be244d14c609d6b99635198526261ac568f426e4d5b00c157f28dcb81"
-    },
-    {
-      "path": "tools/recovery/ShaderProbeModuleInstaller.cs",
-      "bytes": 1484,
-      "sha256": "23120432a73e95f8563a123618b5dcdd03d95945963ba949da5c9cef0969a424"
     },
     {
       "path": "tools/recovery/stage_backend_2023_compatibility_proposal.py",
@@ -2032,9 +2252,24 @@
       "sha256": "31bfba20926a93cc994dec9eabfb6c541ab8260257eb18c18bbbcee47d1014f8"
     },
     {
+      "path": "tools/recovery/stage_shader_metadata_extension_patcher.py",
+      "bytes": 9369,
+      "sha256": "46d8c056346ff8cd30504be03c31054d7c93b1ba64b46a5b8f23ecc54e44d3db"
+    },
+    {
+      "path": "tools/recovery/stage_startup_three_member_bodies_v3.py",
+      "bytes": 10145,
+      "sha256": "3b3228fef77f21fe8b725eb19d8a88bb4e5c84e2194b952ea52b30c01e324285"
+    },
+    {
       "path": "tools/recovery/stage_title_login_transition_slice.py",
       "bytes": 16209,
       "sha256": "e7c3b67242b484b5bb27cdb83ec906ec9688ade4f8cfd2500829f3c40cee67e9"
+    },
+    {
+      "path": "tools/recovery/stage_title_manager_awake_slice.py",
+      "bytes": 13491,
+      "sha256": "91f933ab1cd44ef24a5c27c1970b23953d75b59e250139d2f8e82428de5101a8"
     },
     {
       "path": "tools/recovery/stage_title_page_route_slice.py",
@@ -2042,19 +2277,14 @@
       "sha256": "c66421f6bab5543b500753653a17c90fd305544ba4f3050935cb9328e72d102e"
     },
     {
+      "path": "tools/recovery/stage_title_page_route_slice_v2.py",
+      "bytes": 12611,
+      "sha256": "0e64f9d3d98652c20ccec15532a7def8ab71c0e1a46c3c33e4dd1ba481fa09ca"
+    },
+    {
       "path": "tools/recovery/stage_win32_marshal_compatibility.py",
       "bytes": 7430,
       "sha256": "f038a546f4127311a1ac65765e0dd41d0e2bb448af98f56f56e2baebcf534f46"
-    },
-    {
-      "path": "tools/recovery/Steamworks14SourceBodyStage.cs",
-      "bytes": 28225,
-      "sha256": "276008190b4ad7e0c0ca529f72b02b1e5299e75680e289aa7893d54711e6c867"
-    },
-    {
-      "path": "tools/recovery/SteamworksBodyInventory.cs",
-      "bytes": 9119,
-      "sha256": "232ab4d11ef22964d6bcfd2e0012031fe9c278a29b89940bfe5e6ee87c2e7ef4"
     },
     {
       "path": "tools/recovery/summarize_marshal_assert_fixture.py",
@@ -2065,6 +2295,11 @@
       "path": "tools/recovery/summarize_startup_actions.py",
       "bytes": 1417,
       "sha256": "0071fb4e3b3db69190eb2ac30cd156b5e5422c1b9d8d776c9f5c815cdbfbb436"
+    },
+    {
+      "path": "tools/recovery/test_all_null_dependency_fixture_preparation.py",
+      "bytes": 8826,
+      "sha256": "b6ab0a91e6aa1fafaa6fb3a22fc68bb69f3bc41c86e0080a3fc75fe4a3c737c8"
     },
     {
       "path": "tools/recovery/test_all_pinvoke_proofs.py",
@@ -2132,26 +2367,6 @@
       "sha256": "e6c2a7ab682a54c462dda8548df35c7d220ec1704841851f139fded89f0b56bb"
     },
     {
-      "path": "tools/recovery/TitleLoginSliceEffects.template.cs",
-      "bytes": 8035,
-      "sha256": "7e68554dae22fdf3e572d946142a342b6616e55692b982319eb6e5a74937bbab"
-    },
-    {
-      "path": "tools/recovery/TitleLoginSliceEffects.v3.template.cs",
-      "bytes": 8510,
-      "sha256": "6ddc7cf69083ef1c1160a636bf0629ea7e4124a5bcf4c6795f039a39175e57a3"
-    },
-    {
-      "path": "tools/recovery/TypeContractFixtures.cs",
-      "bytes": 14694,
-      "sha256": "b4ac1fc1645944176157c814044554507a8c0ae761e0594d6ae553ce29cd4ee2"
-    },
-    {
-      "path": "tools/recovery/TypeContractInventory.cs",
-      "bytes": 7680,
-      "sha256": "3217d607cc3c07de894442a9c25b1506af0a3d53dd7719e9ec91739d90d35a41"
-    },
-    {
       "path": "tools/recovery/validate_accessor_error_projection_examples.py",
       "bytes": 7973,
       "sha256": "82302c11429d1a4320a56cb74233f7a708c634d3fe7a55085ff1cc639b5e1758"
@@ -2190,32 +2405,7 @@
       "path": "tools/recovery/verify_tmp_cache_official_registry.py",
       "bytes": 4734,
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
-    },
-    {
-      "path": "tools/recovery/VerifyBodyDeclarations.cs",
-      "bytes": 2472,
-      "sha256": "aadd5fa1b2787ae4f44165e76fb80d92db85781a879a8f214ab60ee62b5b844f"
-    },
-    {
-      "path": "tools/recovery/VerifyOriginalShaderImport.cs",
-      "bytes": 18967,
-      "sha256": "f768aa9cd21a97d36a1f09737d5a653de1f1c6d264d45e2551d88764cfb316b1"
-    },
-    {
-      "path": "tools/recovery/VerifyOriginalStartupPlay.cs",
-      "bytes": 7154,
-      "sha256": "ce6aa600e5e6fc4c006d12005c245403b3b310b6dc8724f8be87d17dc11c8963"
-    },
-    {
-      "path": "tools/recovery/WindowsDevelopmentDefineProbe.cs",
-      "bytes": 5466,
-      "sha256": "9da6d997a3fd5f6447188ac8e4fec8da854df0fd662a8dfcea75665464de5e2b"
-    },
-    {
-      "path": "tools/recovery/WindowsDevelopmentDefineRecorder.cs",
-      "bytes": 3162,
-      "sha256": "4fc6394e595f8f538ad5c68d26de5a6e239ee08d760bd5b4f34abd77b387217b"
     }
   ],
-  "count": 443
+  "count": 481
 }

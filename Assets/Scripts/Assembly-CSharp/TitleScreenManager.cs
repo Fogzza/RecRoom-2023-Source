@@ -232,6 +232,12 @@ get 	{
 
 	protected override void Awake()
 	{
+		base.Awake();
+		LoadingScreen.Instance.IsVisibleChangeEvent += NBDKIBMNLCA;
+		KMNIAGFPHEN = UnityEngine.Object.Instantiate<AGVirtualKeyboard>(keyboardPrefab, Vector3.zero, Quaternion.identity);
+		KMNIAGFPHEN.ForceHideKeyboard(true);
+		IBDKAJJPLGA = MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<DCCDAPLPICN>(null);
+		LIPCPJMCHDF = MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<CPBPJLLMKDB>(null);
 	}
 
 	private void Start()
