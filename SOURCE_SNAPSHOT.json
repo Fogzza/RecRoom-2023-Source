@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11264,
-  "bytes": 121432152,
+  "bytes": 121432640,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -2577,7 +2577,7 @@
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
       "bytes": 12288,
-      "sha256": "52f22297e5ace97330cf797ca390a30d384947e6e134321240a41b3fed0763bc"
+      "sha256": "f9c9e42afc0f2d1a7c0b5a9912e7afb625d70fdd85609f0d11b90912bdf2ab8d"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
@@ -54116,8 +54116,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs",
-      "bytes": 7793,
-      "sha256": "38ac36a43cb3f28f729d2f3d3570cd859d01f53d438dcc7ada3d3cd3c1e9671e"
+      "bytes": 8281,
+      "sha256": "913efec0b61d45697af166e5de48eae9be20833a39b142be820bf2e983581c04"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs.meta",

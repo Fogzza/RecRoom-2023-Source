@@ -82,6 +82,16 @@
       "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
     },
     {
+      "path": "tools/recovery/ContainerKeyChildEffects.template.cs",
+      "bytes": 16120,
+      "sha256": "c228fe0dc482aa3901b4c00bf7e75a48268707ddf6e7e43ec35b61c616ca8835"
+    },
+    {
+      "path": "tools/recovery/ContainerKeyDictionarySmoke.cs",
+      "bytes": 8753,
+      "sha256": "93f876fb56cd2f5d4b40be43ea19656891ecaf2ccf72aac7c3250262676af1cb"
+    },
+    {
       "path": "tools/recovery/ContainerLowerAllocationSmoke.cs",
       "bytes": 7494,
       "sha256": "880ba83979edca5c35f023b2e438679fc7f3455e73fb8cb2a0ff55f4179c7d3c"
@@ -322,6 +332,21 @@
       "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
     },
     {
+      "path": "tools/recovery/ProjectedGenericNameConsumer.cs",
+      "bytes": 588,
+      "sha256": "2a7ee4b03a6f26274d779f0e3aad0f46a3621ebdd4ed4efb12444d6f472feda0"
+    },
+    {
+      "path": "tools/recovery/ProjectedGenericNameMetadata.cs",
+      "bytes": 4173,
+      "sha256": "dae2008b9bec37969e1bde5be0a2fcbc20478becf0c0607c0d43e2d1a75d489a"
+    },
+    {
+      "path": "tools/recovery/ProjectedGenericNamePlayerProbe.cs",
+      "bytes": 6303,
+      "sha256": "990610491ef0809b395d231bc8f0a20ca2c8eeb30b5bda6555c252cbdef7823a"
+    },
+    {
       "path": "tools/recovery/ProveEmptyVersionMarker.cs",
       "bytes": 3232,
       "sha256": "6d1484414bf6f53ce0da4c9b8c1a5c8c05d89adfa00488df0f70f1448d0ae1ef"
@@ -345,6 +370,16 @@
       "path": "tools/recovery/RebaseBodySourceProjection.cs",
       "bytes": 5516,
       "sha256": "899a54691355c71c31fc17816367a0a3f3627140401b7db22080b77111a67dc6"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerKeyChildDonor.cs",
+      "bytes": 1780,
+      "sha256": "01b87be244edae17d01a139445bc3362d7d11ead60bbc729080ff9c9cb1597c2"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerKeyChildMembers.cs",
+      "bytes": 1126,
+      "sha256": "fa9431100ca05574088c75508e731cc493a15c2c79c84c230a109df8914439b5"
     },
     {
       "path": "tools/recovery/RecoveredDisposedGuardDonor.cs",
@@ -375,6 +410,21 @@
       "path": "tools/recovery/RecoveredUjectContainerLowerDonor.v3.cs",
       "bytes": 4373,
       "sha256": "34bf367bcb9897c0b9e7cf087359d4abb2865b05fc191e570718d8b91540ce39"
+    },
+    {
+      "path": "tools/recovery/ReverseProjectedGenericNameConsumer.cs",
+      "bytes": 9605,
+      "sha256": "33407a0cf327116efd4f6c45b8727703a2b21ab5a6f610f6854318e1cea02633"
+    },
+    {
+      "path": "tools/recovery/ReverseProjectedGenericNameConsumer.v2.cs",
+      "bytes": 11347,
+      "sha256": "fbda3f5b6f6ef8adff9abd29ed681b61cef012ab7dd622c1ab8a15c64e798ef8"
+    },
+    {
+      "path": "tools/recovery/ReversedGenericNamePlayerProbe.cs",
+      "bytes": 6579,
+      "sha256": "59acf6005fd439b04df78911320ccea047379727e5e7ff447a0dffdae723db86"
     },
     {
       "path": "tools/recovery/ReviveSourceEffectProof.cs",
@@ -440,6 +490,11 @@
       "path": "tools/recovery/SingletonAccessorEffects.v2.template.cs",
       "bytes": 8882,
       "sha256": "31f0d8c02a2e4fd519a6394f217b6ce4881141919f5c1fd83fd9ecc0d6c02700"
+    },
+    {
+      "path": "tools/recovery/StageContainerKeyChildBodies.cs",
+      "bytes": 15384,
+      "sha256": "75fff2c8d879293a63e6c92b04920139d968069025cc25bed0a0166c0d4d7915"
     },
     {
       "path": "tools/recovery/StageContainerLowerBodies.v3.cs",
@@ -537,6 +592,11 @@
       "sha256": "ee5b9d5220d5befeea479b0c4ba523eacf4d1cb81a338f2896884324e54b98ca"
     },
     {
+      "path": "tools/recovery/TitleSmallCallbacksEffects.template.cs",
+      "bytes": 13899,
+      "sha256": "6203c1c53cb4f4a7afb2af181c6b694a43a90820a155370f662fa5a85b6c5d22"
+    },
+    {
       "path": "tools/recovery/TypeContractFixtures.cs",
       "bytes": 14694,
       "sha256": "b4ac1fc1645944176157c814044554507a8c0ae761e0594d6ae553ce29cd4ee2"
@@ -575,6 +635,11 @@
       "path": "tools/recovery/account_current_original_sources.py",
       "bytes": 8692,
       "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
+    },
+    {
+      "path": "tools/recovery/apply_container_key_child_bodies_reviewed.py",
+      "bytes": 13604,
+      "sha256": "1c81dd298f2bbc95f26619eea154be16029880e3a9af1cf6f57c3284b75d5ff9"
     },
     {
       "path": "tools/recovery/apply_container_lower_bodies_reviewed.py",
@@ -625,6 +690,11 @@
       "path": "tools/recovery/apply_title_page_route_reviewed_v2.py",
       "bytes": 10106,
       "sha256": "498bbf0839faae0ab5ba67a7c626d8e5fc310b5cf919a909acc503f52d07a755"
+    },
+    {
+      "path": "tools/recovery/apply_title_small_callbacks_reviewed.py",
+      "bytes": 11579,
+      "sha256": "a3d3bdd8ff6058be70d158ced08c147a37a924c54697ec9eeb28d83c2144383f"
     },
     {
       "path": "tools/recovery/archive_sdk_audit_inputs.py",
@@ -792,6 +862,11 @@
       "sha256": "21467485afca6ad4a962083c26e8ba838a4d4d0322f3e8fe7bc1669bd5788bfc"
     },
     {
+      "path": "tools/recovery/audit_title_generic_reference_reversal.py",
+      "bytes": 4702,
+      "sha256": "9227f67d533d1aef91c791ff65d1ddb05106a6ecbd0aafe9b73b79004ae0e337"
+    },
+    {
       "path": "tools/recovery/audit_ugui_recovery_candidate.py",
       "bytes": 4102,
       "sha256": "184984587acc0b14738525b3776d124c74f5c90177c529e20e4f4918b2a4873b"
@@ -860,6 +935,11 @@
       "path": "tools/recovery/collect_title_page_route_native.py",
       "bytes": 6778,
       "sha256": "bc639eb54f8038dcc3de0a8b9cfee52f737d64894595f079c6d20f91e8174344"
+    },
+    {
+      "path": "tools/recovery/collect_title_remaining_callbacks_joins.py",
+      "bytes": 6756,
+      "sha256": "ce4c28d212cc8bdbe7ec9234fb3777da12e367167a7172e226531db9664ec069"
     },
     {
       "path": "tools/recovery/collect_title_start_dispatch_joins.py",
@@ -940,6 +1020,11 @@
       "path": "tools/recovery/decode_service_container_windows.py",
       "bytes": 3463,
       "sha256": "e68208dcb888c3466a1d1c80af26f43519c36bf07271e2d6ebef5f7d99006159"
+    },
+    {
+      "path": "tools/recovery/diagnose_projected_consumer_emission.py",
+      "bytes": 3791,
+      "sha256": "8025d00c7d51ee57a91720d4d33a1fa01a8bb775b912b6918151080f7ac1cbad"
     },
     {
       "path": "tools/recovery/enrich_missing_subset.py",
@@ -1617,6 +1702,11 @@
       "sha256": "8a29a58bf83227a16c53881bd657a01749cd1a4a6d298d331daa67f31dbc654c"
     },
     {
+      "path": "tools/recovery/prepare_title_remaining_callbacks_native.py",
+      "bytes": 6401,
+      "sha256": "3c107783d8c5ee8192d69315cee24f159514f506e0cf15649b1573347c3c828e"
+    },
+    {
       "path": "tools/recovery/prepare_unrun_harness_revision_helper.py",
       "bytes": 5582,
       "sha256": "6bd3471f8649659ebbf576fecf9a8b0b5f8480191fa71da9941a0e667f5a4d1c"
@@ -1695,6 +1785,11 @@
       "path": "tools/recovery/prove_container_binding_tail_native.py",
       "bytes": 11603,
       "sha256": "b754b76d6a8b3e9133d8bf1fa76b76df5629e0e79a303e903a2163cad8330099"
+    },
+    {
+      "path": "tools/recovery/prove_container_key_child_members.py",
+      "bytes": 17363,
+      "sha256": "22f0c02bd0265a9db893ea39540ec5f58bf8add33fa10aa42940b41efa7ee95c"
     },
     {
       "path": "tools/recovery/prove_container_key_registration_native.py",
@@ -1967,6 +2062,16 @@
       "sha256": "ae457e405cdcb8ec5a81ed5331a26744ec735fb8fe615592e080b0e5acdbe778"
     },
     {
+      "path": "tools/recovery/run_container_key_child_harness.py",
+      "bytes": 11120,
+      "sha256": "4c68196b61d96b063b5a69f959fa91d43c4d10cf276ae702fd88f2aa1225769a"
+    },
+    {
+      "path": "tools/recovery/run_container_key_dictionary_smoke.py",
+      "bytes": 15652,
+      "sha256": "764818d4176cf1d7c392409b9df1da49762c82346bef58b36bc63c5b967b305e"
+    },
+    {
       "path": "tools/recovery/run_container_lower_allocation_smoke.py",
       "bytes": 16263,
       "sha256": "7a80a70293a1990ee4d865e2ef5e12780748c457d4e6bf24586c53606398f206"
@@ -2162,6 +2267,16 @@
       "sha256": "ad449eab32ad70b65f19dd62b6dc89f16a8b5ac5cf7d281372a29b85b691d2dc"
     },
     {
+      "path": "tools/recovery/run_projected_generic_name_player_binding.py",
+      "bytes": 18311,
+      "sha256": "f71314da4d6d8b4066693e8ddb6f592d5cf43b3e3e95f8323374567b998bbd6f"
+    },
+    {
+      "path": "tools/recovery/run_projected_generic_name_player_binding_v2.py",
+      "bytes": 24458,
+      "sha256": "187c121abb3d6a297e2de5a9b068084052bd3c7e765835bb701d7b641467a929"
+    },
+    {
       "path": "tools/recovery/run_quick_native_scope_candidate.py",
       "bytes": 2692,
       "sha256": "eef3986362a006de37bf2363bf3279b9e57582bb4e5264c06901f83e93617f42"
@@ -2175,6 +2290,16 @@
       "path": "tools/recovery/run_recroom_awake_native_audit_guarded.py",
       "bytes": 1212,
       "sha256": "2c2597781a258a62b6b325834b0c7dfea526ac9a0d811732623e2014775fb4bb"
+    },
+    {
+      "path": "tools/recovery/run_reversed_generic_name_player_binding.py",
+      "bytes": 27438,
+      "sha256": "c94146d9c9e8fc2fce897c052bebd86dc2f850a8eb333cfb3c45fbf7f9d25dd0"
+    },
+    {
+      "path": "tools/recovery/run_reversed_generic_name_player_binding_v2.py",
+      "bytes": 29276,
+      "sha256": "89fbccdc17dce498ea318454eec11cee64ebdf8ede359cb2754d2080d842f22b"
     },
     {
       "path": "tools/recovery/run_reviewed_mono64_core_signature.py",
@@ -2362,6 +2487,16 @@
       "sha256": "0fc1d9d614b9738e0ac0cfd4d0a325b9a1bf5161dce96b2e925e564c84aa37e7"
     },
     {
+      "path": "tools/recovery/run_title_remaining_callbacks_decode.py",
+      "bytes": 5316,
+      "sha256": "0ccb6a0fdf40ade24b75f572c6fa8ef9e36a596ceaeb13d54dc1dfb18aa5c16e"
+    },
+    {
+      "path": "tools/recovery/run_title_small_callbacks_harness.py",
+      "bytes": 10215,
+      "sha256": "c7413af0b4c6e38cbe3acf3aea749e499dacec347c99158e6fbae855b351facf"
+    },
+    {
       "path": "tools/recovery/run_type_contract_inventory.py",
       "bytes": 5434,
       "sha256": "daae7624d9076d8effe2eb68f0367a5da948ee71b9dc7f32b3d52b41015e0b05"
@@ -2395,6 +2530,11 @@
       "path": "tools/recovery/stage_captured_20230414_backend_scope.py",
       "bytes": 13400,
       "sha256": "ca8aa02093925ed5d5de46ee42d0fdb6581b9fa31879ce9abddb6295a7b6bb26"
+    },
+    {
+      "path": "tools/recovery/stage_container_key_child_bodies.py",
+      "bytes": 10624,
+      "sha256": "1effe6395c73609b48a5061e2e0ddddd0d19b40d2d0148305467029b8fdbd70d"
     },
     {
       "path": "tools/recovery/stage_container_lower_bodies_v3.py",
@@ -2572,6 +2712,11 @@
       "sha256": "0e64f9d3d98652c20ccec15532a7def8ab71c0e1a46c3c33e4dd1ba481fa09ca"
     },
     {
+      "path": "tools/recovery/stage_title_small_callbacks_slice.py",
+      "bytes": 11205,
+      "sha256": "444fc276cbde3188fbdb50928456015c4ddb2ed0fbf8192a5d793be8952b5696"
+    },
+    {
       "path": "tools/recovery/stage_win32_marshal_compatibility.py",
       "bytes": 7430,
       "sha256": "f038a546f4127311a1ac65765e0dd41d0e2bb448af98f56f56e2baebcf534f46"
@@ -2702,5 +2847,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 540
+  "count": 569
 }

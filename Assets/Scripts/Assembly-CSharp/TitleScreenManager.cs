@@ -276,6 +276,11 @@ get 	{
 
 	private void NBDKIBMNLCA(bool ICHBECDKHOJ)
 	{
+		Screen.autorotateToLandscapeLeft = true;
+		Screen.autorotateToLandscapeRight = true;
+		Screen.autorotateToPortrait = false;
+		Screen.autorotateToPortraitUpsideDown = false;
+		Screen.orientation = ScreenOrientation.AutoRotation;
 	}
 
 	private void PMNJIOHDABB()
@@ -351,7 +356,14 @@ get 	{
 	[CompilerGenerated]
 	private Vector2 EKJBJGDALKG()
 	{
-		return default;
+		RectTransform rectTransform = (RectTransform)mainCanvas.transform;
+		Vector2 sizeDelta = rectTransform.sizeDelta;
+		Vector3 lossyScale = rectTransform.lossyScale;
+		return new Vector2
+		{
+			x = lossyScale.x * sizeDelta.x,
+			y = lossyScale.y * sizeDelta.y
+		};
 	}
 
 	[CompilerGenerated]
