@@ -32,7 +32,7 @@ new CuratedRuntimeMetadataReference("Microsoft.Bcl.HashCode","754339e8d621f17a81
 new CuratedRuntimeMetadataReference("Microsoft.CognitiveServices.Speech.csharp","6a6a6ae250667b5e085e72a00d323214b1efed633bb57a048d45c7340348b6db"),
 new CuratedRuntimeMetadataReference("Microsoft.Toolkit.HighPerformance","dd1a32d3dc16bbabfab15cd5fbc4b96a3dc904ea05a7eaad9acf338b2106153b"),
 new CuratedRuntimeMetadataReference("NewPlayerChallenges.Runtime","bf6bbd794cda2cb263436d54da7054b8bc34ada8ec480cf2b134d0e993f42b86"),
-new CuratedRuntimeMetadataReference("Newtonsoft.Json","7175817c055af690614bca296165f7295930a39fef6bf81ba8ee420b8992b388"),
+new CuratedRuntimeMetadataReference("Newtonsoft.Json","2a8fada49deb9b6116f7deeb1684208b1bbfbfe6a37fb03154a41b0e352af422"),
 new CuratedRuntimeMetadataReference("Nito.Collections.Deque","ebb97149847d7ecfd5fa3f5a2b4768bf449ff4d99b3862513de509de27ca3d08"),
 new CuratedRuntimeMetadataReference("OSA","299a93be7c058be49179c31ee27f9d3c45877047d1d6147f13a148af78720d43"),
 new CuratedRuntimeMetadataReference("Oculus.Platform","1e84dda2c6ad2da8de89da90681a664dfae8bd617e0b4aa0aa70fc9e9b0a411d"),

@@ -199,10 +199,10 @@ namespace RRUI.Data
 
 			public EOOFAEEOGKM(string IEACNHGAIIE, float CLBGEKBMHJC, float HOGOLBJOFLE, float HNJLGFPIDMP)
 			{
-				this.IEACNHGAIIE = null;
-				this.CLBGEKBMHJC = 0f;
-				this.HOGOLBJOFLE = 0f;
-				this.HNJLGFPIDMP = 0f;
+				this.IEACNHGAIIE = IEACNHGAIIE;
+				this.CLBGEKBMHJC = CLBGEKBMHJC;
+				this.HOGOLBJOFLE = HOGOLBJOFLE;
+				this.HNJLGFPIDMP = HNJLGFPIDMP;
 			}
 		}
 
@@ -1435,7 +1435,7 @@ private set {
 public EOOFAEEOGKM LoadingProgressStatus
 {
 get 		{
-			return default;
+			return JHPBAPJEIKC;
 		}
 
 private set {
@@ -1577,7 +1577,7 @@ private set {
 public bool HasManualLoginInformation
 {
 get 		{
-			return false;
+			return !string.IsNullOrEmpty(LMJIIAEINHM) && !string.IsNullOrEmpty(NAOPEBCEBGK);
 		}
 
 }
@@ -1585,7 +1585,7 @@ get 		{
 public bool HasManualLoginUsername
 {
 get 		{
-			return false;
+			return !string.IsNullOrEmpty(NAOPEBCEBGK);
 		}
 
 }
@@ -1593,40 +1593,48 @@ get 		{
 public string ManualLoginUsername
 {
 get 		{
-			return null;
+			return NAOPEBCEBGK;
 		}
 
 set {
+			NAOPEBCEBGK = value;
+			LMJHOPOAGJB();
 		}
 }
 
 public string ManualLoginPassword
 {
 get 		{
-			return null;
+			return LMJIIAEINHM;
 		}
 
 set {
+			LMJIIAEINHM = value;
+			LMJHOPOAGJB();
 		}
 }
 
 public bool ManualLoginShowPassword
 {
 get 		{
-			return false;
+			return MCMPLJFCICH;
 		}
 
 set {
+			MCMPLJFCICH = value;
+			LMJHOPOAGJB();
 		}
 }
 
 public bool ManualLoginRequirePassword
 {
 get 		{
-			return false;
+			return CCLJEALGFMG;
 		}
 
 set {
+			CCLJEALGFMG = value;
+			LMJHOPOAGJB();
 		}
 }
 
@@ -2016,6 +2024,16 @@ get 		{
 
 		public void ManuallyLogin()
 		{
+			if (BGBIFFLGANM.CPDFJCCALIA == (ushort)EDNJKIHJAGB.SWITCH_ACCOUNT_LOADING_SCREEN)
+				return;
+			var browser = BrowserModel;
+			if (!System.Object.ReferenceEquals(browser, null))
+				browser.GoTo(switchAccountLoadingScreenPage.Route, false);
+			FNPFEHEGKHE(FFMNJIJDCDA.KFGMICCAOJI(PPGMCKPPHDK.LOADING_BAR_LOGGING_INTO_ACCOUNT, Array.Empty<object>()), 0f, 1f, 1f);
+			IPFGEEGKPDH(NAOPEBCEBGK, LMJIIAEINHM, !CCLJEALGFMG, false)
+				.EBIHDILAPPK(MDJPPIIOMPD)
+				.LEFPGJEKFGF(JOIHLLMGAFK)
+				.PIELKGNNIII<List<NOFHIODEAHA.EAIKGIBOLBI>>(HJKOHIKPGCM, null);
 		}
 
 		public void GoToSwitchAccount()
@@ -2680,6 +2698,8 @@ get 		{
 
 		private void FNPFEHEGKHE(string IEACNHGAIIE, float CLBGEKBMHJC, float HOGOLBJOFLE, float HNJLGFPIDMP)
 		{
+			JHPBAPJEIKC = new EOOFAEEOGKM(IEACNHGAIIE, CLBGEKBMHJC, HOGOLBJOFLE, HNJLGFPIDMP);
+			LMJHOPOAGJB();
 		}
 
 		private bool JBIPFDDFJKN()
@@ -2969,17 +2989,21 @@ get 		{
 		[CompilerGenerated]
 		private void MDJPPIIOMPD()
 		{
+			ShouldAttemptSessionTakeover = false;
+			FNPFEHEGKHE(FFMNJIJDCDA.KFGMICCAOJI(PPGMCKPPHDK.LOADING_BAR_DONE, Array.Empty<object>()), 1f, 1f, 0f);
+			BDIBJKAGLHO();
 		}
 
 		[CompilerGenerated]
 		private void JOIHLLMGAFK(string GCBHEJANCJK)
 		{
+			PCAIJFNIEAG(GCBHEJANCJK, NAOPEBCEBGK);
 		}
 
 		[CompilerGenerated]
 		private global::NCOKFFGPIJM<List<NOFHIODEAHA.EAIKGIBOLBI>> HJKOHIKPGCM()
 		{
-			return null;
+			return LGCNIMHODJC(true);
 		}
 
 		[CompilerGenerated]

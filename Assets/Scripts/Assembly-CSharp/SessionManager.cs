@@ -934,10 +934,16 @@ get 			{
 
 		internal void _003CRunJoinDormRoom_003Eb__0(bool bypassMovementModeRestriction)
 		{
+			this._003C_003E4__this.APFMLJLPMJD = this.loadSceneSourceData;
+			var joinPromise = this._003C_003E4__this.CKIFCJCBNLA("Going to ^DormRoom", PFPFLMJDKIB.LeaveParty, _ => Matchmaking.FGKJLHAEJAL());
+			this._003C_003E4__this.MLGHBPFMFNL(joinPromise, this.onResponseCallback);
 		}
 
 		internal void _003CRunJoinDormRoom_003Eb__1()
 		{
+			var callback = this.onResponseCallback;
+			if (callback != null)
+				callback(default(ANAGHNCECEB));
 		}
 	}
 
@@ -2533,6 +2539,11 @@ remove {
 
 	public void RunJoinDormRoom(HHCLMHEOLDA APFMLJLPMJD, Action<ANAGHNCECEB> PHDGJMDIOFO = null)
 	{
+		var continuation = new DCJPFJNCODD();
+		continuation._003C_003E4__this = this;
+		continuation.loadSceneSourceData = APFMLJLPMJD;
+		continuation.onResponseCallback = PHDGJMDIOFO;
+		this.FMONLJPLGGG(null, continuation._003CRunJoinDormRoom_003Eb__0, continuation._003CRunJoinDormRoom_003Eb__1);
 	}
 
 	private void MLGHBPFMFNL(global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM> BOJDPAGLBLI, Action<Matchmaking.DABKEMNEPLM> FFNHJDNOEKM)
