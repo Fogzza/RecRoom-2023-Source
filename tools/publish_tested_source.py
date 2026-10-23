@@ -79,12 +79,12 @@ def visibility(private,public):
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self,*a,**k):raise Stop('metadata_redirect_refused')
     opener=urllib.request.build_opener(urllib.request.ProxyHandler({}),NoRedirect())
-    for name,want in (('SolarNet-source',True),('SolarNet-updates',False)):
+    for name,want in (('SolarNet-source',True),('SolarNet-updates',True)):
         req=urllib.request.Request('https://api.github.com/repos/Fogzza/'+name,headers={'Authorization':'Bearer '+token.decode(),'Accept':'application/vnd.github+json','User-Agent':'SolarNetSourcePublisher/1','X-GitHub-Api-Version':'2022-11-28'},method='GET')
         try:
             with opener.open(req,timeout=15) as response:body=response.read(256*1024+1)
         except Exception:raise Stop('repository_visibility_metadata_failed') from None
-        need(len(body)<=256*1024,'metadata_response_bound');v=json.loads(body);need(v.get('full_name','').lower()==('Fogzza/'+name).lower() and v.get('private') is want,'source_private_updates_public_visibility_required')
+        need(len(body)<=256*1024,'metadata_response_bound');v=json.loads(body);need(v.get('full_name','').lower()==('Fogzza/'+name).lower() and v.get('private') is want,'both_repositories_private_visibility_required')
     del token,raw,fields
 def load_inputs(config):
     config=config.resolve(strict=True);cfg=json.loads(config.read_bytes());project=(config.parent/Path(cfg['project_root'])).resolve(strict=True);updates=(config.parent/Path(cfg['updates_root'])).resolve(strict=True);mp=(config.parent/Path(cfg['manifest'])).resolve(strict=True)
@@ -130,7 +130,8 @@ def check_snapshots(repo,rows):
         need(value['schema']==schema and len(actual)==len(value['files'])==value['count'] and actual==expected,'refresh_private_snapshot_to_exact_reviewed_manifest')
 def transaction(private,public,state,checkpoint,sync,write_note):
     # Durable stages never automatically retry a failed command. --resume is
-    # explicit; confirmed commits are reused and private push precedes public.
+    # explicit; source push precedes the private updates push. Legacy public_*
+    # ledger fields remain unchanged so completed and pending records resume.
     if not state.get('private_commit'):
         existing=private.recovered_commit(state['private_base'],state['id'])
         if existing:state['private_commit']=existing;checkpoint()

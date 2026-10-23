@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 SPEC=importlib.util.spec_from_file_location('publisher',Path(__file__).with_name('publish_tested_source.py'))
 p=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(p)
@@ -27,6 +28,30 @@ class FakeGit:
         self.remote=commit
 
 class Controls(unittest.TestCase):
+    def test_both_private_visibility_metadata_gate_offline(self):
+        # The credential helper and HTTPS opener are fakes; no live access.
+        class FakeCredentials:
+            def run(self,args,data):
+                self.args=args;self.data=data
+                return b'username=fixture\npassword=fixture-not-a-credential\n'
+        class Reply:
+            def __init__(self,value):self.body=json.dumps(value).encode()
+            def __enter__(self):return self
+            def __exit__(self,*a):pass
+            def read(self,size):return self.body[:size]
+        class Opener:
+            def __init__(self,values):self.values=iter(values);self.requests=[]
+            def open(self,request,timeout):self.requests.append((request.full_url,request.method,timeout));return Reply(next(self.values))
+        for source_private,updates_private,passed in ((True,True,True),(True,False,False),(False,True,False),(False,False,False)):
+            with self.subTest(source_private=source_private,updates_private=updates_private):
+                credentials=FakeCredentials();opener=Opener([{'full_name':'Fogzza/SolarNet-source','private':source_private},{'full_name':'Fogzza/SolarNet-updates','private':updates_private}])
+                with patch.object(p.urllib.request,'build_opener',return_value=opener):
+                    if passed:p.visibility(credentials,None)
+                    else:
+                        with self.assertRaisesRegex(p.Stop,'both_repositories_private_visibility_required'):p.visibility(credentials,None)
+                self.assertEqual(credentials.args,['credential','fill']);self.assertTrue(all(method=='GET' and timeout==15 for _,method,timeout in opener.requests));self.assertTrue(all(url.startswith('https://api.github.com/repos/Fogzza/') for url,_,_ in opener.requests))
+        opener=Opener([{'full_name':'OtherOwner/SolarNet-source','private':True}])
+        with patch.object(p.urllib.request,'build_opener',return_value=opener),self.assertRaises(p.Stop):p.visibility(FakeCredentials(),None)
     def test_manifest_paths(self):
         for value in ('Assets/Code.cs','Assets/Code.cs.meta','CompilerSupport/a.cs','ProjectSettings/ProjectSettings.asset','Packages/manifest.json','SolarNet.Unity2020.props','tools/recovery/a.py'):
             self.assertEqual(p.safe_path(value),value)
