@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "ce726df2b5d9f5ee22a07ac79e72a680eb9e4906a17b7c466078ad796bca71c4"
+      "sha256": "d3d35d13837f776fb767e801e5475fad19a8efe90c881b86824a9545aa0df16c"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -2612,7 +2612,7 @@
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
       "bytes": 18944,
-      "sha256": "13a833a44db44d8e35de51bd5ca7e7f9a1ddc58a8bdb9c3c73a9b519dc3e7d0a"
+      "sha256": "81d05824c6833632e05550861a158d553852f42d6572df2afc8b355391c7109f"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",

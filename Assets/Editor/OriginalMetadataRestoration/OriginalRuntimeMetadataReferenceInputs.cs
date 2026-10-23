@@ -196,7 +196,7 @@ new CuratedRuntimeMetadataReference("System.Memory","c3a4d8bff0cf0c525f90b1c43f8
 new CuratedRuntimeMetadataReference("System.Runtime.CompilerServices.Unsafe","5885e20336bd49ca89b5bc482d51bac2bf173f4c5a4c1eaefbca7883a374ee5d"),
 new CuratedRuntimeMetadataReference("TextureTool.Runtime","e37d409c7b9c998a3ec0c5e6277c6a645bd7e8d7778fad9cba52664f0e42f7b3"),
 new CuratedRuntimeMetadataReference("ToxMod","a13ffa28c72f5bcba64570f4f0751badd230004af6c762c217519c54df993b2d"),
-new CuratedRuntimeMetadataReference("UJect.Runtime","13a833a44db44d8e35de51bd5ca7e7f9a1ddc58a8bdb9c3c73a9b519dc3e7d0a"),
+new CuratedRuntimeMetadataReference("UJect.Runtime","81d05824c6833632e05550861a158d553852f42d6572df2afc8b355391c7109f"),
 new CuratedRuntimeMetadataReference("UJect.UnityExtensions","4b914e21607cf971eccd4262ccfff98101daf4eb7e47bdf6464331697c60f833"),
 new CuratedRuntimeMetadataReference("Unity.Addressables","be1ba022096e345bfd277c8395d3bcc5cf432ee041b42782fe7330f4172f3143"),
 new CuratedRuntimeMetadataReference("Unity.Burst.Unsafe","4102562b8168002b1691ee20dd9567c77287caba131cf7e09e031c2e0f1182db"),
