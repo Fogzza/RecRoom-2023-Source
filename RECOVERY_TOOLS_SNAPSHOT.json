@@ -82,6 +82,16 @@
       "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
     },
     {
+      "path": "tools/recovery/ContainerInstanceRegistrationEffects.template.cs",
+      "bytes": 20308,
+      "sha256": "43c62e4708af10f8f043f7fc114bf748fd4675a88c496418eeabc00ec29ff534"
+    },
+    {
+      "path": "tools/recovery/ContainerInstanceRegistrationEffects.v2.template.cs",
+      "bytes": 20603,
+      "sha256": "32536aaf3ef1ea05b69a56583a1fce23315a6dca8dd554064d8cc364390e4094"
+    },
+    {
       "path": "tools/recovery/ContainerKeyChildEffects.template.cs",
       "bytes": 16120,
       "sha256": "c228fe0dc482aa3901b4c00bf7e75a48268707ddf6e7e43ec35b61c616ca8835"
@@ -112,6 +122,21 @@
       "sha256": "55804826ad9714865e14481ce425b6661ca1b73e93db933dec94a2b3deaab983"
     },
     {
+      "path": "tools/recovery/ContainerPreparationEffects.template.cs",
+      "bytes": 22824,
+      "sha256": "87eda51022a4060b95ad253f179e5bbe3d5ed975bd938ada4c82d97fd62517a8"
+    },
+    {
+      "path": "tools/recovery/ContainerPreparationMetadata.cs",
+      "bytes": 11049,
+      "sha256": "d76ac44b341b26fca9881646af3a167b0b385d2d0fe26ced31bdd6b82d9a7b6a"
+    },
+    {
+      "path": "tools/recovery/ContainerProviderConstructorEffects.template.cs",
+      "bytes": 9377,
+      "sha256": "78a017454ddd29f1ec7aab7808c4cf25c2d9eaf2a9be25c773bcfc1c57c60720"
+    },
+    {
       "path": "tools/recovery/ContainerProviderDiscoveryEffects.template.cs",
       "bytes": 20780,
       "sha256": "d19b66594aaa3dfe1d67232fc3257f379f03a95f0cbc3dd4b8dfd9f87aa2446e"
@@ -125,6 +150,11 @@
       "path": "tools/recovery/ContainerProviderDiscoveryEffects.v3.template.cs",
       "bytes": 22182,
       "sha256": "020be735f3a196a57e5531fe0ff96cc247c0682a6c146451f57c4184d3243443"
+    },
+    {
+      "path": "tools/recovery/ContainerProviderValueMonoProbe.v2.cs",
+      "bytes": 9898,
+      "sha256": "1fafe50b6a89cd1746ab081ab4ff44a9e402bb2c42f8fcc0d99887187c2f5fcb"
     },
     {
       "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
@@ -180,6 +210,26 @@
       "path": "tools/recovery/CustomUrpFactoryCacheControls.template.cs",
       "bytes": 21058,
       "sha256": "611df48d0b499bfa11243ea41e5059d164f5579594207fa74f7d12a59795ea7f"
+    },
+    {
+      "path": "tools/recovery/CustomUrpInitializerPrerequisiteControls.template.cs",
+      "bytes": 17287,
+      "sha256": "327f0169b0758acd146aff2d6983d1ba960aa30f49b017d91eb1125246b2fa29"
+    },
+    {
+      "path": "tools/recovery/CustomUrpInitializerPrerequisiteControls.v2.template.cs",
+      "bytes": 17377,
+      "sha256": "71e54c54ac7419b24733506b74c19b8ff124ee0e17aa1b58198318ead720e9c7"
+    },
+    {
+      "path": "tools/recovery/CustomUrpInitializerTwelveMonoSmoke.cs",
+      "bytes": 20597,
+      "sha256": "02ec1ef2af4307c974d52bc155aa1508ec65e8221c776fa35126f7c54e2f8b94"
+    },
+    {
+      "path": "tools/recovery/CustomUrpInitializerTwelveMonoSmoke.members.cs",
+      "bytes": 5866,
+      "sha256": "16503e021d4eeec0b40febbead144c99b30c9d7374a8b5c9c9ce93ff7dffa0e5"
     },
     {
       "path": "tools/recovery/CustomUrpSevenBodyMonoSmoke.cs",
@@ -367,6 +417,11 @@
       "sha256": "099af1f8f134568e148a7a2f0352c465a325f35b29ac583fa5d3a5675e217498"
     },
     {
+      "path": "tools/recovery/PinnedPrerequisiteDefinitionMap.cs",
+      "bytes": 3864,
+      "sha256": "521c9e2f9783923cef55aa6ec3ca6df7639319ebbfcded8f41569641466eb6f1"
+    },
+    {
       "path": "tools/recovery/PlayerReferenceRootFixtures.cs",
       "bytes": 7420,
       "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
@@ -412,6 +467,16 @@
       "sha256": "899a54691355c71c31fc17816367a0a3f3627140401b7db22080b77111a67dc6"
     },
     {
+      "path": "tools/recovery/RecRoomStartFlowEffects.template.cs",
+      "bytes": 10810,
+      "sha256": "12824c968895608e526f9a849e8411ec9b11f8335cee6902de248207f9847d73"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerInstanceRegistrationDonor.cs",
+      "bytes": 2318,
+      "sha256": "2f96ea0d945aad437b296633cb3c30415703a8d73a9e0b77f9b5f469ca6dea4c"
+    },
+    {
       "path": "tools/recovery/RecoveredContainerKeyChildDonor.cs",
       "bytes": 1780,
       "sha256": "01b87be244edae17d01a139445bc3362d7d11ead60bbc729080ff9c9cb1597c2"
@@ -432,6 +497,21 @@
       "sha256": "6c64d8e9362a5dd62f9d1f1f62e83e5e84b1e64e9d5894f0a0f73d2612f877eb"
     },
     {
+      "path": "tools/recovery/RecoveredContainerPreparationLnfMember.cs",
+      "bytes": 1813,
+      "sha256": "862f426df9a190d071c17c38d4995479f412917d049ec3d2178b4f40b6d2961c"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerPreparationPrerequisites.cs",
+      "bytes": 2573,
+      "sha256": "1f0e71649200f77dc9611c8bbfe239a23838bdebc78d321283abcf3630bf81f2"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerProviderConstructorDonor.cs",
+      "bytes": 618,
+      "sha256": "d07855afaf6726adbfb6b200a5def2a4a4c0de730a6a1cc789b343489813cd1a"
+    },
+    {
       "path": "tools/recovery/RecoveredContainerProviderDiscoveryDonor.cs",
       "bytes": 3485,
       "sha256": "eedfab2c9ae70adeaf2714e28dd92e876d78a8ecbe7d0f223c969515a1f78291"
@@ -450,6 +530,11 @@
       "path": "tools/recovery/RecoveredInitializationLowerDonor.v2.cs",
       "bytes": 1237,
       "sha256": "02f41dd1bfcf4a2eef0b42b6b7fe1976fbca786b0537bffe57811f728fe28df9"
+    },
+    {
+      "path": "tools/recovery/RecoveredLnfAssertionMembers.cs",
+      "bytes": 578,
+      "sha256": "24c83740822dab1e4f64901ce56c66aa29384ef757347e0b2047e3a3a282181c"
     },
     {
       "path": "tools/recovery/RecoveredSingletonAccessorDonor.cs",
@@ -552,6 +637,11 @@
       "sha256": "31f0d8c02a2e4fd519a6394f217b6ce4881141919f5c1fd83fd9ecc0d6c02700"
     },
     {
+      "path": "tools/recovery/StageContainerInstanceRegistrationBodies.cs",
+      "bytes": 22229,
+      "sha256": "790abd09aff35f994fb5d721673073f028e1f77a4a25501959adb674f0635b89"
+    },
+    {
       "path": "tools/recovery/StageContainerKeyChildBodies.cs",
       "bytes": 15384,
       "sha256": "75fff2c8d879293a63e6c92b04920139d968069025cc25bed0a0166c0d4d7915"
@@ -567,6 +657,16 @@
       "sha256": "f7df0905759686f65829d677c4ddda985ffa4b87f7f51d7942758254f6d24e5d"
     },
     {
+      "path": "tools/recovery/StageContainerPreparationBodies.cs",
+      "bytes": 23572,
+      "sha256": "070a5e82cb7ace6c49911f7bd8666c27afc777e03e0cb8ea7224d9af7d8cd8f8"
+    },
+    {
+      "path": "tools/recovery/StageContainerProviderValueConstructor.cs",
+      "bytes": 13793,
+      "sha256": "32275a105c2b1bacafb6dbf02efd759b68933915593f63df01c3e1ffb065c536"
+    },
+    {
       "path": "tools/recovery/StageCustomUrpFactoryCacheBodies.cs",
       "bytes": 15723,
       "sha256": "068349b92acc98f4013aa2deedd3ea20284c856b9c85985606ce53449d577c75"
@@ -580,6 +680,16 @@
       "path": "tools/recovery/StageCustomUrpFactoryCacheBodies.v3.cs",
       "bytes": 17556,
       "sha256": "c8e776debe40544d55cbd073750d4d0fe6a50cc16c9bf565b77b99524fb58b1b"
+    },
+    {
+      "path": "tools/recovery/StageCustomUrpInitializerPrerequisiteBodies.cs",
+      "bytes": 19215,
+      "sha256": "f1c50b561669b61f236dbb4777ff0130d3d1b1c4f5ac91b4b6687611adb09e37"
+    },
+    {
+      "path": "tools/recovery/StageCustomUrpInitializerPrerequisiteBodies.v2.cs",
+      "bytes": 19229,
+      "sha256": "a4c2ceaa6185a3d3735559f5a946711e67fd3e0f1b03b9ee392a741a881f37e3"
     },
     {
       "path": "tools/recovery/StageSingletonAccessorBodies.cs",
@@ -742,6 +852,11 @@
       "sha256": "1a49c635c38e2edd04986cf15c1274f1f1a1abcd6f47e93b5e78f9a2f351af0c"
     },
     {
+      "path": "tools/recovery/apply_container_registration_value_bodies_reviewed.py",
+      "bytes": 13864,
+      "sha256": "b607653fd4a75024078a15651f0c3ec501d6f83c77a9c4aa05b1ef8a4066f595"
+    },
+    {
       "path": "tools/recovery/apply_original_shader_launcher_amendment.py",
       "bytes": 11087,
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
@@ -865,6 +980,11 @@
       "path": "tools/recovery/audit_custom_urp_cecil_reindex_v2.py",
       "bytes": 9075,
       "sha256": "ccfd1005718fb8a89f3dff0758be2cd35c87a48b26e6e5346498d13f7f1e3fa6"
+    },
+    {
+      "path": "tools/recovery/audit_custom_urp_initializer_twelve_mono_completion.py",
+      "bytes": 11718,
+      "sha256": "d72818db8140397a3b3ff9c2bdef4338fcafb5f924e6cbcf0c3aaf9102a2fcbb"
     },
     {
       "path": "tools/recovery/audit_custom_urp_native_loop.py",
@@ -1365,6 +1485,11 @@
       "path": "tools/recovery/original_ag_guid_dependency_conversion.py",
       "bytes": 13680,
       "sha256": "97dbcd2a8a1522aae5e88efffa844bc4bf08f78fdb39e869c88de1200c3c9076"
+    },
+    {
+      "path": "tools/recovery/original_eh4_metadata.py",
+      "bytes": 6244,
+      "sha256": "7ae871828475535effa0667a0fa5bbb4a7cc36523e75b8d4bebd330ca0b944f3"
     },
     {
       "path": "tools/recovery/original_shader_collection_editor_conversion.py",
@@ -1912,6 +2037,16 @@
       "sha256": "b754b76d6a8b3e9133d8bf1fa76b76df5629e0e79a303e903a2163cad8330099"
     },
     {
+      "path": "tools/recovery/prove_container_instance_provider_constructors.py",
+      "bytes": 10478,
+      "sha256": "0101b68ace854ea8bbcdc673a28e3d618578ec0a47b520f64d14c01abea358ca"
+    },
+    {
+      "path": "tools/recovery/prove_container_instance_registration_members.py",
+      "bytes": 8615,
+      "sha256": "c2705e326cae24e11774821953c183a5c3f13d4d33ee911e6d5067e642f18569"
+    },
+    {
       "path": "tools/recovery/prove_container_key_child_members.py",
       "bytes": 17363,
       "sha256": "22f0c02bd0265a9db893ea39540ec5f58bf8add33fa10aa42940b41efa7ee95c"
@@ -1925,6 +2060,16 @@
       "path": "tools/recovery/prove_container_logging_reference_scope.py",
       "bytes": 5675,
       "sha256": "44e1b8a3877452ed5a8ebae43108e8962470ea86250c2f32c5fb4844e158cf3a"
+    },
+    {
+      "path": "tools/recovery/prove_container_preparation_lnf_member.py",
+      "bytes": 17056,
+      "sha256": "52cbef115c185817df97123d0c1ac286764da9176fcab9a0223fdb2ccf0fd22c"
+    },
+    {
+      "path": "tools/recovery/prove_container_preparation_prerequisites.py",
+      "bytes": 18242,
+      "sha256": "7a2207c771c7bd1cfe48cc3bee987880a9c1465e2035ed8721fb2c5720c5f2d9"
     },
     {
       "path": "tools/recovery/prove_container_small_initializers_native.py",
@@ -1960,6 +2105,11 @@
       "path": "tools/recovery/prove_live_provider_discovery_native.py",
       "bytes": 12288,
       "sha256": "04ce00d8eb552a10b4c02b396db1e812fb61a0db4cca04809abaa67d4518ebaf"
+    },
+    {
+      "path": "tools/recovery/prove_lnf_assertion_members.py",
+      "bytes": 9562,
+      "sha256": "e87c03d5c8e131082ff5caa42bb8631f11d280096e70d140cdac85660645f755"
     },
     {
       "path": "tools/recovery/prove_nameserver_request_factory_cfg.py",
@@ -2000,6 +2150,11 @@
       "path": "tools/recovery/prove_recroom_ondestroy_native_cfg.py",
       "bytes": 6064,
       "sha256": "403acd989cfa33d09ce1cd85cdd9747a0d42e809ba5ca345ba7a6241a83f17cb"
+    },
+    {
+      "path": "tools/recovery/prove_recroom_start_native_cfg.py",
+      "bytes": 10611,
+      "sha256": "c3741016461f1461f35226a8f68770493f614d7bac0caa54a17fdc3b11318ac0"
     },
     {
       "path": "tools/recovery/prove_revive_leaf_candidates.py",
@@ -2207,6 +2362,26 @@
       "sha256": "ae457e405cdcb8ec5a81ed5331a26744ec735fb8fe615592e080b0e5acdbe778"
     },
     {
+      "path": "tools/recovery/run_container_instance_provider_constructors_decode.py",
+      "bytes": 7859,
+      "sha256": "8b6414d9591c646f211ff98ce1d9bf2db811a0faa50492173004a903fb7dbb6d"
+    },
+    {
+      "path": "tools/recovery/run_container_instance_registration_decode.py",
+      "bytes": 7750,
+      "sha256": "779af20b282f8de8ce6d0b87a7977b9335410a212fe8a4c886402e69e4fb8873"
+    },
+    {
+      "path": "tools/recovery/run_container_instance_registration_harness.py",
+      "bytes": 14301,
+      "sha256": "2967bbfc403b9fc197c0814055bc22ef9830fe30c397fd42164a7bffdfd5a839"
+    },
+    {
+      "path": "tools/recovery/run_container_instance_registration_harness_v2.py",
+      "bytes": 12811,
+      "sha256": "0c57a1bb1a4446fca2362f8b533c1c351901966fab6e756e62598f0952d242ee"
+    },
+    {
       "path": "tools/recovery/run_container_key_child_harness.py",
       "bytes": 11120,
       "sha256": "4c68196b61d96b063b5a69f959fa91d43c4d10cf276ae702fd88f2aa1225769a"
@@ -2237,6 +2412,16 @@
       "sha256": "00c86676b113d720082f0df8032d49d0fd95fd4c9953eca290f10e819c22f2a1"
     },
     {
+      "path": "tools/recovery/run_container_preparation_harness.py",
+      "bytes": 14255,
+      "sha256": "6d82b9e72b60bc0ff5b084d779e20fe121c18fa9b9c567675209ce7fa9436b29"
+    },
+    {
+      "path": "tools/recovery/run_container_provider_constructor_harness.py",
+      "bytes": 10015,
+      "sha256": "869466b263eb1402b37fc1ee116aaed2d04ce3185e00e813838353b8fe3cb842"
+    },
+    {
       "path": "tools/recovery/run_container_provider_discovery_harness.py",
       "bytes": 15613,
       "sha256": "a82bb01f35c90938a81ed2b3cdb2a3190ee6fc346bc3219de322ef6643bf7561"
@@ -2250,6 +2435,11 @@
       "path": "tools/recovery/run_container_provider_discovery_harness_v3.py",
       "bytes": 22157,
       "sha256": "3f4a87b1024ffeb2398b17854e1435c4c5632ed4d3b5d59cbbcddaaae4fdcf49"
+    },
+    {
+      "path": "tools/recovery/run_container_provider_value_mono_probe_v2.py",
+      "bytes": 15188,
+      "sha256": "bf1ddd7f53569a35c029d47766872ac79100861656556b23470f795f9d577234"
     },
     {
       "path": "tools/recovery/run_core_field_attribute_witness.py",
@@ -2280,6 +2470,21 @@
       "path": "tools/recovery/run_custom_urp_factory_decode.py",
       "bytes": 6586,
       "sha256": "bec4660601faea4d7c7f41ee8d1b1dba2491cfbdedc64d3dc8691be43b7b8ca4"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_initializer_prerequisite_controls.py",
+      "bytes": 12563,
+      "sha256": "ffd7c89fcef8cc3465858e79a51593750db6b491c8ea62f581b85fca16764eed"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_initializer_prerequisite_controls_v2.py",
+      "bytes": 15671,
+      "sha256": "1abaa729b88136b5477f5d1ce3f2c542ac621552b8d00deebe1b6885bf3458cf"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_initializer_twelve_mono_smoke.py",
+      "bytes": 17924,
+      "sha256": "eef5617392e8486e5eb7615d683fa2f0dc20b267b9dda1df3974464615c9bc03"
     },
     {
       "path": "tools/recovery/run_custom_urp_seven_body_mono_smoke.py",
@@ -2335,6 +2540,11 @@
       "path": "tools/recovery/run_inspect_pinvoke_blocks.py",
       "bytes": 2211,
       "sha256": "4c60ae93284e22013df0281c19c22e97e21ae23e325212ab59ecfa3f0db525a7"
+    },
+    {
+      "path": "tools/recovery/run_live_lookup_dependencies_decode.py",
+      "bytes": 10338,
+      "sha256": "f39fd6354813209b1619532ec496520b5c6581960c32efe05d5f7d398cb9b9e0"
     },
     {
       "path": "tools/recovery/run_manifest_streaming_fixtures.py",
@@ -2480,6 +2690,11 @@
       "path": "tools/recovery/run_recroom_awake_native_audit_guarded.py",
       "bytes": 1212,
       "sha256": "2c2597781a258a62b6b325834b0c7dfea526ac9a0d811732623e2014775fb4bb"
+    },
+    {
+      "path": "tools/recovery/run_recroom_start_flow_harness.py",
+      "bytes": 8574,
+      "sha256": "1cd94bbd76f327b5bcc8f145f6473fc98042f522921cdd8cc3492d723ca2cb7d"
     },
     {
       "path": "tools/recovery/run_reversed_generic_name_player_binding.py",
@@ -2732,6 +2947,11 @@
       "sha256": "ca8aa02093925ed5d5de46ee42d0fdb6581b9fa31879ce9abddb6295a7b6bb26"
     },
     {
+      "path": "tools/recovery/stage_container_instance_registration_bodies.py",
+      "bytes": 14493,
+      "sha256": "391f10ddbba27177729c07374288e3456575d0874db7423d037b1905f7af2a6a"
+    },
+    {
       "path": "tools/recovery/stage_container_key_child_bodies.py",
       "bytes": 10624,
       "sha256": "1effe6395c73609b48a5061e2e0ddddd0d19b40d2d0148305467029b8fdbd70d"
@@ -2747,6 +2967,16 @@
       "sha256": "6ca35cbe3c76242301bed5de845e3e776f392d151db2e1abea0da9f4213dcd55"
     },
     {
+      "path": "tools/recovery/stage_container_preparation_bodies.py",
+      "bytes": 11616,
+      "sha256": "cbbdc9f60638515eca6be968f03d27acd1756fd26897b40289fcd1711571ad6e"
+    },
+    {
+      "path": "tools/recovery/stage_container_registration_and_value_constructor.py",
+      "bytes": 13138,
+      "sha256": "b5f060f47dc40a4bba9a9e4b1942d2fe996743371beacc3d89a02a6be0c457ce"
+    },
+    {
       "path": "tools/recovery/stage_custom_urp_factory_cache_bodies.py",
       "bytes": 10829,
       "sha256": "f38540ba30f560b0b30f5349b654efedc234173540ba2496f8493ff031661e31"
@@ -2760,6 +2990,16 @@
       "path": "tools/recovery/stage_custom_urp_factory_cache_bodies_v3.py",
       "bytes": 19253,
       "sha256": "f160233cdbfe0d1ec2dd76bbb890ac1853047b1da9e07ac4e0b0e49240c11bb4"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_initializer_prerequisite_bodies.py",
+      "bytes": 25471,
+      "sha256": "62f3d913eef54fad07de3c1106e7f9b23ebb05f27b9f6787ab15a59b22337c39"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_initializer_prerequisite_bodies_v2.py",
+      "bytes": 26490,
+      "sha256": "f80584d5a74e59083d5f29e992e170fa6227641d218f567848caf3b24e66e0b4"
     },
     {
       "path": "tools/recovery/stage_custom_urp_shared_cache_candidates.py",
@@ -2885,6 +3125,11 @@
       "path": "tools/recovery/stage_recroom_ondestroy_typed_candidate.py",
       "bytes": 7567,
       "sha256": "31bfba20926a93cc994dec9eabfb6c541ab8260257eb18c18bbbcee47d1014f8"
+    },
+    {
+      "path": "tools/recovery/stage_recroom_start_flow_candidate.py",
+      "bytes": 6951,
+      "sha256": "8dfc283b6a3190a253c42b0637f3b671b822685ef2165e58372a5ed4233907ee"
     },
     {
       "path": "tools/recovery/stage_shader_metadata_extension_patcher.py",
@@ -3077,5 +3322,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 615
+  "count": 664
 }
