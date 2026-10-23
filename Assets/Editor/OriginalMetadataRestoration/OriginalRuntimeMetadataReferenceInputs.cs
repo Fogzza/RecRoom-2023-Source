@@ -89,7 +89,7 @@ new CuratedRuntimeMetadataReference("RecRoom.Encoding.Runtime","12c84b3663b9721a
 new CuratedRuntimeMetadataReference("RecRoom.Experiments.Runtime","79b1458245f7abfb9ba355fd3a4e55d30483b9a1be024936188a832a1b9edc39"),
 new CuratedRuntimeMetadataReference("RecRoom.FastLines.Runtime","92136f545bd39cc5ec1c15974e9f65afdfb18f0614509aa60ee4c78eac0e70c5"),
 new CuratedRuntimeMetadataReference("RecRoom.FuzzySearch.Runtime","cc79aef49d59df7ba3ef6a2c9315394bcc9ca253edf396ff163d229923fb5cd4"),
-new CuratedRuntimeMetadataReference("RecRoom.GameSystems.Interfaces","e0be19cb5ad95c23e28c06325fd449a445df6ffa5527895cbf06b1361c690a63"),
+new CuratedRuntimeMetadataReference("RecRoom.GameSystems.Interfaces","9780668e1d04458ac8347eb94104a72ca357595f16f314a7dd2dce07f4f7f059"),
 new CuratedRuntimeMetadataReference("RecRoom.Imageutils.Runtime","4c409236f9403cea5d3c6f1771c8eda03bce597fcb2a83481564fc88df088b98"),
 new CuratedRuntimeMetadataReference("RecRoom.Imposters.Runtime","7f57b835a906c33e5f66b57656e4c6a93ea459b9937d383c51a669d93f148c4d"),
 new CuratedRuntimeMetadataReference("RecRoom.Instantiation.Runtime","25a3a3f55f88dea518b6f4c0a9692c598862aa1b5dd9f0231e34cd1c68092de3"),
