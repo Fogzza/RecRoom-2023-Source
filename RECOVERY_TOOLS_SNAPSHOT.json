@@ -277,6 +277,11 @@
       "sha256": "70dded8c6b838bbab1227f4d526ed2f351898fc1ac6e4a81b3ff5c42660af37d"
     },
     {
+      "path": "tools/recovery/OriginalShaderLoadBatchProbe.cs",
+      "bytes": 6544,
+      "sha256": "adf096c13b7d5c6f3be1d9cd6103a6e56c7f0919fc93fa347f853c7cc9f5f770"
+    },
+    {
       "path": "tools/recovery/OriginalShaderObjectProbe.cs",
       "bytes": 6477,
       "sha256": "c10e692d0d482e9a55ede144f2ceb89e7622d7dce4bcc8b9af7adadc345858c3"
@@ -285,6 +290,11 @@
       "path": "tools/recovery/OriginalShaderRuntimeProbe.cs",
       "bytes": 10554,
       "sha256": "25b558ca00b10fe774c8c692825fd220ea8cb0f96ceafbbe032957597df1937c"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderRuntimeProbeWithLoadBatches.cs",
+      "bytes": 11549,
+      "sha256": "510c4944cb18df1c7cf1d96e34258ca0db21731ea4b3b69f271110af1f2c465b"
     },
     {
       "path": "tools/recovery/OriginalShaderRuntimeProbeWithPipelineTag.cs",
@@ -457,6 +467,11 @@
       "sha256": "232ab4d11ef22964d6bcfd2e0012031fe9c278a29b89940bfe5e6ee87c2e7ef4"
     },
     {
+      "path": "tools/recovery/TitleDisplayCallbackEffects.template.cs",
+      "bytes": 20782,
+      "sha256": "0d9f0f8bc5d5b0b1ce275aaf8c977a51a94ee38da24e138d7e3dfe5fc0495021"
+    },
+    {
       "path": "tools/recovery/TitleLoginSliceEffects.template.cs",
       "bytes": 8035,
       "sha256": "7e68554dae22fdf3e572d946142a342b6616e55692b982319eb6e5a74937bbab"
@@ -540,6 +555,11 @@
       "path": "tools/recovery/apply_startup_three_member_bodies_reviewed_v2.py",
       "bytes": 13893,
       "sha256": "ba3afbf8989a36f599061c92603bddb467e6cfe3e1a8004497aa79bb19daf029"
+    },
+    {
+      "path": "tools/recovery/apply_title_display_callback_reviewed.py",
+      "bytes": 10963,
+      "sha256": "499b1d53f8350df94e124e9e4b816bcf279a19b71bd0d6c7c3ec19bb00383023"
     },
     {
       "path": "tools/recovery/apply_title_login_slice_reviewed.py",
@@ -782,6 +802,16 @@
       "sha256": "97961bd50efa34670be464257e8d69b18fe7fff264872385cad377cc18cd118f"
     },
     {
+      "path": "tools/recovery/collect_title_display_callback_joins.py",
+      "bytes": 5922,
+      "sha256": "de97095e15bbf87a2a4c4ae31538b4b157ad463d86ea1d17791a2fb875849a49"
+    },
+    {
+      "path": "tools/recovery/collect_title_display_inline_contracts.py",
+      "bytes": 5086,
+      "sha256": "ce199832c322513e0e742bfd8ca96e063290a6c5d52c328cc3db036254e87e08"
+    },
+    {
       "path": "tools/recovery/collect_title_page_route_native.py",
       "bytes": 6778,
       "sha256": "bc639eb54f8038dcc3de0a8b9cfee52f737d64894595f079c6d20f91e8174344"
@@ -920,6 +950,11 @@
       "path": "tools/recovery/finalize_all_original_shader_dependencies.py",
       "bytes": 9790,
       "sha256": "da7f3678f08e42c1a1cf459d0fa3b34ac35e871d7dd044861e6b6253402db853"
+    },
+    {
+      "path": "tools/recovery/finalize_all_shader_runtime_checkpoint.py",
+      "bytes": 15573,
+      "sha256": "661c3952fec40e561920397df11f069d4563ed98124d64f63c27731146c8d8b6"
     },
     {
       "path": "tools/recovery/finalize_marshalling_readiness.py",
@@ -1067,6 +1102,11 @@
       "sha256": "e17e0641e95c214e2f9742ba0c24368f8418ff5db31af31dc13fdd5c1d6ad5c5"
     },
     {
+      "path": "tools/recovery/orchestrate_all_original_shader_restoration.py",
+      "bytes": 26835,
+      "sha256": "e63463413090bdc3709a684b2ea9cf100c5c78080c80d0e54bc57f21ed5cdf5e"
+    },
+    {
       "path": "tools/recovery/orchestrate_eight_original_shader_restoration.py",
       "bytes": 20656,
       "sha256": "eb4ee9dece3bbcda760f931c482c086003774172b009cd41f791d6bf8c9f014d"
@@ -1147,6 +1187,11 @@
       "sha256": "885b2e830af7987aa4f10d9f79b5096de7ff7def8e3dc604b26926ef80a30c4f"
     },
     {
+      "path": "tools/recovery/patch_original_shader_collection_with_external_relocation.py",
+      "bytes": 37015,
+      "sha256": "62b39e2d5d273870bb43d4415f8840a91bd8b6e2f4bb5700a747b37289ef69eb"
+    },
+    {
       "path": "tools/recovery/postprocess_builtin_shader_control.py",
       "bytes": 3399,
       "sha256": "013d6ba6c822cd5b9fd26a4666e6dbda8c40e98dea244b8cca1de093b1452076"
@@ -1190,6 +1235,11 @@
       "path": "tools/recovery/prepare_all_shader_null_dependency_expansion.py",
       "bytes": 13594,
       "sha256": "6361bd3159dc9612a3268baa18cb76004f65da272c789e27f858da36d1fb7d0c"
+    },
+    {
+      "path": "tools/recovery/prepare_all_shader_runtime_fixture.py",
+      "bytes": 18507,
+      "sha256": "56bce597c96ec672162e6c3911afd158651a28d68bcbf605d5070ced052a4c78"
     },
     {
       "path": "tools/recovery/prepare_ar_helper_input_guard_candidate.py",
@@ -1507,6 +1557,11 @@
       "sha256": "e4ded8e012619900589e939a3fce03334bbc384bd380e3fd9f6be76e8ff75fb3"
     },
     {
+      "path": "tools/recovery/prepare_title_display_callback_native.py",
+      "bytes": 5942,
+      "sha256": "ba000fc9c9324e8d02531fa0b49abe30ecaabea349b676af762c358fbbec5d67"
+    },
+    {
       "path": "tools/recovery/prepare_title_manager_start_native.py",
       "bytes": 6252,
       "sha256": "8a29a58bf83227a16c53881bd657a01749cd1a4a6d298d331daa67f31dbc654c"
@@ -1777,6 +1832,16 @@
       "sha256": "fc913264ab1ac7ab18ff7af8bb5f3d4ac6909a7a367ce706fb26d93a0e62b142"
     },
     {
+      "path": "tools/recovery/run_all_shader_restoration_offline_controls.py",
+      "bytes": 1222,
+      "sha256": "2f62044454ea2038374b45c82e87a66c93d52c7c8f54c6be6848189937407e03"
+    },
+    {
+      "path": "tools/recovery/run_all_shader_runtime_probes.py",
+      "bytes": 15386,
+      "sha256": "d776c1541215769040e08399d46290d5d609306ae540fcac443b4c82b8a5091a"
+    },
+    {
       "path": "tools/recovery/run_approved_x64_mono_fixture_host.py",
       "bytes": 2697,
       "sha256": "957f4fc42293427caf5ecbb9599e1460006eeca474370cd5a40149a7fd5bb771"
@@ -1997,6 +2062,11 @@
       "sha256": "8096573c095796e32b44e43b5a603060c06fe2aebfd193588e06b11196d4dd62"
     },
     {
+      "path": "tools/recovery/run_original_shader_relocated_patch_v3.py",
+      "bytes": 2426,
+      "sha256": "46460e6cd58231175bbdcefad9a39643784e9237d5184824334a5cfd5fcd01a4"
+    },
+    {
       "path": "tools/recovery/run_original_shader_runtime_patch_fixture.py",
       "bytes": 18603,
       "sha256": "8d274ae10bb8c19082001540d264366305d1a918ab4120f705a13075b9038636"
@@ -2160,6 +2230,16 @@
       "path": "tools/recovery/run_title_awake_chained_decode.py",
       "bytes": 5153,
       "sha256": "52466ae7156b2884d2a69aec47ff737deb82c3d801d8b49ce014c093657a207c"
+    },
+    {
+      "path": "tools/recovery/run_title_display_callback_decode.py",
+      "bytes": 5202,
+      "sha256": "2fd95029ceb191030e23d49012ead1760b1ddc1a2fceaea94f8ea8b01ec10e93"
+    },
+    {
+      "path": "tools/recovery/run_title_display_callback_harness.py",
+      "bytes": 9798,
+      "sha256": "b748a0c1830683f4de2348802c700cb2f9371542aaf5c3dade4c46503d0d767d"
     },
     {
       "path": "tools/recovery/run_title_login_slice_harness.py",
@@ -2372,6 +2452,11 @@
       "sha256": "3b3228fef77f21fe8b725eb19d8a88bb4e5c84e2194b952ea52b30c01e324285"
     },
     {
+      "path": "tools/recovery/stage_title_display_callback_slice.py",
+      "bytes": 18899,
+      "sha256": "e620b5b5ad493595466a7e4b8998759fee4e2bd696b3525871f80012058a9ac6"
+    },
+    {
       "path": "tools/recovery/stage_title_login_transition_slice.py",
       "bytes": 16209,
       "sha256": "e7c3b67242b484b5bb27cdb83ec906ec9688ade4f8cfd2500829f3c40cee67e9"
@@ -2420,6 +2505,11 @@
       "path": "tools/recovery/test_all_pinvoke_proofs.py",
       "bytes": 5411,
       "sha256": "820bb25eb6a8da8912acd678604194f95d3481b2ba6d5eb53328e75de52ada56"
+    },
+    {
+      "path": "tools/recovery/test_all_shader_restoration_orchestration.py",
+      "bytes": 6354,
+      "sha256": "1574017fb5865282e9e962a5d251fc19e48834207aeacb8276b6eba1ceee8d2c"
     },
     {
       "path": "tools/recovery/test_applied_protocol_version_getters.py",
@@ -2522,5 +2612,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 504
+  "count": 522
 }

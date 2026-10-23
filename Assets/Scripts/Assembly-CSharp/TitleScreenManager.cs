@@ -280,6 +280,26 @@ get 	{
 
 	private void PMNJIOHDABB()
 	{
+		bool inScreenDisplayMode = LIPCPJMCHDF.InScreenDisplayMode;
+		if (backgroundRoundedCorners != null)
+			backgroundRoundedCorners.enabled = !inScreenDisplayMode;
+		var anchor = RecRoom.Core.CameraRig.Instance.ScreenModeHUD.WorldSpaceUIAnchor;
+		if (!inScreenDisplayMode)
+		{
+			if (anchor.AttachedGameObject == mainCanvas.gameObject)
+				anchor.Detach();
+			mainCanvas.transform.position = AFFEJPNPKPM;
+			mainCanvas.transform.localScale = AHAPJIODLLJ;
+			mainCanvas.transform.rotation = BGMCKGNIMKN;
+			RecRoom.Core.UI.UIInputModule.Instance.ControllerCamera.farClipPlane = 20f;
+		}
+		else
+		{
+			var screenCamera = RecRoom.Core.CameraRig.Instance.ScreenModeCamera;
+			anchor.Attach(mainCanvas.gameObject, EKJBJGDALKG, screenCamera.transform.rotation, 1f, 0f, false);
+			RecRoom.Core.UI.UIInputModule.Instance.ControllerCamera.farClipPlane =
+				Vector3.Distance(mainCanvas.transform.position, screenCamera.transform.position) * 2f;
+		}
 	}
 
 	public void QueueBirthdayEventForPostLogIn(DateTime DPAIFPOLPOC)
