@@ -1121,15 +1121,15 @@ get 				{
 		[SerializeField]
 		private LanguageModel languageModel;
 
-		private readonly List<NOFHIODEAHA.EAIKGIBOLBI> AEONMIHECKB;
+		private readonly List<NOFHIODEAHA.EAIKGIBOLBI> AEONMIHECKB = new List<NOFHIODEAHA.EAIKGIBOLBI>();
 
-		private readonly Route[] JPDNBFLBKJE;
+		private readonly Route[] JPDNBFLBKJE = new Route[57];
 
-		private readonly LBGGLBDJKBH[] MJILNAPJBPG;
+		private readonly LBGGLBDJKBH[] MJILNAPJBPG = new LBGGLBDJKBH[57];
 
-		private readonly bool[] HLJKFEIBAMK;
+		private readonly bool[] HLJKFEIBAMK = new bool[57];
 
-		private readonly MDEJADHJOEJ BGBIFFLGANM;
+		private readonly MDEJADHJOEJ BGBIFFLGANM = new MDEJADHJOEJ();
 
 		private LKGILLBEJEK PPJECJCFHNC;
 
@@ -1161,7 +1161,7 @@ get 				{
 
 		private BMCGMLFFLBN ICDMMGNFMAF;
 
-		private string AICDDJCAFMH;
+		private string AICDDJCAFMH = MBLMBJANMJA.KLCNJPJLLOA;
 
 		private DynamicUIDialogModel FHHOMMPODAI;
 
@@ -1171,7 +1171,7 @@ get 				{
 
 		private bool JPOBLCHPAMB;
 
-		private string KONOHKPGMLG;
+		private string KONOHKPGMLG = string.Empty;
 
 		private bool PHELINKFEBI;
 
@@ -1191,19 +1191,19 @@ get 				{
 
 		private bool? DNODLMBOJJE;
 
-		private string LHGBCEDJFCI;
+		private string LHGBCEDJFCI = string.Empty;
 
-		private string NEFGPHHAAHD;
+		private string NEFGPHHAAHD = string.Empty;
 
-		private string NGDNNNJJHJJ;
+		private string NGDNNNJJHJJ = string.Empty;
 
-		private string CFJJJDCDCBK;
+		private string CFJJJDCDCBK = string.Empty;
 
 		private bool BJPPIALHEHP;
 
-		private string NAOPEBCEBGK;
+		private string NAOPEBCEBGK = string.Empty;
 
-		private string LMJIIAEINHM;
+		private string LMJIIAEINHM = string.Empty;
 
 		private bool MCMPLJFCICH;
 
@@ -1211,29 +1211,29 @@ get 				{
 
 		private bool KJALGJGGJLE;
 
-		private string JMOKEOHPAHD;
+		private string JMOKEOHPAHD = string.Empty;
 
-		private string GJHGGOFGHML;
+		private string GJHGGOFGHML = string.Empty;
 
-		private string CBMMHOJDOLC;
+		private string CBMMHOJDOLC = string.Empty;
 
-		private bool NHKMAPJGNGN;
+		private bool NHKMAPJGNGN = true;
 
 		private bool MKLAALDHOMO;
 
-		private DateTime OHKDGIAAKGK;
+		private DateTime OHKDGIAAKGK = new DateTime(DateTime.Now.Year, 1, 1);
 
-		private string KHEJNDPFBPI;
+		private string KHEJNDPFBPI = string.Empty;
 
-		private string EHKOCLIBOBK;
+		private string EHKOCLIBOBK = string.Empty;
 
 		private bool EBILGNBILBP;
 
-		private string MIGOMPPBCHN;
+		private string MIGOMPPBCHN = MBLMBJANMJA.HADECKFBKNO;
 
-		private string MEHOEMLNMMA;
+		private string MEHOEMLNMMA = string.Empty;
 
-		private string ONENENKIOHP;
+		private string ONENENKIOHP = string.Empty;
 
 		private static bool BCHJONKFFAK;
 
@@ -1269,7 +1269,7 @@ get 				{
 
 		private const string DADNEIMAMOL = "Recroom.AccountCreation.HasImportedFriends";
 
-		private string FIPFNLEHONJ;
+		private string FIPFNLEHONJ = "_LastFriendImportUTC";
 
 		private const string KOMJKAOGDPE = "social_q3_session_takeover";
 
@@ -2130,6 +2130,11 @@ get 		{
 
 		protected override void DCEBFEOEHGG()
 		{
+			base.DCEBFEOEHGG();
+			ALCHBCLKCII = MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<EFGIDDLNECL>(null);
+			DIPHAJAGIIL();
+			MKPOCGPIGEK();
+			IAIPHHLGIBF();
 		}
 
 		protected override void KPOHBHPPGBM()

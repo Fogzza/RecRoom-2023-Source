@@ -953,6 +953,12 @@ get 			{
 
 		internal void _003CApplyOptionalResponseCallback_003Eb__0(string error)
 		{
+			string message = string.Concat("A promise error message is being propagated as an \"unknown error\". Specific message: ", error, ".");
+			HJDBOADFHMC? category = HJDBOADFHMC.FBJHBFFDBDJ;
+			PNAABCMOHGM.NEGCNMACIEM((object)message, category);
+			var callback = this.optionalOnResponseCallback;
+			if (callback != null)
+				callback((Matchmaking.DABKEMNEPLM)(-1));
 		}
 	}
 
@@ -962,6 +968,9 @@ get 			{
 
 		internal void _003CApplyOptionalResponseCallback_003Eb__0(Matchmaking.DABKEMNEPLM errorCode)
 		{
+			var callback = this.optionalOnResponseCallback;
+			var response = new ANAGHNCECEB(errorCode);
+			callback(response);
 		}
 	}
 
@@ -1128,6 +1137,15 @@ get 			{
 
 		internal void _003CDefaultRoomGates_003Eb__0(bool bypassMovementModeRestriction)
 		{
+			var gate = new OLENAJMENAB();
+			gate.CS_0024_003C_003E8__locals1 = this;
+			gate.bypassMovementModeRestriction = bypassMovementModeRestriction;
+			var session = this._003C_003E4__this;
+			Action confirmed = gate._003CDefaultRoomGates_003Eb__2;
+			Action cancelled = this._003C_003E9__3;
+			if (cancelled == null)
+				this._003C_003E9__3 = cancelled = this._003CDefaultRoomGates_003Eb__3;
+			session.AIBFFJCEMGJ(confirmed, cancelled);
 		}
 
 		internal void _003CDefaultRoomGates_003Eb__13()
@@ -1156,6 +1174,9 @@ get 			{
 
 		internal void _003CDefaultRoomGates_003Eb__1()
 		{
+			var callback = this.onCancel;
+			if (callback != null)
+				callback();
 		}
 	}
 
@@ -2552,6 +2573,17 @@ remove {
 
 	private void MLGHBPFMFNL(global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM> BOJDPAGLBLI, Action<ANAGHNCECEB> FFNHJDNOEKM)
 	{
+		var response = new HJOICMNILEJ();
+		response.optionalOnResponseCallback = FFNHJDNOEKM;
+		Action<Matchmaking.DABKEMNEPLM> converted = null;
+		if (response.optionalOnResponseCallback != null)
+			converted = response._003CApplyOptionalResponseCallback_003Eb__0;
+		var error = new OHJOOFNIBOK();
+		error.optionalOnResponseCallback = converted;
+		var capturedResponse = error.optionalOnResponseCallback;
+		if (capturedResponse != null)
+			BOJDPAGLBLI = BOJDPAGLBLI.EBIHDILAPPK(capturedResponse);
+		BOJDPAGLBLI.LEFPGJEKFGF(error._003CApplyOptionalResponseCallback_003Eb__0);
 	}
 
 	private void GBIFOJCIOAC(LAHBDKNMNHN BOJDPAGLBLI, string KFBOLGLKOHF, Action<ANAGHNCECEB> FFNHJDNOEKM)
@@ -2580,6 +2612,12 @@ remove {
 
 	private void FMONLJPLGGG(JCDPHCELKHI KPFNANKNKLE, Action<bool> OKDKEJOOEPP, Action ICIJNFGMPCA = null)
 	{
+		var gates = new GCDPLCKOKMP();
+		gates._003C_003E4__this = this;
+		gates.room = KPFNANKNKLE;
+		gates.onConfirmed = OKDKEJOOEPP;
+		gates.onCancel = ICIJNFGMPCA;
+		this.MJCOOGAPIIB(gates.room, gates._003CDefaultRoomGates_003Eb__0, gates._003CDefaultRoomGates_003Eb__1);
 	}
 
 	public static bool HasLocalPlayerAlreadyAcceptedWarning(JCDPHCELKHI KPFNANKNKLE)
