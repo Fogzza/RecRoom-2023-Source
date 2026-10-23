@@ -54,14 +54,15 @@ public class SessionManager : InjectedSingletonMonoBehaviour<FMONDJELBAI, Sessio
 public bool JEKALIHPDFJ
 {
 get 		{
-			return false;
-		}
+			return this.FKKHLCMKOGO;
+	}
 
 }
 
 		public void KMJJDHJIMIB()
 		{
-		}
+			this.FKKHLCMKOGO = true;
+	}
 	}
 
 	public enum PFPFLMJDKIB
@@ -1581,22 +1582,23 @@ get 			{
 			[DebuggerHidden]
 			get
 			{
-				return null;
-			}
+				return this._003C_003E2__current;
+	}
 		}
 
  object global::System.Collections.IEnumerator.Current
 {
 get 			{
-				return null;
-			}
+				return this._003C_003E2__current;
+	}
 
 }
 
 		[DebuggerHidden]
 		public IFMAOFGHNJB(int _003C_003E1__state)
 		{
-		}
+			this._003C_003E1__state = _003C_003E1__state;
+	}
 
 		[DebuggerHidden]
 		void IDisposable.Dispose()
@@ -1605,8 +1607,21 @@ get 			{
 
 		private bool MoveNext()
 		{
-			return false;
-		}
+			int state = this._003C_003E1__state;
+			SessionManager owner = this._003C_003E4__this;
+			if (state == 0) this._003Cprogress_003E5__2 = 0;
+			else if (state != 1) return false;
+			this._003C_003E1__state = -1;
+			if (!owner.DJPHNJGKJPL) return false;
+			string suffix = this._003Cprogress_003E5__2 == 0 ? "." : (this._003Cprogress_003E5__2 == 1 ? ".." : "...");
+			this._003Cprogress_003E5__2 = (this._003Cprogress_003E5__2 + 1) % 3;
+			string progressMessage = string.Format("{0}{1}", this.message, suffix);
+			if (SingletonMonoBehaviour<NotificationManager>.Instance != null)
+				SingletonMonoBehaviour<NotificationManager>.Instance.Play((PCBHIGOMCDE)0, "", progressMessage, 1f, null, owner);
+			this._003C_003E2__current = new WaitForSeconds(0.5f);
+			this._003C_003E1__state = 1;
+			return true;
+	}
 
 		bool IEnumerator.MoveNext()
 		{
@@ -1617,7 +1632,8 @@ get 			{
 		[DebuggerHidden]
 		void IEnumerator.Reset()
 		{
-		}
+			throw new NotSupportedException();
+	}
 	}
 
 	private sealed class JEAHMIMMCOG
@@ -2691,6 +2707,8 @@ remove {
 
 	private void KFGBIOFMANN()
 	{
+		if (Player.LocalPlayerExists && Player.LocalPlayer.PlayerParty != null)
+			Player.LocalPlayer.PlayerParty.LeaveCurrentParty();
 	}
 
 	public void PlayerGoToDestinationGate(string ENKODABKJGB, Action OKDKEJOOEPP, Action BNPCGIGFEGC = null)
@@ -2868,7 +2886,38 @@ remove {
 
 	private global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM> CKIFCJCBNLA(string OFCFPGACNJB, PFPFLMJDKIB KHIJCFMFKHI, Func<int[], global::NCOKFFGPIJM<Matchmaking.DABKEMNEPLM>> AFLCHHFPDKN)
 	{
-		return null;
+		if (this.EHPHBKFLAPL__BackingField != null)
+		{
+			var request = new BEJCOLBHFDI();
+			this.EHPHBKFLAPL__BackingField(request);
+			if (request.JEKALIHPDFJ)
+				return DBIPHDIEBCM.NPCLNGHBHDE<Matchmaking.DABKEMNEPLM>("Room switch disabled by current operation");
+		}
+		if (MKKJLGPDDKJ.ELLPBOAKGMN == null || !CodeStage.AntiCheat.ObscuredTypes.ObscuredBool.GJGPFJHFLAE(MKKJLGPDDKJ.ELLPBOAKGMN.JNDOEIJMGGM))
+		{
+			this.BootLocalPlayerToDormRoom(null, (DBECJLAIPEL)1, false);
+			return DBIPHDIEBCM.NPCLNGHBHDE<Matchmaking.DABKEMNEPLM>("Can not matchmake without birthday");
+		}
+		if (this.DJPHNJGKJPL)
+			return DBIPHDIEBCM.NPCLNGHBHDE<Matchmaking.DABKEMNEPLM>("Join game already in progress");
+		this.DJPHNJGKJPL = true;
+		int[] playerIDs = null;
+		switch (KHIJCFMFKHI)
+		{
+			case PFPFLMJDKIB.LeaveParty:
+				this.KFGBIOFMANN();
+				break;
+			case PFPFLMJDKIB.InviteParty:
+			case PFPFLMJDKIB.PartyAutoFollow:
+				if (Player.LocalPlayerExists && Player.LocalPlayer.PlayerParty.PartySize > 1)
+					playerIDs = Player.LocalPlayer.PlayerParty.GetPlayerIDs(false);
+				break;
+			case PFPFLMJDKIB.EveryoneAutoFollow:
+				playerIDs = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Select(NOIGDGIHCIC.PFFFCAEODGF(false), RecoveredStaticCallbacks.Cache_275_0 ?? (RecoveredStaticCallbacks.Cache_275_0 = new Func<CHILKDJABBF, int>(RecoveredStaticCallbacks.Instance.SelectActorNumber))));
+				break;
+		}
+		this.StartCoroutine(new IFMAOFGHNJB(0) { _003C_003E4__this = this, message = OFCFPGACNJB });
+		return AFLCHHFPDKN(playerIDs).LEFPGJEKFGF(this.GJKHNLEPFIL).EBIHDILAPPK(new Action<Matchmaking.DABKEMNEPLM>(this.PPHKGPPJHHG));
 	}
 
 	private void BHPLNMNFJOH(Matchmaking.DABKEMNEPLM COKEHKMDIDL)
@@ -2988,11 +3037,20 @@ remove {
 	[CompilerGenerated]
 	private void GJKHNLEPFIL(string NLJOHEKGNDH)
 	{
+		this.DJPHNJGKJPL = false;
+		SingletonMonoBehaviour<NotificationManager>.Instance.Play((PCBHIGOMCDE)1, "Unable to change rooms", "If this persists, contact support", 5f, null, null);
 	}
 
 	[CompilerGenerated]
 	private void PPHKGPPJHHG(Matchmaking.DABKEMNEPLM MLDANHIGANI)
 	{
+		if ((int)MLDANHIGANI == 0) return;
+		this.DJPHNJGKJPL = false;
+		string message;
+		string title;
+		GetJoinGameErrorCodeMessage(MLDANHIGANI, out message, out title);
+		if (!string.IsNullOrEmpty(message))
+			SingletonMonoBehaviour<NotificationManager>.Instance.Play((PCBHIGOMCDE)1, message, title, 5f, null, null);
 	}
 
 	[CompilerGenerated]
