@@ -471,15 +471,15 @@ get 			{
 
 	private IDisposable OMHADFCPKJJ;
 
-	private OFDHBOEDNCN AIDHPHJKAMP;
+	private OFDHBOEDNCN AIDHPHJKAMP = new OFDHBOEDNCN("BootSequence");
 
 	private bool LIPOFDEAMPE;
 
 	private static int JKGHHHKBONP;
 
-	private int CGCGDEEJADP;
+	private int CGCGDEEJADP = -1;
 
-	private float KEEBMEBDMMH;
+	private float KEEBMEBDMMH = -1f;
 
 	private bool HNLBNHFAEIF;
 

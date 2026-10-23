@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122693651,
+  "bytes": 122695912,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -424,7 +424,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "7c4fed735ca0147740fec23402a01926544feabd9d60ae568b65bab10a1188d2",
+      "sha256": "04494d500eee2121b0878471d6b6240e46601b08dd92a2fc64ef0df80b9e2941",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -1916,7 +1916,7 @@
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
       "bytes": 1782784,
-      "sha256": "e453fa46a96c50804ddfda5f9e0b53542494f8787edfef60a586a7ee9e204f1d",
+      "sha256": "81af48be206236bbf56278e54644ef3e6cfd12ec859ece9f0596acb94c9466f3",
       "reasons": [
         "complete_required_SDK_plugin_subtree"
       ]
@@ -12595,8 +12595,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/BootSequence.cs",
-      "bytes": 29845,
-      "sha256": "775979617e5dae4c12d7d76bcf20cfc90952c15542267cfccb4d52deaf2d787c",
+      "bytes": 29890,
+      "sha256": "0a82b440135718afbc9689171b932e1b096c9bc40e9bfcff11e90449a680aa82",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -37131,8 +37131,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/OFDHBOEDNCN.cs",
-      "bytes": 1238,
-      "sha256": "4133b883a7ceaab415b4a0a1ef8c1117cf238a42fe7bdbc6cfbd44c54db12d98",
+      "bytes": 3454,
+      "sha256": "4b8b35d36f835e853a4930ee134c6546b5ef88788ba9dfb21f2e55bf44518729",
       "reasons": [
         "actual_code_or_source_definition"
       ]
