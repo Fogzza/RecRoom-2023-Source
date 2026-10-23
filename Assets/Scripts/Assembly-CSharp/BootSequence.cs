@@ -561,22 +561,44 @@ get 	{
 
 private INFFBPOJOIJ GAKFIBCGHNA
 {
-get 	{
-		return INFFBPOJOIJ.APP_SETUP;
-	}
-
-set {
-	}
+    get
+    {
+        MDEJADHJOEJ machine = this.HOMDODONEKI;
+        return machine.KKKHNMGIFMF ? (INFFBPOJOIJ)machine.CPDFJCCALIA : (INFFBPOJOIJ)(-1);
+    }
+    set
+    {
+        MDEJADHJOEJ machine = this.HOMDODONEKI;
+        bool initialized = machine.KKKHNMGIFMF;
+        int current = initialized ? machine.CPDFJCCALIA : -1;
+        if (current == (int)value || !initialized) return;
+        IDisposable operation = this.OMHADFCPKJJ;
+        if (operation != null)
+        {
+            operation.Dispose();
+            machine = this.HOMDODONEKI;
+        }
+        machine.KFGGILLHJNK(unchecked((ushort)value));
+    }
 }
 
 public static bool IsBootSequenceReadyForSceneChanges
 {
-get 	{
-		return false;
-	}
-
-set {
-	}
+    get { return NJLKPOAHJOG; }
+    set
+    {
+        if (NJLKPOAHJOG == value) return;
+        NJLKPOAHJOG = value;
+        try
+        {
+            Action changed = KMHAJLFDEJA__BackingField;
+            if (changed != null) changed();
+        }
+        catch (Exception error)
+        {
+            UnityEngine.Debug.LogException(error);
+        }
+    }
 }
 
 public OFDHBOEDNCN Clock
@@ -621,11 +643,30 @@ set {
 	}
 }
 
-public static event Action OnReadyForPresenceChanged {
-add {
-	}
-remove {
-	}
+public static event Action OnReadyForPresenceChanged
+{
+    add
+    {
+        Action current = KMHAJLFDEJA__BackingField;
+        Action compared;
+        do
+        {
+            compared = current;
+            Action updated = (Action)Delegate.Combine(compared, value);
+            current = System.Threading.Interlocked.CompareExchange(ref KMHAJLFDEJA__BackingField, updated, compared);
+        } while (!object.ReferenceEquals(current, compared));
+    }
+    remove
+    {
+        Action current = KMHAJLFDEJA__BackingField;
+        Action compared;
+        do
+        {
+            compared = current;
+            Action updated = (Action)Delegate.Remove(compared, value);
+            current = System.Threading.Interlocked.CompareExchange(ref KMHAJLFDEJA__BackingField, updated, compared);
+        } while (!object.ReferenceEquals(current, compared));
+    }
 }
 
 	private void IFBHEMGGLOB(string NLJOHEKGNDH)
@@ -762,21 +803,53 @@ remove {
 		return null;
 	}
 
-	private void OGGHGLCGMKC(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void OGGHGLCGMKC(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    UnityEngine.Screen.fullScreen = true;
+    for (int sceneIndex = 0; sceneIndex < UnityEngine.SceneManagement.SceneManager.sceneCount; sceneIndex++)
+    {
+        UnityEngine.SceneManagement.Scene scene = UnityEngine.SceneManagement.SceneManager.GetSceneAt(sceneIndex);
+        UnityEngine.GameObject[] roots = scene.GetRootGameObjects();
+        for (int rootIndex = 0; rootIndex < roots.Length; rootIndex++)
+        {
+            UnityEngine.GameObject root = roots[rootIndex];
+            if (!root.CompareTag("BootSequence_DoNotPersist")) GDNHHONMGKD.BPPJHLGEFMH(root);
+        }
+    }
+    RecRoom.LocalPlayerController.Instance.EnterAppInitializingState();
+    CameraFade.Instance.FadeOut((CameraFade.BAIBOJEOOGB)5, true, -1f, 0f);
+    HLNFDOBEGJO overlay;
+    if (MPAAIECKLGA.CFHDLGEGDFD.IJDPOKFHBJA<HLNFDOBEGJO>(out overlay)) overlay.BEBKKLAHFHC();
+    this.AIDHPHJKAMP.OJFIFFKKFLH("FinishLoadSceneAsync(ACCOUNT_SELECTION_SCENE)", 0f);
+    LBGKPEOAAGJ.JCEAIIAMMBK("TitleScreen", UnityEngine.SceneManagement.LoadSceneMode.Single).EBIHDILAPPK(this.ICBMGMAMENI);
+}
 
 	private void FAPDJLLMBFI()
 	{
 	}
 
-	private void DPKHEPKPGDD(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void DPKHEPKPGDD(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    this.ABPPEFLFCGO = "Starting PreInitialize...";
+    TMPro.TextMeshPro.TryBuildEmojiSequenceLookupTree(TMPro.TMP_Settings.defaultEmojiAsset);
+    MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<FMDMKFFJHNM>(null).OLFBNALEEFJ(NOIGDGIHCIC.BANEFAEGNBE);
+    MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<PNLAGMLMLPN>(null).OLFBNALEEFJ(Photon.Voice.PUN.PhotonVoiceNetwork.Instance.Client);
+    PlatformManager platform = PlatformManager.Instance;
+    this.GAIINAIAKJM = this.ELAFAAHOIJK("PlatformManager.PreInitialize", platform.PreInitialize)
+        .PIELKGNNIII(this.MHFKMOLKHII, null)
+        .EBIHDILAPPK(this.ODAPNIIGAEC)
+        .PIELKGNNIII(this.FAHEBIJEPGP, null)
+        .EBIHDILAPPK(this.EBDMIICCAMM)
+        .LEFPGJEKFGF(this.IFBHEMGGLOB);
+}
 
-	private void AEHHFAKCOMG(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void AEHHFAKCOMG(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    this.AIDHPHJKAMP.IGPCOAEGHAL("(Before Login)");
+    this.AIDHPHJKAMP.OJFIFFKKFLH("(Login)", 0f);
+    this.ABPPEFLFCGO = "Waiting for login...";
+    this.AIDHPHJKAMP.FHBILIJBOGI("(Waiting for Rec Room)");
+}
 
 	public void StartPhotonPing()
 	{
@@ -800,21 +873,81 @@ remove {
 	{
 	}
 
-	private void BIIKBFDHAHL(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void BIIKBFDHAHL(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    this.AIDHPHJKAMP.IGPCOAEGHAL("(Login)");
+    this.AIDHPHJKAMP.OJFIFFKKFLH("(After Login)", 0f);
+    this.ABPPEFLFCGO = "Downloading player data...";
+    MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<IILDCCEMGBA>(null).LGPFBIHNCNF(true);
+    IJEHEPHLCII.OFDKPDDLIJC.IHEKMEOIBOI();
+    PUNNetworkManager.Instance.Initialize();
+    PUNNetworkManager.Instance.PrefetchInitialRoomDetails();
+    NCOKFFGPIJM<IReadOnlyDictionary<string, int>> pings = this.NKBHGBEDHDA;
+    Action<IReadOnlyDictionary<string, int>> savePings = PUNNetworkManager.Instance.SetPhotonRegionPreconnectionPings;
+    pings.EBIHDILAPPK(savePings);
+    this.GAKFIBCGHNA = INFFBPOJOIJ.CALIBRATION;
+}
 
-	private void MNCPFJLNGOP(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void MNCPFJLNGOP(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    if (!RecRoom.RoomCalibration.RequiresCalibration)
+    {
+        this.GAKFIBCGHNA = INFFBPOJOIJ.POST_LOGIN_INITIALIZATION;
+        return;
+    }
+    this.ABPPEFLFCGO = "Waiting for Calibration...";
+    this.AIDHPHJKAMP.FHBILIJBOGI("(Waiting for Rec Room)");
+    this.AIDHPHJKAMP.OJFIFFKKFLH("WaitForCalibration", 0f);
+    this.MPPKEIGBAFL = true;
+    RecRoom.RoomCalibration.LoadDormRoomOnCompletion = false;
+    LBGKPEOAAGJ.JCEAIIAMMBK("room_calibration", UnityEngine.SceneManagement.LoadSceneMode.Single);
+}
 
-	private void AMLPOGGOFMO()
-	{
-	}
+private void AMLPOGGOFMO()
+{
+    if (!RecRoom.RoomCalibration.Completed) return;
+    this.AIDHPHJKAMP.IGPCOAEGHAL("WaitForCalibration");
+    this.AIDHPHJKAMP.NOMPIEABHOP("(Waiting for Rec Room)");
+    this.GAKFIBCGHNA = INFFBPOJOIJ.POST_LOGIN_INITIALIZATION;
+}
 
-	private void BKMCHPEBLIP(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void BKMCHPEBLIP(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    if (this.BONOPEJBIHF)
+    {
+        this.GAKFIBCGHNA = INFFBPOJOIJ.LOAD_INITIAL_SCENE;
+        return;
+    }
+    this.BONOPEJBIHF = true;
+    this.ABPPEFLFCGO = "Post login initialize...";
+    PlatformManager platform = PlatformManager.Instance;
+    this.ELAFAAHOIJK("PlatformManager.PostLoginInitialize", platform.PostLoginInitialize);
+    if (!AmplitudeAnalytics.AmplitudeAnalyticsClient.IsInitialized)
+    {
+        HJDBOADFHMC? category = HJDBOADFHMC.KAAIIIEPCIA;
+        PNAABCMOHGM.GGALHNMLAOJ("AnalyticsClient is not initialized post login", category);
+    }
+    else
+    {
+        AmplitudeAnalytics.AmplitudeAnalyticsClient analytics = AmplitudeAnalytics.AmplitudeAnalyticsClient.Instance;
+        CodeStage.AntiCheat.ObscuredTypes.ObscuredInt accountId = MKKJLGPDDKJ.ELLPBOAKGMN.JDONLFOPABP;
+        analytics.AccountId = accountId.BAAIFKJODCJ();
+    }
+    try
+    {
+        MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<EFGIDDLNECL>(null).FNBODPPGFNA();
+    }
+    catch (Exception error)
+    {
+        string message = string.Concat("IPlatformNotificationManager::HandleAccountLogin -- Exception: ", error.Message);
+        HJDBOADFHMC? category = HJDBOADFHMC.KAAIIIEPCIA;
+        PNAABCMOHGM.GGALHNMLAOJ(message, category);
+    }
+    CKIFGIGBCPI.MFAFACPNOBJ();
+    CameraFade.Instance.FadeOut((CameraFade.BAIBOJEOOGB)6, true, 0.5f, 0f)
+        .GCGCBFABOIJ(this.JDFBJDHEOHM)
+        .EBIHDILAPPK(this.DNIJJJBEMFB);
+}
 
 	private void BFNHDLAFFIN()
 	{
@@ -824,13 +957,40 @@ remove {
 	{
 	}
 
-	private void NGMNELNLNLB()
-	{
-	}
+private void NGMNELNLNLB()
+{
+    if (this.HOJNHEDAFBJ == null || !this.HOJNHEDAFBJ.IsCompleted) return;
+    this.AIDHPHJKAMP.IGPCOAEGHAL("Wait for AsyncBatch");
+    this.ABPPEFLFCGO = "Initializing core systems...";
+    try
+    {
+        this.AIDHPHJKAMP.OJFIFFKKFLH("InitializeCoreSystems", 0f);
+        this.DOGBOOLBKHJ();
+        this.AIDHPHJKAMP.IGPCOAEGHAL("InitializeCoreSystems");
+    }
+    catch (Exception error)
+    {
+        string message = string.Concat("Error initializing Core Systems: ", error == null ? null : error.ToString());
+        HJDBOADFHMC? category = HJDBOADFHMC.KAAIIIEPCIA;
+        PNAABCMOHGM.GGALHNMLAOJ(message, category);
+        UnityEngine.Debug.LogException(error);
+        this.IFBHEMGGLOB("Error initializing Core Systems");
+    }
+    if (!this.MPPKEIGBAFL && RecRoom.RoomCalibration.UsesRoomCalibration && !TutorialManager.Instance.HasCompletedNUXTutorial)
+        this.GAKFIBCGHNA = INFFBPOJOIJ.CALIBRATION;
+    else
+        this.GAKFIBCGHNA = INFFBPOJOIJ.LOAD_INITIAL_SCENE;
+}
 
-	private void LOMLBLLNIGE(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void LOMLBLLNIGE(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    IsBootSequenceReadyForSceneChanges = true;
+    this.ABPPEFLFCGO = "Loading initial scene...";
+    this.AIDHPHJKAMP.OJFIFFKKFLH("LoadInitialScene", 0f);
+    if (PlatformManager.Instance.IsCrossPlatformWarningRequired()) this.IBDKAJJPLGA.LEODHBOENKA((HGMGOPODGJN)0, false);
+    this.BKDKLOMJKBG();
+    this.OFHEFBICKDJ().FBKDIKEACFK(this.JDIIDFMMGBH);
+}
 
 	private NJIJPADHPEC PAGOIHDMGIM()
 	{
@@ -857,13 +1017,32 @@ remove {
 	{
 	}
 
-	private void LPJNFIBIKGD()
-	{
-	}
+private void LPJNFIBIKGD()
+{
+    if (!this.PHBBJJLKPKG.IsCompleted || this.DFECAIFGNCA.CPDFJCCALIA != 3 || PUNNetworkManager.Instance.IsJoiningRoom || !CameraFade.Instance.IsFadedIn) return;
+    this.AIDHPHJKAMP.IGPCOAEGHAL("PostLoadInitialScene");
+    this.AIDHPHJKAMP.IGPCOAEGHAL("(Play Pressed To Initial Room Visible)");
+    this.AIDHPHJKAMP.IGPCOAEGHAL("(Total)");
+    if (this.PHFHOMMGCGJ) this.GAKFIBCGHNA = INFFBPOJOIJ.ERROR;
+    this.AIDHPHJKAMP.ILBACJJBKKJ();
+    try
+    {
+        string error = this.HLLLBLNAABH;
+        OFDHBOEDNCN clock = this.AIDHPHJKAMP;
+        float initialTime = this.KEEBMEBDMMH;
+        int sequenceIndex = this.CGCGDEEJADP;
+        bool experiencedFocusChange = this.KBIFGLJCCEI;
+        OILDLLGEMKP.JMONEBDIHKK(error, clock, initialTime, sequenceIndex, experiencedFocusChange);
+    }
+    catch { }
+    DAHKMIJGAOC.OKHBMFAKOKL(this, this.CBFAAHKFJCI);
+    UnityEngine.Object.Destroy(this.gameObject);
+}
 
-	private void EJKPIIAGILL(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
-	{
-	}
+private void EJKPIIAGILL(ushort EHLPLCEJPDD, ushort HKDHPIPECPL)
+{
+    PlatformManager.Instance.TransformErrorMessage(this.HLLLBLNAABH).EBIHDILAPPK(this.NEELOJNFEDL);
+}
 
 	private void GGNMOINIFLF()
 	{

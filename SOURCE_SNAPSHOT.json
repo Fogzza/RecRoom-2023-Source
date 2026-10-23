@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122684637,
+  "bytes": 122693651,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -12595,8 +12595,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/BootSequence.cs",
-      "bytes": 20831,
-      "sha256": "a585800e6f21891d0f8a4b6a33d11d2701ac3430d0c3c6a599c1b74ddd5e1289",
+      "bytes": 29845,
+      "sha256": "775979617e5dae4c12d7d76bcf20cfc90952c15542267cfccb4d52deaf2d787c",
       "reasons": [
         "actual_code_or_source_definition"
       ]
