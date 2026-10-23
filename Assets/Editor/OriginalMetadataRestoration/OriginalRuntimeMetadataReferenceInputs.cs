@@ -23,7 +23,7 @@ new CuratedRuntimeMetadataReference("Circuits.Static.EV","10af1b654a2fe279fbc4b5
 new CuratedRuntimeMetadataReference("Circuits.Static.RecRoom","9101c7341344639a7922f22d8e7bb83de6d2d41be5bdc87b724fa8a9fa91af58"),
 new CuratedRuntimeMetadataReference("Circuits.Static.Utilities","e57016e6c0a3955ffd8f1bc448273484ddcdc65673af6507ea87575936a32d43"),
 new CuratedRuntimeMetadataReference("Circuits.V2","7c98a27bcc909d7c0f563d38d2521ef49b37e6ac2d0cc57bcfb4ec9f0f38f48f"),
-new CuratedRuntimeMetadataReference("Codestage.Anticheattoolkit.Runtime","e0aac1d8cd1390a9d71bbac394fc070ac767c9dae971fe6c4195a8ef044ededc"),
+new CuratedRuntimeMetadataReference("Codestage.Anticheattoolkit.Runtime","4a6d217232e5cfb50d31162f4ceac586e03ccd452fd0b003a39ebcd03f4ad325"),
 new CuratedRuntimeMetadataReference("EasyAntiCheat.Client","cfd189fc5459b2a23be16a16849d12938485cbf0a7bb475d1e86c86d0a1ac9e1"),
 new CuratedRuntimeMetadataReference("Google.Protobuf","6ef100447dfa9662bffde7e222735b9416e13efcdbd37d74b42ce29e5c1cdb47"),
 new CuratedRuntimeMetadataReference("Kyub.EmojiSearch","379bc4cd11a9442222ede2474b623002e26f7a844cfb330ba851002eba5377f9"),

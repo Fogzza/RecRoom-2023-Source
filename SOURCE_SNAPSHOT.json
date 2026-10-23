@@ -424,7 +424,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "7ca55d32dac3bfd1260ce46fcd5aa7a475f3c568fd2c7261ecf736cf6497d84f",
+      "sha256": "c4fa2bb9c87fbcdc7e0341fe7506237b5ad32823f0451c7dbbec8a1b92f8d7b5",
       "reasons": [
         "actual_code_or_source_definition"
       ]
@@ -1457,7 +1457,7 @@
     {
       "path": "Assets/Plugins/Codestage.Anticheattoolkit.Runtime.dll",
       "bytes": 50176,
-      "sha256": "e0aac1d8cd1390a9d71bbac394fc070ac767c9dae971fe6c4195a8ef044ededc",
+      "sha256": "4a6d217232e5cfb50d31162f4ceac586e03ccd452fd0b003a39ebcd03f4ad325",
       "reasons": [
         "complete_required_SDK_plugin_subtree"
       ]
