@@ -92,6 +92,16 @@
       "sha256": "93f876fb56cd2f5d4b40be43ea19656891ecaf2ccf72aac7c3250262676af1cb"
     },
     {
+      "path": "tools/recovery/ContainerLookupEffects.v2.template.cs",
+      "bytes": 17071,
+      "sha256": "c61323250799618c1db8a64fe11bde4a1873ee570ba65322abab85dbc0a17db1"
+    },
+    {
+      "path": "tools/recovery/ContainerLookupEffects.v3.template.cs",
+      "bytes": 18146,
+      "sha256": "d6ad5a82af3c97323a966038eba434d0c7648355390d8677c8647949e3d392c8"
+    },
+    {
       "path": "tools/recovery/ContainerLowerAllocationSmoke.cs",
       "bytes": 7494,
       "sha256": "880ba83979edca5c35f023b2e438679fc7f3455e73fb8cb2a0ff55f4179c7d3c"
@@ -100,6 +110,21 @@
       "path": "tools/recovery/ContainerLowerEffects.template.cs",
       "bytes": 15631,
       "sha256": "55804826ad9714865e14481ce425b6661ca1b73e93db933dec94a2b3deaab983"
+    },
+    {
+      "path": "tools/recovery/ContainerProviderDiscoveryEffects.template.cs",
+      "bytes": 20780,
+      "sha256": "d19b66594aaa3dfe1d67232fc3257f379f03a95f0cbc3dd4b8dfd9f87aa2446e"
+    },
+    {
+      "path": "tools/recovery/ContainerProviderDiscoveryEffects.v2.template.cs",
+      "bytes": 20796,
+      "sha256": "ebf9b5cfe76f0fbb340346d9eea7e7492d1f6528c17fd877fb8e5d84f5ec278c"
+    },
+    {
+      "path": "tools/recovery/ContainerProviderDiscoveryEffects.v3.template.cs",
+      "bytes": 22182,
+      "sha256": "020be735f3a196a57e5531fe0ff96cc247c0682a6c146451f57c4184d3243443"
     },
     {
       "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
@@ -150,6 +175,16 @@
       "path": "tools/recovery/CurrentScriptMetadataInventory.cs",
       "bytes": 6891,
       "sha256": "b7bf770dd68876e10946e42abe3dc811f2e76a2632be0ae01b3fec62a0514e13"
+    },
+    {
+      "path": "tools/recovery/CustomUrpFactoryCacheControls.template.cs",
+      "bytes": 21058,
+      "sha256": "611df48d0b499bfa11243ea41e5059d164f5579594207fa74f7d12a59795ea7f"
+    },
+    {
+      "path": "tools/recovery/CustomUrpSevenBodyMonoSmoke.cs",
+      "bytes": 13858,
+      "sha256": "92fcaf985daaf9f12e59dcc3a7f097968f98593c1ed8b804706cc807179099e1"
     },
     {
       "path": "tools/recovery/DisassembleOculusVersion.cs",
@@ -205,6 +240,11 @@
       "path": "tools/recovery/FiniteAOTResolverFixtures.cs",
       "bytes": 3509,
       "sha256": "3533176e018ebdcb8f93aa26faa7fdba4032be1ce52e36b3db1b9065a61b3c4c"
+    },
+    {
+      "path": "tools/recovery/FiniteOriginalDefinitionReindex.cs",
+      "bytes": 4744,
+      "sha256": "c5e6d17f223f5d5ba79405a12226312e80fadce46b19de6b67f49660c493b2dd"
     },
     {
       "path": "tools/recovery/FrameworkScopeFixtures.cs",
@@ -382,6 +422,26 @@
       "sha256": "fa9431100ca05574088c75508e731cc493a15c2c79c84c230a109df8914439b5"
     },
     {
+      "path": "tools/recovery/RecoveredContainerLookupDonor.v2.cs",
+      "bytes": 1487,
+      "sha256": "ec2b5ab1faebc535e4fff7438be5b31ba031ab76556987f1e01f42c7d9cd2816"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerLookupMember.cs",
+      "bytes": 635,
+      "sha256": "6c64d8e9362a5dd62f9d1f1f62e83e5e84b1e64e9d5894f0a0f73d2612f877eb"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerProviderDiscoveryDonor.cs",
+      "bytes": 3485,
+      "sha256": "eedfab2c9ae70adeaf2714e28dd92e876d78a8ecbe7d0f223c969515a1f78291"
+    },
+    {
+      "path": "tools/recovery/RecoveredContainerProviderDiscoveryMember.cs",
+      "bytes": 1035,
+      "sha256": "7fc0441f839971909629e6d2be00ce62f3617991ee2ee2a4c7e4822107dd385e"
+    },
+    {
       "path": "tools/recovery/RecoveredDisposedGuardDonor.cs",
       "bytes": 345,
       "sha256": "a9cfd70c06fc8146553b1fe432f5b6888b3f6aadf291bcd4f753b53ec13fb456"
@@ -497,9 +557,29 @@
       "sha256": "75fff2c8d879293a63e6c92b04920139d968069025cc25bed0a0166c0d4d7915"
     },
     {
+      "path": "tools/recovery/StageContainerLookupDiscoveryBodies.cs",
+      "bytes": 18881,
+      "sha256": "d8efada2d0a735ea9c758acda34f92a740c2dd7d16e95663b86ef3bc251c237f"
+    },
+    {
       "path": "tools/recovery/StageContainerLowerBodies.v3.cs",
       "bytes": 22643,
       "sha256": "f7df0905759686f65829d677c4ddda985ffa4b87f7f51d7942758254f6d24e5d"
+    },
+    {
+      "path": "tools/recovery/StageCustomUrpFactoryCacheBodies.cs",
+      "bytes": 15723,
+      "sha256": "068349b92acc98f4013aa2deedd3ea20284c856b9c85985606ce53449d577c75"
+    },
+    {
+      "path": "tools/recovery/StageCustomUrpFactoryCacheBodies.v2.cs",
+      "bytes": 17033,
+      "sha256": "6320df929bbc412c265f49b32b0edd0c271a98c7cce94e2818be89d944d150d0"
+    },
+    {
+      "path": "tools/recovery/StageCustomUrpFactoryCacheBodies.v3.cs",
+      "bytes": 17556,
+      "sha256": "c8e776debe40544d55cbd073750d4d0fe6a50cc16c9bf565b77b99524fb58b1b"
     },
     {
       "path": "tools/recovery/StageSingletonAccessorBodies.cs",
@@ -587,6 +667,11 @@
       "sha256": "3b91987a9c98b69af1f903b4cc5bc9c58f2cce94c16e4b7be3337af7278f43b9"
     },
     {
+      "path": "tools/recovery/TitleMusicCallbackEffects.template.cs",
+      "bytes": 27081,
+      "sha256": "9e743b1a3c7b2a0523982a7bb0b69efe76592627354651c1bfcf8318e1359385"
+    },
+    {
       "path": "tools/recovery/TitlePageRouteEffects.v2.template.cs",
       "bytes": 9326,
       "sha256": "ee5b9d5220d5befeea479b0c4ba523eacf4d1cb81a338f2896884324e54b98ca"
@@ -642,6 +727,16 @@
       "sha256": "1c81dd298f2bbc95f26619eea154be16029880e3a9af1cf6f57c3284b75d5ff9"
     },
     {
+      "path": "tools/recovery/apply_container_lookup_discovery_bodies_reviewed.py",
+      "bytes": 10828,
+      "sha256": "3438c044b15d0830694023acfdf017fd21d7cfebefaab75e8216446bab9e6349"
+    },
+    {
+      "path": "tools/recovery/apply_container_lookup_discovery_bodies_reviewed_v2.py",
+      "bytes": 12179,
+      "sha256": "598a9af42a20200b1a16aace3213a371fcb70258af1cd8604846afe1764ddb47"
+    },
+    {
       "path": "tools/recovery/apply_container_lower_bodies_reviewed.py",
       "bytes": 15213,
       "sha256": "1a49c635c38e2edd04986cf15c1274f1f1a1abcd6f47e93b5e78f9a2f351af0c"
@@ -685,6 +780,11 @@
       "path": "tools/recovery/apply_title_manager_start_reviewed.py",
       "bytes": 11279,
       "sha256": "8688c870cf88fa00bcb40c5e3ba7b7461de03aaaac79fbfa7953526df04edfb9"
+    },
+    {
+      "path": "tools/recovery/apply_title_music_callback_slice_reviewed.py",
+      "bytes": 11478,
+      "sha256": "e819af26012275aa3e06393d6f97cafc5570b2efd2172252df13db7afa005ec5"
     },
     {
       "path": "tools/recovery/apply_title_page_route_reviewed_v2.py",
@@ -755,6 +855,21 @@
       "path": "tools/recovery/audit_current_client_endpoint_configuration.py",
       "bytes": 6387,
       "sha256": "621637017ca2830db3ee9e9bea171166a40ec8ee0ec55397b94e6cfcb5307ca3"
+    },
+    {
+      "path": "tools/recovery/audit_custom_urp_cecil_reindex.py",
+      "bytes": 11295,
+      "sha256": "eddab5f598a824116005ba3cfd173e9221f435f3b3aeb070bdd341396c2cee45"
+    },
+    {
+      "path": "tools/recovery/audit_custom_urp_cecil_reindex_v2.py",
+      "bytes": 9075,
+      "sha256": "ccfd1005718fb8a89f3dff0758be2cd35c87a48b26e6e5346498d13f7f1e3fa6"
+    },
+    {
+      "path": "tools/recovery/audit_custom_urp_native_loop.py",
+      "bytes": 16270,
+      "sha256": "237b932606e2031d4ccbd4a4790d9e80b9aac2bb47d50ad9b032c686b8336dd2"
     },
     {
       "path": "tools/recovery/audit_emitted_inventory.py",
@@ -930,6 +1045,11 @@
       "path": "tools/recovery/collect_title_display_inline_contracts.py",
       "bytes": 5086,
       "sha256": "ce199832c322513e0e742bfd8ca96e063290a6c5d52c328cc3db036254e87e08"
+    },
+    {
+      "path": "tools/recovery/collect_title_music_dependencies_joins.py",
+      "bytes": 6789,
+      "sha256": "dbd61b48fa3ecc45cf1cfb517ad2fe119270fa1181f7a879da7bc473091a1cd4"
     },
     {
       "path": "tools/recovery/collect_title_page_route_native.py",
@@ -1702,6 +1822,11 @@
       "sha256": "8a29a58bf83227a16c53881bd657a01749cd1a4a6d298d331daa67f31dbc654c"
     },
     {
+      "path": "tools/recovery/prepare_title_music_dependencies_native.py",
+      "bytes": 6979,
+      "sha256": "610d3cf62be75515b9beedd574c7dca2b790bf9e1dacac5ddd7ef79caf676466"
+    },
+    {
       "path": "tools/recovery/prepare_title_remaining_callbacks_native.py",
       "bytes": 6401,
       "sha256": "3c107783d8c5ee8192d69315cee24f159514f506e0cf15649b1573347c3c828e"
@@ -1812,6 +1937,11 @@
       "sha256": "733ba61f1762c0e9f577949757184cdea7d494baf33eb640bde13c80f687f7ac"
     },
     {
+      "path": "tools/recovery/prove_custom_urp_factory_wrappers.py",
+      "bytes": 18081,
+      "sha256": "50c9ecd206614408d795103b204daeef8061386ab190d9c2dd4f51cb995f7bb7"
+    },
+    {
       "path": "tools/recovery/prove_embedded_oculus_openvr_descriptors.py",
       "bytes": 14555,
       "sha256": "a203f452fb52646b879969532d938e13e8b660e444503a2edc64be224f4903ab"
@@ -1820,6 +1950,16 @@
       "path": "tools/recovery/prove_genuine_editor_builtin_shader_identities.py",
       "bytes": 11219,
       "sha256": "17b68980e4e38ece5b55a83622229b0f4c1f9c58cd953ceafbee435c126c8bad"
+    },
+    {
+      "path": "tools/recovery/prove_live_lookup_member_native.py",
+      "bytes": 11986,
+      "sha256": "bd7decac616e77b30cce16d2a70163ad93e84673ba05870f7ec7739d87f613fb"
+    },
+    {
+      "path": "tools/recovery/prove_live_provider_discovery_native.py",
+      "bytes": 12288,
+      "sha256": "04ce00d8eb552a10b4c02b396db1e812fb61a0db4cca04809abaa67d4518ebaf"
     },
     {
       "path": "tools/recovery/prove_nameserver_request_factory_cfg.py",
@@ -1947,6 +2087,11 @@
       "sha256": "7f7e0a1ccf169cc164f52361e42eb24aa0e6ef344e2552df6ba26be7f2195cf3"
     },
     {
+      "path": "tools/recovery/resolve_live_lookup_dependency_joins.py",
+      "bytes": 4868,
+      "sha256": "40efd5d50ee4b4d84cf5a37885616a0df8a713e4c87100f11292f08e48502d9b"
+    },
+    {
       "path": "tools/recovery/resolve_original_shader_dependencies.py",
       "bytes": 5874,
       "sha256": "ad3d5d95cbe0646ec5a5b8f5eb0d068eb23fb7e80bd74b66f69c872c836091a9"
@@ -2072,6 +2217,16 @@
       "sha256": "764818d4176cf1d7c392409b9df1da49762c82346bef58b36bc63c5b967b305e"
     },
     {
+      "path": "tools/recovery/run_container_lookup_harness.py",
+      "bytes": 11867,
+      "sha256": "79aca5350e8e5768a5e544a386bad0f76c82af419302ce8411f96ac9fc9ef815"
+    },
+    {
+      "path": "tools/recovery/run_container_lookup_harness_v2.py",
+      "bytes": 15584,
+      "sha256": "030fbdc7691891b1dd816a08a123422eaa891d703fb8842ef32f9c4a41320c89"
+    },
+    {
       "path": "tools/recovery/run_container_lower_allocation_smoke.py",
       "bytes": 16263,
       "sha256": "7a80a70293a1990ee4d865e2ef5e12780748c457d4e6bf24586c53606398f206"
@@ -2080,6 +2235,21 @@
       "path": "tools/recovery/run_container_lower_member_harness_v3.py",
       "bytes": 11659,
       "sha256": "00c86676b113d720082f0df8032d49d0fd95fd4c9953eca290f10e819c22f2a1"
+    },
+    {
+      "path": "tools/recovery/run_container_provider_discovery_harness.py",
+      "bytes": 15613,
+      "sha256": "a82bb01f35c90938a81ed2b3cdb2a3190ee6fc346bc3219de322ef6643bf7561"
+    },
+    {
+      "path": "tools/recovery/run_container_provider_discovery_harness_v2.py",
+      "bytes": 18498,
+      "sha256": "392a7962cd333c631f7ab25dc5b12224a492a0e974bf949f3a7902d5b7fb3a31"
+    },
+    {
+      "path": "tools/recovery/run_container_provider_discovery_harness_v3.py",
+      "bytes": 22157,
+      "sha256": "3f4a87b1024ffeb2398b17854e1435c4c5632ed4d3b5d59cbbcddaaae4fdcf49"
     },
     {
       "path": "tools/recovery/run_core_field_attribute_witness.py",
@@ -2095,6 +2265,26 @@
       "path": "tools/recovery/run_current_script_metadata_inventory.py",
       "bytes": 3686,
       "sha256": "6562e0bd768b847d5aef6bb6a678a062f4c49ecf6f443f0c57248ebd2f53f300"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_dependency_decode.py",
+      "bytes": 9067,
+      "sha256": "9833afdffdf04baf7f68aa8db85e7ad04c139aedc3e1eb46b0fb147e3495160d"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_factory_cache_controls.py",
+      "bytes": 10275,
+      "sha256": "7f1f6f3c2636aafc9bce1884c255ed307fff24231a9ca01f422cee39dd453ab2"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_factory_decode.py",
+      "bytes": 6586,
+      "sha256": "bec4660601faea4d7c7f41ee8d1b1dba2491cfbdedc64d3dc8691be43b7b8ca4"
+    },
+    {
+      "path": "tools/recovery/run_custom_urp_seven_body_mono_smoke.py",
+      "bytes": 18641,
+      "sha256": "cb2429288f13e6afdfdfdc2b8f1b0cee403f4b9f73e70f0157aeb5062efc502a"
     },
     {
       "path": "tools/recovery/run_eight_original_shader_gpu_probes.py",
@@ -2482,6 +2672,16 @@
       "sha256": "8a2c129ba9a3fe73f33bb9c3ea0b07c4a2149e5cada44fee5eb40814b04daa72"
     },
     {
+      "path": "tools/recovery/run_title_music_callback_harness.py",
+      "bytes": 11998,
+      "sha256": "6e533a901f1f80a8ff56250be4d9a0aad23149abc67fa6e9cbf161c2c8f0c474"
+    },
+    {
+      "path": "tools/recovery/run_title_music_dependencies_decode.py",
+      "bytes": 5388,
+      "sha256": "3c780503091ef182217bbc66c9b1aae1471a1881b1679a6cc9dc11a544fc0d94"
+    },
+    {
       "path": "tools/recovery/run_title_page_route_harness_v2.py",
       "bytes": 9328,
       "sha256": "0fc1d9d614b9738e0ac0cfd4d0a325b9a1bf5161dce96b2e925e564c84aa37e7"
@@ -2537,9 +2737,34 @@
       "sha256": "1effe6395c73609b48a5061e2e0ddddd0d19b40d2d0148305467029b8fdbd70d"
     },
     {
+      "path": "tools/recovery/stage_container_lookup_discovery_bodies.py",
+      "bytes": 11129,
+      "sha256": "325a0fb28d853244d974062c63824e429df85e649bcc2810ce3c4515f7994e62"
+    },
+    {
       "path": "tools/recovery/stage_container_lower_bodies_v3.py",
       "bytes": 16242,
       "sha256": "6ca35cbe3c76242301bed5de845e3e776f392d151db2e1abea0da9f4213dcd55"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_factory_cache_bodies.py",
+      "bytes": 10829,
+      "sha256": "f38540ba30f560b0b30f5349b654efedc234173540ba2496f8493ff031661e31"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_factory_cache_bodies_v2.py",
+      "bytes": 14949,
+      "sha256": "58ec9b1db53b0c99fc660faeec5c42847ad4fea2eb508ae90039dc325df4f37d"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_factory_cache_bodies_v3.py",
+      "bytes": 19253,
+      "sha256": "f160233cdbfe0d1ec2dd76bbb890ac1853047b1da9e07ac4e0b0e49240c11bb4"
+    },
+    {
+      "path": "tools/recovery/stage_custom_urp_shared_cache_candidates.py",
+      "bytes": 13943,
+      "sha256": "cab7313323f27c36219d9a936b6d05d8afee23407c4a1ccd478d81b7839fa3fa"
     },
     {
       "path": "tools/recovery/stage_editor_shader_native_input.py",
@@ -2702,6 +2927,11 @@
       "sha256": "0999896ebd2a4a36c00627a2f56e84a6fac664cc68e12bcd5e5ac7327ad99d4f"
     },
     {
+      "path": "tools/recovery/stage_title_music_callback_slice.py",
+      "bytes": 21189,
+      "sha256": "4ac5ee87e673aa88b57b779bac2169d55d76a0cd289f44cad3c99d7003c76dbc"
+    },
+    {
       "path": "tools/recovery/stage_title_page_route_slice.py",
       "bytes": 9964,
       "sha256": "c66421f6bab5543b500753653a17c90fd305544ba4f3050935cb9328e72d102e"
@@ -2847,5 +3077,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 569
+  "count": 615
 }

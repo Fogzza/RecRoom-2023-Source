@@ -52,7 +52,7 @@ set {
 public ushort CPDFJCCALIA
 {
 get 	{
-		return 0;
+		return this.MFHOAFKBLGN;
 	}
 
 private set {

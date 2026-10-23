@@ -48,6 +48,7 @@ get 			{
 		[DebuggerHidden]
 		public BBOMFKCKKEP(int _003C_003E1__state)
 		{
+			this._003C_003E1__state = _003C_003E1__state;
 		}
 
 		[DebuggerHidden]
@@ -100,6 +101,7 @@ get 			{
 		[DebuggerHidden]
 		public EPCGHFICLMA(int _003C_003E1__state)
 		{
+			this._003C_003E1__state = _003C_003E1__state;
 		}
 
 		[DebuggerHidden]
@@ -329,24 +331,68 @@ get 	{
 
 	private void NDENAIFEGGC(IEnumerator KNMNCHEEHEI)
 	{
+		MLOEPDOPGJD();
+		HEGLMMJABEN = StartCoroutine(KNMNCHEEHEI);
 	}
 
 	private void MLOEPDOPGJD()
 	{
+		AudioManager.StopMusic();
+		Coroutine coroutine = HEGLMMJABEN;
+		if (coroutine != null)
+		{
+			StopCoroutine(coroutine);
+			HEGLMMJABEN = null;
+		}
 	}
 
 	private void NMJIFHLPFNP(float OKBAJEAPIHG)
 	{
+		if (flowModel == null)
+			return;
+		if (flowModel.IsInInterstitialState)
+			return;
+		AudioClip currentMusic = AudioManager.CurrentMusicAudioClip();
+		if (flowModel.IsInChatState || flowModel.IsInFeedState)
+		{
+			if (currentMusic != null)
+				MLOEPDOPGJD();
+			return;
+		}
+		if (flowModel.IsInAccountCreationState)
+		{
+			RecRoomAudioClip music = accountCreationMusic;
+			if (HEGLMMJABEN != null && currentMusic == (music == null ? null : music.audioClip))
+				return;
+			NDENAIFEGGC(MDLLPIFKLJO());
+			return;
+		}
+		if (PlatformManager.Instance.CurrentUnityLauncher == (KDHPMLNMNNO)1)
+		{
+			if (currentMusic != null)
+				MLOEPDOPGJD();
+			return;
+		}
+		RecRoomAudioClip titleMusic = titleScreenMusic;
+		if (HEGLMMJABEN != null && currentMusic == (titleMusic == null ? null : titleMusic.audioClip))
+			return;
+		NDENAIFEGGC(KJNOGCGEIHD());
 	}
 
 	private IEnumerator KJNOGCGEIHD()
 	{
-		return null;
+		return new BBOMFKCKKEP(0)
+		{
+			_003C_003E4__this = this
+		};
 	}
 
 	private IEnumerator MDLLPIFKLJO()
 	{
-		return null;
+		return new EPCGHFICLMA(0)
+		{
+			_003C_003E4__this = this
+		};
 	}
 
 	public void UpdateOrGoToFeed(List<KDEEJHLLLCH> MJFMBHKBJID, DBECJLAIPEL PKGLLJBECJM, bool CKDDPKOJGGJ = false)

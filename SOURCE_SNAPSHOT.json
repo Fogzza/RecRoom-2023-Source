@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11264,
-  "bytes": 121432640,
+  "bytes": 121434686,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -2576,8 +2576,8 @@
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
-      "bytes": 12288,
-      "sha256": "f9c9e42afc0f2d1a7c0b5a9912e7afb625d70fdd85609f0d11b90912bdf2ab8d"
+      "bytes": 12800,
+      "sha256": "9997b88de8261636419c1a9354fd768d8b3b7618ec193d62349908477ba1d170"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
@@ -14311,8 +14311,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/GONBPKCPFNK.cs",
-      "bytes": 2217,
-      "sha256": "1c034e84831e13f19eb38090d35e98703c6bb11be06fc16974b0c43e2b8cab01"
+      "bytes": 2232,
+      "sha256": "45c295b925dab977bdb4874760a0dcd3343b1910ad84fa31c3bdc1650490f2a2"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/GONBPKCPFNK.cs.meta",
@@ -30391,8 +30391,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RRUI/Data/TitleScreenFlowModel.cs",
-      "bytes": 56206,
-      "sha256": "8990602406af5c2b68de21d3802a94b4f65d70b4697a2ac53c25d368f06cb4b9"
+      "bytes": 56425,
+      "sha256": "684983c372983cd14e08faeab00d3aea8485746011de93fee180986597614bad"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/RRUI/Data/TitleScreenFlowModel.cs.meta",
@@ -54116,8 +54116,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs",
-      "bytes": 8281,
-      "sha256": "913efec0b61d45697af166e5de48eae9be20833a39b142be820bf2e983581c04"
+      "bytes": 9581,
+      "sha256": "324cf7031cc3badf423d1a908e7f495736ae27bd6d54b0bf391853d501f3d690"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/TitleScreenManager.cs.meta",

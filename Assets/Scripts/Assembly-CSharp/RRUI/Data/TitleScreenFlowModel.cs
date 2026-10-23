@@ -1298,7 +1298,8 @@ get 		{
 public bool IsInAccountCreationState
 {
 get 		{
-			return false;
+			ushort state = BGBIFFLGANM.CPDFJCCALIA;
+			return state >= 17 && state <= 34;
 		}
 
 }
@@ -1306,7 +1307,8 @@ get 		{
 public bool IsInChatState
 {
 get 		{
-			return false;
+			ushort state = BGBIFFLGANM.CPDFJCCALIA;
+			return state >= 54 && state <= 55;
 		}
 
 }
@@ -1314,7 +1316,7 @@ get 		{
 public bool IsInFeedState
 {
 get 		{
-			return false;
+			return BGBIFFLGANM.CPDFJCCALIA == 56;
 		}
 
 }
@@ -1330,7 +1332,8 @@ get 		{
 public bool IsInInterstitialState
 {
 get 		{
-			return false;
+			ushort state = BGBIFFLGANM.CPDFJCCALIA;
+			return state == 33 || state == 52;
 		}
 
 }
