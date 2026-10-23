@@ -110,7 +110,16 @@ namespace RRUI.Data
 			[SerializeField]
 			private Route mobileRoute;
 
-			public Route Route => null;
+			public Route Route
+			{
+				get
+				{
+					if (!routeIsDifferentOnMobile || !SingletonMonoBehaviour<PlatformManager>.IsInitialized)
+						return route;
+					return MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<MCCKDPKLCIN>(null).SupportsPortraitMode
+						? mobileRoute : route;
+				}
+			}
 		}
 
 		private abstract class EEPNGDEKJOG
@@ -2028,6 +2037,10 @@ get 		{
 
 		public void GoToLogin()
 		{
+			var browser = BrowserModel;
+			if (System.Object.ReferenceEquals(browser, null))
+				return;
+			browser.GoTo(loginPage.Route, false);
 		}
 
 		public void GoToLoginWithAnotherDevice()

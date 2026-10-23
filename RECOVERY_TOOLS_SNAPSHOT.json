@@ -17,6 +17,11 @@
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
     },
     {
+      "path": "tools/recovery/apply_title_login_slice_reviewed.py",
+      "bytes": 9374,
+      "sha256": "0a589e6f1428b86fab6e8614a6bd35dd5bfa907df52b4b95cb3b8bf02eec80a3"
+    },
+    {
       "path": "tools/recovery/archive_sdk_audit_inputs.py",
       "bytes": 1849,
       "sha256": "c5b4d7792b80649dde5ba5726840c01bb6ccedd7c38fc5fcc3df334589f1060b"
@@ -222,14 +227,29 @@
       "sha256": "fa927e0ea8b54b8454c4b8df22a2f2947d71566d69080187f06f486b733b8ba6"
     },
     {
+      "path": "tools/recovery/BuildBuiltinMaterialIdentityFixture.cs",
+      "bytes": 19921,
+      "sha256": "57c9e6a782ebec0af33708555dfd77a2b0f040e532e4cb32d237c553987b1c26"
+    },
+    {
       "path": "tools/recovery/BuildOriginalAGDependencyFixture.cs",
       "bytes": 9604,
       "sha256": "40138abb2af91cf4c8ae35c1072d1cec0e73fdf5b1b83a967b3a14ea61b5e399"
     },
     {
+      "path": "tools/recovery/BuildOriginalShaderBuiltinIdentityFixture.cs",
+      "bytes": 19768,
+      "sha256": "99afdb63efa0579d31330ecd50c0b61c8ece2d9d56e3f8ddd4bdd7a4fffcd24c"
+    },
+    {
       "path": "tools/recovery/BuildOriginalShaderCollectionFixture.cs",
       "bytes": 16881,
       "sha256": "2f8f9d324539d7a8b7cb58fc12c0560b01ab42d0697a46051cf4c889914b70c6"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderNullDependencyFixture.cs",
+      "bytes": 20167,
+      "sha256": "92a5dd65c4fb8d3f5be6671c8b8482ebd9443bd787a42691e457a67ca4d21c6b"
     },
     {
       "path": "tools/recovery/BuildOriginalShaderPrograms.cs",
@@ -275,6 +295,16 @@
       "path": "tools/recovery/collect_all_pinvoke_native.py",
       "bytes": 3524,
       "sha256": "de3b2c1a26876d76451456f1ca54aa0fb051acd20a2bf89d3089af9ec85486b3"
+    },
+    {
+      "path": "tools/recovery/collect_nameserver_request_factory_native.py",
+      "bytes": 5715,
+      "sha256": "7b7cd608852f12ee3d55b25e40559f7b8c994863d488fc1896b496885931a0e4"
+    },
+    {
+      "path": "tools/recovery/collect_title_page_route_native.py",
+      "bytes": 6778,
+      "sha256": "bc639eb54f8038dcc3de0a8b9cfee52f737d64894595f079c6d20f91e8174344"
     },
     {
       "path": "tools/recovery/collect_win32_marshal_wrappers.py",
@@ -822,6 +852,11 @@
       "sha256": "f548d54e6a0422076fb443fa2b91ebca6935153855f9b86004614d4836a17532"
     },
     {
+      "path": "tools/recovery/patch_original_shader_collection_with_builtins.py",
+      "bytes": 27559,
+      "sha256": "fbba70a207bf76f82f1257ef238e1b7c1858ae115b58f8fd1e8e47afd18b295f"
+    },
+    {
       "path": "tools/recovery/PlayerReferenceRootFixtures.cs",
       "bytes": 7420,
       "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
@@ -870,6 +905,11 @@
       "path": "tools/recovery/prepare_ar_helper_input_guard_candidate.py",
       "bytes": 4468,
       "sha256": "1029d62206cc7ea7253ab324350fe8b5f73ef007159610bc3c9622c34f28481a"
+    },
+    {
+      "path": "tools/recovery/prepare_builtin_material_only_tools.py",
+      "bytes": 5346,
+      "sha256": "04695a2d8189c730d6b1ddf3d987f26028490db20bfc328824662b07b7e8e2ca"
     },
     {
       "path": "tools/recovery/prepare_combined_marshal_overlay.py",
@@ -1047,6 +1087,11 @@
       "sha256": "a1ad7f0a27c3214c8a54f3ac737fd2eb8e9c03a38c10143cd73c00945864419e"
     },
     {
+      "path": "tools/recovery/prepare_original_shader_null_dependency_projection.py",
+      "bytes": 14621,
+      "sha256": "bb18559d264652da3d9ddd2df48178df3e1ff468d7afda32aea292e3d251b1d3"
+    },
+    {
       "path": "tools/recovery/prepare_original_streamingassets_runtime_installation.py",
       "bytes": 9197,
       "sha256": "c397756e315bcada467c76237a0dfb9a8d8bf0276d6217eb7668a752c6c86c5f"
@@ -1058,8 +1103,8 @@
     },
     {
       "path": "tools/recovery/prepare_recovery_tool_publication_manifest_readonly.py",
-      "bytes": 4144,
-      "sha256": "bfebbfac091853d8e0753e790066d01fd0dd337304401eb974e7349af4b66e5c"
+      "bytes": 4509,
+      "sha256": "5e8ac140c8ee9ff8413ed86440e8a862e744bcfd6c594547f606a4f80ad446ec"
     },
     {
       "path": "tools/recovery/prepare_reviewed_aot_runner.py",
@@ -1120,6 +1165,16 @@
       "path": "tools/recovery/prepare_startup_disassembly.py",
       "bytes": 866,
       "sha256": "9c276201cd349218db6ce2f08e610d8e0bcb32483688e8a7a5ddf5dd147787e4"
+    },
+    {
+      "path": "tools/recovery/prepare_startup_foundation_next_decode.py",
+      "bytes": 5371,
+      "sha256": "ce22357d88fa699b134341639819c1b7266f26e5b47e1457944593d0f2ffd790"
+    },
+    {
+      "path": "tools/recovery/prepare_startup_foundation_slice.py",
+      "bytes": 17025,
+      "sha256": "d697616a5cb8edb0050a42dd2166d0601cbca211a3e2241d42d83d7ff25fb7da"
     },
     {
       "path": "tools/recovery/prepare_startup_play_observer.py",
@@ -1242,6 +1297,11 @@
       "sha256": "17b68980e4e38ece5b55a83622229b0f4c1f9c58cd953ceafbee435c126c8bad"
     },
     {
+      "path": "tools/recovery/prove_nameserver_request_factory_cfg.py",
+      "bytes": 16722,
+      "sha256": "78ac9bf5be0bb660b22e0a1f39af528a2634d7fc92210dde86f1e797f017eb9f"
+    },
+    {
       "path": "tools/recovery/prove_native_framework_assembly_scopes.py",
       "bytes": 4139,
       "sha256": "0c4ab634491bd253b3214e5f383056a58e9d290faaf1c39ab46e1fefd0f7c430"
@@ -1290,6 +1350,16 @@
       "path": "tools/recovery/prove_service_container_getter_native.py",
       "bytes": 11853,
       "sha256": "68a0e331872782ad426351b4cd0b77019a848935cd50330bb3c3f21db35db28d"
+    },
+    {
+      "path": "tools/recovery/prove_startup_container_resolver_member.py",
+      "bytes": 11093,
+      "sha256": "18d7fa0e2e6e127dffe750e69f4c6333b612ca8119fff38da51863b6dd7efb74"
+    },
+    {
+      "path": "tools/recovery/prove_startup_singleton_and_disposed_members.py",
+      "bytes": 19535,
+      "sha256": "d9b539424c70b2d42ac514ed54597491878f564338c99197f94a3cb70f26dfb1"
     },
     {
       "path": "tools/recovery/prove_tmp_native_product_version.py",
@@ -1367,6 +1437,11 @@
       "sha256": "ad3d5d95cbe0646ec5a5b8f5eb0d068eb23fb7e80bd74b66f69c872c836091a9"
     },
     {
+      "path": "tools/recovery/resolve_startup_foundation_native_joins.py",
+      "bytes": 8171,
+      "sha256": "69212508ec22071bc59f79fa2b030f22f2c577156135b39dd57e623472319af7"
+    },
+    {
       "path": "tools/recovery/review_all179_shader_manifest_readonly.py",
       "bytes": 6849,
       "sha256": "21b686a5404e2d48b7b87907fe89b20076f4e01781a0ad7455efb347cc1eca73"
@@ -1437,6 +1512,16 @@
       "sha256": "e564ce3644cef37313e5224fc9380bae210de39941839ae8d2b4ab891139d6b1"
     },
     {
+      "path": "tools/recovery/run_builtin_identity_offline_controls.py",
+      "bytes": 1709,
+      "sha256": "38be485f27cdd0be20e8ad9f8bebedca8016d57c03330d52bb1b89e1dd571f47"
+    },
+    {
+      "path": "tools/recovery/run_builtin_material_identity_fixture.py",
+      "bytes": 21048,
+      "sha256": "cc445c91561cfc93e86183d47aa5abf286665de02110d454ac50b2532ee4d0b4"
+    },
+    {
       "path": "tools/recovery/run_captured_20230414_gate_controls.py",
       "bytes": 12138,
       "sha256": "8f8d5866eb902aa81614574c80f7b15e6fd78a9551b218a51f6c75380242f19c"
@@ -1482,6 +1567,11 @@
       "sha256": "3337975a306881f78310edf583c6e502a6855358a87118cfd75f96968cd4f202"
     },
     {
+      "path": "tools/recovery/run_four_material_pointer_proofs.py",
+      "bytes": 3124,
+      "sha256": "7c25f94f3681fb345fa1c72f8b291391fa89472123e6e5e0c906c9233ce0f70c"
+    },
+    {
       "path": "tools/recovery/run_framework_scope_fixtures.py",
       "bytes": 1762,
       "sha256": "746aa616c6f0a8876002b7a8290ff9b20d8cc5e8bdb7e22e99001925ce272dc6"
@@ -1522,6 +1612,21 @@
       "sha256": "143c07c23871f6e8483418b7dae1cacf0aaf65b840479932fd773babd3159eae"
     },
     {
+      "path": "tools/recovery/run_nameserver_request_factory_evidence.py",
+      "bytes": 1367,
+      "sha256": "46f95395953d67eee6ec0c99d4c882fdb2c2d42e20c5b66f5007b5633fc52df7"
+    },
+    {
+      "path": "tools/recovery/run_nameserver_request_factory_proof.py",
+      "bytes": 1504,
+      "sha256": "d2fa12a0bee9974b7a4e6eec1f9875fa874702e8cb9b9d705dda834bed82f6b5"
+    },
+    {
+      "path": "tools/recovery/run_null_dependency_fixture_offline_controls.py",
+      "bytes": 1271,
+      "sha256": "4cbaaa90dd6cc8b5f9f56818ff275a6a90b68c024fda9cd30fd6967727995d8b"
+    },
+    {
       "path": "tools/recovery/run_null_import_probe.py",
       "bytes": 1761,
       "sha256": "d2708a2a576760f1e8d5cf5b3822a6319fe410ad864c29a5ac9d63a82f865dbe"
@@ -1552,6 +1657,11 @@
       "sha256": "86c667115dce0374a6bb25711201c5187fe3196a28f607dd2b778c361de295af"
     },
     {
+      "path": "tools/recovery/run_original_shader_builtin_identity_fixture.py",
+      "bytes": 20989,
+      "sha256": "1ba8406a60d8ad13daad819240f1717d8ade7bd5a50561b11222c024279a56db"
+    },
+    {
       "path": "tools/recovery/run_original_shader_collection_fixture.py",
       "bytes": 13797,
       "sha256": "e3dd9995623279d8182ce75aafcfaef24c3bd3822a8b8786b82e4ed850eeb4dd"
@@ -1560,6 +1670,11 @@
       "path": "tools/recovery/run_original_shader_import_fixture.py",
       "bytes": 10907,
       "sha256": "cdff379ff9b128ef745304a39c790a3c10d78bb3d7847c50ee87af05a3975bca"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_null_dependency_fixture.py",
+      "bytes": 25454,
+      "sha256": "806b319396d647bd5562b21caa4235348cd41ae13d82dc63d0ad28bceb7bff07"
     },
     {
       "path": "tools/recovery/run_original_shader_probe.py",
@@ -1672,6 +1787,11 @@
       "sha256": "20c092b8ffbe59605ed4a52081f9a8f281f9eeccd4e33c62f7f06c850a80e839"
     },
     {
+      "path": "tools/recovery/run_startup_foundation_decode.py",
+      "bytes": 6252,
+      "sha256": "e64411ff3ee934e33d34608791dafaf09b91f60a5a9fd4f3e4b5f8f59b055ed6"
+    },
+    {
       "path": "tools/recovery/run_steamworks_body_inventory.py",
       "bytes": 4762,
       "sha256": "42342d5bc1bcfb1bd59ef52e130d139261ce5cc4cb228fd66ef2a845ad901066"
@@ -1690,6 +1810,21 @@
       "path": "tools/recovery/run_tested_sdk_closure_64mib.py",
       "bytes": 2622,
       "sha256": "58facad763dcd65d4cacf667dfd054084a00eee0aaeb48d536de7d555e97af7f"
+    },
+    {
+      "path": "tools/recovery/run_title_login_slice_harness.py",
+      "bytes": 11578,
+      "sha256": "64dbb2cbbb175bb0c478b3e664fea893f246edf0f9067834a0f8fce001f73345"
+    },
+    {
+      "path": "tools/recovery/run_title_login_slice_harness_v2.py",
+      "bytes": 13631,
+      "sha256": "207df29a8b4d6759194198565a7215e4371b6cc3520d10e05100f6fb6c96b1f6"
+    },
+    {
+      "path": "tools/recovery/run_title_login_slice_harness_v3.py",
+      "bytes": 13771,
+      "sha256": "9db2c8af76a04e8f7fc9643f528f5b170521148b447b51291720bfca2f922674"
     },
     {
       "path": "tools/recovery/run_type_contract_inventory.py",
@@ -1802,6 +1937,11 @@
       "sha256": "c18fcddabb1a8f7df217c20e2d265b58ca8fc26ad4084a677d7c453e4b23a21b"
     },
     {
+      "path": "tools/recovery/stage_null_projection_fixture_siblings.py",
+      "bytes": 13310,
+      "sha256": "8e51b83b9bc91fea4c4fc6c787b45f03edfe127ff2dd260a96184f4575f2dcf1"
+    },
+    {
       "path": "tools/recovery/stage_oculus_embedded_marshal.py",
       "bytes": 4137,
       "sha256": "c6dcf159a567014d1049813ef2fd579b05fac3967f46eb86f6d184aca589fa94"
@@ -1892,6 +2032,16 @@
       "sha256": "31bfba20926a93cc994dec9eabfb6c541ab8260257eb18c18bbbcee47d1014f8"
     },
     {
+      "path": "tools/recovery/stage_title_login_transition_slice.py",
+      "bytes": 16209,
+      "sha256": "e7c3b67242b484b5bb27cdb83ec906ec9688ade4f8cfd2500829f3c40cee67e9"
+    },
+    {
+      "path": "tools/recovery/stage_title_page_route_slice.py",
+      "bytes": 9964,
+      "sha256": "c66421f6bab5543b500753653a17c90fd305544ba4f3050935cb9328e72d102e"
+    },
+    {
       "path": "tools/recovery/stage_win32_marshal_compatibility.py",
       "bytes": 7430,
       "sha256": "f038a546f4127311a1ac65765e0dd41d0e2bb448af98f56f56e2baebcf534f46"
@@ -1932,6 +2082,11 @@
       "sha256": "1483d78c439cdf171cc46b7e1465d0fe84f81ecaa1aa9c341af93fd8f7782287"
     },
     {
+      "path": "tools/recovery/test_builtin_identity_fixture_preparation.py",
+      "bytes": 9381,
+      "sha256": "13ebf7978337ef28c7736faee7db8789cfe9aaae4ac33138b6d5e3f76235f174"
+    },
+    {
       "path": "tools/recovery/test_deployment_transaction_hardening.py",
       "bytes": 8322,
       "sha256": "261e1186a241d7863219ebbcab02d47dacc60ef227f3146438522f57226263d1"
@@ -1952,6 +2107,11 @@
       "sha256": "326cf9be65e8b6a0f33b46402602f0da1274438fdfc13829c89976903635295f"
     },
     {
+      "path": "tools/recovery/test_null_dependency_fixture_preparation.py",
+      "bytes": 7894,
+      "sha256": "5dca2e498c0a48fad0374f3607e09b508815e9dfe1355024ca3b28c07ac55f3b"
+    },
+    {
       "path": "tools/recovery/test_shader_buildreport_mapper.py",
       "bytes": 8203,
       "sha256": "90e0300c201e7e7aeaa5a32e75b0b96fcdd556b292951e284b6b2fb9873e4a56"
@@ -1962,9 +2122,24 @@
       "sha256": "de6a689a0ba7c1a242b7386d532e45466a9697901e0c4715cd988e96ff2e22e5"
     },
     {
+      "path": "tools/recovery/test_streaming_shader_patch_with_builtins.py",
+      "bytes": 16405,
+      "sha256": "8fa114799d878a51766657b2aec5bb5c9b08e7732bd400c3da5cb0e6aac78564"
+    },
+    {
       "path": "tools/recovery/test_v2291_preparer_guards.py",
       "bytes": 3145,
       "sha256": "e6c2a7ab682a54c462dda8548df35c7d220ec1704841851f139fded89f0b56bb"
+    },
+    {
+      "path": "tools/recovery/TitleLoginSliceEffects.template.cs",
+      "bytes": 8035,
+      "sha256": "7e68554dae22fdf3e572d946142a342b6616e55692b982319eb6e5a74937bbab"
+    },
+    {
+      "path": "tools/recovery/TitleLoginSliceEffects.v3.template.cs",
+      "bytes": 8510,
+      "sha256": "6ddc7cf69083ef1c1160a636bf0629ea7e4124a5bcf4c6795f039a39175e57a3"
     },
     {
       "path": "tools/recovery/TypeContractFixtures.cs",
@@ -2042,5 +2217,5 @@
       "sha256": "4fc6394e595f8f538ad5c68d26de5a6e239ee08d760bd5b4f34abd77b387217b"
     }
   ],
-  "count": 408
+  "count": 443
 }

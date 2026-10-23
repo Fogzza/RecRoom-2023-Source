@@ -209,7 +209,7 @@ get 			{
 public AIOCIBMFJEJ FlowModel
 {
 get 	{
-		return null;
+		return flowModel;
 	}
 
 }

@@ -5,7 +5,18 @@ import datetime as dt, fnmatch, hashlib, json, re, subprocess, uuid
 import prepare_rr23_code_publication_manifest_readonly as scan
 
 HERE=Path(__file__).resolve().parent
-EXACT={'create_solarnet_github_repositories.py','configure_solarnet_discord_updates.py','name_solarnet_discord_webhook.py','copy_reviewed_solarnet_source_snapshot.py'}
+# Account setup and incident publication helpers remain local. They do not
+# belong to the game recovery source snapshot, even when they contain no token.
+EXACT={
+    'create_solarnet_github_repositories.py',
+    'configure_solarnet_discord_updates.py',
+    'name_solarnet_discord_webhook.py',
+    'copy_reviewed_solarnet_source_snapshot.py',
+    'copy_reviewed_recovery_tools_snapshot.py',
+    'verify_solarnet_github_discord_delivery.py',
+    'make_solarnet_updates_private.py',
+    'publish_solarnet_privacy_support_update.py',
+}
 def main():
     result=subprocess.run(['rg','--files','--hidden','--no-ignore','-g','*.py','-g','*.cs','.'],cwd=HERE,capture_output=True,text=True,encoding='utf-8',check=True)
     paths=sorted({(HERE/n).resolve(strict=True) for n in result.stdout.splitlines()})
