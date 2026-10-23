@@ -1,8 +1,8 @@
 {
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
-  "count": 11264,
-  "bytes": 121436842,
+  "count": 11271,
+  "bytes": 121485567,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -383,6 +383,41 @@
       "path": "Assets/Editor/OriginalMetadataRestoration/csc.rsp.meta",
       "bytes": 155,
       "sha256": "a1ab8759c9c9b389bbf480fc7cd5a341bc3ef001923ed4e0c9d7d67fd070bd58"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry.meta",
+      "bytes": 172,
+      "sha256": "7e25e222ff2e13d6855246de5836da54083857bd35a1e61d1d4b15a080df1672"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.cs",
+      "bytes": 24333,
+      "sha256": "65c8dcbe96ee63bf3fcd78fd51227ca13092937abbfb649d09ff976383df71fb"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.cs.meta",
+      "bytes": 243,
+      "sha256": "da0c334474c6f28db05d2d429cd7a78462770b5336c6f8d8e8cddd0900a6e08a"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.uss",
+      "bytes": 438,
+      "sha256": "ab82245c94aae16c2867279d71a40da11d6c60d1cff9d36e9b5570980738eabc"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.uss.meta",
+      "bytes": 305,
+      "sha256": "edb96b84fe4943b46c2670809c46a9972c627b42baf4e69ed54204d9685e2364"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/RecoveryWorkspace.cs",
+      "bytes": 22991,
+      "sha256": "9ee32cc7c578bcb0ad7b1efa2fc9b07fe51367f6925d44b87d9f8b520de34539"
+    },
+    {
+      "path": "Assets/Editor/RecoveredGeometry/RecoveryWorkspace.cs.meta",
+      "bytes": 243,
+      "sha256": "f690858188471b88caccba822a046c8305d147f28f4bb655fac5d7917564e911"
     },
     {
       "path": "Assets/OriginalOpenVR.meta",
