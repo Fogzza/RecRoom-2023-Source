@@ -17,6 +17,26 @@
       "sha256": "718a7fe685027e39a035719fbb3ff9eb5042ea3b5f025ee1d75bb377e110e0f6"
     },
     {
+      "path": "tools/recovery/BootCoroutineMoveNextEffects.template.cs",
+      "bytes": 20376,
+      "sha256": "f5dd847b42cc61e1d31679d1656cc0c864b591b291353f8a01401e2a8044e028"
+    },
+    {
+      "path": "tools/recovery/BootEntryIteratorEffects.template.cs",
+      "bytes": 22023,
+      "sha256": "f5442134bad3f8937491fa82cb8b5f987aadd180400130dac816c2491b51583c"
+    },
+    {
+      "path": "tools/recovery/BootEntryIteratorEffects.v2.template.cs",
+      "bytes": 22698,
+      "sha256": "9aeea955b0f9464a6d3e07a14280bc0a1b5c38cb25b2476d412b7d051523a98a"
+    },
+    {
+      "path": "tools/recovery/BootEntryIteratorEffects.v3.template.cs",
+      "bytes": 24349,
+      "sha256": "16ebaa58795c9cbf54cd80e8fadf1950b22c789cb0a245a463f1f0148b5e0be2"
+    },
+    {
       "path": "tools/recovery/BootThreeMethodsEffectProof.cs",
       "bytes": 11399,
       "sha256": "3c4ce3368955e49d538eaa7a078436fb350b4822991095559f404b60f64162bf"
@@ -302,6 +322,11 @@
       "sha256": "ac45699fa9172b85bdc9497ef29e6c47f4a57c575dee72e1df5faf7c203a3181"
     },
     {
+      "path": "tools/recovery/InspectCombinedBootIteratorBindings.cs",
+      "bytes": 8526,
+      "sha256": "4940f148c1f423ad54e07e47277db90014fed2d8dd4d41b522732e0666344f9b"
+    },
+    {
       "path": "tools/recovery/InspectDecompilerEventCollision.cs",
       "bytes": 2722,
       "sha256": "9aad05beeefc6b6f6d8f26c33ace9838c971a52113c928fa4f4d6fb8d301da15"
@@ -577,6 +602,11 @@
       "sha256": "70466a884eb8547e752b019c25ac4b8b4e9aceb565d52ddfa9576eda6c108e82"
     },
     {
+      "path": "tools/recovery/RuntimeMetadataPinUpdateFixture.cs",
+      "bytes": 5678,
+      "sha256": "f418a0253dfd8e547e238af93ebe1c24347fea9987aa4e1fb97ab6f2f237be8d"
+    },
+    {
       "path": "tools/recovery/SDKContractAudit.cs",
       "bytes": 14772,
       "sha256": "45374a525371e24f6d0254d4f0ca3561d25cefa78d6a5c23faf82700c1ae4eac"
@@ -832,6 +862,11 @@
       "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
     },
     {
+      "path": "tools/recovery/apply_combined_boot_iterator_slice_reviewed.py",
+      "bytes": 10687,
+      "sha256": "d13a34141583a5dbc124473ffe07ef9023a0ba372e8f7fb5e7c02d652d5b6b50"
+    },
+    {
       "path": "tools/recovery/apply_container_key_child_bodies_reviewed.py",
       "bytes": 13604,
       "sha256": "1c81dd298f2bbc95f26619eea154be16029880e3a9af1cf6f57c3284b75d5ff9"
@@ -860,6 +895,11 @@
       "path": "tools/recovery/apply_original_shader_launcher_amendment.py",
       "bytes": 11087,
       "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
+    },
+    {
+      "path": "tools/recovery/apply_runtime_metadata_reference_pins_reviewed.py",
+      "bytes": 9999,
+      "sha256": "09ec039f98884614fd06f527bf736752da198d6c49c167ac2368e22a567b4f94"
     },
     {
       "path": "tools/recovery/apply_singleton_accessor_bodies_reviewed.py",
@@ -1087,6 +1127,11 @@
       "sha256": "7c9b334e4eb8be46397315cc8b922e1dad534a0b84e7e9a2d4ee5ec13dff7ef5"
     },
     {
+      "path": "tools/recovery/audit_startup_addressables_content_chain.py",
+      "bytes": 18038,
+      "sha256": "25b8eb41631459966f25bf4daf4dab4d11d4306666c1115d62b70beb9f768f57"
+    },
+    {
       "path": "tools/recovery/audit_startup_native_leaves.py",
       "bytes": 3553,
       "sha256": "c76d4da104985f8539feda816453afca18de2efb0ffedffee04be04a2e024799"
@@ -1145,6 +1190,16 @@
       "path": "tools/recovery/collect_all_pinvoke_native.py",
       "bytes": 3524,
       "sha256": "de3b2c1a26876d76451456f1ca54aa0fb051acd20a2bf89d3089af9ec85486b3"
+    },
+    {
+      "path": "tools/recovery/collect_boot_sequence_startup_joins.py",
+      "bytes": 7041,
+      "sha256": "1dd4886734080a46d830452190ea9350844917457f0445393427cfdfd303645b"
+    },
+    {
+      "path": "tools/recovery/collect_browser_navigation_native.py",
+      "bytes": 8258,
+      "sha256": "94d67313b9309fe9b7bb6adbfef760461bc627b6307b98554e3e3a2cec34cb53"
     },
     {
       "path": "tools/recovery/collect_nameserver_request_factory_native.py",
@@ -1627,6 +1682,11 @@
       "sha256": "04695a2d8189c730d6b1ddf3d987f26028490db20bfc328824662b07b7e8e2ca"
     },
     {
+      "path": "tools/recovery/prepare_combined_boot_iterator_slice.py",
+      "bytes": 7494,
+      "sha256": "86f50cdf76ca9088defee5d33c51700321928b51aec48fb937c0983028497069"
+    },
+    {
       "path": "tools/recovery/prepare_combined_marshal_overlay.py",
       "bytes": 6099,
       "sha256": "80fbafceca343ac5c7d925e476bc63ad80a7ad1cfebe7a26124913a49cd61e65"
@@ -1852,6 +1912,11 @@
       "sha256": "600b4130c277a20bcb12d9091e018f623d18b85be38c99f86b8c877c80d89f72"
     },
     {
+      "path": "tools/recovery/prepare_runtime_metadata_reference_pin_update.py",
+      "bytes": 14223,
+      "sha256": "811543f6d9b1e4f92d2f8330091e303cb232d528411a3c4f052b1e6cea402815"
+    },
+    {
       "path": "tools/recovery/prepare_scope_attribute_diagnostics.py",
       "bytes": 2047,
       "sha256": "d1847bf0b02d54c9fdd166c40d4eb1826697d5b0276c3e4ec1daa8754b1b1678"
@@ -2015,6 +2080,16 @@
       "path": "tools/recovery/prove_all_pinvoke_resolver_args.py",
       "bytes": 15845,
       "sha256": "d4c341b4c2794c508bb46c6f2f700c159282f9aa781d876592af00fe45330716"
+    },
+    {
+      "path": "tools/recovery/prove_boot_coroutine_move_next_native.py",
+      "bytes": 9238,
+      "sha256": "20acb8f4d859e0b828341592c7db93fedeeee29e4d415c88df891530c8e637c7"
+    },
+    {
+      "path": "tools/recovery/prove_boot_current_methodimpl_projection.py",
+      "bytes": 8035,
+      "sha256": "6dee7488c5b79ebb98def1b3249b3219be74a4848b7cca360b1ae00c285aa501"
     },
     {
       "path": "tools/recovery/prove_built_standard_pass_layout.py",
@@ -2332,6 +2407,36 @@
       "sha256": "240c5482ac40757c0590c89337ee9f0b5465c96a3871b902d4c0c317c7d98f6a"
     },
     {
+      "path": "tools/recovery/run_boot_coroutine_move_next_harness.py",
+      "bytes": 12071,
+      "sha256": "ec7f9911de3d1a49a0bdeaafc6c4de4f0e6e70e3d114551fa6605ac749e06827"
+    },
+    {
+      "path": "tools/recovery/run_boot_entry_iterator_harness.py",
+      "bytes": 12222,
+      "sha256": "373155ae7e8e9a0dd49a35a9c27850e5758c544b203dcc8a2e99dca0547ea1db"
+    },
+    {
+      "path": "tools/recovery/run_boot_entry_iterator_harness_v2.py",
+      "bytes": 12977,
+      "sha256": "2a4d73f9285facb7d8bdea69dfb329e15fdec4d33b37d13c56c8627eee756b45"
+    },
+    {
+      "path": "tools/recovery/run_boot_entry_iterator_harness_v3.py",
+      "bytes": 15673,
+      "sha256": "552cd875318b6038094cafe2977f7e1c00d83fe400ff340f3cd45e65ecc6020d"
+    },
+    {
+      "path": "tools/recovery/run_boot_iterator_basics_decode.py",
+      "bytes": 7928,
+      "sha256": "59763d87c0675b54a0b62c0603dc9e029413eb213bc9e1cbe8f7d122c3bac49f"
+    },
+    {
+      "path": "tools/recovery/run_boot_sequence_startup_scopes_decode.py",
+      "bytes": 7700,
+      "sha256": "2ceb0c52a92616733a4141f6cf1361052079a1c9208aa44584bf0fa242332125"
+    },
+    {
       "path": "tools/recovery/run_boot_three_method_effect_proof.py",
       "bytes": 6003,
       "sha256": "08e753e6d54c0ba9609baaf958df75a094b0903da3f112f421f9e55b74f8f353"
@@ -2360,6 +2465,11 @@
       "path": "tools/recovery/run_cli_marker_void_fixtures.py",
       "bytes": 2058,
       "sha256": "ae457e405cdcb8ec5a81ed5331a26744ec735fb8fe615592e080b0e5acdbe778"
+    },
+    {
+      "path": "tools/recovery/run_combined_boot_iterator_binding.py",
+      "bytes": 12135,
+      "sha256": "08813fc2e42d78af8a2aef5eba7cd641e69c1837772573408cb265a8700e27db"
     },
     {
       "path": "tools/recovery/run_container_instance_provider_constructors_decode.py",
@@ -2942,6 +3052,26 @@
       "sha256": "4bb5f66e5d61d06288b15207cd631b379cea4f1833af08ee154e13970b71a476"
     },
     {
+      "path": "tools/recovery/stage_boot_coroutine_semantic_projection.py",
+      "bytes": 7471,
+      "sha256": "d07a08cc7837fe53a6ce9912f92ff32be3b8781c82378c1788b7b58b04cbd777"
+    },
+    {
+      "path": "tools/recovery/stage_boot_entry_iterator_slice.py",
+      "bytes": 21687,
+      "sha256": "41f0832ae5b29225da90012e2f45b24f356d4dc28c2fda19e449344689f3d0c0"
+    },
+    {
+      "path": "tools/recovery/stage_boot_entry_iterator_slice_v2.py",
+      "bytes": 5031,
+      "sha256": "d8d7e9a790c1fa5339544cfb80bc4f868b043d18618c89bc063948eb63d216d0"
+    },
+    {
+      "path": "tools/recovery/stage_browser_navigation_slice.py",
+      "bytes": 14508,
+      "sha256": "faa85c59d5ef22d4b975cf644fd938e4b82a9f6248184380ac347495cd803ad1"
+    },
+    {
       "path": "tools/recovery/stage_captured_20230414_backend_scope.py",
       "bytes": 13400,
       "sha256": "ca8aa02093925ed5d5de46ee42d0fdb6581b9fa31879ce9abddb6295a7b6bb26"
@@ -3322,5 +3452,5 @@
       "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
     }
   ],
-  "count": 664
+  "count": 690
 }

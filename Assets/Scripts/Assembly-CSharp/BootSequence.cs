@@ -90,14 +90,14 @@ public class BootSequence : SingletonMonoBehaviour<BootSequence>, NEPJJLMCFPM
 			[DebuggerHidden]
 			get
 			{
-				return null;
+				return this._003C_003E2__current;
 			}
 		}
 
  object global::System.Collections.IEnumerator.Current
 {
 get 			{
-				return null;
+				return this._003C_003E2__current;
 			}
 
 }
@@ -105,6 +105,7 @@ get 			{
 		[DebuggerHidden]
 		public NEKGMMPKEPF(int _003C_003E1__state)
 		{
+			this._003C_003E1__state = _003C_003E1__state;
 		}
 
 		[DebuggerHidden]
@@ -114,6 +115,48 @@ get 			{
 
 		private bool MoveNext()
 		{
+			int state = _003C_003E1__state;
+			BootSequence boot = _003C_003E4__this;
+			if (state == 0)
+			{
+				_003C_003E1__state = -1;
+				if (boot.CGCGDEEJADP == 0)
+				{
+					float processTime = PlatformManager.Instance.GetCurrentProcessTimeSinceBoot();
+					boot.KEEBMEBDMMH = processTime;
+					if (processTime > 0f)
+					{
+						var processTimers = boot.AIDHPHJKAMP;
+						boot.LIPOFDEAMPE = true;
+						processTimers.OJFIFFKKFLH(KFLCEJHCAII, processTime);
+					}
+				}
+				boot.AIDHPHJKAMP.OJFIFFKKFLH(MDGBEFOBMLG, 0f);
+				boot.AIDHPHJKAMP.OJFIFFKKFLH(KFKHDPIOGDF, 0f);
+				boot.AIDHPHJKAMP.OJFIFFKKFLH(JIGCOAAHHCO, 0f);
+				boot.AIDHPHJKAMP.OJFIFFKKFLH(DPOPFLBCAKF, 0f);
+				PNAABCMOHGM.FPNMONCCAAE(string.Concat("Build version: ", IDDIAODMAPP.OLGKJALIAAI), new HJDBOADFHMC?(HJDBOADFHMC.NLODGHMOFNO));
+				boot.HLLLBLNAABH = null;
+				boot.PHFHOMMGCGJ = false;
+				NDFLHBFOIGB.IHEKMEOIBOI();
+				if (MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<MCCKDPKLCIN>(null).CurrentUnityLauncher == (KDHPMLNMNNO)1)
+				{
+					MPAAIECKLGA.CFHDLGEGDFD.HHCPOGCCGNF<GCLANALOAPO>(null).IHEKMEOIBOI();
+				}
+				if (!PlatformManager.Instance.RequiresLoginBeforeInternet)
+				{
+					boot.DKODHBLBHDC();
+				}
+				_003C_003E2__current = new UnityEngine.WaitForEndOfFrame();
+				_003C_003E1__state = 1;
+				return true;
+			}
+			if (state == 1)
+			{
+				_003C_003E1__state = -1;
+				boot.HOMDODONEKI.IHEKMEOIBOI(0);
+				boot.CBFAAHKFJCI = JHIKKDDFDGA.FJNOABDJGMO(boot, boot.HKBJKPPPCPM, true);
+			}
 			return false;
 		}
 
@@ -126,6 +169,7 @@ get 			{
 		[DebuggerHidden]
 		void IEnumerator.Reset()
 		{
+			throw new NotSupportedException();
 		}
 	}
 

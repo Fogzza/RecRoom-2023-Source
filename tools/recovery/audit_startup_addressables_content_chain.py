@@ -1,0 +1,90 @@
+"""Pure bounded original startup Addressables chain and one-bundle script audit.
+
+Uses retained official1.20.5 schema and existing pure UnityFS readers. Hashes
+only38 named local dependency bundles; inspects object prefixes only in the
+first startup bundle. Never loads managed/game/Unity code or changes Main.
+"""
+from pathlib import Path
+import base64,collections,datetime as dt,hashlib,json,re,struct,sys,uuid
+HERE=Path(__file__).resolve().parent;WS=HERE.parents[2];ROOT=WS/'Recovery/RecRoom-2023-04-18';AA=WS/'RR23/Assets/StreamingAssets/aa';AUDIT=ROOT/'AddressablesAudit';PACKAGE=AUDIT/'OfficialPackage';PREVIOUS=AUDIT/'Run-20261022T013413Z-e0b9b83a'
+sys.path[:0]=[str(ROOT/'Tools'),str(HERE)]
+import audit_addressables as original
+from audit_cli_marshal_contracts import Cli
+from audit_hashable_scoped_vtable import Read
+GUID='740391ea1bc3ee64c9ebcdee9efd7bfb';PREFAB='Assets/Core/Content/Systems/(Startup).prefab';BUNDLE='21aae9f4e506d50f2669ef35e3c2e094.bundle'
+def need(v,m):
+    if not v:raise ValueError(m)
+def pin(p,maximum=64*1024**2):
+    p=Path(p).resolve(strict=True);need(p.is_file() and p.stat().st_size<=maximum,'Bounded regular audit input')
+    with p.open('rb') as f:h=hashlib.file_digest(f,'sha256').hexdigest()
+    return {'path':str(p),'bytes':p.stat().st_size,'sha256':h}
+def save(p,r):
+    with p.open('x',encoding='utf-8') as f:json.dump(r,f,indent=2);f.write('\n')
+def official():
+    result=[]
+    for name in ['provenance.json','additional-sources-provenance.json']:
+        p=PACKAGE/name;data=json.loads(p.read_bytes());need(data['tarball_sha256']=='e909683879ac318814a42023c2c2594011a923833beaa9285f7cd2a887f5ef47','Exact retained official1.20.5 tarball provenance')
+        for row in data['saved_sources']:
+            path=PACKAGE/Path(row['path']).name;actual=pin(path);need(actual['sha256']==row['sha256'] and actual['bytes']==row['bytes'],'Retained official source byte identity');result.append(actual)
+    return result
+def catalog_chain():
+    authority=official();settings=pin(AA/'settings.json');catalog=pin(AA/'catalog.json');need(settings['sha256']=='6e557ed826052f1591573950d08b74731a7d73c013326eb2abac25fab110b1b2' and catalog['sha256']=='872a54e5852944609fad9be2351e3b5da41322fe26d9908bd88e5b4daa6f9397','Current preserved original settings/catalog hashes');config=json.loads(Path(settings['path']).read_bytes());need(config['m_AddressablesVersion']=='1.20.5' and config['m_buildTarget']=='StandaloneWindows64','Exact original version/target');raw=json.loads(Path(catalog['path']).read_bytes());keys,entries=original.decode_catalog(raw);found=[x for x in keys if x['kind']==0 and x['value']==GUID];need(len(found)==1 and len(found[0]['entries'])==1,'One exact String GUID bucket/location');key=found[0];entry=entries[key['entries'][0]];need(entry['internal_id']==PREFAB and entry['provider'].endswith('.BundledAssetProvider') and entry['resource_type']['m_ClassName']=='UnityEngine.GameObject','Exact startup GameObject location');offsets=[];buckets=base64.b64decode(raw['m_BucketDataString'],validate=True);cursor=4
+    for i in range(original.i32(buckets,0)):
+        off,n=struct.unpack_from('<ii',buckets,cursor);cursor+=8+4*n
+        if i==key['index']:offsets.append(off)
+    need(cursor==len(buckets) and len(offsets)==1,'Exact bucket table consumption');packed=base64.b64decode(raw['m_KeyDataString'],validate=True);need(original.packed_object(packed,offsets[0])=={'kind':0,'value':GUID},'Typed key offset, not bare byte search');records=base64.b64decode(raw['m_EntryDataString'],validate=True);words=struct.unpack_from('<7i',records,4+entry['index']*28);need(raw['m_InternalIds'][words[0]]==PREFAB,'Original internalId table index');depkey=keys[entry['dependency_key_index']];direct=entry['dependency_entry_indexes'];need(depkey['kind']==4 and len(direct)==38,'Exact signed Int32 dependency key and38 ordered locations')
+    visited=[];pending=list(direct)
+    while pending:
+        i=pending.pop(0)
+        if i in visited:continue
+        need(0<=i<len(entries) and len(visited)<19729,'Finite catalog dependency closure');visited.append(i);pending.extend(entries[i]['dependency_entry_indexes'])
+    need(visited==direct,'All38 bundle rows are terminal: no hidden catalog transitive rows');manifest=ROOT/'RuntimeSDKRecovery/OriginalAARuntimeInstallation-20261022T185908Z-58c0e495/manifest.json';need(pin(manifest)['sha256']=='a6e3f4e85b70f5fef6a77ff01146a11714c00f7b414327f62e88b1a1c70cc66c','Exact original installation manifest authority');files={x['project_relative_path']:x for x in json.loads(manifest.read_bytes())['files']};locations=[];total=0
+    for i in visited:
+        location=entries[i];need(location['provider'].endswith('.AssetBundleProvider') and location['resource_type']['m_ClassName'].endswith('.IAssetBundleResource'),'Only actual bundle dependencies');prefix='{UnityEngine.AddressableAssets.Addressables.RuntimePath}\\StandaloneWindows64\\';need(location['internal_id'].startswith(prefix),'Only original local RuntimePath prefix');name=location['internal_id'][len(prefix):];need(re.fullmatch('[0-9a-f]{32}\\.bundle',name),'Exact safe physical filename');expected=files['Assets/StreamingAssets/aa/StandaloneWindows64/'+name];current=pin(AA/'StandaloneWindows64'/name);need(current['bytes']==expected['bytes'] and current['sha256']==expected['sha256'],'Current local bundle bytes match verified original inventory');options=location['extra']['value'];need(options['type']=='UnityEngine.ResourceManagement.ResourceProviders.AssetBundleRequestOptions' and options['json']['m_BundleSize']==current['bytes'],'Exact catalog bundle size/options');total+=current['bytes'];locations.append({'entry':location,'current_local_file':current,'verified_original':expected})
+    need(total==79187326 and locations[0]['current_local_file']['path'].endswith(BUNDLE),'Finite exact original38-file chain');old=json.loads((PREVIOUS/'decoded-catalog.json').read_bytes());need(old['keys'][key['index']]==key and all(all(old['entries'][i][k]==entries[i][k] for k in entries[i]) for i in [entry['index']]+visited),'Independent fresh raw decode agrees with preserved original decoded audit');del old
+    mapping=json.loads((PREVIOUS/'original-key-to-source-map.json').read_bytes());mapped=[x for x in mapping['assets'] if x['entry_index']==entry['index']];need(len(mapped)==1 and mapped[0]['source_match_status']=='unique_source_object' and len(mapped[0]['source_object_candidates'])==1,'Existing exact original container-object identity');mapped=mapped[0];need(mapped['source_object_candidates'][0]['source_bundle']==BUNDLE and mapped['original_internal_id']==PREFAB,'Exact original startup bundle identity');del mapping
+    scene=WS/'RR23/Assets/Core/Scenes/main_root.unity';text=scene.read_text();match=re.search(r'startupObjectReference:\s*\n\s*m_AssetGUID: ([0-9a-f]{32})\s*\n\s*m_SubObjectName:([^\n]*)\n\s*m_SubObjectType:([^\n]*)',text);need(match and match.group(1)==GUID and not match.group(2).strip() and not match.group(3).strip(),'Exact Main serialized AssetReference String GUID, no subobject suffix')
+    return {'official_1_20_5_source_pins':authority,'current_settings':settings,'current_catalog':catalog,'current_scene':pin(scene),'current_scene_meta':pin(Path(str(scene)+'.meta')),'AssetReference_subobject_name_empty':True,'runtime_key':key,'typed_key_object_offset':offsets[0],'ASCII_GUID_payload_offset':offsets[0]+5,'raw_entry_words':list(words),'internal_id_index':words[0],'entry':entry,'dependency_key':depkey,'ordered_dependency_locations':locations,'dependency_count':len(locations),'dependency_bytes_freshly_hashed':total,'all38_fresh_SHA256_match_verified_original':True,'all_dependencies_terminal_in_catalog':True,'source_map':mapped,'source_map_authority':pin(PREVIOUS/'original-key-to-source-map.json'),'source_container_authority':pin(PREVIOUS/'bundle-containers.json'),'original_installation_manifest':pin(manifest),'settings_catalog_locations':config['m_CatalogLocations'],'catalog_update_on_start_disabled':config['m_DisableCatalogUpdateOnStart']}
+def object_table(scanner,header,metadata,node_size):
+    version=struct.unpack_from('>I',header,8)[0];need(version==22,'Original2020 startup serialized v22');c=scanner.Cursor(metadata,'>' if header[16] else '<');engine=c.string();platform=c.read('i');tree=bool(c.read('B'));count=c.read('i');need(engine=='2020.3.33f1' and platform==19 and tree and 0<count<10000,'Exact genuine standalone Windows metadata');classes=[]
+    for _ in range(count):
+        cls=c.read('i');classes.append(cls);c.read('B');c.read('h');c.pos+=16 if cls==114 else 0;c.pos+=16;n,strings=c.read('ii');need(0<=n<=1000000 and 0<=strings<=len(metadata),'Bounded genuine type tree');c.pos+=n*32+strings;deps=c.read('i');need(0<=deps<=1000000,'Bounded type dependencies');c.pos+=deps*4;need(c.pos<=len(metadata),'Type table inside metadata')
+    objects=[];count=c.read('i');need(0<=count<100000,'Finite startup object table')
+    for _ in range(count):
+        c.pos=(c.pos+3)&~3;pid,offset,size,index=c.read('qqIi');need(0<=index<len(classes) and 0<=offset<=offset+size<=node_size,'Exact object range');objects.append({'path_id':pid,'data_offset':offset,'byte_size':size,'type_index':index,'class_id':classes[index]})
+    return objects
+def startup_scripts(chain):
+    scanner=original.load_scanner();path=Path(chain['ordered_dependency_locations'][0]['current_local_file']['path']);reader=original.BundleReader(path,scanner);results=[];target=chain['source_map']['source_object_candidates'][0]
+    try:
+        nodes=[n for n in reader.nodes if n['flags']&4];need(len(nodes)==1 and nodes[0]['path']==target['source_serialized_file'],'Exact one startup serialized CAB');node=nodes[0];header=reader.read(node['offset'],48);amount=struct.unpack_from('>I',header,20)[0];data_start=struct.unpack_from('>Q',header,32)[0];need(0<amount<=16*1024**2,'Bounded startup metadata');metadata=reader.read(node['offset']+48,amount);meta=scanner.serialized_types(header,metadata,True);objects=object_table(scanner,header,metadata,node['size']);byid={o['path_id']:o for o in objects};need(len(byid)==len(objects) and byid[target['path_id']]['class_id']==1,'Container root points to actual Class1 GameObject');need([o for o in objects if o['class_id'] in (114,115)]==meta['_script_objects'],'Independent all-object table matches retained script reader')
+        def data(obj,limit=4*1024**2):need(obj['byte_size']<=limit,'Bounded selected startup object');return reader.read(node['offset']+data_start+obj['data_offset'],obj['byte_size'])
+        def string(c):
+            n=c.read('i');need(0<=n<=min(65536,len(c.data)-c.pos),'Bounded original aligned string');v=c.data[c.pos:c.pos+n].decode('utf-8');c.pos=(c.pos+n+3)&~3;return v
+        bundle=meta['_bundle_objects'];need(len(bundle)==1,'One original Class142 container');c=scanner.Cursor(data(bundle[0]),'<');bundle_name=string(c);count=c.read('i');need(0<count<=100000,'Bounded original preload table');preloads=[{'file_id':c.read('i'),'path_id':c.read('q')} for _ in range(count)];n=c.read('i');need(n==1,'Only the startup prefab container in this first bundle');name=string(c);start,length,file_id,pid=c.read('iiiq');need(name==PREFAB and file_id==0 and pid==target['path_id'] and 0<=start<=start+length<=len(preloads),'Exact container key/root/preload slice');selected=preloads[start:start+length];local_ids={x['path_id'] for x in selected if x['file_id']==0};need(all(x['path_id'] in byid for x in selected if x['file_id']==0),'Every local preload resolves existing exact object');scripts={};behaviours=[]
+        for obj in meta['_script_objects']:
+            if obj['class_id']==115:
+                c=scanner.Cursor(data(obj),'<');mono_name=string(c);order=c.read('i');c.pos+=16;cls,namespace,assembly=string(c),string(c),string(c);scripts[obj['path_id']]={'path_id':str(obj['path_id']),'name':mono_name,'class_name':cls,'namespace':namespace,'assembly':assembly,'execution_order':order}
+            elif obj['path_id'] in local_ids:
+                prefix=reader.read(node['offset']+data_start+obj['data_offset'],min(28,obj['byte_size']));c=scanner.Cursor(prefix,'<');game_file,game_path,enabled=c.read('iqB');c.pos=(c.pos+3)&~3;script_file,script_path=c.read('iq');behaviours.append({'path_id':str(obj['path_id']),'type_index':obj['type_index'],'game_object':{'file_id':game_file,'path_id':str(game_path)},'enabled':enabled,'script':{'file_id':script_file,'path_id':str(script_path)}})
+        declarations={x['type_index']:x for x in meta['script_types']};unknown=[]
+        for row in behaviours:
+            p=row['script'];sid=int(p['path_id']);row['original_type_tree_root']=declarations[row['type_index']]['schema'][0] if declarations[row['type_index']]['schema'] else None
+            if p['file_id']==0 and sid in scripts:row['actual_MonoScript']=scripts[sid]
+            else:
+                ext=meta['externals'][p['file_id']-1] if 1<=p['file_id']<=len(meta['externals']) else None;row['unresolved_external_or_missing_script_namespace']=ext;unknown.append(row['path_id'])
+        return {'inspected_bundle':chain['ordered_dependency_locations'][0]['current_local_file'],'source_serialized_CAB':node['path'],'metadata_bytes':amount,'engine':meta['engine'],'platform':meta['platform'],'root_Class1_GameObject_path_id':str(pid),'original_Class142_path_id':str(bundle[0]['path_id']),'embedded_bundle_name':bundle_name,'container_count':1,'preload_index':start,'preload_count':length,'local_preload_objects':len(local_ids),'preload_external_pointer_count':sum(x['file_id']!=0 for x in selected),'actual_preload_MonoBehaviour_prefixes':behaviours,'MonoScript_objects_in_this_bundle':list(scripts.values()),'unresolved_script_pointer_behaviour_ids':unknown,'external_namespaces':meta['externals'],'only_original_container_and_script_prefixes_read':True,'entire_MonoBehaviour_fields_or_prefab_hierarchy_decoded':False,'other37_bundle_contents_inspected':False,'reader_pins':[pin(Path(original.__file__)),pin(WS/'Tools/RecoveryTools/scan_unityfs_structure.py')]}
+    finally:reader.close()
+def bind_scripts(result):
+    actual=ROOT/'Validation/BootCoroutineMoveNextBindingEffects-20261023T111529Z-2efc9f16/run-report.json';need(pin(actual)['sha256']=='83eee666f27ef2ddfcb7e4cd055d8f6d56eef0ed903260c4000451670565dc78','Actual real full-source compile metadata authority');receipt=json.loads(actual.read_bytes());core=receipt['compiled_full_assembly'];need(pin(Path(core['path']))==core,'Actual compiled metadata byte pin');assemblies={};rows=[]
+    for script in result['MonoScript_objects_in_this_bundle']:
+        name=script['assembly'];need(re.fullmatch(r'[A-Za-z0-9_.-]+(?:\.dll)?',name) and '/' not in name and '\\' not in name,'Exact original assembly filename');filename=name if name.endswith('.dll') else name+'.dll'
+        if filename not in assemblies:
+            path=Path(core['path']) if filename=='Assembly-CSharp.dll' else WS/'RR23/Assets/Plugins'/filename
+            if path.exists():
+                p=pin(path,32*1024**2);c=Cli(path.read_bytes());reader=Read(c);types={reader.definition(i):hex(0x02000000|i) for i in range(1,c.rows[2]+1)};assemblies[filename]=(p,types)
+            else:assemblies[filename]=(None,{})
+        p,types=assemblies[filename];typ=(script['namespace']+'.' if script['namespace'] else '')+script['class_name'];rows.append({'original_MonoScript':script,'compiled_metadata':p,'exact_type_name':typ,'exact_TypeDef_token':types.get(typ),'match_status':'exact_assembly_filename_and_TypeDef_name' if typ in types else 'not_resolved_by_exact_local_metadata','method_implementation_or_MonoScript_GUID_fileID_compatibility_claimed':False})
+    return {'actual_full_source_compile_receipt':pin(actual),'compiled_metadata_only_not_loaded_or_executed':True,'bindings':rows,'bound':sum(x['exact_TypeDef_token'] is not None for x in rows),'unresolved':sum(x['exact_TypeDef_token'] is None for x in rows),'compiled_metadata_inputs':[x[0] for x in assemblies.values() if x[0]]}
+def main():
+    chain=catalog_chain();scripts=startup_scripts(chain);bindings=bind_scripts(scripts);out=ROOT/'Validation'/('StartupAddressablesContentChain-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();report={'schema':'bounded-original-startup-addressables-content-and-script-chain/v1','status':'catalog_chain_local_original_bytes_and_first_bundle_script_metadata_audited_runtime_validation_pending','producer':pin(Path(__file__)),'catalog_and_local_chain':chain,'first_startup_bundle_script_prefix_audit':scripts,'first_bundle_MonoScript_exact_compiled_metadata_binding':bindings,'limits':{'local_bundle_files_hashed':38,'local_bundle_bytes_hashed':79187326,'bundle_contents_inspected':1,'maximum_decoded_block_bytes':32*1024**2,'maximum_metadata_bytes':16*1024**2,'managed_or_Unity_or_game_or_network_executed':False},'remaining_validation':['Addressables initialization, actual location lookup and LoadAsset/Instantiate/WaitForCompletion on a matching recovered player','All dependency bundles native deserialization with recovered serialized MonoScript GUID/fileID and field-layout compatibility','Startup prefab component activation/lifecycle and transitive service behavior','Any external MonoScript references not resolvable within first-bundle-only scope'],'project_prefab_asset_path_claimed_present':False,'all_original_bundle_scripts_operational_claimed':False,'Main_modified':False,'backend_or_remote_endpoints_accessed':False};save(out/'report.json',report);print(json.dumps({'report':pin(out/'report.json'),'startup_entry':chain['entry']['index'],'bundle_dependencies':chain['dependency_count'],'Main_bundle_hashes_match':True,'startup_preload_behaviours':len(scripts['actual_preload_MonoBehaviour_prefixes']),'local_MonoScripts':len(scripts['MonoScript_objects_in_this_bundle']),'bound_script_types':bindings['bound'],'unresolved_script_types':bindings['unresolved'],'external_script_prefixes_unresolved':len(scripts['unresolved_script_pointer_behaviour_ids'])}))
+if __name__=='__main__':main()
