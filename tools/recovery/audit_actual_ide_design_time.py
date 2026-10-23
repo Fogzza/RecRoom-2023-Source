@@ -1,0 +1,18 @@
+"""Resolve actual main IDE refs with default imported root, never compile source."""
+import json,shutil,uuid
+from pathlib import Path
+from datetime import datetime,timezone
+import prepare_marshalling_integration as p
+import build_stage_guarded as b
+out=p.ROOT/'Validation'/('SolarNetActualIDEDesignTime-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();report={'schema':'actual-main-IDE-ResolveReferences-only-default-properties/v1','phases':[],'project_modified':False,'source_compile_executed':False,'game_code_loaded_or_executed':False}
+try:
+ project=p.WORKSPACE/'RR23';msbuild=Path(r'C:\Program Files\Microsoft Visual Studio\18\Community\MSBuild\Current\Bin\MSBuild.exe');firstpass=project/'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll';target=out/'bin/Assembly-CSharp-firstpass.dll';target.parent.mkdir();shutil.copyfile(firstpass,target);p.need(p.sha(target)==p.sha(firstpass),'Exact current firstpass witness copy');report['firstpass_metadata_only_witness']={'source':p.pinned(firstpass),'copy':p.pinned(target)}
+ command=[msbuild,project/'Assembly-CSharp.csproj','/nologo','/v:q','/t:ResolveReferences','/p:Configuration=Debug','/p:Platform=AnyCPU','/p:BaseIntermediateOutputPath='+str(out/'obj')+'\\','/p:IntermediateOutputPath='+str(out/'obj')+'\\','/p:OutputPath='+str(out/'bin')+'\\','/p:DesignTimeBuild=true','/p:BuildProjectReferences=false','/p:SkipCompilerExecution=true','/p:BuildInParallel=false','/p:UseSharedCompilation=false','/m:1','/nr:false','/getProperty:SolarNetProjectRoot,UnityEditorRoot,TargetFrameworkVersion,FrameworkPathOverride,NoStdLib,NoStandardLibraries,CscToolPath,Platform,Configuration','/getItem:ReferencePath']
+ before=[p.pinned(project/x) for x in ('SolarNet.sln','SolarNet.Unity2020.props','Assembly-CSharp.csproj','Assembly-CSharp-firstpass.csproj')];b.reserved_phase(command,out,'default-property-reference-resolution',report,maximum=60,cap=.125);text=(out/'default-property-reference-resolution.log').read_text(encoding='utf-8-sig');at=text.find('\n{');at=0 if text.startswith('{') else at+1;p.need(at>=0,'Expected structured MSBuild property/reference output');data=json.loads(text[at:]);(out/'resolved-reference-items.json').write_text(json.dumps(data,indent=2)+'\n');paths=data['Items']['ReferencePath'];selected={Path(r['Identity']).stem:r for r in paths};checks={}
+ for name in ('UnityEngine','UnityEngine.CoreModule','UnityEngine.TextRenderingModule','mscorlib','AstarPathfindingProject'):
+  p.need(name in selected,'Expected actual resolved IDE reference: '+name);path=Path(selected[name]['Identity']).resolve();p.need(path.is_file(),'Resolved reference path missing');checks[name]=p.pinned(path)
+ p.need(str(project).lower()==str(Path(data['Properties']['SolarNetProjectRoot'])).lower(),'Default imported project root differs from main');p.need(len(paths)>=417,'Full actual reference inventory required')
+ for row in before:p.pinned(Path(row['path']),row['sha256'])
+ report.update(status='passed_reference_resolution_only',actual_resolved_reference_count=len(paths),default_properties=data['Properties'],important_resolved_paths=checks,inputs=before,all_inputs_unchanged=True,explicit_SolarNetProjectRoot_override_used=False,structured_reference_evidence=p.pinned(out/'resolved-reference-items.json'))
+except Exception as e:report.update(status='failed',error=str(e))
+(out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'status':report['status'],'report':str(out/'report.json'),'references':report.get('actual_resolved_reference_count'),'error':report.get('error')}))

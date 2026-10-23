@@ -1,0 +1,6 @@
+public enum AEOAMCKEBBE
+{
+	DISABLED = 0,
+	ALWAYS = 1,
+	REVIVE_AVAILABLE = 2
+}

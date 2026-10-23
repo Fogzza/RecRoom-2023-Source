@@ -1,0 +1,10 @@
+using RecRoom.CircuitsV2.Config;
+
+public interface HEJEFJABMHN
+{
+	CircuitsV2Config EACKKPDLOBK();
+
+	bool MMJOLLFHEHJ(in MEKIBDBDLCM MNJIEOBJGJG, CFDOOCPPGEI NIFOGEBEDNG);
+
+	global::NMAELEDHCMF<MLOKAFMAHAD> PEHJOPJHNLK();
+}

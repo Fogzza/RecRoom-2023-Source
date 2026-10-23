@@ -1,0 +1,33 @@
+using System.Threading.Tasks;
+
+public interface ONPBFNKNEKJ
+{
+
+ bool EHOICMNJINI
+{
+get ;
+}
+
+ bool PKACPGAIPOI
+{
+get ;
+}
+
+ event FCLMHOEEHML IIKNAEHJBFM;
+
+ event CPNKFGBDHKI HBNCBDPEOJG;
+
+ event CPNKFGBDHKI IDAMIJLKCNJ;
+
+ event HHECBBHEMNK JKJFAMBCBPL;
+
+ event PEOFICPFIFK POAPJJDIOHD;
+
+ event IAMCPHONIAG HIPFFCGHPHC;
+
+ event IFLOEONDDIF CNAMJAIJOIK;
+
+	Task GNLMBPKPBGI();
+
+	Task CKALOIDGAIN();
+}

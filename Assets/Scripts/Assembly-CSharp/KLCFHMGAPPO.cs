@@ -1,0 +1,4 @@
+public interface KLCFHMGAPPO
+{
+	bool ALJKCFGGOJH(CHILKDJABBF EKOFNPFCLMO);
+}

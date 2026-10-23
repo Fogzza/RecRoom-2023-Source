@@ -1,0 +1,5 @@
+/reference:"C:\Users\andre\Documents\ChatGPT\LunarNet\Tools\Editors\2020.3.33f1\Editor\Data\Managed\Unity.CompilationPipeline.Common.dll"
+/resource:"CompilerSupport/Metadata/GeneralManifest.bin",RR23.GeneralManifest
+/resource:"CompilerSupport/Metadata/RawMetadata.dll",RR23.RawMetadata
+/resource:"CompilerSupport/Metadata/SerializationMetadata.dll",RR23.SerializationMetadata
+/resource:"CompilerSupport/Metadata/proven-marshalling-overlay.bin",RR23.ProvenMarshallingOverlay

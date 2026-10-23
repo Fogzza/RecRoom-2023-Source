@@ -1,0 +1,9 @@
+import json,shutil,uuid
+from datetime import datetime,timezone
+import prepare_marshalling_integration as p
+import build_stage_guarded as b
+stage=p.ROOT/'CompilerRepairs/CurrentCoreExactAOTScopes-20261022T160146Z-e2673b24';out=p.ROOT/'Validation'/('AttributeScopeLazyAudit-'+datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();report={'schema':'attribute-constructor-fullscope-lazy-state-audit/v1','phases':[],'game_code_executed':False,'project_modified':False}
+try:
+ cecil=stage/'ToolBuild/Mono.Cecil.dll';shutil.copyfile(cecil,out/cecil.name);framework=b.EDITOR/'Data/MonoBleedingEdge/lib/mono/4.7.1-api';exe=out/'AttributeScopeLazyAudit.exe';sources=[p.HERE/'AttributeScopeLazyAudit.cs',stage/'Package/Assets/Editor/OriginalMetadataRestoration/ScopedMetadataSignatures.cs'];rsp=out/'compile.rsp';rsp.write_text('\n'.join(['/target:exe','/nostdlib+','/langversion:7.3','/out:"'+str(exe)+'"']+['/reference:"'+str(framework/n)+'"' for n in ('mscorlib.dll','System.dll','System.Core.dll','Facades/netstandard.dll')]+['/reference:"'+str(cecil)+'"']+['"'+str(x)+'"' for x in sources])+'\n');b.reserved_phase([b.EDITOR/'Data/Tools/Roslyn/csc.exe','@'+str(rsp)],out,'compile',report,maximum=30,cap=.25);core=p.ROOT/'Validation/DiagnosticNative22ScopeCandidate-20261022T160914Z-84fe934e/Candidate/Assembly-CSharp.dll';b.reserved_phase([b.EDITOR/'Data/MonoBleedingEdge/bin/mono.exe',exe,core],out,'attribute-constructor-metadata-only',report,maximum=60,cap=.25);report.update(status='completed_audit_only',sources=[p.pinned(x) for x in sources],candidate=p.pinned(core))
+except Exception as e:report.update(status='failed',error=str(e))
+(out/'report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'status':report['status'],'report':str(out/'report.json'),'error':report.get('error')}))

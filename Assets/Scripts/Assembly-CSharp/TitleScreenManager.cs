@@ -1,0 +1,319 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+using RRUI;
+using RRUI.Data;
+using RecRoom;
+using RecRoom.Audio;
+using UnityEngine;
+
+public class TitleScreenManager : SingletonMonoBehaviour<TitleScreenManager>
+{
+	[StructLayout((LayoutKind)3)]
+	private struct AECFDDJIDAL
+	{
+		public TitleScreenManager _003C_003E4__this;
+
+		public AudioClip currentMusic;
+	}
+
+	private sealed class BBOMFKCKKEP : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public TitleScreenManager _003C_003E4__this;
+
+		object IEnumerator<object>.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+ object global::System.Collections.IEnumerator.Current
+{
+get 			{
+				return null;
+			}
+
+}
+
+		[DebuggerHidden]
+		public BBOMFKCKKEP(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		void IDisposable.Dispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		bool IEnumerator.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			return this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		void IEnumerator.Reset()
+		{
+		}
+	}
+
+	private sealed class EPCGHFICLMA : IEnumerator<object>, IEnumerator, IDisposable
+	{
+		private int _003C_003E1__state;
+
+		private object _003C_003E2__current;
+
+		public TitleScreenManager _003C_003E4__this;
+
+		object IEnumerator<object>.Current
+		{
+			[DebuggerHidden]
+			get
+			{
+				return null;
+			}
+		}
+
+ object global::System.Collections.IEnumerator.Current
+{
+get 			{
+				return null;
+			}
+
+}
+
+		[DebuggerHidden]
+		public EPCGHFICLMA(int _003C_003E1__state)
+		{
+		}
+
+		[DebuggerHidden]
+		void IDisposable.Dispose()
+		{
+		}
+
+		private bool MoveNext()
+		{
+			return false;
+		}
+
+		bool IEnumerator.MoveNext()
+		{
+			//ILSpy generated this explicit interface implementation from .override directive in MoveNext
+			return this.MoveNext();
+		}
+
+		[DebuggerHidden]
+		void IEnumerator.Reset()
+		{
+		}
+	}
+
+	[SerializeField]
+	private Canvas mainCanvas;
+
+	[SerializeField]
+	private Canvas[] otherCanvases;
+
+	[SerializeField]
+	private RoundedCorners backgroundRoundedCorners;
+
+	[SerializeField]
+	private TitleScreenFlowModel flowModel;
+
+	[SerializeField]
+	private AGVirtualKeyboard keyboardPrefab;
+
+	[SerializeField]
+	private RecRoomAudioClip titleScreenMusic;
+
+	[SerializeField]
+	private RecRoomAudioClip accountCreationMusic;
+
+	[SerializeField]
+	private float musicFadeInTime;
+
+	private Coroutine HEGLMMJABEN;
+
+	private AGVirtualKeyboard KMNIAGFPHEN;
+
+	private Vector3 AFFEJPNPKPM;
+
+	private Vector3 AHAPJIODLLJ;
+
+	private Quaternion BGMCKGNIMKN;
+
+	public const string BIRTHDAY_ENTERED = "birthdayEntered";
+
+	public const string EMAIL_STEP = "emailStep";
+
+	public const string CREATING_ACCOUNT = "creatingAccount";
+
+	public const string ACCOUNT_CREATED = "accountCreated";
+
+	public const string ACCOUNT_FAILED = "failedAccountCreation";
+
+	public const string RESET_PASSWORD = "passwordReset";
+
+	public const string BDAY_ISJUNIOR = "isJunior";
+
+	public const string CONFIRM_EMAIL_INPUT = "confirmEmailInput";
+
+	public const string CONFIRM_EMAIL_SENT = "confirmEmailSent";
+
+	public const string CONFIRM_EMAIL_ERROR = "confirmEmailError";
+
+	public const string RESULT_LATER = "later";
+
+	public const string RESULT_SUCCESS = "success";
+
+	public const string SEND_LINK = "sendLink";
+
+	public const string PRIVACY_POLICY = "privacyPolicy";
+
+	public const string FAIL_TO_SEND = "failToSend";
+
+	public const string EMAIL_SUBMITTED = "submitted";
+
+	private const string HKFGDBKECJB = "registration_flow";
+
+	private const string DMEOMNCICNG = "step";
+
+	private const string DPIAFGBJFPK = "substep";
+
+	private const string LCJBNNCGMKE = "privacyPolicy";
+
+	private const string MOKDHGLKAFD = "codeOfConduct";
+
+	private const string LKHBIIKKMJJ = "Birthday";
+
+	private DCCDAPLPICN IBDKAJJPLGA;
+
+	private CPBPJLLMKDB LIPCPJMCHDF;
+
+public AIOCIBMFJEJ FlowModel
+{
+get 	{
+		return null;
+	}
+
+}
+
+public bool CanUpdateOrGoToFeed
+{
+get 	{
+		return false;
+	}
+
+}
+
+public bool TitleScreenFeedEnabled
+{
+get 	{
+		return false;
+	}
+
+}
+
+	protected override void Awake()
+	{
+	}
+
+	private void Start()
+	{
+	}
+
+	private void Update()
+	{
+	}
+
+	protected override void OnDestroy()
+	{
+	}
+
+	public bool IsOnTitleScreen()
+	{
+		return false;
+	}
+
+	private void NBDKIBMNLCA(bool ICHBECDKHOJ)
+	{
+	}
+
+	private void PMNJIOHDABB()
+	{
+	}
+
+	public void QueueBirthdayEventForPostLogIn(DateTime DPAIFPOLPOC)
+	{
+	}
+
+	public void LogRegistrationEvent(string GDGDAIAMBKP, string ICGAPNOBCBF = null)
+	{
+	}
+
+	public void LogRegistrationEventWithDetail(string GDGDAIAMBKP, string PJECDPAJCJE, string BNDLEDFKJKL)
+	{
+	}
+
+	public void OnPrivacyPolicySelected()
+	{
+	}
+
+	public void OnComfortAndSafetySelected()
+	{
+	}
+
+	private void NDENAIFEGGC(IEnumerator KNMNCHEEHEI)
+	{
+	}
+
+	private void MLOEPDOPGJD()
+	{
+	}
+
+	private void NMJIFHLPFNP(float OKBAJEAPIHG)
+	{
+	}
+
+	private IEnumerator KJNOGCGEIHD()
+	{
+		return null;
+	}
+
+	private IEnumerator MDLLPIFKLJO()
+	{
+		return null;
+	}
+
+	public void UpdateOrGoToFeed(List<KDEEJHLLLCH> MJFMBHKBJID, DBECJLAIPEL PKGLLJBECJM, bool CKDDPKOJGGJ = false)
+	{
+	}
+
+	[CompilerGenerated]
+	private Vector2 EKJBJGDALKG()
+	{
+		return default;
+	}
+
+	[CompilerGenerated]
+	private bool INAANGFKADI(RecRoomAudioClip MHNDMEJNOLH, ref AECFDDJIDAL P_1)
+	{
+		return false;
+	}
+}

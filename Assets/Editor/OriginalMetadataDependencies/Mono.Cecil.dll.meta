@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d43ccf7e5e4e4ab28c17dd420abb3a00
+PluginImporter:
+  serializedVersion: 2
+  isExplicitlyReferenced: 1
+  validateReferences: 1
+  platformData:
+  - first:
+      Any:
+    second:
+      enabled: 0
+      settings: {}
+  - first:
+      Editor: Editor
+    second:
+      enabled: 1
+      settings: {}

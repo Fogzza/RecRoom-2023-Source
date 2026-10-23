@@ -1,0 +1,20 @@
+public enum ANOEOICCMDH
+{
+	INVALID = -1,
+	WEAPON = 0,
+	SPORTS = 1,
+	DECORATION = 2,
+	KITCHEN = 3,
+	TOYS = 4,
+	CREATIVE = 5,
+	FURNITURE = 6,
+	DYNAMIC = 7,
+	MATH_CHIPS = 8,
+	GAME_CHIPS = 9,
+	OTHER_CHIPS = 10,
+	GIZMOS = 11,
+	OTHER_GADGETS = 12,
+	AI = 13,
+	AI_CHIPS = 14,
+	CV2_Gadgets = 15
+}

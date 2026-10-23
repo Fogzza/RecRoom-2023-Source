@@ -1,0 +1,18 @@
+using System.Collections.Generic;
+using RecRoom.Core;
+
+public interface MOKKNOCMELN
+{
+	public delegate void LELEMNMEFNC(bool DPBMPIIMOOI);
+
+ GiftBox JMMDBEDEHAE
+{
+get ;
+}
+
+	void IGHFPNOILPG(List<EDDPDJCKOBH.GMBCAMAAPMN> PFBAOAHFAIC, bool EKILBKBJENK, bool OAHMPAFOGBJ);
+
+	void OCOCCKBOFJM();
+
+	IEnumerator<EGGPGCCKPCO> GBGBPJNEOCL(EDDPDJCKOBH.GMBCAMAAPMN JILJEPBFNBO, LELEMNMEFNC ONAFALABHKI, bool IHIABGNNAHM = false, bool KDAEJFCMMFA = true);
+}

@@ -1,0 +1,4 @@
+"""Only lower an already-tested metadata reader's private cap128→64MiB."""
+import json
+import prepare_marshalling_integration as p
+source=p.HERE/'run_tested_sdk_closure.py';target=p.HERE/'run_tested_sdk_closure_64mib.py';text=source.read_text();p.need(text.count('cap=.125')==1,'Exact fixed previous reader cap');text=text.replace('cap=.125','cap=.0625');target.write_text(text);(p.HERE/'tested-sdk-closure-64mib-provenance.json').write_text(json.dumps({'source':p.pinned(source),'candidate':p.pinned(target),'only_change':'Metadata-only existing reader private cap128MiB→64MiB; unchanged1.5GiB global reserve,90s deadline,source hashes and complete226assembly checks','prior_measured_peak_bytes':32776192,'game_or_SDK_code_executed':False},indent=2)+'\n');print(json.dumps({'runner':str(target),'sha256':p.sha(target)}))

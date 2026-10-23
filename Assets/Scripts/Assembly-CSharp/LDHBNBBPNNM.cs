@@ -1,0 +1,25 @@
+public struct LDHBNBBPNNM : EJFGIMBJACH
+{
+	private JNODIIINKKJ.PBDGIEELIHN GLMKCLLFLBE;
+
+public int CLOBKPKHBNE
+{
+get 	{
+		return 0;
+	}
+
+}
+
+	public LDHBNBBPNNM(JNODIIINKKJ.PBDGIEELIHN DNLPIHIBJDP)
+	{
+		GLMKCLLFLBE = JNODIIINKKJ.PBDGIEELIHN.NO_SNAPPING;
+	}
+
+	public void KFIHMLODGME()
+	{
+	}
+
+	public void MILDLLFOGOM()
+	{
+	}
+}

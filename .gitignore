@@ -1,0 +1,15 @@
+.publisher.local.json
+.publisher-state.json
+.publisher-pending.json
+.publisher-cache/
+.publisher-notes*
+.publisher*.writing
+*.publisher-writing
+__pycache__/
+*.pyc
+.DS_Store
+Library/
+Temp/
+Logs/
+obj/
+bin/

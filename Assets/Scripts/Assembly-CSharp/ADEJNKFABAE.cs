@@ -1,0 +1,6 @@
+public struct ADEJNKFABAE
+{
+	public PNEABJNGNIK BOOJCLKKGDP;
+
+	public PNEABJNGNIK BKNFPAIFGAP;
+}

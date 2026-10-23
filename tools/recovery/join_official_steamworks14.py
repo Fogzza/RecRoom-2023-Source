@@ -1,0 +1,26 @@
+"""Exact native ownership/signature joins to compiled pinned official SDK metadata."""
+import datetime as dt,hashlib,json,uuid
+from pathlib import Path
+WS=Path(__file__).resolve().parents[3];ROOT=WS/'Recovery/RecRoom-2023-04-18'
+NATIVE=ROOT/'Validation/NativeSteamworks14-20261022T140638Z-35bad05b/report.json';COMPILED=ROOT/'Validation/CompiledOfficialSteamworks14-20261022T140821Z-b17fc5e2/report.json';LEDGER=ROOT/'Validation/AllPInvokeBindings-20261022T123600Z/ReviewedEvidencePackage/binding-ledger.json'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def key(owner,name,ret,params):return owner,name,ret,tuple(params)
+def index(rows,f):
+ result={}
+ for row in rows:result.setdefault(f(row),[]).append(row)
+ return result
+def main():
+ out=ROOT/'Validation'/('OfficialSteamMarshalJoin-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();native=json.loads(NATIVE.read_text());compiled=json.loads(COMPILED.read_text());records_path=Path(compiled['marshal_records']['path']);records=json.loads(records_path.read_text());ledger=json.loads(LEDGER.read_text());report={'schema':'native-original-official-sdk-marshalling-join/v1','project_modified':False,'original_or_sdk_code_executed':False,'inputs':[{'path':str(p),'sha256':sha(p)} for p in (NATIVE,COMPILED,records_path,LEDGER)],'fields':[],'imports':[],'field_gaps':[],'import_gaps':[],'binding_mismatches':[]}
+ fields=index(records['fields'],lambda r:(r['owner'],r['name'],r['type']));methods=index(records['methods'],lambda r:key(r['owner'],r['name'],r['return'],[p['type'] for p in r['parameters']]));native_imports=[x for x in native['native_steam_imports'] if x['flags']&0x2000];ledgers=index(ledger['bindings'],lambda r:key(r['declaring_type'],r['method_name'],r['return_type'],[p['type'] for p in r['parameters']]))
+ for n in native['marshal_fields']:
+  matches=fields.get((n['owner'],n['field_name'],n['type']),[])
+  if len(matches)!=1:report['field_gaps'].append({'native':n,'matching_source_count':len(matches)});continue
+  s=matches[0];report['fields'].append({'native':n,'official_compiled':s,'source_sdk_compile_report':str(COMPILED),'exact_owner_name_type_join':True,'native_has_marshal_flag':bool(n['flags']&0x1000),'original_native_descriptor_bytes_recovered':False,'descriptor_authority':'hash-pinned genuine matching-version SDK source compiled with exactUnity2020 compiler'})
+ for n in native_imports:
+  k=key(n['owner'],n['name'],n['return'],[p['type'] for p in n['parameters']]);matches=methods.get(k,[]);bindings=ledgers.get(k,[])
+  if len(matches)!=1 or len(bindings)!=1:report['import_gaps'].append({'native':n,'matching_source_count':len(matches),'matching_ledger_count':len(bindings)});continue
+  s=matches[0];l=bindings[0];flags=s['pinvoke']['attributes'];native_binding=l['effective_import'];cc={0x100:0,0x200:1,0x300:2,0x400:3,0x500:4}.get(flags&0x700);charset={0:2,2:2,4:3,6:4}.get(flags&6);checks={'same_module':s['pinvoke']['module']==native_binding['module'],'same_entrypoint':s['pinvoke']['entry']==native_binding['entry_point'],'same_calling_convention':cc==native_binding['native_calling_convention']['native_enum'],'same_charset_effective':charset==native_binding['native_char_set']['native_enum'],'same_nomangle':bool(flags&1)==native_binding['is_no_mangle'],'same_original_token':int(n['token'],16)==int(l['original_native_MethodDef_token'],16),'native_param_flags_match_source_has_marshal':all(bool(np['native_type']['attributes']&0x2000)==bool(sp['marshal'] is not None) for np,sp in zip(n['parameters'],s['parameters']))}
+  row={'native':n,'official_compiled':s,'native_effective_binding':native_binding,'exact_full_signature_join':True,'checks':checks,'source_return_marshal_present_without_native_param0_flag':bool(s['return_marshal'] is not None)};report['imports'].append(row)
+  if not all(checks.values()):report['binding_mismatches'].append({'method':n['name'],'native_token':n['token'],'checks':checks,'source_binding':s['pinvoke'],'native_binding':native_binding})
+ report['summary']={'native_flagged_fields':len(native['marshal_fields']),'exact_source_field_joins':len(report['fields']),'native_steam_imports':len(native_imports),'exact_source_import_joins':len(report['imports']),'source_parameter_descriptors_for_retained_imports':sum(p['marshal'] is not None for m in report['imports'] for p in m['official_compiled']['parameters']),'source_return_descriptors_for_retained_imports':sum(m['official_compiled']['return_marshal']is not None for m in report['imports']),'field_gaps':len(report['field_gaps']),'import_gaps':len(report['import_gaps']),'binding_mismatches':len(report['binding_mismatches'])};report['status']='all_exact_source_joins_and_effective_bindings_passed' if not(report['field_gaps']or report['import_gaps']or report['binding_mismatches']) else 'explicit_differences_require_review';(out/'report.json').write_text(json.dumps(report,indent=2));print(json.dumps({'report':str(out/'report.json'),'status':report['status'],'summary':report['summary'],'first_field_gap':report['field_gaps'][:1],'first_import_gap':report['import_gaps'][:1],'binding_mismatch_sample':report['binding_mismatches'][:2]}),flush=True)
+if __name__=='__main__':main()

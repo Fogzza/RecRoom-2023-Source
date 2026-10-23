@@ -1,0 +1,71 @@
+using UnityEngine;
+
+namespace RecRoom.Core.Encounters
+{
+	public class ActivateDeactivateEncounterEncounterStep : GameEncounterStep
+	{
+		public enum DIDNDDHDIBM
+		{
+			TIME_ELAPSED = 0,
+			IMMEDIATELY = 1
+		}
+
+		public enum FPMNNMMEGLH
+		{
+			ACTIVATE = 0,
+			DEACTIVATE = 1
+		}
+
+		[SerializeField]
+		private FPMNNMMEGLH action;
+
+		[SerializeField]
+		private GameEncounter affectedEncounter;
+
+public override string Description
+{
+get 		{
+			return null;
+		}
+
+}
+
+		public override void OnEncounterStart()
+		{
+		}
+
+		public override void OnEncounterStop()
+		{
+		}
+
+		public override void OnStartRunning()
+		{
+		}
+
+		public override void OnUpdateRunning()
+		{
+		}
+
+		public override void OnStopRunning()
+		{
+		}
+
+		public override void OnSkipRunning()
+		{
+		}
+
+		public override bool IsBlockingEncounterEnd()
+		{
+			return false;
+		}
+
+		public override bool IsCompleted()
+		{
+			return false;
+		}
+
+		private void IKMABDEBHND(bool BJCBAJGPFKH)
+		{
+		}
+	}
+}

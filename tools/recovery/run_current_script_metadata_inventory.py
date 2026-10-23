@@ -1,0 +1,18 @@
+from pathlib import Path
+import datetime as dt,importlib.util,json,shutil,sys,uuid
+HERE=Path(__file__).resolve().parent;WS=HERE.parents[2];ROOT=WS/'Recovery/RecRoom-2023-04-18'
+sp=importlib.util.spec_from_file_location('comparerguard',HERE.parent/'RuntimeMetadataAudit/run_marshalling_comparer.py');g=importlib.util.module_from_spec(sp);sp.loader.exec_module(g)
+def need(b,s):
+ if not b:raise ValueError(s)
+native=ROOT/'Validation/AllOriginalScripts-20261022T145115Z-25a68695/report.json';n=json.loads(native.read_text());out=native.parent/('CurrentManaged-'+dt.datetime.now(dt.timezone.utc).strftime('%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();modules=[];missing=[];ed=WS/'Tools/Editors/2020.3.33f1/Editor';compiled=ROOT/'Validation/ActualUnityCodeCompile-20261022T124157Z-933539fe/Project/Library/ScriptAssemblies'
+for row in n['images']:
+ image=row['image'];choices=[(WS/'RR23/Assets/Plugins'/image,'current_RR23_runtime_plugin'),(compiled/image,'verified_Unity_compiler_snapshot_pre_7_body_batch'),(ed/'Data/Managed/UnityEngine'/image,'matching_Unity2020_engine_framework'),(ed/'Data/MonoBleedingEdge/lib/mono/unityjit'/image,'matching_Unity2020_Mono_framework'),(ed/'Data/Managed'/image,'matching_Unity2020_managed_framework')];hits=[(p,role) for p,role in choices if p.is_file()]
+ if hits:
+  p,role=hits[0];modules.append({'path':str(p),'sha256':g.sha(p),'role':role,'original_image':image})
+ else:missing.append({'image':image,'native_types':row['counts']['types'],'native_methods':row['counts']['methods'],'status':'no_exact_named_current_project_or_matching_Editor_module_found'})
+plan={'schema':'current-script-metadata-input-plan/v1','native_inventory':{'path':str(native),'sha256':g.sha(native)},'modules':modules,'unavailable_original_images':missing,'core_snapshot_limitation':'Known current7 source-body changes applied after this compiled snapshot. Current source hashes/journals are authoritative for those bodies; this snapshot is only an actual metadata/type identity witness. No framework module is called recovered original gameplay.'};(out/'inputs.json').write_text(json.dumps(plan,indent=2)+'\n')
+helper=out/'CurrentScriptMetadataInventory.dll';src=[HERE/'CurrentScriptMetadataInventory.cs',HERE.parent/'CompilerPropertyProjection/CanonicalMetadataSignatures.cs'];cecil=HERE.parent/'ILCoverageAuditor/Published/Mono.Cecil.dll';shutil.copyfile(cecil,out/cecil.name);rsp=out/'compile.rsp';rsp.write_text('\n'.join(['/nologo','/target:exe','/langversion:latest','/out:"'+str(helper)+'"']+['/reference:"'+str(p)+'"' for p in sorted(g.g.REF.glob('*.dll'))]+['/reference:"'+str(out/cecil.name)+'"']+['"'+str(p)+'"' for p in src])+'\n');report={'status':'started','input_plan':str(out/'inputs.json'),'modules':len(modules),'unavailable_images':missing,'project_modified':False}
+try:
+ g.run([g.g.DOTNET,g.g.SDK/'Roslyn/bincore/csc.dll','/noconfig','@'+str(rsp)],out,'compile-trusted-inventory',cap=128*1024**2,seconds=30);helper.with_suffix('.runtimeconfig.json').write_text(json.dumps({'runtimeOptions':{'tfm':'net10.0','framework':{'name':'Microsoft.NETCore.App','version':'10.0.11'}}}));g.run([g.g.DOTNET,helper,out/'inputs.json',out/'Inventory'],out,'read-only-managed-inventory',cap=256*1024**2,seconds=120);report['status']='passed'
+except Exception as e:report.update(status='failed',error=str(e))
+report['sources']=[{'path':str(p),'sha256':g.sha(p)} for p in src];(out/'run-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'report':str(out/'run-report.json'),'status':report['status'],'modules':len(modules),'unavailable_images':len(missing),'error':report.get('error')}));raise SystemExit(0 if report['status']=='passed' else 1)

@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - BrushTool
+  - LayerIsLocked
+  - Hazard
+  - OutfitRenderer
+  - ProxyTransform
+  - CollisionSfx_Table
+  - CollisionSfx_Paddle
+  - Button3D
+  - MovementRestricted
+  - MovementCollisionAlwaysAllowed
+  - TeleportRegion
+  - CollisionSfx/Bowling/Pin
+  - CollisionSfx/Bowling/Gutter
+  - CollisionSfx/Bowling/Backboard
+  - Pool/Ball
+  - Pool/Cushion
+  - Pool/Pocket
+  - CollisionSfx/Bowling/Lane
+  - GeneratedLODRenderer
+  - Climbable
+  - WallRunRestricted
+  - BootSequence_DoNotPersist
+  - MirroredCamera
+  - Orientation/Throwable
+  - SteamVRRoot
+  - OutlineOnlyRenderer
+  - Boardable
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Hidden In First Person
+  - LocalPlayerPhysics
+  - DynamicPhysics
+  - StaticPhysics
+  - RemotePlayerPhysics
+  - DynamicPhysicsIgnoreStaticPhysics
+  - MovementBlocker
+  - DEPRECATED_OutfitTrigger
+  - CameraMesh
+  - DynamicPhysicsIgnoreDynamicPhysics
+  - DynamicPhysicsIgnorePlayerPhysics
+  - KillZone
+  - PlayerTrigger
+  - VehiclePhysics
+  - OverlayNotifications
+  - DynamicPhysicsIgnoreDynamicAndPlayerPhysics
+  - DynamicPhysicsIgnoreEnemyAndPlayerPhysics
+  - TriggerCollider
+  - EnemyPhysics
+  - DynamicPhysicsIgnoreDynamicAndPlayerAndEnemyPhysics
+  - EnemyPhysicsIgnoreDynamicAndEnemyPhysics
+  - FirstPersonShadowCaster
+  - Decoration
+  - CachedView
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: TactileMenuButton
+    uniqueID: 2635266657
+    locked: 0

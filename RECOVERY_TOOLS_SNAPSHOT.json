@@ -1,0 +1,2046 @@
+{
+  "schema": "SolarNet-reviewed-recovery-tool-snapshot/v1",
+  "files": [
+    {
+      "path": "tools/recovery/account_current_original_sources.py",
+      "bytes": 8692,
+      "sha256": "e75c241b99d1252a6c219014c8ac61e3143be2ef8a1fb23c4d3f3b0ef0cb1ce8"
+    },
+    {
+      "path": "tools/recovery/ActualCoreFieldSelectorInventory.cs",
+      "bytes": 2468,
+      "sha256": "bc8ab7f8d3fff9be46ac602f30e67196218f1113ae3f91fe8bca38809cd859fb"
+    },
+    {
+      "path": "tools/recovery/apply_original_shader_launcher_amendment.py",
+      "bytes": 11087,
+      "sha256": "763e3b2179429e27de6b311ca13879bd6219649f7083ed7b0392634441be5feb"
+    },
+    {
+      "path": "tools/recovery/archive_sdk_audit_inputs.py",
+      "bytes": 1849,
+      "sha256": "c5b4d7792b80649dde5ba5726840c01bb6ccedd7c38fc5fcc3df334589f1060b"
+    },
+    {
+      "path": "tools/recovery/AttributeScopeLazyAudit.cs",
+      "bytes": 1727,
+      "sha256": "b0288789c51f7416a2f97d74fd13bd6e6e0f33066f0f4caf904ace9549c80e85"
+    },
+    {
+      "path": "tools/recovery/audit_accessibility_error_coverage.py",
+      "bytes": 14304,
+      "sha256": "b0e2d2a2fb8ae734039320adb8890d7b8b82468b3fc24135f1edf1b058cf5790"
+    },
+    {
+      "path": "tools/recovery/audit_accessor_error_projection_static.py",
+      "bytes": 5123,
+      "sha256": "dd7d5e68249fce0b04e8151a6074376e0d6fe43e1cf3b67f068230d4a396df65"
+    },
+    {
+      "path": "tools/recovery/audit_actual_ide_design_time.py",
+      "bytes": 3607,
+      "sha256": "b9f8fd0de5744ad0c3f05401943c057c3df3121a4b04f898f20ca6cc86ae72a8"
+    },
+    {
+      "path": "tools/recovery/audit_ar_reflection_overloads_static.py",
+      "bytes": 2200,
+      "sha256": "2ad4cbfb4c57a10e6650921676b2169e6c0e10d2d425a82210114e75043c1bf4"
+    },
+    {
+      "path": "tools/recovery/audit_boot_candidate_dependency_closure.py",
+      "bytes": 11068,
+      "sha256": "f2c7b69246895413388856698a7b347ecf6014d63cd007bb2149522f3d4dc3c0"
+    },
+    {
+      "path": "tools/recovery/audit_build_playability_boundary.py",
+      "bytes": 11445,
+      "sha256": "a10f60e14840944bb749e2803b9d6ffe46cc1d16e9a0f91b3bfc8fabb82455d0"
+    },
+    {
+      "path": "tools/recovery/audit_cli_marshal_contracts.py",
+      "bytes": 9049,
+      "sha256": "7bf5a8823bdaf741d2f35cdd470471ccb0dbb154947ad387d414d3ec502049bc"
+    },
+    {
+      "path": "tools/recovery/audit_codegen_worker_memory.py",
+      "bytes": 6221,
+      "sha256": "4321066b58ea2c54a6e1836842b66f8ac4567062a4cc9dc41603b2274e0a6011"
+    },
+    {
+      "path": "tools/recovery/audit_comle_scoped_base.py",
+      "bytes": 425,
+      "sha256": "3ac36ab32bb01edf4510c92015125dd247d506aa0e7b8b89fc11b100efdccb4a"
+    },
+    {
+      "path": "tools/recovery/audit_core_typeref_assembly_scopes.py",
+      "bytes": 2868,
+      "sha256": "af137e6fd734bbe5d53696f71985187c27d348282eeae911b6f3da0c5a479997"
+    },
+    {
+      "path": "tools/recovery/audit_current_client_endpoint_configuration.py",
+      "bytes": 6387,
+      "sha256": "621637017ca2830db3ee9e9bea171166a40ec8ee0ec55397b94e6cfcb5307ca3"
+    },
+    {
+      "path": "tools/recovery/audit_emitted_inventory.py",
+      "bytes": 4293,
+      "sha256": "668d219b8c3b537ee92b644cac113e86d0e1e37aff3e824e823088e89c6e84df"
+    },
+    {
+      "path": "tools/recovery/audit_finite_aot_framework_closure.py",
+      "bytes": 2883,
+      "sha256": "65a7ab5365ff6647beb2e9fac8768fa2fd035e0459363cf3dde9434cc060be66"
+    },
+    {
+      "path": "tools/recovery/audit_finite_aot_system_core.py",
+      "bytes": 4050,
+      "sha256": "9fd7ac9f0283855606f755b3aae65514033e60f0eaca82eadcd1c94254a6d7b1"
+    },
+    {
+      "path": "tools/recovery/audit_hashable_scoped_vtable.py",
+      "bytes": 5467,
+      "sha256": "ed61d9e08bb902870dce95c74c34150c641b6ebbf74d59b7c463db2ea9e656fb"
+    },
+    {
+      "path": "tools/recovery/audit_ide_reference_paths.py",
+      "bytes": 2878,
+      "sha256": "f74ffacb5d3035cf0ee7de12d84a87deea9fc7cb109704647cd84cb275fff578"
+    },
+    {
+      "path": "tools/recovery/audit_main_asset_ripper_editor_helpers_static.py",
+      "bytes": 4784,
+      "sha256": "c377e869f34cb722f8b565d170bf3fb06d3b82993a96c242ca638e711df681db"
+    },
+    {
+      "path": "tools/recovery/audit_minimal_original_bootstrap.py",
+      "bytes": 12239,
+      "sha256": "ffcfa590b500acc8d3c8aa760e1066f5a9220ebf3179b0b8896ca7a763403292"
+    },
+    {
+      "path": "tools/recovery/audit_missing_methods.py",
+      "bytes": 2933,
+      "sha256": "a2b0267efe29a5e296e805ddedaa6a56227fe41f1bc82908695419b6e6a7b4a3"
+    },
+    {
+      "path": "tools/recovery/audit_native_nameserver_router.py",
+      "bytes": 7452,
+      "sha256": "01ba9c152ef915eca01f0e7133a93780ed58d3c7415fe509de505264843f28fb"
+    },
+    {
+      "path": "tools/recovery/audit_native_steamworks14.py",
+      "bytes": 5991,
+      "sha256": "dcdf87645f1d25674f6cff4fbe3a875ab4d16854730cf0f5add93105f464d1ce"
+    },
+    {
+      "path": "tools/recovery/audit_official_sdk_native_identity.py",
+      "bytes": 7367,
+      "sha256": "ef67deefe9286d92e68886ef24d574e0088890342eb568d328c2be346840a00e"
+    },
+    {
+      "path": "tools/recovery/audit_original_pinvoke_wrappers.py",
+      "bytes": 9432,
+      "sha256": "1b653d68d2e57f8d159a6abdb51f66b604525014c2d3a28c8173700d77207481"
+    },
+    {
+      "path": "tools/recovery/audit_original_rendering_sdk_candidates.py",
+      "bytes": 8998,
+      "sha256": "411a499e03b1022086c62197fadb56c8f0c339dcb8c0a30c8d212617076a4005"
+    },
+    {
+      "path": "tools/recovery/audit_original_windows_build_preflight.py",
+      "bytes": 9307,
+      "sha256": "8b98d7a4d01a857b93e886ea0293dce061e380abbb290afc0b8caa1b0db72054"
+    },
+    {
+      "path": "tools/recovery/audit_pasted_projection_errors.py",
+      "bytes": 12586,
+      "sha256": "a48180daba5ac8808f493875be493884fe1359f8a6b58e5e9da99df36400643f"
+    },
+    {
+      "path": "tools/recovery/audit_pasted_projection_errors_20261022_latest.py",
+      "bytes": 12794,
+      "sha256": "58096204f37c62a4d81d76ae41679ea7cbbd37ccd164aa11479468790b40dabb"
+    },
+    {
+      "path": "tools/recovery/audit_pinvoke_native_dependencies.py",
+      "bytes": 5759,
+      "sha256": "e4fbdab666db7f2658969ec1978b73e3a95d793cb1cd436a4a4e1ab34a351a59"
+    },
+    {
+      "path": "tools/recovery/audit_revive_button_dependencies.py",
+      "bytes": 7648,
+      "sha256": "51fbb63a0e88540a577e7b1775ac54fb04623315dc8d41729bfed4812693c38d"
+    },
+    {
+      "path": "tools/recovery/audit_startup_action_dependencies.py",
+      "bytes": 6474,
+      "sha256": "7c9b334e4eb8be46397315cc8b922e1dad534a0b84e7e9a2d4ee5ec13dff7ef5"
+    },
+    {
+      "path": "tools/recovery/audit_startup_native_leaves.py",
+      "bytes": 3553,
+      "sha256": "c76d4da104985f8539feda816453afca18de2efb0ffedffee04be04a2e024799"
+    },
+    {
+      "path": "tools/recovery/audit_textmeshpro_recovery_candidate.py",
+      "bytes": 8760,
+      "sha256": "21467485afca6ad4a962083c26e8ba838a4d4d0322f3e8fe7bc1669bd5788bfc"
+    },
+    {
+      "path": "tools/recovery/audit_ugui_recovery_candidate.py",
+      "bytes": 4102,
+      "sha256": "184984587acc0b14738525b3776d124c74f5c90177c529e20e4f4918b2a4873b"
+    },
+    {
+      "path": "tools/recovery/audit_unity2020_safe_mode_api_static.py",
+      "bytes": 3909,
+      "sha256": "5ba52038945c26e7f9eb21ad79c316d57af00709fb861384f42b1dc67204e051"
+    },
+    {
+      "path": "tools/recovery/audit_unity2020_windows_build_contract.py",
+      "bytes": 7816,
+      "sha256": "b660e7a874f8a3b649a21181b8636cb1731cb65f049ec680a60587c544a5502a"
+    },
+    {
+      "path": "tools/recovery/BootCallbacksEffectProof.cs",
+      "bytes": 9162,
+      "sha256": "718a7fe685027e39a035719fbb3ff9eb5042ea3b5f025ee1d75bb377e110e0f6"
+    },
+    {
+      "path": "tools/recovery/BootThreeMethodsEffectProof.cs",
+      "bytes": 11399,
+      "sha256": "3c4ce3368955e49d538eaa7a078436fb350b4822991095559f404b60f64162bf"
+    },
+    {
+      "path": "tools/recovery/build_official_addressables.py",
+      "bytes": 10552,
+      "sha256": "b162d2aed99ea6126fcc4e62e5df57a9d9172ac537f03e99972b106545bb8840"
+    },
+    {
+      "path": "tools/recovery/build_stage_guarded.py",
+      "bytes": 8152,
+      "sha256": "fa927e0ea8b54b8454c4b8df22a2f2947d71566d69080187f06f486b733b8ba6"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalAGDependencyFixture.cs",
+      "bytes": 9604,
+      "sha256": "40138abb2af91cf4c8ae35c1072d1cec0e73fdf5b1b83a967b3a14ea61b5e399"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderCollectionFixture.cs",
+      "bytes": 16881,
+      "sha256": "2f8f9d324539d7a8b7cb58fc12c0560b01ab42d0697a46051cf4c889914b70c6"
+    },
+    {
+      "path": "tools/recovery/BuildOriginalShaderPrograms.cs",
+      "bytes": 7902,
+      "sha256": "b82806fad5115f0484e15f7e6ad0f355381e74061f58dc4fff13026de1af1c40"
+    },
+    {
+      "path": "tools/recovery/BuildRecoveredWindows.cs",
+      "bytes": 4608,
+      "sha256": "46f1ac502289988e25afc6c0a9b0137960081a626297c4e279c626cea821c114"
+    },
+    {
+      "path": "tools/recovery/CanonicalMarshallingContracts.cs",
+      "bytes": 7358,
+      "sha256": "34e2ee9a315a042ff092f43c8fc15ca5326eb838dde5fe19dae24a13d4e33ba6"
+    },
+    {
+      "path": "tools/recovery/CanonicalMarshallingFixtures.cs",
+      "bytes": 9208,
+      "sha256": "a39fdf46ff483fae14f240d22e180f73e4fce8cd3cb8ace317ffb1c131c4a6c8"
+    },
+    {
+      "path": "tools/recovery/check_installed_original_sdk_dependencies.py",
+      "bytes": 5034,
+      "sha256": "a096e6881842081b491e7bec62297d2e63b43810f4b3b1e9533a861c32778d96"
+    },
+    {
+      "path": "tools/recovery/check_windows_builder_unity2020.py",
+      "bytes": 2802,
+      "sha256": "53d1e0e9f3fedf714620029b8194393847eed8ad1473406615841b0981fc1f7a"
+    },
+    {
+      "path": "tools/recovery/classify_shader_parsed_form_differences.py",
+      "bytes": 1913,
+      "sha256": "7f4e2cc6e1f58fb895a763002d8de84b12a1e032c8b252aa3e8b9475e07c5666"
+    },
+    {
+      "path": "tools/recovery/CliMarkerVoidFixtures.cs",
+      "bytes": 5728,
+      "sha256": "0b1c5d8e0be73f0c9bf25bd85bcb8b7a0b037ed1aaa0cfbe7544dd3e997f1539"
+    },
+    {
+      "path": "tools/recovery/collect_all_pinvoke_native.py",
+      "bytes": 3524,
+      "sha256": "de3b2c1a26876d76451456f1ca54aa0fb051acd20a2bf89d3089af9ec85486b3"
+    },
+    {
+      "path": "tools/recovery/collect_win32_marshal_wrappers.py",
+      "bytes": 2329,
+      "sha256": "3b18de9225c31ee714aaeef95f916cacb05e8458617fb17fca7b500549971826"
+    },
+    {
+      "path": "tools/recovery/compare_hashable_original_scope.py",
+      "bytes": 2007,
+      "sha256": "1c3275f6b7f65415f5a048440583dd24e718cd2d99323452226687dae9a2debc"
+    },
+    {
+      "path": "tools/recovery/compare_later_manual_dispatch.py",
+      "bytes": 5810,
+      "sha256": "accb42d6c7aa0dd92474b10e7b6a64731abd9fc57629f392bca6b6c550214de8"
+    },
+    {
+      "path": "tools/recovery/compare_shader_parsed_form.py",
+      "bytes": 2407,
+      "sha256": "1ba21f3660988cb659b19ec0b3c48d2bb3118e5345e8031ce56e02d61ed0cafb"
+    },
+    {
+      "path": "tools/recovery/compile_apply_original_protocol_version_getters.py",
+      "bytes": 9263,
+      "sha256": "d20d394174b8f35fec8a87a4116a2768ebd907dc533bb688158ec4783ffb2700"
+    },
+    {
+      "path": "tools/recovery/compile_embedded_openvr_witness.py",
+      "bytes": 2822,
+      "sha256": "105d54f7155e4f13a21ca414fcfe2ff04aa927b1513e63ac74bc13c8790ebe5f"
+    },
+    {
+      "path": "tools/recovery/compile_official_steamworks14.py",
+      "bytes": 6425,
+      "sha256": "21e8da06b6355ac8a698eba1a9d794df1998647b48233544a5c2a9ed52470cc1"
+    },
+    {
+      "path": "tools/recovery/compile_openvr_api_witness.py",
+      "bytes": 2836,
+      "sha256": "b571ce39188e51814bc4c6f0926c525cb0ffa782355441100c9193233717e61a"
+    },
+    {
+      "path": "tools/recovery/compile_openvr_release_witness.py",
+      "bytes": 4529,
+      "sha256": "5ff71f9fd51c5d58a0877ad78a4961949814969fb93e377574232c60d57de7d5"
+    },
+    {
+      "path": "tools/recovery/complete_scoped_offline_gates.py",
+      "bytes": 2492,
+      "sha256": "e609a26d48e2a182752e5e9e0a9ea2a71e9ab81bc1d1e29880d50eec7568878b"
+    },
+    {
+      "path": "tools/recovery/configure_owned_photon_apps.py",
+      "bytes": 14330,
+      "sha256": "c8be164bf2e8ff5751ea68eddf01e27873a1751438fd497e1074e3c05ee022bc"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalAGWithFallbackGuid.cs",
+      "bytes": 12110,
+      "sha256": "dfa14b41d1aafbacefa71c32576462a02b34e260a8250c76de9b0bafec02ccaf"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderCollectionToEditor.cs",
+      "bytes": 14256,
+      "sha256": "b21a3c0d59faad1906a58ecd79be8cbd8c4ecb4f8f4ce55e232f3e6b8039a5f3"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderPairToEditor.cs",
+      "bytes": 9922,
+      "sha256": "97c772330ff9caeaa3251893bcc7f17405ea2ea58df309e6b2bb5a00d15c9f04"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditor.cs",
+      "bytes": 6192,
+      "sha256": "152b26f86db074791f532341f39f86012b9e8057f4e6e4fac879d9835ff0a4fb"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditorDiagnostic.cs",
+      "bytes": 8349,
+      "sha256": "b70dee8a34e31b367d8575d26754ef8ae2a056c62ac225691f260c9f9ebd30e7"
+    },
+    {
+      "path": "tools/recovery/ConvertOriginalShaderToEditorNormalized.cs",
+      "bytes": 9274,
+      "sha256": "56bc9daa1314c4c389f5eb7c731f7eca93e7c9778241f638a0bc7fb0ba1144ba"
+    },
+    {
+      "path": "tools/recovery/CoreFieldAttributeWitnessInventory.cs",
+      "bytes": 5970,
+      "sha256": "2dc9caf9a82c1abebd03e7f4811dbfc5b735f22d8e75d6d60452cfe34b953fe8"
+    },
+    {
+      "path": "tools/recovery/CoreMethodFlagsInventory.cs",
+      "bytes": 6914,
+      "sha256": "32a231a8a7d632c498400c9f96370f4bb103a1ac946d6029d74a087edda6a0fe"
+    },
+    {
+      "path": "tools/recovery/CurrentCoreChecks.cs",
+      "bytes": 3109,
+      "sha256": "a7765ded9e28af28ee17669bda1b8a6dbdd24acffcaca416da9bb248d31df877"
+    },
+    {
+      "path": "tools/recovery/CurrentScriptMetadataInventory.cs",
+      "bytes": 6891,
+      "sha256": "b7bf770dd68876e10946e42abe3dc811f2e76a2632be0ae01b3fec62a0514e13"
+    },
+    {
+      "path": "tools/recovery/decode_oculus_version.py",
+      "bytes": 2071,
+      "sha256": "d043379e6400a87d794542e1bbe0a6b96159e92540538fd7bd30a43eaaeb5584"
+    },
+    {
+      "path": "tools/recovery/decode_recroom_game_root_native.py",
+      "bytes": 1782,
+      "sha256": "a9fd31ac147e7c2c0509844a8159c7598b690367da22629615dac985e1f3e348"
+    },
+    {
+      "path": "tools/recovery/decode_service_container_windows.py",
+      "bytes": 3463,
+      "sha256": "e68208dcb888c3466a1d1c80af26f43519c36bf07271e2d6ebef5f7d99006159"
+    },
+    {
+      "path": "tools/recovery/DisassembleOculusVersion.cs",
+      "bytes": 1724,
+      "sha256": "6fe4f5ecd39321311a037973dfd33229faca9f2015dce1496e64db72be0cd9c8"
+    },
+    {
+      "path": "tools/recovery/DisassemblePInvokeWrappers.cs",
+      "bytes": 3711,
+      "sha256": "c0b6c17d2264e1b787eb5643b544a47599519e434625b226d405c92042eccbf0"
+    },
+    {
+      "path": "tools/recovery/EmittedOriginalMethodSubsetPolicy.cs",
+      "bytes": 2976,
+      "sha256": "fd05a9ac71d8083ed067ac6a2d4f3a0e75f1ff61c4b40908a23ee1f84d78424f"
+    },
+    {
+      "path": "tools/recovery/EmittedReferencePlanCompletion.cs",
+      "bytes": 2912,
+      "sha256": "11218ca1b24d57300a75c917b737cab0bb2de2bb153b98bd962b6b89ac48a736"
+    },
+    {
+      "path": "tools/recovery/enrich_missing_subset.py",
+      "bytes": 3429,
+      "sha256": "746c9a81d91367d113063347e365349cd5b7ca6fda1cf7158fa647338ce4f2ca"
+    },
+    {
+      "path": "tools/recovery/ExactCliMarkerConstructor.cs",
+      "bytes": 2009,
+      "sha256": "99d5bd1fe1991f741b855a19d8d9878bcc3f7d402ec5d1e9d2afad9aacbc0ba0"
+    },
+    {
+      "path": "tools/recovery/ExactMetadataReferenceResolver.cs",
+      "bytes": 5950,
+      "sha256": "e22c2cef40e7db6702f5e7ce6cbd855083ee683f90294612cf0a0660da68df3c"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalFrameworkScopes.cs",
+      "bytes": 4360,
+      "sha256": "901eae6ac308ac22604792d5e7d0b4422577fbd749b073003de378ee822046fd"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalPropertyRestoration.cs",
+      "bytes": 5998,
+      "sha256": "af3e4f1a7af26981f030264f6656d555d8b543863d0d98fad9a9122b0588bfe3"
+    },
+    {
+      "path": "tools/recovery/ExactOriginalTypeFlagRestoration.cs",
+      "bytes": 1922,
+      "sha256": "eab7d1b4cb014b79a581324d952f6977816493c1a4058f317629c6842cf78766"
+    },
+    {
+      "path": "tools/recovery/expand_original_shader_native_index.py",
+      "bytes": 6792,
+      "sha256": "a66c1a0cdf7909e219793eaf20de766866262bc24fab0ed6ee9e0b4bbb6e7f7c"
+    },
+    {
+      "path": "tools/recovery/expand_original_shader_native_index_v2.py",
+      "bytes": 7591,
+      "sha256": "2edeb061be12f2f51ea133a5b1d33c89b620159244df01e1c516072bee08aa94"
+    },
+    {
+      "path": "tools/recovery/ExtractSdkMarshalling.cs",
+      "bytes": 2498,
+      "sha256": "2ae0766212deec89e6dfcdf58421565657d1be845b9467e1661e48d295d1d282"
+    },
+    {
+      "path": "tools/recovery/fetch_oculus_embedded_openvr_source.py",
+      "bytes": 2729,
+      "sha256": "c969435d7521d83fab71566fe4515a8f70d0f38bb54772903c183e0ac232a607"
+    },
+    {
+      "path": "tools/recovery/fetch_official_openvr.py",
+      "bytes": 2444,
+      "sha256": "ff6aa5d92ffc65bb329d8160629f190e68ed68405733fa1ba921bd247e18d252"
+    },
+    {
+      "path": "tools/recovery/fetch_official_steamworks14.py",
+      "bytes": 2769,
+      "sha256": "e3fa146c51d3bbab92061562e0efb6b807f05b799bd506c6989137c8c0f12851"
+    },
+    {
+      "path": "tools/recovery/fetch_openvr_history.py",
+      "bytes": 2559,
+      "sha256": "cbb9ed6a9a6c82f10e961f9074b31cd95b29184463d22b9384dfff12acbc0d5a"
+    },
+    {
+      "path": "tools/recovery/fetch_openvr_release_source.py",
+      "bytes": 2305,
+      "sha256": "aa0b97325b87c37bda98e23764c8fc8718b2bbe94197f02b9f195175603c1aaf"
+    },
+    {
+      "path": "tools/recovery/fetch_steamworks14_template.py",
+      "bytes": 1820,
+      "sha256": "38841aa02675e38e135b7ad0a1982bcbaa46a43304d1a9975fdd80fa826e07b5"
+    },
+    {
+      "path": "tools/recovery/fetch_steamworks_manual_dispatch_history.py",
+      "bytes": 3253,
+      "sha256": "d3f9d96a49d09ae8db5e9f16986176e7c4adf5fe32de160d4513a089af39e500"
+    },
+    {
+      "path": "tools/recovery/finalize_all_original_shader_dependencies.py",
+      "bytes": 9790,
+      "sha256": "da7f3678f08e42c1a1cf459d0fa3b34ac35e871d7dd044861e6b6253402db853"
+    },
+    {
+      "path": "tools/recovery/finalize_marshalling_readiness.py",
+      "bytes": 6342,
+      "sha256": "39a301b46456dd2cf5fa04cf0daae5825ddf630ad008ecb1cc8e0622531fffa2"
+    },
+    {
+      "path": "tools/recovery/finalize_rr23_code_publication_manifest_readonly.py",
+      "bytes": 10089,
+      "sha256": "32d90fb1608514c4c6d8264cdbb55136db114cee065de9cea0a21ba7d8cbedfa"
+    },
+    {
+      "path": "tools/recovery/find_official_openvr_binary_identity.py",
+      "bytes": 4078,
+      "sha256": "a9cbb4f676535e2541ba5f54160f3ee643c34144d0291c60c6bacc56c51ab81c"
+    },
+    {
+      "path": "tools/recovery/FiniteAOTResolverFixtures.cs",
+      "bytes": 3509,
+      "sha256": "3533176e018ebdcb8f93aa26faa7fdba4032be1ce52e36b3db1b9065a61b3c4c"
+    },
+    {
+      "path": "tools/recovery/FrameworkScopeFixtures.cs",
+      "bytes": 3697,
+      "sha256": "ac45699fa9172b85bdc9497ef29e6c47f4a57c575dee72e1df5faf7c203a3181"
+    },
+    {
+      "path": "tools/recovery/inspect_container_registration_dependencies.py",
+      "bytes": 3062,
+      "sha256": "5c1f880c6c65921832e3d27daf417a52acb59f9482dfe561082d00f1ae4f7e5f"
+    },
+    {
+      "path": "tools/recovery/inspect_native_oculus_contracts.py",
+      "bytes": 5669,
+      "sha256": "5246110b220ead0dbca15a69cb729f4abaeb1369f2eaacb1de315cf4d209dc3d"
+    },
+    {
+      "path": "tools/recovery/inspect_original_ag_dxbc_source_feasibility.py",
+      "bytes": 6269,
+      "sha256": "6d3c9a8fab6e69b11d9bd27e2b0e24c941a76135b5788e5b72606230c21a7765"
+    },
+    {
+      "path": "tools/recovery/inspect_revive_button_native.py",
+      "bytes": 3914,
+      "sha256": "00676b470c0d4ef7d4188964d96b518b485c6f45705883619b870a38a3d1410a"
+    },
+    {
+      "path": "tools/recovery/InspectDecompilerEventCollision.cs",
+      "bytes": 2722,
+      "sha256": "9aad05beeefc6b6f6d8f26c33ace9838c971a52113c928fa4f4d6fb8d301da15"
+    },
+    {
+      "path": "tools/recovery/InspectPInvokeBlocks.cs",
+      "bytes": 1828,
+      "sha256": "fddb7b323f86b514553c446f2a55ab1288d87ca2ca04ce362393be3c84e74ac5"
+    },
+    {
+      "path": "tools/recovery/InspectSinglePropertySemantics.cs",
+      "bytes": 1502,
+      "sha256": "c31d6324c24c790b7e180e9967e1e0b0c99e714fea8ed26a194125277b14ac1e"
+    },
+    {
+      "path": "tools/recovery/inventory_all_original_scripts.py",
+      "bytes": 9378,
+      "sha256": "c8bb59172f30b0bc8ecf86a8ebb74605a2cf532eb2a6ebe59287b3f286710d5b"
+    },
+    {
+      "path": "tools/recovery/inventory_all_original_shader_coverage.py",
+      "bytes": 16718,
+      "sha256": "eb56823072b5a1742bdf26375dce469f9d640f8e46f39a2360ce834887a06226"
+    },
+    {
+      "path": "tools/recovery/inventory_all_original_shader_coverage_v2.py",
+      "bytes": 19133,
+      "sha256": "6f342f6f2fdf39cc73ab8785f6f26982d69632f1e4007e2e04bee1eeb1afd764"
+    },
+    {
+      "path": "tools/recovery/inventory_all_original_shader_coverage_v3.py",
+      "bytes": 19416,
+      "sha256": "0f404c3804c0c492d318ca6d83034eaf4da60e5e495ef0b13a263cfc9199c9cd"
+    },
+    {
+      "path": "tools/recovery/inventory_existing_main_shader_dependencies.py",
+      "bytes": 6892,
+      "sha256": "295c02b67c03b09bc5e72da37fe6c4b35cdfdd259523fc6b3cb566a9e5c06be6"
+    },
+    {
+      "path": "tools/recovery/inventory_native_openvr.py",
+      "bytes": 4267,
+      "sha256": "f78cffd35a3849b0c8eef07f3395ddfbaa5e4318d7eb4fe160b19d81aafed25b"
+    },
+    {
+      "path": "tools/recovery/inventory_openvr_providers.py",
+      "bytes": 2955,
+      "sha256": "f352193e9d52d29e1d956e64871b4a2beeb6706f0fc8ebac96c91ba4c7858743"
+    },
+    {
+      "path": "tools/recovery/inventory_recroom_game_root_native.py",
+      "bytes": 4183,
+      "sha256": "79f7f61e831af7ac09e078bc146b0218f271d13e336440aed22be36ac80324c4"
+    },
+    {
+      "path": "tools/recovery/inventory_rr23_source_publication_readonly.py",
+      "bytes": 10400,
+      "sha256": "95d6e1ee053c6e2e29ece465492f1f5ad1308c138d113f425be5f253922f79d4"
+    },
+    {
+      "path": "tools/recovery/inventory_rr23_source_sizes_readonly.py",
+      "bytes": 2076,
+      "sha256": "d4f40a76825ae552aa7fca48847a03ea056a6fad24bb87b1e2aa182066bb8e9f"
+    },
+    {
+      "path": "tools/recovery/inventory_vendor_marshal_gaps_full.py",
+      "bytes": 6884,
+      "sha256": "643cd98022bdaede52969d3f869e84dc7d83121775f5033db7a1e9cdd580f062"
+    },
+    {
+      "path": "tools/recovery/join_actual_marshal_native.py",
+      "bytes": 6761,
+      "sha256": "a404ce00d13817c5677a0c8ff55c386c268f85ee064698c338ef3ca1666f60fb"
+    },
+    {
+      "path": "tools/recovery/join_all_original_script_accounting.py",
+      "bytes": 9872,
+      "sha256": "5b465d6691da593000b99c20223f056b4d1026bf2fb54d142fec8fb862f055f4"
+    },
+    {
+      "path": "tools/recovery/join_official_steamworks14.py",
+      "bytes": 5225,
+      "sha256": "1f02123b4cc25066f062026e3133379ab034d8151444b4c77940f007b05b0770"
+    },
+    {
+      "path": "tools/recovery/join_openvr_contracts.py",
+      "bytes": 4935,
+      "sha256": "70ff1b739059b73e0a7adc1a522105b2316e5c97166e22aa370089a1737f54c7"
+    },
+    {
+      "path": "tools/recovery/list_boot_fixture_type_owners.py",
+      "bytes": 726,
+      "sha256": "88e41db98d4cc46bbd06e250a2f26902e790af94478b2cdb64a01646e5b37d45"
+    },
+    {
+      "path": "tools/recovery/ManagedTypeInventory.cs",
+      "bytes": 1431,
+      "sha256": "a53bb9895248ebd28395e0128e6229747bd6bf5fc6db134a54f35292c4e7b72c"
+    },
+    {
+      "path": "tools/recovery/ManifestStreamingFixtures.cs",
+      "bytes": 10916,
+      "sha256": "a02b951e89cc6191b52eff161c73d176956519beda99386a423469cdc9a18ab7"
+    },
+    {
+      "path": "tools/recovery/map_builtin_material_shader_targets.py",
+      "bytes": 11395,
+      "sha256": "92241ff0bc026bc6ec87f2b391f38a74b3b8cbedca51ecee33b92e7b425e7810"
+    },
+    {
+      "path": "tools/recovery/map_shader_buildreport.py",
+      "bytes": 15669,
+      "sha256": "249e3638197496a405291e3d9dd40c010d2bdcec9757194307cdd5a53ee905b7"
+    },
+    {
+      "path": "tools/recovery/match_embedded_openvr_graph.py",
+      "bytes": 7015,
+      "sha256": "f7e9c57034d6b50f3a3aab3d591f6049bbd0f13ab39075bcf29bd3997c1abe17"
+    },
+    {
+      "path": "tools/recovery/material_shader_pointer_probe.py",
+      "bytes": 6631,
+      "sha256": "ac10513a14f48593d52523027518f4114d6cc5855fb391a614555d6c835aae26"
+    },
+    {
+      "path": "tools/recovery/MetadataRoundTripDiagnostics.cs",
+      "bytes": 12595,
+      "sha256": "fcca910800146473c3e59d2afec1d2a940dcf1b9e4f6f7db730618c2b3dd0e0f"
+    },
+    {
+      "path": "tools/recovery/MetadataRoundTripDiagnosticsFixtures.cs",
+      "bytes": 3248,
+      "sha256": "d0eb51c44cbf63c97f7e10b717af71707d98188d23d63107167269aaede61a6f"
+    },
+    {
+      "path": "tools/recovery/MissingOriginalMethods.cs",
+      "bytes": 7879,
+      "sha256": "f2505915a4dd3631e27d6753ffbd11ef4895558809a4f8a5e61dd03fb6a88eaf"
+    },
+    {
+      "path": "tools/recovery/native_dumpbin_help_guarded.py",
+      "bytes": 801,
+      "sha256": "e17e0641e95c214e2f9742ba0c24368f8418ff5db31af31dc13fdd5c1d6ad5c5"
+    },
+    {
+      "path": "tools/recovery/NullImportMapProbe.cs",
+      "bytes": 1365,
+      "sha256": "4cdf299b858e2124614586cb78e615cc00ebc77e7911c12bfbc5a7bca4259ea3"
+    },
+    {
+      "path": "tools/recovery/OculusEmbeddedMarshalStage.cs",
+      "bytes": 13836,
+      "sha256": "e115bfa3a9766d11dbc22515f69e342316a9b4fdfce7b4374578bfec11f159bf"
+    },
+    {
+      "path": "tools/recovery/OfficialSteamMarshalSource.cs",
+      "bytes": 4057,
+      "sha256": "bc494ed72fe0a7663a733ed3bb37534b6ca01292e4e05cf01cb8119269771166"
+    },
+    {
+      "path": "tools/recovery/OpenVrMarshalStage.cs",
+      "bytes": 12225,
+      "sha256": "6f7111f5caa3022257c65f87405e056c7d48f93e499873501113831f084f9d59"
+    },
+    {
+      "path": "tools/recovery/OpenVrMetadataInventory.cs",
+      "bytes": 4100,
+      "sha256": "0487f4a6ac130c8b292e53b72bc09761c243c22704e9420b98224f985aa0eba7"
+    },
+    {
+      "path": "tools/recovery/OpenVrSourceMarshalOwnership.cs",
+      "bytes": 4286,
+      "sha256": "cfc78b3e2852a242b098df56a2881aa607e8e5a3c438ba883e02ab7bcb64628f"
+    },
+    {
+      "path": "tools/recovery/original_ag_guid_dependency_conversion.py",
+      "bytes": 13680,
+      "sha256": "97dbcd2a8a1522aae5e88efffa844bc4bf08f78fdb39e869c88de1200c3c9076"
+    },
+    {
+      "path": "tools/recovery/original_shader_collection_editor_conversion.py",
+      "bytes": 9275,
+      "sha256": "627f636e2c51978126ed100c57a3d543ae34c5b42e2c7d251185ed57ff62a437"
+    },
+    {
+      "path": "tools/recovery/original_shader_editor_conversion.py",
+      "bytes": 7230,
+      "sha256": "6d2503dcc9d42dcf7bb67b70a4b06b9123297c27471e13e2dff309ff743e80ee"
+    },
+    {
+      "path": "tools/recovery/original_shader_editor_conversion_diagnostic.py",
+      "bytes": 7367,
+      "sha256": "4d183af5b95dae6c9c72e88f9e946fe438b716dd93f4b6068d80e0e3ece897bb"
+    },
+    {
+      "path": "tools/recovery/original_shader_editor_conversion_normalized.py",
+      "bytes": 7726,
+      "sha256": "7c9b7c0b68a0bc72bdbbaee05cfb2a22ad6bdd41f62586d61d7239b919e63aaa"
+    },
+    {
+      "path": "tools/recovery/original_shader_pair_editor_conversion.py",
+      "bytes": 13102,
+      "sha256": "f7d75d1b99bf241df9871291cf22eecbf6ce2596f42174fc2b37cdac2b75ce66"
+    },
+    {
+      "path": "tools/recovery/OriginalEmptyExternRestoration.cs",
+      "bytes": 3268,
+      "sha256": "02cff7c89bd80ff8391947876c11ba40e1716d3bef8031e3eb1f38416cb82378"
+    },
+    {
+      "path": "tools/recovery/OriginalMaterialShaderPointerProbe.cs",
+      "bytes": 4305,
+      "sha256": "274936db54fc30727d0572b4078e29443a95cc0c55f637d1461b72ae4fa59480"
+    },
+    {
+      "path": "tools/recovery/OriginalRuntimeMetadataReferenceInputs.cs",
+      "bytes": 30811,
+      "sha256": "70dded8c6b838bbab1227f4d526ed2f351898fc1ac6e4a81b3ff5c42660af37d"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderObjectProbe.cs",
+      "bytes": 6477,
+      "sha256": "c10e692d0d482e9a55ede144f2ceb89e7622d7dce4bcc8b9af7adadc345858c3"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderRuntimeProbe.cs",
+      "bytes": 10554,
+      "sha256": "25b558ca00b10fe774c8c692825fd220ea8cb0f96ceafbbe032957597df1937c"
+    },
+    {
+      "path": "tools/recovery/OriginalShaderRuntimeProbeWithPipelineTag.cs",
+      "bytes": 11613,
+      "sha256": "4aedcbce38d4e503efd19b81a203417aabfbaa3fceba9a758e75f4951ab6b144"
+    },
+    {
+      "path": "tools/recovery/OriginalTypeContractChecks.cs",
+      "bytes": 4184,
+      "sha256": "099af1f8f134568e148a7a2f0352c465a325f35b29ac583fa5d3a5675e217498"
+    },
+    {
+      "path": "tools/recovery/owned_suspended_launch.py",
+      "bytes": 7497,
+      "sha256": "3d7e912711cf4babf2200efc1d93f07d89625fd39fe5f381f09356d89c5cd958"
+    },
+    {
+      "path": "tools/recovery/package_pinvoke_binding_evidence.py",
+      "bytes": 9499,
+      "sha256": "8ac0c8876197e5bd87cb434fc1b9d41efe7ea64c14de7a96232c1e4681bc438f"
+    },
+    {
+      "path": "tools/recovery/package_steamworks14_marshal_overlay.py",
+      "bytes": 10836,
+      "sha256": "193631510a5187f303d1f111cf93ef6c4d4f8341e78e56db299420a068594576"
+    },
+    {
+      "path": "tools/recovery/patch_isolated_player_shader.py",
+      "bytes": 8393,
+      "sha256": "71cc605f47ecf45b6d2a2422bf2b61a29a57cde6d23a8fd311b187ee400eaf51"
+    },
+    {
+      "path": "tools/recovery/patch_isolated_room_shader_pair.py",
+      "bytes": 5471,
+      "sha256": "686aec85844484845fa073b84989c138b25fa23d20826a8ebdf732c5c1a05934"
+    },
+    {
+      "path": "tools/recovery/patch_malformed_marshal_fixture.py",
+      "bytes": 1801,
+      "sha256": "96e13396e5cf606de8e9e1f023e705d23eea47e1b32884931b04f25e82742da5"
+    },
+    {
+      "path": "tools/recovery/patch_original_shader_collection_streaming.py",
+      "bytes": 18078,
+      "sha256": "f548d54e6a0422076fb443fa2b91ebca6935153855f9b86004614d4836a17532"
+    },
+    {
+      "path": "tools/recovery/PlayerReferenceRootFixtures.cs",
+      "bytes": 7420,
+      "sha256": "0e5137e4fca8437521447db6879f52e18496f4affbaa28002846a4814ce7b72c"
+    },
+    {
+      "path": "tools/recovery/postprocess_builtin_shader_control.py",
+      "bytes": 3399,
+      "sha256": "013d6ba6c822cd5b9fd26a4666e6dbda8c40e98dea244b8cca1de093b1452076"
+    },
+    {
+      "path": "tools/recovery/postprocess_existing_shader_build.py",
+      "bytes": 7619,
+      "sha256": "195a0d868bd40032e082fb1c916537dd757e8085c7e0edf24a8568484a8e13e4"
+    },
+    {
+      "path": "tools/recovery/postprocess_mixed_binary_shader_result.py",
+      "bytes": 8451,
+      "sha256": "17d2d3d65d6eae751be3eac9647d2252e12bc2af8dfce74e23d2adcd0d98f6b8"
+    },
+    {
+      "path": "tools/recovery/postprocess_mixed_binary_shader_result_v2.py",
+      "bytes": 8774,
+      "sha256": "3da6d10756d5f21e0662c808904803377715a2fe8ee51b4b29013ff55c0c7f52"
+    },
+    {
+      "path": "tools/recovery/postprocess_original_room_shader_pair.py",
+      "bytes": 9257,
+      "sha256": "860d2bb649fae29e7b3f46878ba182b836ae5c3f4bce26f4af00c745a9aeb508"
+    },
+    {
+      "path": "tools/recovery/postprocess_original_room_shader_pair_with_pipeline_tag.py",
+      "bytes": 10294,
+      "sha256": "1a340ce7d0ce4939c87437ab539906a791c722872b739ef8ed96ec7937ec2958"
+    },
+    {
+      "path": "tools/recovery/prepare_actual_unity_compile_evidence.py",
+      "bytes": 4211,
+      "sha256": "2cf64de24d835c041e45a5b4c0051a946ee3127685b3166208954025ed451a16"
+    },
+    {
+      "path": "tools/recovery/prepare_all_original_shader_editor_manifest.py",
+      "bytes": 23814,
+      "sha256": "f5921de1afed4ea77ec0f81cc2b79f22ab4662dac935356a7cd767e45e3fb7c9"
+    },
+    {
+      "path": "tools/recovery/prepare_ar_helper_input_guard_candidate.py",
+      "bytes": 4468,
+      "sha256": "1029d62206cc7ea7253ab324350fe8b5f73ef007159610bc3c9622c34f28481a"
+    },
+    {
+      "path": "tools/recovery/prepare_combined_marshal_overlay.py",
+      "bytes": 6099,
+      "sha256": "80fbafceca343ac5c7d925e476bc63ad80a7ad1cfebe7a26124913a49cd61e65"
+    },
+    {
+      "path": "tools/recovery/prepare_compile_jobtelemetry_runner.py",
+      "bytes": 6866,
+      "sha256": "f0c50cd2e75b60a3aab675843e95ec27b05cf752167e8f5714f8df329fce21e4"
+    },
+    {
+      "path": "tools/recovery/prepare_compile_official_tmp306.py",
+      "bytes": 11778,
+      "sha256": "1b152b4c3bdf8c6b6ac39d6b5a4d6eccd0d7e7aa8416d5b7091a523b4bd7fe0b"
+    },
+    {
+      "path": "tools/recovery/prepare_current_core.py",
+      "bytes": 54146,
+      "sha256": "a4ad08aeddaa1ed37634f1e54dba370148920640e1aefca11c1b3197e66c15fe"
+    },
+    {
+      "path": "tools/recovery/prepare_deployment_transaction_hardening.py",
+      "bytes": 4222,
+      "sha256": "46c3cb41131b75fb84e0fd78812483cac486137d12f0886705709174634e56f0"
+    },
+    {
+      "path": "tools/recovery/prepare_deployment_transaction_hardening_v2.py",
+      "bytes": 2287,
+      "sha256": "ccc70b017ff285d9abf1baac81817bc22aa38fad57fbfa9d171f8b2ce4e139a1"
+    },
+    {
+      "path": "tools/recovery/prepare_development_eac_exclusion.py",
+      "bytes": 9400,
+      "sha256": "385466f060672ac1dcbb1032399e5bfef57cbb0461d6b4d4082e9ae4c27c4b53"
+    },
+    {
+      "path": "tools/recovery/prepare_direct_manifest_stream_stage.py",
+      "bytes": 5358,
+      "sha256": "dfa9e0f6977eae09b7f15eaa24ed1319650490f37cb16b4ec906e0cbc0f943a3"
+    },
+    {
+      "path": "tools/recovery/prepare_direct_original_editor_shader_build_fixture.py",
+      "bytes": 12818,
+      "sha256": "347dc6bfbc689e5fcf47deb47f65a938115897f782bcd72e44490ee7be28e8a0"
+    },
+    {
+      "path": "tools/recovery/prepare_direct_stream_offline_gates.py",
+      "bytes": 3256,
+      "sha256": "3061173d78f9e8e3327a051d041105d2ca89ba6921ad441962a07d6f46f52fff"
+    },
+    {
+      "path": "tools/recovery/prepare_exact_aot_scope_resolver.py",
+      "bytes": 7762,
+      "sha256": "866de8f8c710706a8b75d1b37efbc0d7a9e34b6cb8594a1282ff7338c944c284"
+    },
+    {
+      "path": "tools/recovery/prepare_existing_nameserver_target_plan.py",
+      "bytes": 8513,
+      "sha256": "4d044654109a3a676a24b63f8ee352a8dc7c061368155f42d520fc925c7f6f9d"
+    },
+    {
+      "path": "tools/recovery/prepare_final_native22_runner.py",
+      "bytes": 968,
+      "sha256": "b5f28dd4aa4491127ae46dce4d2a3222fd46602481f5eb85e870d9f9b2843c4f"
+    },
+    {
+      "path": "tools/recovery/prepare_force_binary_original_shader_build_fixture.py",
+      "bytes": 14887,
+      "sha256": "718e9e694d529ec8db3becccff173917965f119af1af5155bff8fe7856ac897c"
+    },
+    {
+      "path": "tools/recovery/prepare_force_binary_semantic_shader_build_fixture.py",
+      "bytes": 19220,
+      "sha256": "57ccbafe2f9e44f10cbddff4482cdb202144739e4af7c49d4b80d770abf00a5f"
+    },
+    {
+      "path": "tools/recovery/prepare_framework_scope_stage.py",
+      "bytes": 5827,
+      "sha256": "c0a74393edaeda3433b2fc5e521319194fae9d4da3dc5b3b857ad42761a4506d"
+    },
+    {
+      "path": "tools/recovery/prepare_genuine_sdk_proposal.py",
+      "bytes": 9847,
+      "sha256": "4741834c7d3f5b2f55d20b32b4a4ba413e9628174ac9c4a496a6a9536e2ec0d0"
+    },
+    {
+      "path": "tools/recovery/prepare_ide_specific_version_policy.py",
+      "bytes": 5344,
+      "sha256": "1fb5fa18b4062bc1f3b00851cd246bf431d6ae84d05f320850edda5371c68c9a"
+    },
+    {
+      "path": "tools/recovery/prepare_marshal_assert_fixture.py",
+      "bytes": 2059,
+      "sha256": "2731b0cb8f7825cb3b6ccfb2e847ee924f73c89b2c122ad45b5455be2a21c503"
+    },
+    {
+      "path": "tools/recovery/prepare_marshalling_integration.py",
+      "bytes": 20310,
+      "sha256": "888ee390858866cfe06ea638d7d4c55075923c8eaf83be6fc16ef1bb5af993a4"
+    },
+    {
+      "path": "tools/recovery/prepare_mixed_original_shader_build_fixture.py",
+      "bytes": 14992,
+      "sha256": "6ac13c328e5696465f08f86fb7f830a37fe6808990094d7199dca017bb23999c"
+    },
+    {
+      "path": "tools/recovery/prepare_mono64_aot_review_amendment.py",
+      "bytes": 5312,
+      "sha256": "3da87a7748e93f8e4d3ed5fde64b9458ea0a39252291cbb08a90c6c0bc6bd834"
+    },
+    {
+      "path": "tools/recovery/prepare_mono64_core_signature_plan.py",
+      "bytes": 5190,
+      "sha256": "533257eb7c20de7a8f0a65d9a3fe49d5f35196211df9f05801d9a8e8a0dcc191"
+    },
+    {
+      "path": "tools/recovery/prepare_mono64_i18n_review_amendment.py",
+      "bytes": 2575,
+      "sha256": "5a34c550bbef93a5b8c05fa9eb171aa08a3fb3fc29bd6f897d43693e727b73f6"
+    },
+    {
+      "path": "tools/recovery/prepare_native22_core_signature_review.py",
+      "bytes": 3397,
+      "sha256": "5ed1d893271a6f4d9ddf6e3c918c7518b004f24ef4efef1464dd1a6b8f7ff7f5"
+    },
+    {
+      "path": "tools/recovery/prepare_native22_reviewed_runner.py",
+      "bytes": 1212,
+      "sha256": "c9b9e4a0af39da6e6097c3a363c85d16f367ed24b2bdd2f0230eea3ce7fa7bb5"
+    },
+    {
+      "path": "tools/recovery/prepare_nonempty_shader_control_fixture.py",
+      "bytes": 18256,
+      "sha256": "d259b5443891c94bfb4d859b2d86bee5a054c65479b268e5da3d35f2cb47eb11"
+    },
+    {
+      "path": "tools/recovery/prepare_openvr_marshal_overlay.py",
+      "bytes": 7751,
+      "sha256": "f6b961c9a9a29daea46e560d738df71084d4f1b698f794a54a641d7189532001"
+    },
+    {
+      "path": "tools/recovery/prepare_original_addressables_runtime_installation.py",
+      "bytes": 7757,
+      "sha256": "c627603f3bdd8d4d84c63a44f3df93a40a79810eb850c2c6e7b629d7f6129e85"
+    },
+    {
+      "path": "tools/recovery/prepare_original_binary_shader_build_fixture.py",
+      "bytes": 11569,
+      "sha256": "46997a196b3c187036acbf49c838821be85f0e1529ce6cc6131b6cfed7c551b8"
+    },
+    {
+      "path": "tools/recovery/prepare_original_editor_shader_build_fixture.py",
+      "bytes": 12586,
+      "sha256": "3cf5d99ce0679c1e3ba5f2e8bcca9184f367712d92d399d5b1b7859aeb6e82f2"
+    },
+    {
+      "path": "tools/recovery/prepare_original_native_sdk_installation.py",
+      "bytes": 12690,
+      "sha256": "515f056e288c09e20a4ce0f4f1a7f98f651b1738874fbb057fff9e9b933b971b"
+    },
+    {
+      "path": "tools/recovery/prepare_original_sdk_dependency_plan.py",
+      "bytes": 10362,
+      "sha256": "0850f3bf8de461f4b18ac7594341fac46741e9b8ae52a0fbba7b125c43d59bfc"
+    },
+    {
+      "path": "tools/recovery/prepare_original_shader_build_fixture.py",
+      "bytes": 9144,
+      "sha256": "489e17517a53ca6d376dc143abc0f351ecbe409f5f9776e0cc46ce0f1a2194a8"
+    },
+    {
+      "path": "tools/recovery/prepare_original_shader_import_fixture.py",
+      "bytes": 8096,
+      "sha256": "a1ad7f0a27c3214c8a54f3ac737fd2eb8e9c03a38c10143cd73c00945864419e"
+    },
+    {
+      "path": "tools/recovery/prepare_original_streamingassets_runtime_installation.py",
+      "bytes": 9197,
+      "sha256": "c397756e315bcada467c76237a0dfb9a8d8bf0276d6217eb7668a752c6c86c5f"
+    },
+    {
+      "path": "tools/recovery/prepare_primitive_marker_scope_stage.py",
+      "bytes": 3136,
+      "sha256": "87ce64c0e163ef8ef0dbfcce6f5e7680295ad2564a162da4a1de334dc35c9a33"
+    },
+    {
+      "path": "tools/recovery/prepare_recovery_tool_publication_manifest_readonly.py",
+      "bytes": 4144,
+      "sha256": "bfebbfac091853d8e0753e790066d01fd0dd337304401eb974e7349af4b66e5c"
+    },
+    {
+      "path": "tools/recovery/prepare_reviewed_aot_runner.py",
+      "bytes": 1292,
+      "sha256": "7c9f90d4324ebaf51d569f950080d685a23b441f6186b5b8b4c8a23919b2c4f8"
+    },
+    {
+      "path": "tools/recovery/prepare_reviewed_i18n_runner.py",
+      "bytes": 1150,
+      "sha256": "55c455a664c86f3386049d30a74959bf9c0ebc6326e7ae0f773cc8eea1dc3725"
+    },
+    {
+      "path": "tools/recovery/prepare_rr23_code_publication_manifest_readonly.py",
+      "bytes": 10048,
+      "sha256": "600b4130c277a20bcb12d9091e018f623d18b85be38c99f86b8c877c80d89f72"
+    },
+    {
+      "path": "tools/recovery/prepare_scope_attribute_diagnostics.py",
+      "bytes": 2047,
+      "sha256": "d1847bf0b02d54c9fdd166c40d4eb1826697d5b0276c3e4ec1daa8754b1b1678"
+    },
+    {
+      "path": "tools/recovery/prepare_scope_diagnostic_stage.py",
+      "bytes": 4105,
+      "sha256": "69e10075423ca7d4f08c1dad25317bc034fff0f6c1fbde3efcf4449c317951e0"
+    },
+    {
+      "path": "tools/recovery/prepare_scoped_comparer.py",
+      "bytes": 4237,
+      "sha256": "569de9052bb88cc7a3cf3ce82c57578c52c7dc8d3afbb369b8b27d11fdbb312f"
+    },
+    {
+      "path": "tools/recovery/prepare_scoped_compile_offline_gates.py",
+      "bytes": 3124,
+      "sha256": "4418b8293f09bd13a57066c0c8cbe38f484a1ef7cfff0042cd67fe0e88bec4c4"
+    },
+    {
+      "path": "tools/recovery/prepare_sdk_marshalling_stage.py",
+      "bytes": 3291,
+      "sha256": "f318998063eb00931a57fd48817988cdcf482c57ffab34019d93d7dfec8bb101"
+    },
+    {
+      "path": "tools/recovery/prepare_sdk_runtime_fixture.py",
+      "bytes": 4781,
+      "sha256": "d26e1ee6c19d7a6573a7865d938be2154d82d13f0f021ff278c7e8dd291718a8"
+    },
+    {
+      "path": "tools/recovery/prepare_shader_collection_regression_manifest.py",
+      "bytes": 4059,
+      "sha256": "1273c730f989d369a8c347549145f66dbc6e459462d818ace0bc135c74f5735b"
+    },
+    {
+      "path": "tools/recovery/prepare_solarnet_solution_platform_mapping.py",
+      "bytes": 1966,
+      "sha256": "26a4e94c8e940341f672b4e35c5bbe44d806410c162fcadc49a3550f4ec82d0e"
+    },
+    {
+      "path": "tools/recovery/prepare_startup_disassembly.py",
+      "bytes": 866,
+      "sha256": "9c276201cd349218db6ce2f08e610d8e0bcb32483688e8a7a5ddf5dd147787e4"
+    },
+    {
+      "path": "tools/recovery/prepare_startup_play_observer.py",
+      "bytes": 2078,
+      "sha256": "8263f1991eb57673a88585a996ad5cf16cff87c239e22092d3f4d12d577d1786"
+    },
+    {
+      "path": "tools/recovery/prepare_steamworks14_body_contracts.py",
+      "bytes": 4069,
+      "sha256": "613d9e1a2bdb64ac3ce85f42105deef360ba1687f8f7c6988b7abfcd2c6a2779"
+    },
+    {
+      "path": "tools/recovery/prepare_stricter_sdk_closure_runner.py",
+      "bytes": 826,
+      "sha256": "3df17608251d9ec50707b7407a8770fa4cc5e63f700ccf752989ed01cb42e3c9"
+    },
+    {
+      "path": "tools/recovery/prepare_tested_sdk_runtime_plan.py",
+      "bytes": 5005,
+      "sha256": "fdea513b67360ac1a4d71f8af11275752177c31a1e724e4d43f4d358c4378995"
+    },
+    {
+      "path": "tools/recovery/prepare_unrun_harness_revision_helper.py",
+      "bytes": 5582,
+      "sha256": "6bd3471f8649659ebbf576fecf9a8b0b5f8480191fa71da9941a0e667f5a4d1c"
+    },
+    {
+      "path": "tools/recovery/prepare_unrun_harness_revision_tests.py",
+      "bytes": 2505,
+      "sha256": "54d40ce076d04f205efb0b7293bdc52b3e85ac5d525f41a87f22e000f1da0456"
+    },
+    {
+      "path": "tools/recovery/prepare_v2291_marshalling_preparer_variants.py",
+      "bytes": 4637,
+      "sha256": "9916b03e8759ac0e98d0b208b2fbbec63f37eac338382e3236da0af01f52bfeb"
+    },
+    {
+      "path": "tools/recovery/prepare_windows_development_define_probe.py",
+      "bytes": 6936,
+      "sha256": "0db8bb4ca4529dec4ee52b0085356bb1f4f05c691d2508bf62e6b0a4fff9e755"
+    },
+    {
+      "path": "tools/recovery/prepare_x64_mono_fixture_host.py",
+      "bytes": 6115,
+      "sha256": "50facba641f22919349abba9c9ebdc2d06fcb2a4572e11bf731b7741873bd227"
+    },
+    {
+      "path": "tools/recovery/preserve_parsed_shader_payload.py",
+      "bytes": 2411,
+      "sha256": "52e33bd100a31d1ab610a45ca64abb4605baaae2ad5b342dd9e953f1e78bb0a2"
+    },
+    {
+      "path": "tools/recovery/probe_ide_rar_rejection.py",
+      "bytes": 2199,
+      "sha256": "12d8a8572f4c1c93dff4ac7d491bfbb986ec267271d059c11c80f96ca879a816"
+    },
+    {
+      "path": "tools/recovery/probe_ide_reference_policy.py",
+      "bytes": 1802,
+      "sha256": "4d3f39556eae2c27057e52cc29a32283b9cc37ab2fe3feda62097e107d5d8b46"
+    },
+    {
+      "path": "tools/recovery/probe_original_shader_sources.py",
+      "bytes": 11341,
+      "sha256": "4ed9c3fa73ad3b7eea23417bc0f7e4589de7886e61ae0b3f18de6c7d8e8abfe3"
+    },
+    {
+      "path": "tools/recovery/probe_owned_suspended_launch.py",
+      "bytes": 6792,
+      "sha256": "309f6e175fec6c335a7e15ada6ac08c03ebb02b52675eea97d5bd694178a4d8e"
+    },
+    {
+      "path": "tools/recovery/probe_refreshed_unity2020_license.py",
+      "bytes": 8750,
+      "sha256": "b07e6644be41695e63cf2c381f4ec9da582bbbfff91d80c2fc439061c724d6ab"
+    },
+    {
+      "path": "tools/recovery/prove_all_pinvoke_resolver_args.py",
+      "bytes": 15845,
+      "sha256": "d4c341b4c2794c508bb46c6f2f700c159282f9aa781d876592af00fe45330716"
+    },
+    {
+      "path": "tools/recovery/prove_cli_marker_void_encoding.py",
+      "bytes": 2273,
+      "sha256": "8df62e269421385853f4d2db55a04a73f9b70d329f775efa47d2e9b27463d2b9"
+    },
+    {
+      "path": "tools/recovery/prove_comle_native_vtable24.py",
+      "bytes": 4265,
+      "sha256": "9852fc3d0594f4b8eef645313c088efbfba9c8667e710831b489a37e08a6adf3"
+    },
+    {
+      "path": "tools/recovery/prove_container_binding_tail_native.py",
+      "bytes": 11603,
+      "sha256": "b754b76d6a8b3e9133d8bf1fa76b76df5629e0e79a303e903a2163cad8330099"
+    },
+    {
+      "path": "tools/recovery/prove_container_key_registration_native.py",
+      "bytes": 6982,
+      "sha256": "2a8fb3b2045f39bd0f6c3f173abf856f6c092f7595ed206b0066ca9ba204dc07"
+    },
+    {
+      "path": "tools/recovery/prove_container_small_initializers_native.py",
+      "bytes": 7621,
+      "sha256": "bc01b3c96cd6f8648de55e9bf59784ecdf3381b3514f5d47ea9fbc89214c3ec5"
+    },
+    {
+      "path": "tools/recovery/prove_container_storage_registration_native.py",
+      "bytes": 8370,
+      "sha256": "733ba61f1762c0e9f577949757184cdea7d494baf33eb640bde13c80f687f7ac"
+    },
+    {
+      "path": "tools/recovery/prove_embedded_oculus_openvr_descriptors.py",
+      "bytes": 14555,
+      "sha256": "a203f452fb52646b879969532d938e13e8b660e444503a2edc64be224f4903ab"
+    },
+    {
+      "path": "tools/recovery/prove_genuine_editor_builtin_shader_identities.py",
+      "bytes": 11219,
+      "sha256": "17b68980e4e38ece5b55a83622229b0f4c1f9c58cd953ceafbee435c126c8bad"
+    },
+    {
+      "path": "tools/recovery/prove_native_framework_assembly_scopes.py",
+      "bytes": 4139,
+      "sha256": "0c4ab634491bd253b3214e5f383056a58e9d290faaf1c39ab46e1fefd0f7c430"
+    },
+    {
+      "path": "tools/recovery/prove_native_nameserver_router_cfg.py",
+      "bytes": 12642,
+      "sha256": "1bf0eb3dc1a6dcbe4fdadf1689f7bc084a103f620acbc5700735a495d4192155"
+    },
+    {
+      "path": "tools/recovery/prove_oculus_wrapper_version.py",
+      "bytes": 5499,
+      "sha256": "bd681d512e72b8a0c43cd0da98a5c9cac15a42fa6f81539eec95735c6bd7e6ce"
+    },
+    {
+      "path": "tools/recovery/prove_recroom_awake_native_cfg.py",
+      "bytes": 7261,
+      "sha256": "b083d20a9a37263473045d7e730a17aa0f49e305d4cb696b7ba2c4ba56553b91"
+    },
+    {
+      "path": "tools/recovery/prove_recroom_boot_hook_native_cfg.py",
+      "bytes": 5094,
+      "sha256": "2870e805e75628cf19fdb09db587c91c503ecf97713029b1179bc05e35dcd963"
+    },
+    {
+      "path": "tools/recovery/prove_recroom_ondestroy_native_cfg.py",
+      "bytes": 6064,
+      "sha256": "403acd989cfa33d09ce1cd85cdd9747a0d42e809ba5ca345ba7a6241a83f17cb"
+    },
+    {
+      "path": "tools/recovery/prove_revive_leaf_candidates.py",
+      "bytes": 8409,
+      "sha256": "c69bd6d08f8a27b8b232fbed3d495e21e706fe16ab9b42a55175387b5bcafc19"
+    },
+    {
+      "path": "tools/recovery/prove_service_container_constructor_native.py",
+      "bytes": 11492,
+      "sha256": "0defa93476aee00a70a042956b24d3667c97b968066c4518e86ed07d67089bf2"
+    },
+    {
+      "path": "tools/recovery/prove_service_container_factory_native.py",
+      "bytes": 9020,
+      "sha256": "ce1a6bbc7282efb0637738c016b16e7844cbb686977adf95e74dcdba7c4eb657"
+    },
+    {
+      "path": "tools/recovery/prove_service_container_getter_native.py",
+      "bytes": 11853,
+      "sha256": "68a0e331872782ad426351b4cd0b77019a848935cd50330bb3c3f21db35db28d"
+    },
+    {
+      "path": "tools/recovery/prove_tmp_native_product_version.py",
+      "bytes": 3056,
+      "sha256": "c4177f6db3349b6e530eeef89936cdf122ef361c448d2cc29f0f6fe10041b220"
+    },
+    {
+      "path": "tools/recovery/ProveEmptyVersionMarker.cs",
+      "bytes": 3232,
+      "sha256": "6d1484414bf6f53ce0da4c9b8c1a5c8c05d89adfa00488df0f70f1448d0ae1ef"
+    },
+    {
+      "path": "tools/recovery/ProvenMarshallingOverlay.cs",
+      "bytes": 16349,
+      "sha256": "26cec834b8da58371d1c7d2b1239fa4d4116b67fa89b506ea795f1cf13cfc906"
+    },
+    {
+      "path": "tools/recovery/ProvenMarshallingOverlayFixtures.cs",
+      "bytes": 2457,
+      "sha256": "cfa1dffc171ce0a81c9b48de7f8979a27982de6716eea4af40e9052f1d4ca827"
+    },
+    {
+      "path": "tools/recovery/QuickNativeScopeCandidate.cs",
+      "bytes": 2712,
+      "sha256": "56e077cbbcc3e6619f9fd945312eac9ff7a41ff8e331ccce57a2c45e31415524"
+    },
+    {
+      "path": "tools/recovery/read_original_ag_shader_models.py",
+      "bytes": 7936,
+      "sha256": "9505086d9c6a6e40c9617a520d8d3bbadf7ab6f29734821250eeeec3d0fa0957"
+    },
+    {
+      "path": "tools/recovery/read_other_original_shader_models.py",
+      "bytes": 11574,
+      "sha256": "0c8c0123435172d1f60a004bca757b8fd12dd1d6efd470bb27e1ebd8693b8479"
+    },
+    {
+      "path": "tools/recovery/RebaseBodySourceProjection.cs",
+      "bytes": 5516,
+      "sha256": "899a54691355c71c31fc17816367a0a3f3627140401b7db22080b77111a67dc6"
+    },
+    {
+      "path": "tools/recovery/record_actual_unity_metadata_oom.py",
+      "bytes": 2773,
+      "sha256": "4559ae65025f9e8acc99042a51bd6d10aff66fc34944ca3944413cf5acfb3ca8"
+    },
+    {
+      "path": "tools/recovery/record_final_unity_license_refusal.py",
+      "bytes": 2363,
+      "sha256": "ab2b074322a4482a4426cd05ff1d07b9a76ae1d66829fb567aa9b6d80cfa58ef"
+    },
+    {
+      "path": "tools/recovery/record_fresh_post_license_harness.py",
+      "bytes": 2187,
+      "sha256": "a858e8fce80ce72a05564e8ca4e6b7005b9b72e2474b1084e760b15ceb45594f"
+    },
+    {
+      "path": "tools/recovery/record_ide_reference_checkpoint.py",
+      "bytes": 3392,
+      "sha256": "26a0b5dbccc5fe91cd75423ada957130667e7c761518c783f803e368edf24bdc"
+    },
+    {
+      "path": "tools/recovery/record_pasted_error_representatives.py",
+      "bytes": 3940,
+      "sha256": "74640aeb7b2ff3ee7603b49512e49276115e62c6995acee8591d1ef2ab7f710f"
+    },
+    {
+      "path": "tools/recovery/refresh_current_recovery_status.py",
+      "bytes": 17882,
+      "sha256": "7f7e0a1ccf169cc164f52361e42eb24aa0e6ef344e2552df6ba26be7f2195cf3"
+    },
+    {
+      "path": "tools/recovery/resolve_original_shader_dependencies.py",
+      "bytes": 5874,
+      "sha256": "ad3d5d95cbe0646ec5a5b8f5eb0d068eb23fb7e80bd74b66f69c872c836091a9"
+    },
+    {
+      "path": "tools/recovery/review_all179_shader_manifest_readonly.py",
+      "bytes": 6849,
+      "sha256": "21b686a5404e2d48b7b87907fe89b20076f4e01781a0ad7455efb347cc1eca73"
+    },
+    {
+      "path": "tools/recovery/review_isolated_shader_pair_controls.py",
+      "bytes": 10993,
+      "sha256": "d913a6b72a1531b0ca8b031bebcfc51e43828cae2914a61da526e568b2321a1c"
+    },
+    {
+      "path": "tools/recovery/review_steamworks_body_inventory.py",
+      "bytes": 4764,
+      "sha256": "254620fe83af4c3ee543be27bfd64c3c2586b208739ccfb648c4cd7d60aa02b2"
+    },
+    {
+      "path": "tools/recovery/ReviveSourceEffectProof.cs",
+      "bytes": 7376,
+      "sha256": "70466a884eb8547e752b019c25ac4b8b4e9aceb565d52ddfa9576eda6c108e82"
+    },
+    {
+      "path": "tools/recovery/run_actual_core_field_selector_audit.py",
+      "bytes": 8031,
+      "sha256": "936287218698cd275989a9e9b075d6e75409a53d127545aa4625af1f14c9eea5"
+    },
+    {
+      "path": "tools/recovery/run_approved_x64_mono_fixture_host.py",
+      "bytes": 2697,
+      "sha256": "957f4fc42293427caf5ecbb9599e1460006eeca474370cd5a40149a7fd5bb771"
+    },
+    {
+      "path": "tools/recovery/run_attribute_scope_lazy_audit.py",
+      "bytes": 1842,
+      "sha256": "e862dad8ad73b5578f4b573b8143454a5e5a56f223f3299288e3409ea3e1b07f"
+    },
+    {
+      "path": "tools/recovery/run_body_full_compile.py",
+      "bytes": 4703,
+      "sha256": "3dfc7ce4c8b768e901f95bc9bf05d10de826a429fd57990f8b2d4cc18e5449a4"
+    },
+    {
+      "path": "tools/recovery/run_body_source_projection.py",
+      "bytes": 5306,
+      "sha256": "96f637649c32a921a1eedf5f7eaa552b6fdcff4d2b366cc736a4ff118eb6ef55"
+    },
+    {
+      "path": "tools/recovery/run_body_source_rebase.py",
+      "bytes": 4422,
+      "sha256": "4937b753605a4c563f79b228aa37200993faed55994bf525012a7aa46f798859"
+    },
+    {
+      "path": "tools/recovery/run_body_source_stream_rebase.py",
+      "bytes": 8427,
+      "sha256": "f544f07edbadd2215f66b0313f8c22b2cdbf643fbce78db4efbf93b875588c8c"
+    },
+    {
+      "path": "tools/recovery/run_boot_callbacks_effect_proof.py",
+      "bytes": 5997,
+      "sha256": "240c5482ac40757c0590c89337ee9f0b5465c96a3871b902d4c0c317c7d98f6a"
+    },
+    {
+      "path": "tools/recovery/run_boot_three_method_effect_proof.py",
+      "bytes": 6003,
+      "sha256": "08e753e6d54c0ba9609baaf958df75a094b0903da3f112f421f9e55b74f8f353"
+    },
+    {
+      "path": "tools/recovery/run_build_player_data_generator_diagnostic.py",
+      "bytes": 13355,
+      "sha256": "e564ce3644cef37313e5224fc9380bae210de39941839ae8d2b4ab891139d6b1"
+    },
+    {
+      "path": "tools/recovery/run_captured_20230414_gate_controls.py",
+      "bytes": 12138,
+      "sha256": "8f8d5866eb902aa81614574c80f7b15e6fd78a9551b218a51f6c75380242f19c"
+    },
+    {
+      "path": "tools/recovery/run_cli_marker_void_fixtures.py",
+      "bytes": 2058,
+      "sha256": "ae457e405cdcb8ec5a81ed5331a26744ec735fb8fe615592e080b0e5acdbe778"
+    },
+    {
+      "path": "tools/recovery/run_core_field_attribute_witness.py",
+      "bytes": 12261,
+      "sha256": "fed8826f089c50bb205bf21a890873496376c318b297a6f4672a28a7cec4ac03"
+    },
+    {
+      "path": "tools/recovery/run_core_method_flags_inventory.py",
+      "bytes": 10546,
+      "sha256": "01e230b6f142c6d7a1dc86f762525b546d651e529e40fa65b50c20179a023436"
+    },
+    {
+      "path": "tools/recovery/run_current_script_metadata_inventory.py",
+      "bytes": 3686,
+      "sha256": "6562e0bd768b847d5aef6bb6a678a062f4c49ecf6f443f0c57248ebd2f53f300"
+    },
+    {
+      "path": "tools/recovery/run_empty_marker_proof.py",
+      "bytes": 2055,
+      "sha256": "a97ea2d6399602048ee3fc521d4a67bf7d789debf659edc6382cd9aa989e92ea"
+    },
+    {
+      "path": "tools/recovery/run_final_unrun_harness_revision.py",
+      "bytes": 2866,
+      "sha256": "a2190c7a6cd35dbf625a5431ef08a6b1b9dac440af5764f930286b61ec39e3a9"
+    },
+    {
+      "path": "tools/recovery/run_final_unrun_harness_revision_r2.py",
+      "bytes": 3038,
+      "sha256": "10aa1b5e5054f26f5e59cf0802f7f26ead807fb2b5d0cf290c8eb36720bfbf2b"
+    },
+    {
+      "path": "tools/recovery/run_finite_aot_resolver_fixtures.py",
+      "bytes": 1810,
+      "sha256": "3337975a306881f78310edf583c6e502a6855358a87118cfd75f96968cd4f202"
+    },
+    {
+      "path": "tools/recovery/run_framework_scope_fixtures.py",
+      "bytes": 1762,
+      "sha256": "746aa616c6f0a8876002b7a8290ff9b20d8cc5e8bdb7e22e99001925ce272dc6"
+    },
+    {
+      "path": "tools/recovery/run_full_windows_build.py",
+      "bytes": 10128,
+      "sha256": "647fcc7e69d249c2ddf86414f4a558c11e028079d6bef653b84056b3157f961c"
+    },
+    {
+      "path": "tools/recovery/run_full_windows_build_8gib.py",
+      "bytes": 10134,
+      "sha256": "47f4ee692cf2d3c6d84cd4826aab4018cc1f390dfb50782cc8984e2d9136c921"
+    },
+    {
+      "path": "tools/recovery/run_inspect_pinvoke_blocks.py",
+      "bytes": 2211,
+      "sha256": "4c60ae93284e22013df0281c19c22e97e21ae23e325212ab59ecfa3f0db525a7"
+    },
+    {
+      "path": "tools/recovery/run_manifest_streaming_fixtures.py",
+      "bytes": 7634,
+      "sha256": "4a35a5bf4d40cd7f1c4fb5d73cfa4103b78b897531331223fe766a1d48cc7ced"
+    },
+    {
+      "path": "tools/recovery/run_marshal_fixture_children.py",
+      "bytes": 3308,
+      "sha256": "74b36d6403ea6928e22f9564d3314a7c2894be3a8191fcbf96b1d233c3a5ef5a"
+    },
+    {
+      "path": "tools/recovery/run_marshalling_contract_fixtures.py",
+      "bytes": 3206,
+      "sha256": "978950dd09817c4ae15ce98d9c24db134e9428cf0c9f5eb8d43b4bb5ca535217"
+    },
+    {
+      "path": "tools/recovery/run_marshalling_roundtrip.py",
+      "bytes": 5332,
+      "sha256": "143c07c23871f6e8483418b7dae1cacf0aaf65b840479932fd773babd3159eae"
+    },
+    {
+      "path": "tools/recovery/run_null_import_probe.py",
+      "bytes": 1761,
+      "sha256": "d2708a2a576760f1e8d5cf5b3822a6319fe410ad864c29a5ac9d63a82f865dbe"
+    },
+    {
+      "path": "tools/recovery/run_original_ag_dependency_fixture.py",
+      "bytes": 16971,
+      "sha256": "86c7c2ca0d5a03af0997f880332ce5fa7858e3ae4c2d52fccab72ca491cd0707"
+    },
+    {
+      "path": "tools/recovery/run_original_ag_dependency_fixture_v2.py",
+      "bytes": 17225,
+      "sha256": "79da2f4235abc44a7b22b6d23ca1211b1d6c0b99803763d9a7b912ad5be1cf37"
+    },
+    {
+      "path": "tools/recovery/run_original_ag_dependency_fixture_v3.py",
+      "bytes": 17286,
+      "sha256": "5e3de0dab9e0cc96543608fd3ce420705609811b76f1c570689e55b1c1ee1d52"
+    },
+    {
+      "path": "tools/recovery/run_original_ag_packed_report_fixture.py",
+      "bytes": 4265,
+      "sha256": "5042a5d3d2b0bd0c40d1c69226a587e08e61301ba61db4e2a0cfee6d4a0431f8"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_build_fixture.py",
+      "bytes": 9777,
+      "sha256": "86c667115dce0374a6bb25711201c5187fe3196a28f607dd2b778c361de295af"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_collection_fixture.py",
+      "bytes": 13797,
+      "sha256": "e3dd9995623279d8182ce75aafcfaef24c3bd3822a8b8786b82e4ed850eeb4dd"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_import_fixture.py",
+      "bytes": 10907,
+      "sha256": "cdff379ff9b128ef745304a39c790a3c10d78bb3d7847c50ee87af05a3975bca"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_probe.py",
+      "bytes": 4707,
+      "sha256": "8096573c095796e32b44e43b5a603060c06fe2aebfd193588e06b11196d4dd62"
+    },
+    {
+      "path": "tools/recovery/run_original_shader_runtime_patch_fixture.py",
+      "bytes": 18603,
+      "sha256": "8d274ae10bb8c19082001540d264366305d1a918ab4120f705a13075b9038636"
+    },
+    {
+      "path": "tools/recovery/run_original_startup_play.py",
+      "bytes": 13851,
+      "sha256": "c77d0d357912304a2e92b91ae2a925a5f21473307b55c5aa6db8fe98ff773883"
+    },
+    {
+      "path": "tools/recovery/run_overlay_fixtures.py",
+      "bytes": 5458,
+      "sha256": "31951fdde1e5610d6a7b1f01a06b01a33f4f83733e26f119090f0ffc8fb4da8a"
+    },
+    {
+      "path": "tools/recovery/run_prepare_guarded.py",
+      "bytes": 2298,
+      "sha256": "2573101c411ee1f972eb243d432ed37e1b75184d84097e3821ed5bede2d4e6a0"
+    },
+    {
+      "path": "tools/recovery/run_prepared_shader_bundle_runtime_probe.py",
+      "bytes": 5415,
+      "sha256": "ad449eab32ad70b65f19dd62b6dc89f16a8b5ac5cf7d281372a29b85b691d2dc"
+    },
+    {
+      "path": "tools/recovery/run_quick_native_scope_candidate.py",
+      "bytes": 2692,
+      "sha256": "eef3986362a006de37bf2363bf3279b9e57582bb4e5264c06901f83e93617f42"
+    },
+    {
+      "path": "tools/recovery/run_recroom_awake_candidate_guarded.py",
+      "bytes": 1215,
+      "sha256": "2fef14b495f88b7883d27567f8c1ed5ef34d62be68ea35e139cef622eca7ac5f"
+    },
+    {
+      "path": "tools/recovery/run_recroom_awake_native_audit_guarded.py",
+      "bytes": 1212,
+      "sha256": "2c2597781a258a62b6b325834b0c7dfea526ac9a0d811732623e2014775fb4bb"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature.py",
+      "bytes": 5416,
+      "sha256": "65faf0dfdec2120330f26f1fd241ff44173db203b3a1f60e4cf9929cf0bec856"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature_aot.py",
+      "bytes": 5506,
+      "sha256": "49f5943213477a33134374c4a37726cba6c1da136ff9b1fd118f3e6fc070c14e"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature_final.py",
+      "bytes": 5511,
+      "sha256": "7df7b9889fe93a09f3a27f25f2b3c4f1cf0b3f24c36b0142330a137985ebb15e"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature_final_r2.py",
+      "bytes": 5511,
+      "sha256": "5cb4e0ce77dc101f76085e6028c956b65824440ebe45bdaffd475e4e359a0c85"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature_i18n.py",
+      "bytes": 5503,
+      "sha256": "e86b3e071ead25f2f7ff5cef3e0a409adba6ac933a88c3c6c4c349934686e058"
+    },
+    {
+      "path": "tools/recovery/run_reviewed_mono64_core_signature_native22.py",
+      "bytes": 5511,
+      "sha256": "ee23e4146a534e43a7a1f7a363af16a75b51e40592ad91f29a012538646d9d59"
+    },
+    {
+      "path": "tools/recovery/run_revive_source_effect_proof.py",
+      "bytes": 5546,
+      "sha256": "e2f98a85d9e80bc43802eccd34790c3b57fc1316ff9beb00b57e9e1494101b5e"
+    },
+    {
+      "path": "tools/recovery/run_scoped_vtable_audit.py",
+      "bytes": 1945,
+      "sha256": "bcb02117b8819ddfcd007da56ce8e0e5d1a46c241b071025d6f6e55501ede434"
+    },
+    {
+      "path": "tools/recovery/run_sdk_reference_fixtures.py",
+      "bytes": 3314,
+      "sha256": "3b4818a93da61ee47d51b25c34b09745ea20ad8871e02baf14a0336f5c4b3019"
+    },
+    {
+      "path": "tools/recovery/run_sdk_runtime_fixture.py",
+      "bytes": 9626,
+      "sha256": "2f311f1ef326555769049d4627470143d6ce67ae15cb7f88a5d114b9a47c53fe"
+    },
+    {
+      "path": "tools/recovery/run_sdk_runtime_fixture_strict.py",
+      "bytes": 9615,
+      "sha256": "4008ce8543e48c43ce857a505dc9aca1617826496bb56d1fa09671bad20f5baa"
+    },
+    {
+      "path": "tools/recovery/run_serialization_field_witness_fixtures.py",
+      "bytes": 2291,
+      "sha256": "eb1cd62f6561363cfb11cc3b542a29dc1789e5568e569050b31d9ac16d87b467"
+    },
+    {
+      "path": "tools/recovery/run_shader_buildreport_mapper_controls.py",
+      "bytes": 2853,
+      "sha256": "20c092b8ffbe59605ed4a52081f9a8f281f9eeccd4e33c62f7f06c850a80e839"
+    },
+    {
+      "path": "tools/recovery/run_steamworks_body_inventory.py",
+      "bytes": 4762,
+      "sha256": "42342d5bc1bcfb1bd59ef52e130d139261ce5cc4cb228fd66ef2a845ad901066"
+    },
+    {
+      "path": "tools/recovery/run_streaming_shader_patch_controls.py",
+      "bytes": 1373,
+      "sha256": "4bf91549a5d8f566be789891575f1af6051060093e4a51fc8b84271b1acf6ce7"
+    },
+    {
+      "path": "tools/recovery/run_tested_sdk_closure.py",
+      "bytes": 2600,
+      "sha256": "16f23d9b358b7ab1603cb6773a00fc2269a41e5a7b27fb193449834a55b435ce"
+    },
+    {
+      "path": "tools/recovery/run_tested_sdk_closure_64mib.py",
+      "bytes": 2622,
+      "sha256": "58facad763dcd65d4cacf667dfd054084a00eee0aaeb48d536de7d555e97af7f"
+    },
+    {
+      "path": "tools/recovery/run_type_contract_inventory.py",
+      "bytes": 5434,
+      "sha256": "daae7624d9076d8effe2eb68f0367a5da948ee71b9dc7f32b3d52b41015e0b05"
+    },
+    {
+      "path": "tools/recovery/run_win32_abi_compat_fixture.py",
+      "bytes": 7881,
+      "sha256": "a7f4b2ae8a833ed4f29bdf91e0c28e5531293147dcb627d9ab31efea6822e66e"
+    },
+    {
+      "path": "tools/recovery/run_windows_development_define_probe.py",
+      "bytes": 12348,
+      "sha256": "685f87ada7d4c10a09421e11b59466b3e19e817bfdaabd5a233c0192f17529fc"
+    },
+    {
+      "path": "tools/recovery/ScopedVtableAudit.cs",
+      "bytes": 2983,
+      "sha256": "15d7f0be8daca107def97343239da0491c126647896762a800a013b38a545a70"
+    },
+    {
+      "path": "tools/recovery/SDKContractAudit.cs",
+      "bytes": 14772,
+      "sha256": "45374a525371e24f6d0254d4f0ca3561d25cefa78d6a5c23faf82700c1ae4eac"
+    },
+    {
+      "path": "tools/recovery/SDKContractFixtures.cs",
+      "bytes": 8129,
+      "sha256": "44b5ad8c500a70049c6e5a893b9dafd17699b074792875512547e3215f36dfad"
+    },
+    {
+      "path": "tools/recovery/SDKReferenceAudit.cs",
+      "bytes": 5646,
+      "sha256": "f434e5fdc62c409760498055080581022883634a1c53881b3cb60af37fc5260f"
+    },
+    {
+      "path": "tools/recovery/SDKReferenceFixtures.cs",
+      "bytes": 4818,
+      "sha256": "54fe2cdc9997b49543a76bd7b174d445b1c9c3386aab005f1f85ae375e102e01"
+    },
+    {
+      "path": "tools/recovery/SDKTextureLoadFixture.cs",
+      "bytes": 5583,
+      "sha256": "d15ebb542c58d2c56d4872a393accd488832e9503168cf6db523cef07d93592c"
+    },
+    {
+      "path": "tools/recovery/select_sdk_texture_fixture.py",
+      "bytes": 8516,
+      "sha256": "6683c66dae1c662823b79b214ad60bef688e7c4fa9859ba97a1970cd8d082035"
+    },
+    {
+      "path": "tools/recovery/SerializationFieldIdentityWitness.cs",
+      "bytes": 2775,
+      "sha256": "a572e4431a32746290e361f7c044f9453ecef086365cdf716a7566123abb9113"
+    },
+    {
+      "path": "tools/recovery/SerializationFieldWitnessFixtures.cs",
+      "bytes": 5738,
+      "sha256": "af3c9fc2a347a6978c006bcb6e0d2ea5ad3774392ea3329a18e05a0e146b658f"
+    },
+    {
+      "path": "tools/recovery/shader_program_data.py",
+      "bytes": 4386,
+      "sha256": "3ddf0ff619d804db1720832db489a7d14fa3c2d44647068c4e45a2c43c643809"
+    },
+    {
+      "path": "tools/recovery/ShaderPackedBuildReportCapture.cs",
+      "bytes": 2119,
+      "sha256": "4eb9668be244d14c609d6b99635198526261ac568f426e4d5b00c157f28dcb81"
+    },
+    {
+      "path": "tools/recovery/ShaderProbeModuleInstaller.cs",
+      "bytes": 1484,
+      "sha256": "23120432a73e95f8563a123618b5dcdd03d95945963ba949da5c9cef0969a424"
+    },
+    {
+      "path": "tools/recovery/stage_backend_2023_compatibility_proposal.py",
+      "bytes": 16647,
+      "sha256": "4bb5f66e5d61d06288b15207cd631b379cea4f1833af08ee154e13970b71a476"
+    },
+    {
+      "path": "tools/recovery/stage_captured_20230414_backend_scope.py",
+      "bytes": 13400,
+      "sha256": "ca8aa02093925ed5d5de46ee42d0fdb6581b9fa31879ce9abddb6295a7b6bb26"
+    },
+    {
+      "path": "tools/recovery/stage_editor_shader_native_input.py",
+      "bytes": 13060,
+      "sha256": "abd134a9272de3365a3b492228e66bf526dffcd07bdae2851e6a1b6b5269c455"
+    },
+    {
+      "path": "tools/recovery/stage_editor_shader_native_input_v2.py",
+      "bytes": 4769,
+      "sha256": "4c9c3322496d0a3d65bdf06955e8fd251499257221d3f84f22e4af22d65695c8"
+    },
+    {
+      "path": "tools/recovery/stage_editor_shader_native_input_v3.py",
+      "bytes": 7595,
+      "sha256": "d5a6cb87475e3c8ff731af2dd2edc29ebdd8bf3c2e159092dbd77d7f095ee862"
+    },
+    {
+      "path": "tools/recovery/stage_finite_mono_i18n_dependencies.py",
+      "bytes": 3616,
+      "sha256": "0eea4faa5320d1da401a12de3f5e2aa86aab2648e14e951e62a0b670d0a2ce65"
+    },
+    {
+      "path": "tools/recovery/stage_mono64_signature_probe_sources.py",
+      "bytes": 9696,
+      "sha256": "c18fcddabb1a8f7df217c20e2d265b58ca8fc26ad4084a677d7c453e4b23a21b"
+    },
+    {
+      "path": "tools/recovery/stage_oculus_embedded_marshal.py",
+      "bytes": 4137,
+      "sha256": "c6dcf159a567014d1049813ef2fd579b05fac3967f46eb86f6d184aca589fa94"
+    },
+    {
+      "path": "tools/recovery/stage_official_addressables.py",
+      "bytes": 4164,
+      "sha256": "90c31eb2f74d2ad6f5a2a45efb3de5fc1368d1b50619f9313091ade9ea2b59a6"
+    },
+    {
+      "path": "tools/recovery/stage_openvr_marshal.py",
+      "bytes": 3384,
+      "sha256": "00cdb982c250ff34dba84a4e47404df0402bf335aa379246297a174183dc43bb"
+    },
+    {
+      "path": "tools/recovery/stage_original_ag_editor_guid_wrapper.py",
+      "bytes": 11662,
+      "sha256": "221d40dc70dbfd71a41362de573975c99f1fe42e1aca51d7f8a0c9e5ef116e85"
+    },
+    {
+      "path": "tools/recovery/stage_original_ag_shader_candidate.py",
+      "bytes": 13704,
+      "sha256": "4ff1262b2798d12bf0451e02760ac81ecd48e097ede231e00d5abc8c10c56c1e"
+    },
+    {
+      "path": "tools/recovery/stage_original_native_sdk_dependencies.py",
+      "bytes": 11919,
+      "sha256": "12348202f68206b54f680b3b1e8f4c3e8b2b870078714b545eaebed8ccbb1e99"
+    },
+    {
+      "path": "tools/recovery/stage_original_protocol_version_getters.py",
+      "bytes": 13669,
+      "sha256": "0de8b2e2e1346e0abcda3d86f5ad09cec8c5eef8d72982e6044bb92c69534b00"
+    },
+    {
+      "path": "tools/recovery/stage_original_shader_collection_wrappers.py",
+      "bytes": 12486,
+      "sha256": "6f523d580d74f6a04bc3fef3e52cac327ddda3c9b21d4cd5c8dc549660effdfe"
+    },
+    {
+      "path": "tools/recovery/stage_original_shader_only_bundle_probe.py",
+      "bytes": 8166,
+      "sha256": "aceb3d1f43da1c314f95c8419c1e22339d0d65a5ce8426ba90d83fce8a9eb07a"
+    },
+    {
+      "path": "tools/recovery/stage_original_shader_recovery_route.py",
+      "bytes": 7874,
+      "sha256": "161f4af6c77600d5cad35f5efcd91a71f27c911b8f0be82d07e9dcdb6b0dfa06"
+    },
+    {
+      "path": "tools/recovery/stage_original_shader_suspended_launch_proposal.py",
+      "bytes": 7405,
+      "sha256": "22401a0cb82512d309be5b52a5b91dcbf037dee878b52c1f9e8490b07fa23343"
+    },
+    {
+      "path": "tools/recovery/stage_original_stencil_shader.py",
+      "bytes": 8313,
+      "sha256": "eb183d9f662fdabf078eaf5b566b0dd48696db29f1fb99946bf99dc6e1ec1f5c"
+    },
+    {
+      "path": "tools/recovery/stage_other_original_shader_candidates.py",
+      "bytes": 11338,
+      "sha256": "4fa482379e44166cbd32d05abae86324896d5267e0a363a0603f7bc8fa1d4a73"
+    },
+    {
+      "path": "tools/recovery/stage_player_reference_root_fix.py",
+      "bytes": 4089,
+      "sha256": "f80054ca47588eea9bafd467c7922dfb458bbec65cdd669348afe157efe88ed1"
+    },
+    {
+      "path": "tools/recovery/stage_recroom_awake_typed_candidate.py",
+      "bytes": 10218,
+      "sha256": "cc47cca0bfdee22bd29626fa8677bd3398b4549ea7d37ba4e5ddadbd732d59b8"
+    },
+    {
+      "path": "tools/recovery/stage_recroom_boot_hook_typed_candidate.py",
+      "bytes": 6983,
+      "sha256": "f9523ef4c73ddcf766c9c6fa40569b1638fed68c166964117a237bd2fc8d9dd6"
+    },
+    {
+      "path": "tools/recovery/stage_recroom_ctor_initializer_candidate.py",
+      "bytes": 6969,
+      "sha256": "b3cbb8aab7687bb3e6909f4e5d60344ce2b886fe0cea062cc410c59567a800f3"
+    },
+    {
+      "path": "tools/recovery/stage_recroom_ondestroy_typed_candidate.py",
+      "bytes": 7567,
+      "sha256": "31bfba20926a93cc994dec9eabfb6c541ab8260257eb18c18bbbcee47d1014f8"
+    },
+    {
+      "path": "tools/recovery/stage_win32_marshal_compatibility.py",
+      "bytes": 7430,
+      "sha256": "f038a546f4127311a1ac65765e0dd41d0e2bb448af98f56f56e2baebcf534f46"
+    },
+    {
+      "path": "tools/recovery/Steamworks14SourceBodyStage.cs",
+      "bytes": 28225,
+      "sha256": "276008190b4ad7e0c0ca529f72b02b1e5299e75680e289aa7893d54711e6c867"
+    },
+    {
+      "path": "tools/recovery/SteamworksBodyInventory.cs",
+      "bytes": 9119,
+      "sha256": "232ab4d11ef22964d6bcfd2e0012031fe9c278a29b89940bfe5e6ee87c2e7ef4"
+    },
+    {
+      "path": "tools/recovery/summarize_marshal_assert_fixture.py",
+      "bytes": 2606,
+      "sha256": "3d8bd1e0e3b2d5495263140270dcc4222c7ea9fa5262b1264ea6fb43a834f1cf"
+    },
+    {
+      "path": "tools/recovery/summarize_startup_actions.py",
+      "bytes": 1417,
+      "sha256": "0071fb4e3b3db69190eb2ac30cd156b5e5422c1b9d8d776c9f5c815cdbfbb436"
+    },
+    {
+      "path": "tools/recovery/test_all_pinvoke_proofs.py",
+      "bytes": 5411,
+      "sha256": "820bb25eb6a8da8912acd678604194f95d3481b2ba6d5eb53328e75de52ada56"
+    },
+    {
+      "path": "tools/recovery/test_applied_protocol_version_getters.py",
+      "bytes": 8412,
+      "sha256": "e1c8fabbfee8b1997a6955e00c00bacbcd15e89e0c211b0ec37fc4f030bf7cc9"
+    },
+    {
+      "path": "tools/recovery/test_ar_helper_input_guard.py",
+      "bytes": 8673,
+      "sha256": "1483d78c439cdf171cc46b7e1465d0fe84f81ecaa1aa9c341af93fd8f7782287"
+    },
+    {
+      "path": "tools/recovery/test_deployment_transaction_hardening.py",
+      "bytes": 8322,
+      "sha256": "261e1186a241d7863219ebbcab02d47dacc60ef227f3146438522f57226263d1"
+    },
+    {
+      "path": "tools/recovery/test_deployment_transaction_hardening_v2.py",
+      "bytes": 9725,
+      "sha256": "aba2c0cd8aef7509dd9fefe59abcf4f6fa8f542a217b08f4a359171d926ae627"
+    },
+    {
+      "path": "tools/recovery/test_embedded_oculus_openvr_proof.py",
+      "bytes": 3401,
+      "sha256": "96bb483ec710ce893ab4f5be3051999e19ccadec49954fc878090ad30ef47e70"
+    },
+    {
+      "path": "tools/recovery/test_native22_candidate_scopes.py",
+      "bytes": 3175,
+      "sha256": "326cf9be65e8b6a0f33b46402602f0da1274438fdfc13829c89976903635295f"
+    },
+    {
+      "path": "tools/recovery/test_shader_buildreport_mapper.py",
+      "bytes": 8203,
+      "sha256": "90e0300c201e7e7aeaa5a32e75b0b96fcdd556b292951e284b6b2fb9873e4a56"
+    },
+    {
+      "path": "tools/recovery/test_streaming_shader_patch.py",
+      "bytes": 8159,
+      "sha256": "de6a689a0ba7c1a242b7386d532e45466a9697901e0c4715cd988e96ff2e22e5"
+    },
+    {
+      "path": "tools/recovery/test_v2291_preparer_guards.py",
+      "bytes": 3145,
+      "sha256": "e6c2a7ab682a54c462dda8548df35c7d220ec1704841851f139fded89f0b56bb"
+    },
+    {
+      "path": "tools/recovery/TypeContractFixtures.cs",
+      "bytes": 14694,
+      "sha256": "b4ac1fc1645944176157c814044554507a8c0ae761e0594d6ae553ce29cd4ee2"
+    },
+    {
+      "path": "tools/recovery/TypeContractInventory.cs",
+      "bytes": 7680,
+      "sha256": "3217d607cc3c07de894442a9c25b1506af0a3d53dd7719e9ec91739d90d35a41"
+    },
+    {
+      "path": "tools/recovery/validate_accessor_error_projection_examples.py",
+      "bytes": 7973,
+      "sha256": "82302c11429d1a4320a56cb74233f7a708c634d3fe7a55085ff1cc639b5e1758"
+    },
+    {
+      "path": "tools/recovery/verify_actual_shader_packed_report.py",
+      "bytes": 3645,
+      "sha256": "d320db2cae8936c8a7e3abe1331e3b1cb6a0335f43b58307e9ea12082c195b2e"
+    },
+    {
+      "path": "tools/recovery/verify_all_original_shader_editor_outputs.py",
+      "bytes": 17438,
+      "sha256": "5a5bf1850c5daadd38c1ea6475b5a446a5b196b6db5be56d821dce0493fcaba3"
+    },
+    {
+      "path": "tools/recovery/verify_native22_candidate_scopes.py",
+      "bytes": 5364,
+      "sha256": "879b425470cd11173f2d5ab05e5b4243f5e885aa4d5224d493eb1128e9b21a3d"
+    },
+    {
+      "path": "tools/recovery/verify_oculus_embedded_raw_marshal.py",
+      "bytes": 5155,
+      "sha256": "ac4a57feb05ce13ec4ef4e06538bbb54204cb5cf6d8c5564cac6f787e6e66d41"
+    },
+    {
+      "path": "tools/recovery/verify_openvr_raw_marshal_blobs.py",
+      "bytes": 4386,
+      "sha256": "ab2d6028dc8eebcd0d47f0bae5a9fd87f22962465228f31cb21ccce5504df5eb"
+    },
+    {
+      "path": "tools/recovery/verify_original_builtin_shader_aliases.py",
+      "bytes": 6618,
+      "sha256": "028f5c47220bfb837bdf67a0d78b71cb3423f18574042bd787e747fbffd50085"
+    },
+    {
+      "path": "tools/recovery/verify_tmp_cache_official_registry.py",
+      "bytes": 4734,
+      "sha256": "29e11b3c699182e407b3cbc76525ddb055b320f729f8884e87609fa627602bc9"
+    },
+    {
+      "path": "tools/recovery/VerifyBodyDeclarations.cs",
+      "bytes": 2472,
+      "sha256": "aadd5fa1b2787ae4f44165e76fb80d92db85781a879a8f214ab60ee62b5b844f"
+    },
+    {
+      "path": "tools/recovery/VerifyOriginalShaderImport.cs",
+      "bytes": 18967,
+      "sha256": "f768aa9cd21a97d36a1f09737d5a653de1f1c6d264d45e2551d88764cfb316b1"
+    },
+    {
+      "path": "tools/recovery/VerifyOriginalStartupPlay.cs",
+      "bytes": 7154,
+      "sha256": "ce6aa600e5e6fc4c006d12005c245403b3b310b6dc8724f8be87d17dc11c8963"
+    },
+    {
+      "path": "tools/recovery/WindowsDevelopmentDefineProbe.cs",
+      "bytes": 5466,
+      "sha256": "9da6d997a3fd5f6447188ac8e4fec8da854df0fd662a8dfcea75665464de5e2b"
+    },
+    {
+      "path": "tools/recovery/WindowsDevelopmentDefineRecorder.cs",
+      "bytes": 3162,
+      "sha256": "4fc6394e595f8f538ad5c68d26de5a6e239ee08d760bd5b4f34abd77b387217b"
+    }
+  ],
+  "count": 408
+}

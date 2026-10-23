@@ -1,0 +1,8 @@
+public struct HHINBGJONJA
+{
+	public string LMFILEBEJHE;
+
+	public DBECJLAIPEL IENALKJJBJC;
+
+	public PJGPBJDBNEK.BDOPNLLKBPB JGJLHEJMLDJ;
+}

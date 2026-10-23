@@ -1,0 +1,47 @@
+using System.Collections.Generic;
+using RecNet;
+
+public interface CDLILHDKGGD
+{
+
+ IReadOnlyList<DFDECAEJBIO> IGMKMBJEDDI
+{
+get ;
+}
+
+ IReadOnlyList<FMEDMCFGHFM> DBHDKPDOFFL
+{
+get ;
+}
+
+ IReadOnlyList<FMEDMCFGHFM> IIOFHADCNLL
+{
+get ;
+}
+
+ global::HHOBPMOCKMJ<FMEDMCFGHFM> HCMKLHAIPPB
+{
+get ;
+}
+
+ global::HHOBPMOCKMJ<FMEDMCFGHFM> BAJDDMILKFA
+{
+get ;
+}
+
+ global::CBEFDECGNBJ<long, int, string> GCJJHAOAPHJ
+{
+get ;
+}
+
+ global::HHOBPMOCKMJ<ChatMessage> LDOJKFDBJDH
+{
+get ;
+}
+
+	global::NCOKFFGPIJM<FMEDMCFGHFM> NCMJIKIJLFK(int PCKCPNGPNBJ, LFFKCMNFNAN GLLFHCCFIGK);
+
+	global::NCOKFFGPIJM<FMEDMCFGHFM> JDKNAOEFLCF(List<int> DCCNDPPOHOG, LFFKCMNFNAN GLLFHCCFIGK);
+
+	int IHEHCPBGCHK();
+}

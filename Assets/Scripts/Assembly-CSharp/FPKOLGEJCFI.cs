@@ -1,0 +1,8 @@
+internal enum FPKOLGEJCFI
+{
+	INVITE_EXPIRED = 0,
+	IN_PARTY = 1,
+	ROOM_IS_FULL = 2,
+	VERSION_MISMATCH = 3,
+	JOIN_PARTY = 4
+}

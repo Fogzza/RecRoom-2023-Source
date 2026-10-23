@@ -1,0 +1,26 @@
+public enum POEOMLLLCAI
+{
+	INDEX_0 = 0,
+	INDEX_1 = 1,
+	INDEX_2 = 2,
+	INDEX_3 = 3,
+	INDEX_4 = 4,
+	INDEX_5 = 5,
+	INDEX_6 = 6,
+	INDEX_7 = 7,
+	INDEX_8 = 8,
+	INDEX_9 = 9,
+	INDEX_10 = 10,
+	INDEX_11 = 11,
+	INDEX_12 = 12,
+	INDEX_13 = 13,
+	INDEX_14 = 14,
+	INDEX_15 = 15,
+	INDEX_16 = 16,
+	INDEX_17 = 17,
+	INDEX_18 = 18,
+	INDEX_19 = 19,
+	INDEX_20 = 20,
+	ANY_INDEX = -1,
+	MAX_VALUE = INDEX_20
+}

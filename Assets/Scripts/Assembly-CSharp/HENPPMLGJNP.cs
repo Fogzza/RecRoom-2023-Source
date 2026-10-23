@@ -1,0 +1,14 @@
+public struct HENPPMLGJNP
+{
+	public HGKINAOMNIF OAOJBIFOINH;
+
+	public string HLIGBKANEEA;
+
+	public static HENPPMLGJNP DPNOFAHOMND;
+
+	public HENPPMLGJNP(HGKINAOMNIF OAOJBIFOINH, string HLIGBKANEEA)
+	{
+		this.OAOJBIFOINH = HGKINAOMNIF.Cancel;
+		this.HLIGBKANEEA = null;
+	}
+}

@@ -1,0 +1,8 @@
+// Metadata only; hash/report lazy signature differences without code execution.
+using System;using System.IO;using System.Linq;using System.Collections.Generic;using Mono.Cecil;using RR23.MetadataRestoration;
+static class AttributeScopeLazyAudit
+{
+ static IEnumerable<TypeDefinition> Walk(IEnumerable<TypeDefinition> ts){foreach(var t in ts){yield return t;foreach(var n in Walk(t.NestedTypes))yield return n;}}
+ static IEnumerable<ICustomAttributeProvider> Owners(ModuleDefinition m){yield return m;yield return m.Assembly;foreach(var t in Walk(m.Types)){yield return t;foreach(var g in t.GenericParameters)yield return g;foreach(var f in t.Fields)yield return f;foreach(var i in t.Interfaces)yield return i;foreach(var p in t.Properties)yield return p;foreach(var e in t.Events)yield return e;foreach(var method in t.Methods){yield return method;yield return method.MethodReturnType;foreach(var p in method.Parameters)yield return p;foreach(var g in method.GenericParameters)yield return g;}}}
+ static int Main(string[] args){try{int count=0,changed=0;using(var a=AssemblyDefinition.ReadAssembly(args[0])){foreach(var owner in Owners(a.MainModule))foreach(var attr in owner.CustomAttributes){var method=attr.Constructor;var before=ScopedMetadataSignatures.Type(method.DeclaringType)+ScopedMetadataSignatures.Method(method);var after=ScopedMetadataSignatures.Type(method.DeclaringType)+ScopedMetadataSignatures.Method(method);if(before!=after){changed++;Console.WriteLine("Unstable constructor "+method.FullName+" before="+before+" after="+after);}count++;}}Console.WriteLine("Attribute constructor scoped signatures checked="+count+" unstable="+changed);return 0;}catch(Exception e){Console.Error.WriteLine(e);return 1;}}
+}

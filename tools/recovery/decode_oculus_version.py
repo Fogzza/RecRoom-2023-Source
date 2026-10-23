@@ -1,0 +1,10 @@
+"""Decode a pinned742-byte original method with a guarded metadata-tool host."""
+import ast,ctypes,datetime as dt,importlib.util,json,os,shutil,subprocess,time,uuid
+from ctypes import wintypes
+from pathlib import Path
+HERE=Path(__file__).resolve().parent;WS=HERE.parents[2];ROOT=WS/'Recovery/RecRoom-2023-04-18';spec=importlib.util.spec_from_file_location('g',HERE.parent/'CompilerPropertyProjection/run_guarded.py');g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g);node=next(x for x in ast.parse((HERE/'compile_official_steamworks14.py').read_text()).body if isinstance(x,ast.FunctionDef) and x.name=='phase');exec(compile(ast.Module(body=[node],type_ignores=[]),'phase','exec'))
+out=ROOT/'Validation'/('OculusVersionDisassembly-'+dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]);out.mkdir();report={'phases':[],'project_modified':False,'game_code_executed':False}
+try:
+ source=HERE/'DisassembleOculusVersion.cs';host=out/'DisassembleOculusVersion.dll';dep=HERE.parent/'NativeLayoutEvidence/Published/Iced.dll';rsp=out/'compile.rsp';rsp.write_text('\n'.join(['/nologo','/target:exe','/out:"'+str(host)+'"']+['/reference:"'+str(p)+'"' for p in sorted(g.REF.glob('*.dll'))+[dep]]+['"'+str(source)+'"'])+'\n');phase([g.DOTNET,g.SDK/'Roslyn/bincore/csc.dll','/noconfig','@'+str(rsp)],out,'compile-disassembler',report,cap=.125);shutil.copyfile(dep,out/dep.name);host.with_suffix('.runtimeconfig.json').write_text(json.dumps({'runtimeOptions':{'tfm':'net10.0','framework':{'name':'Microsoft.NETCore.App','version':'10.0.11'}}}));phase([g.DOTNET,host,ROOT/'Validation/NativeOculusContracts-20261022T155520Z-0cceb379/report.json',out/'disassembly.json'],out,'decode-original-version-cctor',report,cap=.125);report.update(status='passed',source_sha256=g.sha(source))
+except BaseException as e:report.update(status='failed',error=str(e))
+finally:(out/'report.json').write_text(json.dumps(report,indent=2));print(json.dumps({'report':str(out/'report.json'),'status':report['status'],'error':report.get('error')}),flush=True)

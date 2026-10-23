@@ -1,0 +1,1 @@
+namespace RR23.MetadataRestoration { public static class ProvenMarshallingOverlayInputs { public const string ResourceName="RR23.ProvenMarshallingOverlay"; public const string Sha256="ef8b537b4fd149d913f13f8ff1bfecdb5c2182fa92a0a4b04a2e95fddf42429f"; } }

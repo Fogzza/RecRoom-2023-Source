@@ -1,0 +1,7 @@
+public static class MEFLOPAJGGE
+{
+	public static global::NCOKFFGPIJM<CJDHONMNJNA> IGOIBFPECPO(IMIJPHJKLIM IGGPIMCKMBP, HHAPNEKGMEP MLDANHIGANI, string LDPCFDMCJLH)
+	{
+		return null;
+	}
+}

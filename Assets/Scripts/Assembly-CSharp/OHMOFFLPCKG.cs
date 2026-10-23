@@ -1,0 +1,8 @@
+public enum OHMOFFLPCKG
+{
+	COUNTDOWN = 0,
+	ACTIVE = 1,
+	REVIEW = 2,
+	UPLOADING = 3,
+	INVALID = 65535
+}

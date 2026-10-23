@@ -1,0 +1,6 @@
+public enum PNDAHJMHLMI
+{
+	NOT_CONNECTABLE = 0,
+	AUTOMATIC = 1,
+	CUSTOM = 2
+}

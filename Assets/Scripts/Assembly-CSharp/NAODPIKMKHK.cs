@@ -1,0 +1,6 @@
+public enum NAODPIKMKHK
+{
+	OFF = 0,
+	HEAD_RELATIVE = 1,
+	CONTROLLER_RELATIVE = 2
+}

@@ -1,0 +1,6 @@
+public enum DPOHPKHGJKL
+{
+	ALL_DISABLED = 0,
+	ONE_ENABLED = 1,
+	ALL_ENABLED = 2
+}

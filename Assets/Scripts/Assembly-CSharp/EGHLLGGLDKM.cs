@@ -1,0 +1,4 @@
+public class EGHLLGGLDKM : FDGDCNLMACK
+{
+	public LFIOJFLIPFC EODADECIKIA;
+}

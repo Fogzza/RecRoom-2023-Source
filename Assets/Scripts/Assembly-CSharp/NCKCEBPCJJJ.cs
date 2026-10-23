@@ -1,0 +1,14 @@
+public class NCKCEBPCJJJ : AMFPEDOFIGE
+{
+	private OILDLLGEMKP.PMBKPGCMABJ NDMNICPLIBM;
+
+public OILDLLGEMKP.PMBKPGCMABJ NNJOHOIAPAH
+{
+get 	{
+		return OILDLLGEMKP.PMBKPGCMABJ.Client_Unknown;
+	}
+
+set {
+	}
+}
+}
