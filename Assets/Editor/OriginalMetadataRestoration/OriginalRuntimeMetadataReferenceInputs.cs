@@ -66,7 +66,7 @@ new CuratedRuntimeMetadataReference("RecRoom.AvatarSystems.SharedData.Runtime","
 new CuratedRuntimeMetadataReference("RecRoom.BitPacker.Runtime","c7ab9cd5b840904928f786e463a6ad7d67ff6deeab14da6f0a98bc189743373d"),
 new CuratedRuntimeMetadataReference("RecRoom.Build.Runtime","847f4eb71ddf880affde65c448209cf5216bd9de3a18dd7455760862cbe9e115"),
 new CuratedRuntimeMetadataReference("RecRoom.Challenges.Runtime","7e5a87c84f291f47a61e8547cd92714691613084a156d536c88d9c692dfc5e6b"),
-new CuratedRuntimeMetadataReference("RecRoom.Chat.Runtime","60cf15eaf835e8ac08e495e32f370d19642fcd9fa3dbb03179b711ae576deaa0"),
+new CuratedRuntimeMetadataReference("RecRoom.Chat.Runtime","fd79db0cced40dbb3710e36db3d1d02347f9509903ebdfc5c6de22bef1def209"),
 new CuratedRuntimeMetadataReference("RecRoom.CircuitsV1.Runtime","faf047452232e4af154764fc66f26baf4d993ad8ca2e1339c0efff2c48a021d2"),
 new CuratedRuntimeMetadataReference("RecRoom.ClusterLods.Runtime","9b20a20328d8e5bd7903e8be89dfa17c24b87e3388949783dc40ad4aff1dbbad"),
 new CuratedRuntimeMetadataReference("RecRoom.CodeGen.Attributes","8dcc98547078751eef45209c85aa167640ad8e0690acd8bb05a683706562fced"),

@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "9e0059ea20bf111779ec9bcbb852fe5e56ffd6931a6e8dfc3713c17aff307c8f"
+      "sha256": "c95c41de4c15d7cd1d13ae380b10d14b50e2c3c982f5ed6d25cb9ac0b22947bc"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -3562,7 +3562,7 @@
     {
       "path": "Assets/Plugins/RecRoom.Chat.Runtime.dll",
       "bytes": 15360,
-      "sha256": "60cf15eaf835e8ac08e495e32f370d19642fcd9fa3dbb03179b711ae576deaa0"
+      "sha256": "fd79db0cced40dbb3710e36db3d1d02347f9509903ebdfc5c6de22bef1def209"
     },
     {
       "path": "Assets/Plugins/RecRoom.Chat.Runtime.dll.meta",
