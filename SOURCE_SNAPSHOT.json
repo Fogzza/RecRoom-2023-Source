@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "a88391f9aa16e5ea464093ad3cb134886903746eb7d473683adf80368c75e35d"
+      "sha256": "5fd3ac7cbe0a9e4c69b98ed9092d8f7157f9965a1c322fdc6adda5dcbfc81512"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -3722,7 +3722,7 @@
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll",
       "bytes": 4608,
-      "sha256": "90363a5825863891319fdc05cfd7c0a76407691002e03515bd719c3f98005aee"
+      "sha256": "1cfd9a9f271c389080e837a1b87fe09ed78f66e6a78451a0b17150eb6ddc3ffb"
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll.meta",
@@ -4862,7 +4862,7 @@
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
       "bytes": 19968,
-      "sha256": "d9d8e17e8425c294a6d925086d8548b8ae34a7e725e7ac63b14dd17c2102f32d"
+      "sha256": "7e5563fd5aabe05c9ba87ba31563d63a0eb152517ca8169a8b55d59cdf60bb6b"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
