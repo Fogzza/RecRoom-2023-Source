@@ -81,7 +81,7 @@ new CuratedRuntimeMetadataReference("RecRoom.CultureUtil.Runtime","6ba09a7f04af0
 new CuratedRuntimeMetadataReference("RecRoom.Datastructures.CollisionMesh.Runtime","e4da31cebf2bacc5c0a3d085eee42006eac64b0148a516fcd640f47b7e40f0e7"),
 new CuratedRuntimeMetadataReference("RecRoom.Datastructures.CullingGroupManager.Runtime","7f3aac2407542a3c9fc6aa9a972ce64abd0c3ad0237b2e90cafa7f893851cd08"),
 new CuratedRuntimeMetadataReference("RecRoom.Datastructures.OverridableFields.Runtime","46a1520b4bf5a482b40c18de290ec3ede5f1a653e6928691f98df2aa7033862a"),
-new CuratedRuntimeMetadataReference("RecRoom.Datastructures.Runtime","41147ae0295276159c42ce83930520fa3948a2a5793ae9244a7e462c23245a3e"),
+new CuratedRuntimeMetadataReference("RecRoom.Datastructures.Runtime","e9ad83a75dbb5e27c2df02c698a0c2047b178541d86aed351e283f04c7991e61"),
 new CuratedRuntimeMetadataReference("RecRoom.Datastructures.Singletons.Runtime","39911ee1855adbae84037c5c08108ba2583d5627817b947d010b5ad9b80db15b"),
 new CuratedRuntimeMetadataReference("RecRoom.Debugging.Runtime","d0834da16db08d88fb25370c2b27fc6afd05565c56e04dda4d613b6f5447f075"),
 new CuratedRuntimeMetadataReference("RecRoom.EditorHelpers.Runtime","04ea3896fea2017d20e78a6c01152ea28cf307fcdccfccedbbf6473667e54154"),
