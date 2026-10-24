@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122729993,
+  "bytes": 122731017,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "281c085ae95810337d4f1e742993e25cac12f6aec8da7b9543e4c2c2eab0eae1"
+      "sha256": "ead06b7f607faff646c398a5969496394941174a5e5974a6ffc47ed687b5b799"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1151,8 +1151,8 @@
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
-      "bytes": 1788928,
-      "sha256": "a84971f2304b0205493ba67ab4a8cafe83a9ceb8431d66cde583465425e93708"
+      "bytes": 1789440,
+      "sha256": "185f5aa341a5f18162a7666a6569c243f91deaa2d9bc4cb7782e0a93d81922f9"
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll.meta",
@@ -1461,8 +1461,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Runtime.dll",
-      "bytes": 70144,
-      "sha256": "e9ad83a75dbb5e27c2df02c698a0c2047b178541d86aed351e283f04c7991e61"
+      "bytes": 70656,
+      "sha256": "22db2c95f3d7b6a746e7d6ff02a9b72853c47b834635872733d7ce095ff06291"
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Runtime.dll.meta",
