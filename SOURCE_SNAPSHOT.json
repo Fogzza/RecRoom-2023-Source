@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122722825,
+  "bytes": 122729481,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "8b7f7a55863143bb48f04fe17497f66337ec14a9831b34a19a21b8e3e4579650"
+      "sha256": "a4f1dc69fde3d878f994afd0628efb22363a44d5ed3fd00e1af1e4d3effce6a4"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1162,7 +1162,7 @@
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Interfaces.dll",
       "bytes": 3072,
-      "sha256": "42e02b9793b107b26ebf6049970fcf06fc319841fb5245fa269c4e6db6f7f323"
+      "sha256": "b6e39eaa79e4d8957b5cd63eb02e05bb506bdca26489a463379e5754818fb150"
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Interfaces.dll.meta",
@@ -1171,8 +1171,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll",
-      "bytes": 6656,
-      "sha256": "a23ba0d28cd224d0a81f553dd6fce8388199c3bffdfcba95e88ff4e94ef29b04"
+      "bytes": 12288,
+      "sha256": "c4dc5cc094ff185a939bf027ca65f153c5f29de2a8d7a94f3484466bb8481a05"
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll.meta",
@@ -2391,8 +2391,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Unityextensions.Runtime.dll",
-      "bytes": 55296,
-      "sha256": "5af8c52896a2dd1cfcdadfdce1e36fbb597f74434128403bb4dbf21c0c051238"
+      "bytes": 55808,
+      "sha256": "b106265fadcb63890d2bbf01c05de8c4db4e6162a5aea563abd53d33bebea3be"
     },
     {
       "path": "Assets/Plugins/RecRoom.Unityextensions.Runtime.dll.meta",
@@ -2611,8 +2611,8 @@
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
-      "bytes": 19456,
-      "sha256": "600183a489c067eb271e03b77816195af5b94ecb0127ed482ee711a297921016"
+      "bytes": 19968,
+      "sha256": "d9d8e17e8425c294a6d925086d8548b8ae34a7e725e7ac63b14dd17c2102f32d"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
