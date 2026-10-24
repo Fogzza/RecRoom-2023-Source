@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122734252,
+  "bytes": 122734764,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "be72ef9cfb5c9bfab7fb6f5ad9b540b2a1a8384c45dadb16316ffbe257d2dc70"
+      "sha256": "a88391f9aa16e5ea464093ad3cb134886903746eb7d473683adf80368c75e35d"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1471,8 +1471,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll",
-      "bytes": 4096,
-      "sha256": "39911ee1855adbae84037c5c08108ba2583d5627817b947d010b5ad9b80db15b"
+      "bytes": 4608,
+      "sha256": "90363a5825863891319fdc05cfd7c0a76407691002e03515bd719c3f98005aee"
     },
     {
       "path": "Assets/Plugins/RecRoom.Datastructures.Singletons.Runtime.dll.meta",
