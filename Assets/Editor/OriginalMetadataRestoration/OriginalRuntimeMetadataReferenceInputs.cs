@@ -52,7 +52,7 @@ new CuratedRuntimeMetadataReference("Pngcs","015342a0c18806c8caabe31cbb6ed72c790
 new CuratedRuntimeMetadataReference("RecNet.Interfaces","7ff65e9f1c8e3de84b2fd133f39bd30ab7e077ed21091fdccf2742e3e3d0a1db"),
 new CuratedRuntimeMetadataReference("RecNet.Runtime","a84971f2304b0205493ba67ab4a8cafe83a9ceb8431d66cde583465425e93708"),
 new CuratedRuntimeMetadataReference("RecRoom.AgInitialization.Interfaces","b6e39eaa79e4d8957b5cd63eb02e05bb506bdca26489a463379e5754818fb150"),
-new CuratedRuntimeMetadataReference("RecRoom.AgInitialization.Runtime","c4dc5cc094ff185a939bf027ca65f153c5f29de2a8d7a94f3484466bb8481a05"),
+new CuratedRuntimeMetadataReference("RecRoom.AgInitialization.Runtime","b8cd2c2127f709bfbba3f7bed89cc5749fa32a40709a7b9fd864fed9fef49900"),
 new CuratedRuntimeMetadataReference("RecRoom.Agdxgidisplays.Runtime","130d78805a6d0503bccb02f68adc2e82dcc1cbc9e80ba56e87bd48e3237516cc"),
 new CuratedRuntimeMetadataReference("RecRoom.Analytics.Runtime","939d7094990f3e2d368a984d6e0d627287a8212d9a62433e57f9ddf4dfd94fbd"),
 new CuratedRuntimeMetadataReference("RecRoom.ApplicationLifecycle.Runtime","fc0523f8c77ba0bc41cbfa5898e4f8bdc549d435294b352b2f149c046b4126f5"),
