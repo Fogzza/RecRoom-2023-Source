@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
   "count": 11277,
-  "bytes": 122731529,
+  "bytes": 122732553,
   "files": [
     {
       "path": "Assets/Editor.meta",
@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "797143c0ff2345efce4b0869e4c7d78229ef1521bd6edb71f8f1f04646361379"
+      "sha256": "074818af029b117257eafbca32d754773f1d19697f1016c4b3f708b796178062"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1151,8 +1151,8 @@
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
-      "bytes": 1789952,
-      "sha256": "8048406a340228de7584ed38712bab7eafeb420a346eecef3df035d975b142c6"
+      "bytes": 1790976,
+      "sha256": "9e4bb10ecdc8b868a75c89ebd208462ff89a00953f70d684f9ca78cdd26e7928"
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll.meta",
