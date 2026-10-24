@@ -1,6 +1,7 @@
 // Compact embedded runtime manifest. JSON is only an offline preparation format.
 using System;
 using System.IO;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -21,6 +22,19 @@ namespace RR23.MetadataRestoration
         public CoreCompilerConstructorInversePlan[] CompilerAddedConstructors;
         public OriginalEmptyExternPlan[] EmptyExterns;
         public SerializationFieldWitnessPlan[] SerializationFieldWitnesses;
+        private sealed class ManifestReader : BinaryReader
+        {
+            private readonly Dictionary<string, string> strings = new Dictionary<string, string>(StringComparer.Ordinal);
+            public ManifestReader(Stream stream) : base(stream, Encoding.UTF8, true) { }
+            public override string ReadString()
+            {
+                string value = base.ReadString();
+                string existing;
+                if (strings.TryGetValue(value, out existing)) return existing;
+                strings.Add(value, value);
+                return value;
+            }
+        }
         private static int Count(BinaryReader reader, int limit)
         {
             int value = reader.ReadInt32();
@@ -33,7 +47,7 @@ namespace RR23.MetadataRestoration
         }
         public static WholeMetadataManifest Read(Stream stream)
         {
-            using (var reader = new BinaryReader(stream, Encoding.UTF8, true))
+            using (var reader = new ManifestReader(stream))
             {
                 if (reader.ReadString() != "RR23-METADATA-RESTORE-6") throw new InvalidDataException("General manifest schema mismatch");
                 var result = new WholeMetadataManifest { AssemblyName = reader.ReadString(), RawHash = reader.ReadString(),

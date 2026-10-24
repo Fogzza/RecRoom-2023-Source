@@ -28,7 +28,20 @@ namespace RR23.MetadataRestoration
             using (var source = typeof(WholeMetadataRestorer).Assembly.GetManifestResourceStream(name))
             {
                 if (source == null) throw new InvalidDataException("Missing pinned resource: " + name);
-                using (var bytes = new MemoryStream()) { source.CopyTo(bytes); return bytes.ToArray(); }
+                long length = source.Length;
+                if (length < 0 || length > int.MaxValue)
+                    throw new InvalidDataException("Pinned resource length is not representable: " + name);
+                var bytes = new byte[(int)length];
+                int position = 0;
+                while (position < bytes.Length)
+                {
+                    int read = source.Read(bytes, position, bytes.Length - position);
+                    if (read <= 0) throw new EndOfStreamException("Truncated pinned resource: " + name);
+                    position += read;
+                }
+                if (source.ReadByte() != -1)
+                    throw new InvalidDataException("Pinned resource length changed: " + name);
+                return bytes;
             }
         }
         private static string Hash(byte[] bytes)
