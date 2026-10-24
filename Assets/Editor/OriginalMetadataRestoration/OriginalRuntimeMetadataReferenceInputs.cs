@@ -145,7 +145,7 @@ new CuratedRuntimeMetadataReference("RecRoom.PrefParsers.Runtime","643da2866ec2b
 new CuratedRuntimeMetadataReference("RecRoom.Preferences.Runtime","4cad85e089012186c358017f2bd887bc203c7ea62b28609834fa27da5a289914"),
 new CuratedRuntimeMetadataReference("RecRoom.ProgressionEvents.Interfaces","05adae234070d2526e4fbebc59304973d58797c68d089169b6fdca6fbac6bb36"),
 new CuratedRuntimeMetadataReference("RecRoom.ProgressionEvents.Runtime","4c737770f8fcf52b5c3381cf7d60b17c5fdbc0f27b612ab25eaf716dcbadd88c"),
-new CuratedRuntimeMetadataReference("RecRoom.Promises.Runtime","986631b1d8a3b4963b2461015210e931fa4776da5cf285f91052bf81b42f3246"),
+new CuratedRuntimeMetadataReference("RecRoom.Promises.Runtime","23c809e3d10859b1f132b9bf6d5c0dfebf7b3ed7e0d03737f7b6878739246712"),
 new CuratedRuntimeMetadataReference("RecRoom.Protobuf.Debugging.Runtime","b0ed7d1d65eed9135077cbbbb71227ea3e5354b0efdc3a65fdc3b5d8f50ad24b"),
 new CuratedRuntimeMetadataReference("RecRoom.Protobuf.Extensions.Runtime","35aa782cb8d6465c1707612285e27b9e127764764a14cacd7b10e202954078a5"),
 new CuratedRuntimeMetadataReference("RecRoom.Protobuf.Runtime","93e09757e7a7957ca672aeea105e42ff61f49ba34e8515513d8d82e2dd0287d3"),
