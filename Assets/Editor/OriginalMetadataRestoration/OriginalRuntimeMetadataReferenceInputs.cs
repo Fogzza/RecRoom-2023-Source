@@ -50,7 +50,7 @@ new CuratedRuntimeMetadataReference("PhotonVoice.PUN","2dbf5ab4fe4167d349ad1d852
 new CuratedRuntimeMetadataReference("PhotonVoice","94dfb7cce4b6961a51b12b42447f8055fbba1fa6085c8d098ead0e28487fb4a0"),
 new CuratedRuntimeMetadataReference("Pngcs","015342a0c18806c8caabe31cbb6ed72c790624150097f879a57782158dd31c80"),
 new CuratedRuntimeMetadataReference("RecNet.Interfaces","7ff65e9f1c8e3de84b2fd133f39bd30ab7e077ed21091fdccf2742e3e3d0a1db"),
-new CuratedRuntimeMetadataReference("RecNet.Runtime","17c735638c2a0d3736a334bf7c941d05a21c0a2d453a786cca130fb644589288"),
+new CuratedRuntimeMetadataReference("RecNet.Runtime","a84971f2304b0205493ba67ab4a8cafe83a9ceb8431d66cde583465425e93708"),
 new CuratedRuntimeMetadataReference("RecRoom.AgInitialization.Interfaces","b6e39eaa79e4d8957b5cd63eb02e05bb506bdca26489a463379e5754818fb150"),
 new CuratedRuntimeMetadataReference("RecRoom.AgInitialization.Runtime","c4dc5cc094ff185a939bf027ca65f153c5f29de2a8d7a94f3484466bb8481a05"),
 new CuratedRuntimeMetadataReference("RecRoom.Agdxgidisplays.Runtime","130d78805a6d0503bccb02f68adc2e82dcc1cbc9e80ba56e87bd48e3237516cc"),

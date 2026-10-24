@@ -267,7 +267,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "a4f1dc69fde3d878f994afd0628efb22363a44d5ed3fd00e1af1e4d3effce6a4"
+      "sha256": "6a320bc58cc1842ea84886531721a280703dc7bc2fda0c975a1d3b66cb61b01a"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -1152,7 +1152,7 @@
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll",
       "bytes": 1788928,
-      "sha256": "17c735638c2a0d3736a334bf7c941d05a21c0a2d453a786cca130fb644589288"
+      "sha256": "a84971f2304b0205493ba67ab4a8cafe83a9ceb8431d66cde583465425e93708"
     },
     {
       "path": "Assets/Plugins/RecNet.Runtime.dll.meta",
