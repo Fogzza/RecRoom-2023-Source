@@ -1,9 +1,34 @@
 {
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
-  "scope": "Code, required SDKs/compiler metadata, packages and project settings. Art, scenes, audio and original game data remain local.",
-  "count": 11277,
-  "bytes": 122734764,
+  "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
+  "count": 11741,
+  "bytes": 187753270,
   "files": [
+    {
+      "path": "Assets/Activities.meta",
+      "bytes": 172,
+      "sha256": "f673e7a008ecef5e54f5592ae54b6713c8f8042351556e1afa86d0456e12d852"
+    },
+    {
+      "path": "Assets/Activities/TitleScreen.meta",
+      "bytes": 172,
+      "sha256": "bcde3de3e563cde77f41cefa2fcb1566d1e8b083511aae4b25ced7947680f70a"
+    },
+    {
+      "path": "Assets/Activities/TitleScreen/Scenes.meta",
+      "bytes": 172,
+      "sha256": "77fe86811f573df7880711e288acfe443b6d0cb63f7a4b476f7ff23c057c4838"
+    },
+    {
+      "path": "Assets/Activities/TitleScreen/Scenes/TitleScreen.unity",
+      "bytes": 8910879,
+      "sha256": "a274cd51a49a37dae056f954158f17dbaf4a6fdb63d8e5f522ce5b84724c7e44"
+    },
+    {
+      "path": "Assets/Activities/TitleScreen/Scenes/TitleScreen.unity.meta",
+      "bytes": 194,
+      "sha256": "11ba524dc4d4275a73eb839d568a7d4464a24b47772a541ac244c8df2a719925"
+    },
     {
       "path": "Assets/Editor.meta",
       "bytes": 172,
@@ -418,6 +443,2231 @@
       "path": "Assets/Editor/RecoveredGeometry/RecoveryWorkspace.cs.meta",
       "bytes": 243,
       "sha256": "f690858188471b88caccba822a046c8305d147f28f4bb655fac5d7917564e911"
+    },
+    {
+      "path": "Assets/GameObject.meta",
+      "bytes": 172,
+      "sha256": "75cd536436b8e21d645572d5075439ccafbe9f3f4ab1fab39609cb3a1e7bcafd"
+    },
+    {
+      "path": "Assets/GameObject/(AddEmailDialog).prefab",
+      "bytes": 524290,
+      "sha256": "4eaf4f5eedc9ece121ad5466d0ac6d4eb44e02e2ebf0db6cdf84241f0a454413"
+    },
+    {
+      "path": "Assets/GameObject/(AddEmailDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "5bf914ebe98ccf9099d68bbbbcfdc10207eb5ec034882bc1ba7ce9918d471c54"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceCodeDialog).prefab",
+      "bytes": 685908,
+      "sha256": "342c061a4f8d4f83a77acb55f0cc4b5a3f27ec6c62d71718cf8df7e28aac8439"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceCodeDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "e8b01e6f448f05add5381e06e657f896ad1bb78adbe4dbd577db3c306d1d081a"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceConfirmationDialog).prefab",
+      "bytes": 636295,
+      "sha256": "fe96de7609051aaf2c43e8d689ce4d63a77f9fc7d3f4d6f79e160712ee2c0c5c"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceConfirmationDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "da366a40283604efbe2f0ff5a34eac2fe2f12647593172247fe57c4174b6698b"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceEmailDialog).prefab",
+      "bytes": 711660,
+      "sha256": "16a09fdf948062f742c9ede5c3333a93d863afaa721c65e2caf48aac2280563b"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceEmailDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "8fa0d61e82ab7879e1eb3757ab5209cd66e74bd20f16b453843fa5f3b4cf4f7a"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceVerifyEmailDialog).prefab",
+      "bytes": 649386,
+      "sha256": "5f3800adab7971ada36a670312907bd61903461e599912ca65e1260d044f425e"
+    },
+    {
+      "path": "Assets/GameObject/(AuthorizeDeviceVerifyEmailDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "dfc3b8d624bddf78f0cc263e97e0025979279c30170738c1c009f7a4b9769676"
+    },
+    {
+      "path": "Assets/GameObject/(BadgesDialog).prefab",
+      "bytes": 621399,
+      "sha256": "03987bb2007e01e42b1aee4041ea54b63c96ef822aa310ab071793086bbd17a3"
+    },
+    {
+      "path": "Assets/GameObject/(BadgesDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "df2e1df853267f9d7ed513266533f9b7e99c4a3c9ae437e8e708aeb18efd07c2"
+    },
+    {
+      "path": "Assets/GameObject/(CalloutDialog).prefab",
+      "bytes": 52310,
+      "sha256": "fbb5e5904d4edfa048e839468b4ccfc43ffc8c3673fa57c17ee4a7df81b14ddd"
+    },
+    {
+      "path": "Assets/GameObject/(CalloutDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "92af7e0b4bb711b655153d3bf470e30af1b5f59e7a575c01de6f1080cdf74a50"
+    },
+    {
+      "path": "Assets/GameObject/(Card)_DO_NOTUSE.prefab",
+      "bytes": 50855,
+      "sha256": "22269a292fef2ffd0c8f928d05cdd53e4ef7eabcf2e38b9df44bffc7c9663539"
+    },
+    {
+      "path": "Assets/GameObject/(Card)_DO_NOTUSE.prefab.meta",
+      "bytes": 236,
+      "sha256": "4e8a243bc3cfdc3e10dade442f8109ef5b3492c25248eebb063be5f847dc3bac"
+    },
+    {
+      "path": "Assets/GameObject/(ChallengeHowToDialog).prefab",
+      "bytes": 637785,
+      "sha256": "60d6223a5c6d3d2ba9951a1ad6427b06ba0b1d197fefe26652c94841ee93c23d"
+    },
+    {
+      "path": "Assets/GameObject/(ChallengeHowToDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "49511d08a9a8dd2026de3be276f68cb31658374fa170bc9eba324fc17328aff8"
+    },
+    {
+      "path": "Assets/GameObject/(ChatSelectionPickerDialog).prefab",
+      "bytes": 846656,
+      "sha256": "70d2ec63d01cc679e88d10b2fe2b40c51dd47899543efa25346264671fe600d0"
+    },
+    {
+      "path": "Assets/GameObject/(ChatSelectionPickerDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "49afd82a63ddd393ec8a1f91d31d7dde24b34802fa37a720fed455adc2945d9a"
+    },
+    {
+      "path": "Assets/GameObject/(ChatThreadListItem).prefab",
+      "bytes": 89184,
+      "sha256": "6a2385baddcca10792a5e351a750fd9b9396931ea93fa75ed311496b82cb7eeb"
+    },
+    {
+      "path": "Assets/GameObject/(ChatThreadListItem).prefab.meta",
+      "bytes": 236,
+      "sha256": "35b82d2b40a6f8e7ce4da400f2cbc4da3a444bdf2bcaaee5cd983bfd4a1fc629"
+    },
+    {
+      "path": "Assets/GameObject/(CheckoutDialog).prefab",
+      "bytes": 1003953,
+      "sha256": "36572f789be201ab268b8a4bc49bdfa573d4405bae271c337e056c4a2dc75bc8"
+    },
+    {
+      "path": "Assets/GameObject/(CheckoutDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "269c0d8e16047d554783241550448e1dede416f8fd9079ff83a65d457f019225"
+    },
+    {
+      "path": "Assets/GameObject/(Chip).prefab",
+      "bytes": 10390,
+      "sha256": "f16aea390a7e2bb659a0b17db34649ec910c30ffac58c1930daea3f4836d4cf8"
+    },
+    {
+      "path": "Assets/GameObject/(Chip).prefab.meta",
+      "bytes": 236,
+      "sha256": "78bccb0e7e8ec6c303b0a64ad2a08ce67fcbc8ab2fdf664cfc9a0affad09977e"
+    },
+    {
+      "path": "Assets/GameObject/(CircuitV2Button).prefab",
+      "bytes": 23708,
+      "sha256": "8e985f7750d40121e0dd0ed92b4884bb6222ea1f27db610307eedb5918b387e8"
+    },
+    {
+      "path": "Assets/GameObject/(CircuitV2Button).prefab.meta",
+      "bytes": 236,
+      "sha256": "04cede531a20818960dece12286b871507a46b0c1864216e6facb1fa5b3c85e4"
+    },
+    {
+      "path": "Assets/GameObject/(ConfirmPublishDialog).prefab",
+      "bytes": 489764,
+      "sha256": "07aadd74b765d5c5ff8fdf797c3c3765d5c25dfe4155c8911503114f827801a8"
+    },
+    {
+      "path": "Assets/GameObject/(ConfirmPublishDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "700f0337b084cfc4ed6997eee035d5086c43fd79f57ea7f1693f315ac19797b7"
+    },
+    {
+      "path": "Assets/GameObject/(DialogCrossPlatform).prefab",
+      "bytes": 434381,
+      "sha256": "3062c8bcb7dccabb036e283c21caa5cddb219ed36462073876eb59a8f49d5137"
+    },
+    {
+      "path": "Assets/GameObject/(DialogCrossPlatform).prefab.meta",
+      "bytes": 236,
+      "sha256": "5f8d112d685f3867fd932fe87d6052d94cf25af3b8387df85e7aea7d25a4da4b"
+    },
+    {
+      "path": "Assets/GameObject/(DialogVRSafetyWarning).prefab",
+      "bytes": 412096,
+      "sha256": "cbe01b6b0cbd14c6fccbaaba3c072646989f13794273dcd9eb735cbc70bc767b"
+    },
+    {
+      "path": "Assets/GameObject/(DialogVRSafetyWarning).prefab.meta",
+      "bytes": 236,
+      "sha256": "e315bf0aeb46bf4d0f3f9232d521472d0bdf52b6ac91afa069821729bcf4fb19"
+    },
+    {
+      "path": "Assets/GameObject/(DynamicCustomColorPicker).prefab",
+      "bytes": 276310,
+      "sha256": "01af091da9233fcf6cd960750af39e7cfd77483b1cfe8e11264d4b407739e040"
+    },
+    {
+      "path": "Assets/GameObject/(DynamicCustomColorPicker).prefab.meta",
+      "bytes": 236,
+      "sha256": "23dae628ab7418a2e689db384da03cf2ced3e3f3c6afe9f26998f0dbc85d8297"
+    },
+    {
+      "path": "Assets/GameObject/(DynamicProUXCustomColorPicker).prefab",
+      "bytes": 276315,
+      "sha256": "a74c1a30516fa5151b33d8e7ebfc7a2a333dbf47fdb5d3e92131ed76476eedf1"
+    },
+    {
+      "path": "Assets/GameObject/(DynamicProUXCustomColorPicker).prefab.meta",
+      "bytes": 236,
+      "sha256": "16d43bb642254513ab2fc9800e55d90be2091b1d9c412f4c2cbf0e1108c550f9"
+    },
+    {
+      "path": "Assets/GameObject/(EditSavedOutfitDialog).prefab",
+      "bytes": 837305,
+      "sha256": "43eb5e589362474781f28ae08b8efb4c9e25a6f57e970c2d2f19be6e34c071bc"
+    },
+    {
+      "path": "Assets/GameObject/(EditSavedOutfitDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "ee5363f1e2ab548737927011c2d3d8663998c664a3630a92a297564e6b7da554"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Rank_Basic.prefab",
+      "bytes": 199043,
+      "sha256": "4606d6d14c939d563395a2be7c569ee407edc69c2d5b013d3bee6b933af69524"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Rank_Basic.prefab.meta",
+      "bytes": 236,
+      "sha256": "0fe30b37b87a441146798a3c64126de5f2d78b4795395e87240975cbd84c571f"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Rank_Versus.prefab",
+      "bytes": 199003,
+      "sha256": "b4841f3fa5b2cc7ee25fad74b69dcc53feac1c73fa861f07e8adcb85b6667e04"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Rank_Versus.prefab.meta",
+      "bytes": 236,
+      "sha256": "111833addbedc5a02cafc16bca20a9b1a5c201b79d4d6152f4e053f593f6e3f2"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Basic.prefab",
+      "bytes": 194258,
+      "sha256": "e100a1ea356e9f818a35a3d3db6f1dd6002905a81574738b80d0ad4155405f3c"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Basic.prefab.meta",
+      "bytes": 236,
+      "sha256": "618ac418f3e6f18feafdeb594205c7f0c4b1960da1d6783b0e19949a38b78cba"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Compare.prefab",
+      "bytes": 194234,
+      "sha256": "b493191784e6ee642005dfa1ae9cca5686c6faa4ba29f8f0a4dc34a5cd0ece5e"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Compare.prefab.meta",
+      "bytes": 236,
+      "sha256": "b483c1a657f172351ee9033235824ebb558d48beb941280bf4c99a86903c8d2f"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Versus.prefab",
+      "bytes": 194235,
+      "sha256": "337b3d016524c5346f6ef6370d5713b5817b8b09de11d646300f97c66bc0d95e"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionCard) Leaderboard Score_Versus.prefab.meta",
+      "bytes": 236,
+      "sha256": "0892472bfef0afa20ea664ad7f619f41156fa5e92347d5275bd72977bbe98715"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionFriendEntry).prefab",
+      "bytes": 55418,
+      "sha256": "af9e87682aae8bb3d1769a2c281ff603982a8c1baa96fcc1349b19955ec8dbc0"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionFriendEntry).prefab.meta",
+      "bytes": 236,
+      "sha256": "aabe05c9c44b0360434c791f034e91482e174aa626767cd9ac5b32899c18126a"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionFriendRankEntry).prefab",
+      "bytes": 55422,
+      "sha256": "bb54db3eb033c2227f2a3561442945a95851ea2df769dfd1ea391c14061a71fc"
+    },
+    {
+      "path": "Assets/GameObject/(ExternalProgressionFriendRankEntry).prefab.meta",
+      "bytes": 236,
+      "sha256": "b4070ac7f57759ddd88c5c6db0c0dae944f02bb65e8fe9d9d28fff2ce194a6f1"
+    },
+    {
+      "path": "Assets/GameObject/(FriendFestDialog).prefab",
+      "bytes": 441699,
+      "sha256": "422e81c6ffb3a210a93126710ab0801e1b9b2513c6d05fce5e16165d646a8e04"
+    },
+    {
+      "path": "Assets/GameObject/(FriendFestDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "c24e42adfabc676536e912894cf5cea150d44864acac757a8293c94b0177dac0"
+    },
+    {
+      "path": "Assets/GameObject/(FriendSettingsDialog).prefab",
+      "bytes": 502150,
+      "sha256": "da01046992ae17ab37a6bbb9671e67f7b4c9a4131a97c08bc683faf415d63fc2"
+    },
+    {
+      "path": "Assets/GameObject/(FriendSettingsDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "6556b43915e60acbcfb4cb6e743d260a4f17a0eef9c81c961fe2ca3eae7c75d3"
+    },
+    {
+      "path": "Assets/GameObject/(HomeMenuLayoutDialog).prefab",
+      "bytes": 975536,
+      "sha256": "748789b79d6c58709dfbd9a3b6ade4b206c7d10352c9ed274504d148f252d4b4"
+    },
+    {
+      "path": "Assets/GameObject/(HomeMenuLayoutDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "7da1bc295ae9a5e99bc78d7ade3ad3b1c355dbd17d998bb7e6e5742474a98fb6"
+    },
+    {
+      "path": "Assets/GameObject/(MessageDialogWithIntegerInputField).prefab",
+      "bytes": 423088,
+      "sha256": "d719e04ca482ef308e2a54d2e7550ddab731d4f304299654697ac72c9f8e8fef"
+    },
+    {
+      "path": "Assets/GameObject/(MessageDialogWithIntegerInputField).prefab.meta",
+      "bytes": 236,
+      "sha256": "65f773b53e4f4bf571637cc038b1cb2812174f9a7b5159058b5465da9f76f1b9"
+    },
+    {
+      "path": "Assets/GameObject/(OnlineStatusDialog).prefab",
+      "bytes": 521009,
+      "sha256": "0a88a4e74ed4f3862684ca5a1e8dc9a79334889f63ccefda7a0ccaf676bb5621"
+    },
+    {
+      "path": "Assets/GameObject/(OnlineStatusDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "88b44e0b49c3cd400feec03d6e67fdde119ec50131eaef3f80f7e5e524ed5ae6"
+    },
+    {
+      "path": "Assets/GameObject/(PS4TokenConfirmationDialog).prefab",
+      "bytes": 665620,
+      "sha256": "2b51eb83b5a7e9437e11cf831f13cfb6c127d438a7fd9d9b6ce0b64ec49598d8"
+    },
+    {
+      "path": "Assets/GameObject/(PS4TokenConfirmationDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "87cc1a6a64c544ffbaf0bedcd85c569729bb3d50ed5b963eba855e8522501096"
+    },
+    {
+      "path": "Assets/GameObject/(PlayerCard_Grid).prefab",
+      "bytes": 62133,
+      "sha256": "8a1ec5330b90cda7f1d3ed880668a0c8e32b801d61fa35feccaf38496493b75a"
+    },
+    {
+      "path": "Assets/GameObject/(PlayerCard_Grid).prefab.meta",
+      "bytes": 236,
+      "sha256": "fe3250a0b8e32dd979e4f697bcb9e82e374d6a11d3396333cd3ff2914b406c83"
+    },
+    {
+      "path": "Assets/GameObject/(ProgressionEventTutorialDialog).prefab",
+      "bytes": 451060,
+      "sha256": "b8a135dfbb1552f4ec66b6cb7a5b83b18602162cc8b38e365cea76ba6dfc981a"
+    },
+    {
+      "path": "Assets/GameObject/(ProgressionEventTutorialDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "550888d651998394aec2719f362c5fac277652d0fa9c5f390df220afe5857577"
+    },
+    {
+      "path": "Assets/GameObject/(RR+DoubleRewardDialog).prefab",
+      "bytes": 489670,
+      "sha256": "22b8b1a55db0c11e1e50f41d041b16dcea9713bd83601fceadc2a72838f1e90b"
+    },
+    {
+      "path": "Assets/GameObject/(RR+DoubleRewardDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "3191831e0426d15cb7749c8e0869f756ce579b899157691cdb07e66bcc6ff98d"
+    },
+    {
+      "path": "Assets/GameObject/(RemovableChip).prefab",
+      "bytes": 23275,
+      "sha256": "45895a9d38593f62a50976c2bad37856a2f33bc997d036945ba30970c35c6114"
+    },
+    {
+      "path": "Assets/GameObject/(RemovableChip).prefab.meta",
+      "bytes": 236,
+      "sha256": "35aa5a875266151b8eec35242565674edfb8480f95c0dcf71104cac99de32db2"
+    },
+    {
+      "path": "Assets/GameObject/(RemovableChipProUX).prefab",
+      "bytes": 23271,
+      "sha256": "ef9136edf3c2b054b3b8f123fff0698007e64c10acfe75bc27e632583ff500b7"
+    },
+    {
+      "path": "Assets/GameObject/(RemovableChipProUX).prefab.meta",
+      "bytes": 236,
+      "sha256": "1a37ad1bdbda74d6ecdd025341ca00cc9ec846ea108d3f13f1bffc12094e8825"
+    },
+    {
+      "path": "Assets/GameObject/(ReportPlayerDialog).prefab",
+      "bytes": 539725,
+      "sha256": "9e2683d9450e1a347a7d201f49f8e25998e9f8d88831925dca1ddd994990bbb1"
+    },
+    {
+      "path": "Assets/GameObject/(ReportPlayerDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "79de95e8997947164a553d87559d6cf05c2f0a3b6aec975f9cecb8c9627796f6"
+    },
+    {
+      "path": "Assets/GameObject/(RoleEntry).prefab",
+      "bytes": 28689,
+      "sha256": "0e0a687aeedb47b1affb33cea43c3b26d06278cced5ee73000a219a6dcdc3be8"
+    },
+    {
+      "path": "Assets/GameObject/(RoleEntry).prefab.meta",
+      "bytes": 236,
+      "sha256": "eeaa284e781ea487cbf635f72a17538904326db196f3abce770ba0d9b97eec77"
+    },
+    {
+      "path": "Assets/GameObject/(RoomCard)RoomPickerDialog.prefab",
+      "bytes": 97963,
+      "sha256": "d8b0f79a5129c9f7e0ecb598edf85d963b06bbf2e1074e0e1c84adb9b9c6a354"
+    },
+    {
+      "path": "Assets/GameObject/(RoomCard)RoomPickerDialog.prefab.meta",
+      "bytes": 236,
+      "sha256": "15230775b2e2bdf01501a677edb702c261ab160c313357469f9933dba6a5edd8"
+    },
+    {
+      "path": "Assets/GameObject/(SafetyDialog).prefab",
+      "bytes": 446355,
+      "sha256": "26497a03e3ca5e1c00d3f755a278c6fa3e466717a87d27894c1e4e14c3de92e2"
+    },
+    {
+      "path": "Assets/GameObject/(SafetyDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "0574cfcfc63c30e3e05163bac8dd065f198ce287970428bd2ad564adb780cb32"
+    },
+    {
+      "path": "Assets/GameObject/(SaveHistoryListItem) Variant.prefab",
+      "bytes": 87348,
+      "sha256": "475d4c1afe00104ea593afdd890ba6c57d05009768fdaa15949334bae9820ff5"
+    },
+    {
+      "path": "Assets/GameObject/(SaveHistoryListItem) Variant.prefab.meta",
+      "bytes": 236,
+      "sha256": "d900321cf144382c72be27cd635300ba3f6fbea8fad3029871ec1bc49cdb68d9"
+    },
+    {
+      "path": "Assets/GameObject/(ScreenShareReportDialog).prefab",
+      "bytes": 499117,
+      "sha256": "7e6db875e2cbe688a13d68bd59897da14d71e92cac238a3c48c12f74f7c02744"
+    },
+    {
+      "path": "Assets/GameObject/(ScreenShareReportDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "e1c25e80c5c00eb67c75b5b2a4b1550cfdc22193a777e6940277e10cea836e4d"
+    },
+    {
+      "path": "Assets/GameObject/(SelectInfluencerDialog).prefab",
+      "bytes": 812250,
+      "sha256": "f443492e4c62e3e378cedd1f66159cabfae8e0bf0d4fc1265343655ae8d8c9a9"
+    },
+    {
+      "path": "Assets/GameObject/(SelectInfluencerDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "905207a6ae2bdfa11cdf26eeb72473f00e77ec1a9eb7d9e1bace8aeb1f56674c"
+    },
+    {
+      "path": "Assets/GameObject/(WarnMultipleOwnedItemsDialog).prefab",
+      "bytes": 511722,
+      "sha256": "a88abcace7911a01233077f8c6db4810983d305ba49c0135a28b273fc9e0f1f3"
+    },
+    {
+      "path": "Assets/GameObject/(WarnMultipleOwnedItemsDialog).prefab.meta",
+      "bytes": 236,
+      "sha256": "b2d1f3d1e21f627beca3d85921471e5a43512ebb01c2796f5de33a208c99b21b"
+    },
+    {
+      "path": "Assets/GameObject/_AccountButtonChip_ PhotoTaggedPlayer.prefab",
+      "bytes": 17126,
+      "sha256": "20a4356a52c3cafe33fc16ba616cb8f8d318b1d51dda5257b260144589e506a1"
+    },
+    {
+      "path": "Assets/GameObject/_AccountButtonChip_ PhotoTaggedPlayer.prefab.meta",
+      "bytes": 236,
+      "sha256": "adc3dffbaaf944f807dde6fb0f25b5bc9c615f10b157c03eba5450696ebc917f"
+    },
+    {
+      "path": "Assets/GameObject/_AccountSelectionButton3D_.prefab",
+      "bytes": 70530,
+      "sha256": "206939e73a3dc1c1f0959a1e5bfad64a17dfbb4579dc7edd405c92c18e0d85fa"
+    },
+    {
+      "path": "Assets/GameObject/_AccountSelectionButton3D_.prefab.meta",
+      "bytes": 236,
+      "sha256": "919c860e7ccf2c6f41c4e0d3090a83ae655f11d710fc131d489e6104572ecc28"
+    },
+    {
+      "path": "Assets/GameObject/_AddRemovePlayerRoomRoleButton_.prefab",
+      "bytes": 55157,
+      "sha256": "baf9b2e86e6ef1afedaf5d625fc3e130d6a3901c5c084c5209f71bac6de86dcf"
+    },
+    {
+      "path": "Assets/GameObject/_AddRemovePlayerRoomRoleButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0401e03cb690b5891b034ef15bd7e04ee24eae4ff384f0d0ea89ca18cf6c68a9"
+    },
+    {
+      "path": "Assets/GameObject/_AddRemovePlayersRoomRolesDialog_.prefab",
+      "bytes": 307614,
+      "sha256": "159d8dfcea9ab09ad49ce894b9bc0374dbec2e5a25d3a59f62d15fa7e01f6224"
+    },
+    {
+      "path": "Assets/GameObject/_AddRemovePlayersRoomRolesDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b3daa9dd09ffa4ffe88d3fd42629ab947595cf5a209ef49467f6e947f765058d"
+    },
+    {
+      "path": "Assets/GameObject/_AnnouncementsScreenItem_.prefab",
+      "bytes": 59975,
+      "sha256": "00484c8f112688b2e7934c6b40915a29d446096c0817685ac6e49aef2745bfef"
+    },
+    {
+      "path": "Assets/GameObject/_AnnouncementsScreenItem_.prefab.meta",
+      "bytes": 236,
+      "sha256": "cc44d3335bd0b4e33a250a4a2d7bceecaf7fe135fa95c0e6d73413dec869da2b"
+    },
+    {
+      "path": "Assets/GameObject/_BackpackCard_.prefab",
+      "bytes": 116611,
+      "sha256": "1bab58a76fa38a4401078e0d9a4157a024ce79fa1528bfae52ed944da6ff95cc"
+    },
+    {
+      "path": "Assets/GameObject/_BackpackCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2cb1345f9186f2f89e189e48525f3bbbdc0f5aecafaa4f4790e05e139e3f2a67"
+    },
+    {
+      "path": "Assets/GameObject/_BackpackToolButton_.prefab",
+      "bytes": 56710,
+      "sha256": "411cda7f2406e7decb84396c00b28438f32d44e1dc980402f80cd25f0736f6d4"
+    },
+    {
+      "path": "Assets/GameObject/_BackpackToolButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "e4b63ae1b2b0a3e1e8261da9a2fda93795de58902b687d5b643e5ebdd076dce2"
+    },
+    {
+      "path": "Assets/GameObject/_Bar_BackButton_.prefab",
+      "bytes": 24521,
+      "sha256": "076a3eb5d9ef91ef903ad8d6f36e1406b830100153b4a2fd2209bf4d735f9321"
+    },
+    {
+      "path": "Assets/GameObject/_Bar_BackButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "4630434b97f28df6144ba825f448a06fd9b6883836e691daf7c9a51023e2609d"
+    },
+    {
+      "path": "Assets/GameObject/_CV2PinInfo_.prefab",
+      "bytes": 41246,
+      "sha256": "7751245549be47d840f05700627de897b57e5dc5658aabd28f3f06225ca1e85f"
+    },
+    {
+      "path": "Assets/GameObject/_CV2PinInfo_.prefab.meta",
+      "bytes": 236,
+      "sha256": "4510a0b8084fd544e0e955479ce7b3f2053aa16fba704a0d0feb3aee666c5ee6"
+    },
+    {
+      "path": "Assets/GameObject/_CheckOutListItem_.prefab",
+      "bytes": 152376,
+      "sha256": "968be9b9cdb4b486841230fdab4d222daaab4a283a82f5fb43bfcf7a298f18a2"
+    },
+    {
+      "path": "Assets/GameObject/_CheckOutListItem_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2016a6285e9f8a2d415a3031544da607971a9f1706ac05b318f72edf8ca4fda4"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseEventLocationDialog_.prefab",
+      "bytes": 359020,
+      "sha256": "6f2257862cd1e0d6a889f5aa9ba7eee3907dc472c77774bd794a7c846edaec1f"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseEventLocationDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "902aa6ed9110ff6b89a202dff1dde25b8bf1da4c34511c46bfda9f2fdcc6c90f"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseInventionPriceDialog_.prefab",
+      "bytes": 377903,
+      "sha256": "654da15ca8841074a7e17229cce7bdf4a09f1eef789620e585ab01300b7f3c65"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseInventionPriceDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a7ad0d148c7ec311aeedeeca24ad5ff31b3cef6d4f2ef07657a19263f23318d8"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseInventionPublishingPermissionsDialog_.prefab",
+      "bytes": 404111,
+      "sha256": "d31460b0c632c6e85a917ac8b346ebd964ff7be7d3f477d424496ce3f5ad8b47"
+    },
+    {
+      "path": "Assets/GameObject/_ChooseInventionPublishingPermissionsDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "df7cae161c3d9a27fd34e788dbcc2463d9eab12fe91a6704856530b9fc5daef6"
+    },
+    {
+      "path": "Assets/GameObject/_ChoosePlayerDialog_.prefab",
+      "bytes": 1388103,
+      "sha256": "853f675b7e7b72218e7afd450c2e791f89953db8e777c0f9f519db34266a051a"
+    },
+    {
+      "path": "Assets/GameObject/_ChoosePlayerDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6d08e9bc907cc983cc3b22457b932f519b3e3aa87ff3b3453685ac5740dcc824"
+    },
+    {
+      "path": "Assets/GameObject/_CircuitNodeModeEnumSettingUI_.prefab",
+      "bytes": 83645,
+      "sha256": "fda4268f50aa9570a663c85c88ba944054e6a20f42791594f15e8c838d740ef5"
+    },
+    {
+      "path": "Assets/GameObject/_CircuitNodeModeEnumSettingUI_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0c09dbc45443e07158369f9e9917361d299388c4c2b3e775e01e282af52865dc"
+    },
+    {
+      "path": "Assets/GameObject/_ClipboardButton_.prefab",
+      "bytes": 34408,
+      "sha256": "18c93fec08f10221cd254c6b4939184825a88ab6d6ec817e0e4f70522986282d"
+    },
+    {
+      "path": "Assets/GameObject/_ClipboardButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "d1e1f75ef5a6006a220a30010d0573601da85037a5a1c234e7a5e95d957f8edc"
+    },
+    {
+      "path": "Assets/GameObject/_ColorInputDialogScreen_.prefab",
+      "bytes": 350382,
+      "sha256": "5fa8b0a377ebd16e3e2d72512588732761184f28088572e4ced6081ce8f6d817"
+    },
+    {
+      "path": "Assets/GameObject/_ColorInputDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a98f13f843e117d723a12195763d75259e3af3245dca8119b54317150df99a9e"
+    },
+    {
+      "path": "Assets/GameObject/_CommentatorBooth_.prefab",
+      "bytes": 4044306,
+      "sha256": "f14dbf2ee4a4384f687f66b5fded8473781d44a480f1dbca04d14eb1005ad8d2"
+    },
+    {
+      "path": "Assets/GameObject/_CommentatorBooth_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b12e9adbc9379e065efa19f7af2159566e3ebdfffc1da5711276750d866754a0"
+    },
+    {
+      "path": "Assets/GameObject/_ConsumableButton_.prefab",
+      "bytes": 34397,
+      "sha256": "2c6742a75a6f1b56e876969c1904125894dfe811338435b445b07305b18b70dc"
+    },
+    {
+      "path": "Assets/GameObject/_ConsumableButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "906c4c2042f63c266f6970632de35596aebe1944e73bcdf87add15b858cff0f9"
+    },
+    {
+      "path": "Assets/GameObject/_ControlDiagramDialog_.prefab",
+      "bytes": 1244802,
+      "sha256": "6cd6ea943c0b868498568c53583faec848283e77fb3a51ae3c44bf443aac1d6b"
+    },
+    {
+      "path": "Assets/GameObject/_ControlDiagramDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1411387accf853dae96a60ec1d1d73a9c58875a7ac13144c50b03fcc1c25b28a"
+    },
+    {
+      "path": "Assets/GameObject/_DevOnlyButton_.prefab",
+      "bytes": 18271,
+      "sha256": "b5c8d86500faa44f35870f1972c842fa23d1862e94a6f7dbe098be5a9cfc8e62"
+    },
+    {
+      "path": "Assets/GameObject/_DevOnlyButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "985878b5b428f0c4d81bb99eca77026972bf89f9409527847e31adb8335cd564"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicAsyncButton_.prefab",
+      "bytes": 30510,
+      "sha256": "6a57c8100002a60475c62f308f10d340f2104e7603c573d6ee5880a64b69f820"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicAsyncButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "4e726041e11fddfb340f5dc74f35c40e9cfaf18d24488beeac6c59737ceb45d3"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicButtonPortrait_.prefab",
+      "bytes": 34670,
+      "sha256": "49ea121e5fb46d8c8b37a71952a2ab6b717fefcdafc9fc43bb818cf06c38b524"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicButtonPortrait_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6d74c73631368a9c8537a9ceb228fbf5d73fa4febfc109983178166c49f652a9"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicButton_.prefab",
+      "bytes": 34693,
+      "sha256": "e6b589ef1c848f1e7589aca733d289983031115545cc32547c510e3e96a8987c"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "d7f429b362951af090c6afb2778b3966330778fde6aa8c29399724d36bc77097"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicCheckbox_.prefab",
+      "bytes": 26703,
+      "sha256": "ae3457510d54bafdfbb2613b16b49e869abf8a840c8f2a5539c4e63b117578e8"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicCheckbox_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1f9c0aba2cf51a3aa203e9450a8b4a9d881e454155f264e10d5eb8f5814a6e4b"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownButton_.prefab",
+      "bytes": 30581,
+      "sha256": "91ae65ff044d807e6ac4f431b909952d26f7883a6876694f8c0771d74c17b691"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "aff8eebe715156acda816ea4326af8ce7e7d1d1b29773e5edb872d93b13892b5"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownTwoLine_.prefab",
+      "bytes": 65377,
+      "sha256": "6a94165372de819705cfd764017349e52a605ce3ad760309d9cd5cbb274958b9"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownTwoLine_.prefab.meta",
+      "bytes": 236,
+      "sha256": "9209c1adb094800e4d9ecaede14134df8afc67ffc2218b9cab9803250e37e628"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownTwoLine_MultiSelectConfig_.prefab",
+      "bytes": 79422,
+      "sha256": "20dc01eea4291d327017112a598ba722ed9d0a3b732f250ee13d278994a287b8"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdownTwoLine_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "adacd5200aab84d7ff709c37d9375fce5d2247579f24e774513be982a868abec"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdown_.prefab",
+      "bytes": 65396,
+      "sha256": "a743e23d1c3a7fd0f09849c27164e5a5f184b7475a24ce07ca8457e3cb52da5f"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdown_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b7acc9a994ca2b950f38d51eee0b6d1d6fc5729f4ccf35f38c8a982b3feb7d36"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdown_MultiSelectConfig_.prefab",
+      "bytes": 77426,
+      "sha256": "6b08405419cd8681b47a5f9f82e081b17bf9c7936cd5013e329fc80b2e7b049b"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicDropdown_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "15cb00e709505fb56ae736c89dd54273eca97882ef15cc2287d695adef8bfa01"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicFoldout_.prefab",
+      "bytes": 87727,
+      "sha256": "3f4aed21d02f450d22e7a48a2135a7090293b87d8758df1c3b66ee7e4030acd8"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicFoldout_.prefab.meta",
+      "bytes": 236,
+      "sha256": "53445d56f6309fd9117425492052d1601a343729601b832f77fd166b59821a25"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicInputField_1Field_Number_.prefab",
+      "bytes": 101710,
+      "sha256": "7372b4584e009e902824b408d7c4f3241a374b4f261f9f6fdfe6f62632090d84"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicInputField_1Field_Number_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f9fe847e6604339d215ec156aa210f2888a110e2288761f1e7224745c966f02a"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicInputField_1Field_Number_MultiSelectConfig_.prefab",
+      "bytes": 113665,
+      "sha256": "d2e8a96be5a2cd80bcd9558d98640243c4b22ae373ca19f162e459c8fce4df15"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicInputField_1Field_Number_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "5ed72375233aabf578738b526ebe1901592c4846036edeaeee6ab1c0ce147760"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXAsyncButton_.prefab",
+      "bytes": 30515,
+      "sha256": "57e8e2ceb1bf66ee5715a5e1ba07dc88164df9be4d42130d5fd98b0592d9a4df"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXAsyncButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "28c789f30787ff4a7768db84ff096e15890f1eb434b8b2d4f827a2cd0afcae97"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXButton_.prefab",
+      "bytes": 34695,
+      "sha256": "099ed37a6e27be21fffd73bc45673478c256ca124eaa3954838b200a310cf243"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f13390a3e1680ec2c9e223a5408f23b1fa84197f56f1fa4c49822d4c2b45fb86"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXCheckbox_.prefab",
+      "bytes": 26708,
+      "sha256": "982abe9c3824585339649b95e2791e0d70229aa5b815072920d7f3f7dd73a6d5"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXCheckbox_.prefab.meta",
+      "bytes": 236,
+      "sha256": "938c38a8d7e1b2ce8da67cd156155d210da8dc873779c446432f84593c4689ae"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownButton_.prefab",
+      "bytes": 30549,
+      "sha256": "f3003c4aef3377bfa5cfd89839d7f63566c46cdbb878aa537e1c8ae9225094a9"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6bde1977c16ff171d6b0061ec482dc70a3bc5e8c0c681ea9c18ac6eed1853962"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownTwoLine_.prefab",
+      "bytes": 65388,
+      "sha256": "0eb4d48a4ec28b03f2fb46517ff84c40c1713dd34a3f3e901d94ee6f8b52f8e7"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownTwoLine_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6e30afca7fd225c0d5ac9764b51ab522512c720debd8d7cf43a82034a6f0812a"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownTwoLine_MultiSelectConfig_.prefab",
+      "bytes": 79401,
+      "sha256": "5cdde6cc699a9da257168830dc49dbc8c286a2b446a63f06b708bce8af0d03da"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdownTwoLine_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6fb8d20510ba36197d9c421d578709889b724e6f50307ee98e979764f95f4842"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdown_.prefab",
+      "bytes": 65354,
+      "sha256": "06d7f29f971f95366c0e4abfad240a25583341b7d2e8a62bb9af1fdb129fb910"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdown_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2b72a09be39b094ea55ab0098c660a5f087df261f10928aab9b9cca845df86f7"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdown_MultiSelectConfig_.prefab",
+      "bytes": 77364,
+      "sha256": "3bf02a67e3968e06ba30466d11b4b8a408c707b965c54533e069d79c5c6c4a72"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXDropdown_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "85082564d3675c8658e982f74b9a59c89db78819f7b9a486d6ade987ad45da67"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXFoldout_.prefab",
+      "bytes": 87764,
+      "sha256": "663a9b59eed7471babf6961501fbf8eeeca984c7dec2e074671de5574b4d8915"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXFoldout_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0dac5a402f8453b0ef2dd9e290097932cd4f52acd8439d63f132229ca087fa1a"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXInputField_1Field_Number_.prefab",
+      "bytes": 103430,
+      "sha256": "e56ae080434a8eb373947c51f8022ffb62b0c394de8e411f1dd977e02f8c3598"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXInputField_1Field_Number_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f396f28c76499f14fe0981b67be261672906b6a73ff2cbc96b6edc9ea88becd9"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXInputField_1Field_Number_MultiSelectConfig_.prefab",
+      "bytes": 113771,
+      "sha256": "faf865c1ceb8741bda47e142a4869606b47efbc69594765a9363dd76558bb819"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXInputField_1Field_Number_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "622fad89b911245f3ed2f3f2e6f91394e10051b36c81977b5ce471b7020db347"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXRadioButtonSlider_.prefab",
+      "bytes": 121895,
+      "sha256": "d8ec2449f647986c7f495402ff126c9a9ca90d9c17e4a767b21b039e85332bd1"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXRadioButtonSlider_.prefab.meta",
+      "bytes": 236,
+      "sha256": "fcff25b8a9338ba27af9371a78d32fb9cb80dbd41c6627b7bf0530213ee6d333"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXRadioButtonSlider__Float.prefab",
+      "bytes": 122853,
+      "sha256": "c6dcbe1ad502a50938f3f4d0dd8f7e0da6ce629a11cd04a628cf7d8420d8c2c4"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXRadioButtonSlider__Float.prefab.meta",
+      "bytes": 236,
+      "sha256": "673299f65bb17105c9662a86f61f79c6884eadaafc32062313ae9864847f9217"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSectionPanel_.prefab",
+      "bytes": 58507,
+      "sha256": "09bcbc2656e3ed5e587baa600e26c45f43b0ea1fadda43319d8d2b769ebcc1a4"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSectionPanel_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b6987e347031bfa20c8f8618258fd61b7c6a8829c6bf18ac778cd9445284ec36"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSeparationLine__3pxHeight.prefab",
+      "bytes": 4187,
+      "sha256": "3d5c09e47d778c4bc7bfd376874101528e718782db2d4e443ea6d3f97d88fdc4"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSeparationLine__3pxHeight.prefab.meta",
+      "bytes": 236,
+      "sha256": "baaf6868b7b5994955e0626dcdb39793fe818f0119cb8df64301aeca99f2daa8"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSlider_.prefab",
+      "bytes": 124474,
+      "sha256": "446a989ead162af18d0be0c72fe7127eddfe9ff870f30532834c531798a70cd7"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSlider_.prefab.meta",
+      "bytes": 236,
+      "sha256": "747aa0b28720e4095fce681453b394251fa268c9df37cdc3c5a032c705501d9b"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSlider_MultiSelectConfig_.prefab",
+      "bytes": 140497,
+      "sha256": "017de967c72f4fc572225f61f1ec694112a051e08d8d76dee4b5e220db2ee8a1"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXSlider_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "dcfeb5db33b2efee438e7e44b4c3c6d6ba1c7bb061c8d1e2103e4fb25de0f787"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXTagInputField_.prefab",
+      "bytes": 133664,
+      "sha256": "b1c68705d86db0be459e0d87640309c4476ded2125ff0111f24f4dc67eb976c0"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXTagInputField_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a820e4711a980c338b94f8b2f1da50dfd1d775c9a91d9fc36ea5badcdf0004ba"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXWalletButton_.prefab",
+      "bytes": 56493,
+      "sha256": "18147e4c4defd7375acf473d647f60303ca121bc4c21d617f0a1cb6aae30b38e"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUXWalletButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7b87c06f8aa62e6bdf4a27c7b7afc3a99f72e5387584f3751135201aba0e5484"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUX_Mic_Level_Visualizer_.prefab",
+      "bytes": 374564,
+      "sha256": "488b3d5526226425a359c17b69f5e9e4e78fc5faef24d58642827e02960d0695"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicProUX_Mic_Level_Visualizer_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0545e26f9302046053b6f2bae9e40be3a9d1b4ce2a8d073add6e5358e0242bac"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicRadioButtonSlider_.prefab",
+      "bytes": 121880,
+      "sha256": "4122cfc18bba6428c161c2aeb311030c4f0b769bb93eaad12da9508673861a4b"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicRadioButtonSlider_.prefab.meta",
+      "bytes": 236,
+      "sha256": "dc8651ef868d49c0843f8c72670be3eedf07c0fef5a606cecb123d44cc51b0d0"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicRadioButtonSlider__Float.prefab",
+      "bytes": 122921,
+      "sha256": "5c775c1b7ae830f367189853d130af1e3b6ead4211cc93ca7dbdeb651aea11f7"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicRadioButtonSlider__Float.prefab.meta",
+      "bytes": 236,
+      "sha256": "df7a8b56d3ecd6a68524b2b4a32277497e8fbbe7febde3401612a0d7ad659008"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicScrollableUIDialog_.prefab",
+      "bytes": 511387,
+      "sha256": "f214353fe1ab660f43aef62f0d0f837678079911a78d9d881e88ddb2f0609ab4"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicScrollableUIDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "e843b30b95821868a4176c977850687ee16531f0c612dade149aa2b07a47c673"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSectionPanel_.prefab",
+      "bytes": 58438,
+      "sha256": "c0102c0bbbcf52f3145193f876b916f7863160637c9f0c1862f7fc973ac00901"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSectionPanel_.prefab.meta",
+      "bytes": 236,
+      "sha256": "70858cc15533f5afd20c0d0b8a3ea3931195562815b599585a6fc59e558568e8"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSeparationLine__3pxHeight.prefab",
+      "bytes": 4182,
+      "sha256": "5f3d94470485c5be45441e474edca1b1458b62fc9c08192a2c83fb8e77546f1b"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSeparationLine__3pxHeight.prefab.meta",
+      "bytes": 236,
+      "sha256": "dee6bf369a15706c8ab8e1fdd16c83eb99cd6b7e370797dd650db996463887f3"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSlider_MultiSelectConfig_.prefab",
+      "bytes": 140465,
+      "sha256": "fcc0864303712036a1e2f5ca4e6e5b5856cb203852038a4b34000808e8b53285"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicSlider_MultiSelectConfig_.prefab.meta",
+      "bytes": 236,
+      "sha256": "25d6b4efef91325437e6ad558f6d04eaa07e65253d96734741c795bc2df7d34a"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicTagInputField_.prefab",
+      "bytes": 133630,
+      "sha256": "7fb4d7b46edd1f32b7e02c79ace29269ba02ad9a38c959650b91408db7e3e83e"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicTagInputField_.prefab.meta",
+      "bytes": 236,
+      "sha256": "80e96250e39d0c65246f5999f56b218f4e3dd43b666dbe384c6436a4fa7d423d"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicWalletButton_.prefab",
+      "bytes": 56488,
+      "sha256": "ef3882a5e41526085869e0683403e58356543430169c486d97096c32ed2b0f49"
+    },
+    {
+      "path": "Assets/GameObject/_DynamicWalletButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "18e5c043d54b1c76981dda885e9871029f787ac9f4a8e30445a8e1f328fb8515"
+    },
+    {
+      "path": "Assets/GameObject/_Dynamic_Mic_Level_Visualizer_ Variant.prefab",
+      "bytes": 374567,
+      "sha256": "ffaddc4abc0ef220512a8ababddb3ce61d74f9fbea1567f2bbee289969d04998"
+    },
+    {
+      "path": "Assets/GameObject/_Dynamic_Mic_Level_Visualizer_ Variant.prefab.meta",
+      "bytes": 236,
+      "sha256": "d265ffd64a4ec48bd611aa3679ab5c48fc7ae9a95f9d73794d786052edb86676"
+    },
+    {
+      "path": "Assets/GameObject/_EditInventionTagsDialog_.prefab",
+      "bytes": 540504,
+      "sha256": "6329a7dd9a8c96841c5df2e60784dbacd63693fd73e1331c1068653d09d4d03a"
+    },
+    {
+      "path": "Assets/GameObject/_EditInventionTagsDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "450a76e2308619770c7d4ebef65002fa5eaee4a20ad9d5ced87668c72ac3a838"
+    },
+    {
+      "path": "Assets/GameObject/_EditPlayerEventTagsDialog_.prefab",
+      "bytes": 528415,
+      "sha256": "6603ce4c6c82b8c16e1ba9b51e1a959b49a093082c209ac1a86b730bee8a3d1f"
+    },
+    {
+      "path": "Assets/GameObject/_EditPlayerEventTagsDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "812f26b691f002481f94f415f709f3892e3cbc2e3ef987e45966fa7aca7114a4"
+    },
+    {
+      "path": "Assets/GameObject/_EmojiPickerDialog_.prefab",
+      "bytes": 222527,
+      "sha256": "ad18ddfa19bd5bc490065882e12a62ce1f8b0d696b966d55bc31a7850719e0f4"
+    },
+    {
+      "path": "Assets/GameObject/_EmojiPickerDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "630e64f817330abecde5df9f5490ffe57f592f512483539bfca381121a29fcc9"
+    },
+    {
+      "path": "Assets/GameObject/_EnterInventionDescriptionDialog_.prefab",
+      "bytes": 312401,
+      "sha256": "60e51a14d914c4ab22cf98d1761d8b63df23a826aab3574ec1cfceadf9f3be13"
+    },
+    {
+      "path": "Assets/GameObject/_EnterInventionDescriptionDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "5096fe187c6e0e1b3fee3d98fb913e1805d3e85b040ed3351d4e3f4c18b01c84"
+    },
+    {
+      "path": "Assets/GameObject/_EnterInventionNameDialog_.prefab",
+      "bytes": 312371,
+      "sha256": "24062c8d7f678e6717ed42c786888bd676be1adad8a304d2352f607290cd45f3"
+    },
+    {
+      "path": "Assets/GameObject/_EnterInventionNameDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7e0429155a642a92cc58a33900a5d87fa420ffb588211b47e4e1226593be177e"
+    },
+    {
+      "path": "Assets/GameObject/_EquipmentButton_.prefab",
+      "bytes": 29770,
+      "sha256": "321dbacf93ab5d210e1c0136f11c58bbd08fc4b15addbf48234ac79b6f2ea0b3"
+    },
+    {
+      "path": "Assets/GameObject/_EquipmentButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "bc4a4ed77d9443aaf9a5096576473ceaca4375e0ef322738b8526de49a37f724"
+    },
+    {
+      "path": "Assets/GameObject/_FilterSearchButton_.prefab",
+      "bytes": 63105,
+      "sha256": "9f4af9c2ecfe0ee59eb6248f599b1444dd8d4ecb6c68c42e1f22c73717f84d03"
+    },
+    {
+      "path": "Assets/GameObject/_FilterSearchButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "83143710329d1f3f874290ad64c7abde465e1e3ee0320d2ab8a060c3f3a05f0d"
+    },
+    {
+      "path": "Assets/GameObject/_FreeGiftConsumableButton_.prefab",
+      "bytes": 35323,
+      "sha256": "c1d76f0fe6e677054c019d1be7902eebda01242be5ad46b1453609632c1ec707"
+    },
+    {
+      "path": "Assets/GameObject/_FreeGiftConsumableButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "aac0474760dbe4287b7a01e273cec79a1e670d5ee0de862018dcb785638d0a3b"
+    },
+    {
+      "path": "Assets/GameObject/_FullPageSpinner_.prefab",
+      "bytes": 24032,
+      "sha256": "46799626cefdc677d3451e7ef998c69338dbc23cbba1a0eac46f59d76a073a30"
+    },
+    {
+      "path": "Assets/GameObject/_FullPageSpinner_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1b45f5c50cc0ce7add3486a8fa6bb8a32083fe007122ad49184db04bfe2c0c22"
+    },
+    {
+      "path": "Assets/GameObject/_GameRoleRow_.prefab",
+      "bytes": 69336,
+      "sha256": "5752fb79ba9e59602f6bc98aace334033fb5392ab8c67f58690dd2595e296414"
+    },
+    {
+      "path": "Assets/GameObject/_GameRoleRow_.prefab.meta",
+      "bytes": 236,
+      "sha256": "d7e4bce1af0988acf492f88faf16b1dc15ba269ead36e758ecdd04b1d7bbb0d5"
+    },
+    {
+      "path": "Assets/GameObject/_GameScoreboardTeamRow_.prefab",
+      "bytes": 23835,
+      "sha256": "b0faf6dbda15eeb1b07cec1c73360b43ee9b549327e0f391881451dc96a17d53"
+    },
+    {
+      "path": "Assets/GameObject/_GameScoreboardTeamRow_.prefab.meta",
+      "bytes": 236,
+      "sha256": "e440449fa1ae6cdc1e47d263d5413dd01e3ae2e052f3068e0514542df33cfde8"
+    },
+    {
+      "path": "Assets/GameObject/_GameScoreboardView_.prefab",
+      "bytes": 178912,
+      "sha256": "ae5c85e782700791ed26b3085c0d3ec3bfb838380440520de8c9842d651c1f1d"
+    },
+    {
+      "path": "Assets/GameObject/_GameScoreboardView_.prefab.meta",
+      "bytes": 236,
+      "sha256": "8327d1aefb6d2786db4aba1c38460438a09b1e7ea8b00d478ba71fc2d4fc30d6"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialogPortrait_.prefab",
+      "bytes": 673475,
+      "sha256": "0f6efec42e1ea093c8b311125e237fdc0a9be2373d4e3668bfb9392f76f16bca"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialogPortrait_.prefab.meta",
+      "bytes": 236,
+      "sha256": "10b9d157f2a5415bceaad5b0df3c479b8ab5193676ab3852b0ac6d7595f0ce3f"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialog_ Dynamic Search.prefab",
+      "bytes": 691667,
+      "sha256": "218de1f4e899357d7e9fa3caf943dfa569db0faee3b39ef7ed12ac2a49a1485d"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialog_ Dynamic Search.prefab.meta",
+      "bytes": 236,
+      "sha256": "013ceb060986445ad41373a80655b625594a6f102d89c808a43d1396707d3731"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialog_.prefab",
+      "bytes": 672300,
+      "sha256": "c92386d761d5af4faba45812eb6a4fe51fdeedeceb36a1b9308d39cd1e3d193d"
+    },
+    {
+      "path": "Assets/GameObject/_GridPickerDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "000b79cb8480b8717e03fc67dc55a967126f6eb8066fa837b4eb7ac0dd750d3c"
+    },
+    {
+      "path": "Assets/GameObject/_IconButton_ CategoryButton.prefab",
+      "bytes": 18623,
+      "sha256": "0238ef95f007ca3db27ca2fbf61dac3a90e3272a07d7061c38f73bbfc88df428"
+    },
+    {
+      "path": "Assets/GameObject/_IconButton_ CategoryButton.prefab.meta",
+      "bytes": 236,
+      "sha256": "1e017e4319a1754804f410c6670aea3217659a0e15a26671da89276358930119"
+    },
+    {
+      "path": "Assets/GameObject/_IconButton_ SkinColor.prefab",
+      "bytes": 20405,
+      "sha256": "faa57d89f484018279c57afadd5e4219a930911bcc1cb4ef7f070abab015230c"
+    },
+    {
+      "path": "Assets/GameObject/_IconButton_ SkinColor.prefab.meta",
+      "bytes": 236,
+      "sha256": "b1097cc03726d410f89137fdfc5c43674e08d8aae556adafd8ab066ed3529fb7"
+    },
+    {
+      "path": "Assets/GameObject/_ImportFriendButton_.prefab",
+      "bytes": 64508,
+      "sha256": "3fe1ade90560dd4cfc57c2c157a9994250c2eeff35f9e9bff9a058954433ef9b"
+    },
+    {
+      "path": "Assets/GameObject/_ImportFriendButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "ef182a64e575cad76e58e7620d9243b192711293e811bd3aeb6e531fe75b5645"
+    },
+    {
+      "path": "Assets/GameObject/_InstagramBulletinCard_.prefab",
+      "bytes": 21224,
+      "sha256": "04eade7b8e3fbbcce17080b5a3e42ba2521ddb8f21c1119b11ce50fcf565e5a8"
+    },
+    {
+      "path": "Assets/GameObject/_InstagramBulletinCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "14ea1a07ea798d00ff5b78c91e8398d1fce502b8626147dee048cb8c837822f5"
+    },
+    {
+      "path": "Assets/GameObject/_InventionButton_.prefab",
+      "bytes": 73305,
+      "sha256": "5280391fcdef6c15e3d83283429e6b585158654a2de46c16e65311b9c98f3fd2"
+    },
+    {
+      "path": "Assets/GameObject/_InventionButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "81e2285ebe3bace31509e26b8a7a615f566f5ae92efb3d608f8ed41d5d498682"
+    },
+    {
+      "path": "Assets/GameObject/_InviteClubButton_.prefab",
+      "bytes": 37398,
+      "sha256": "97d9a99671bc78cf0021f42af8d5bd1a5cce57f09edb97f07ba64bac1d8611b1"
+    },
+    {
+      "path": "Assets/GameObject/_InviteClubButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1ccfc22a6f26acd5854952a42d1c735b65da29a44bcbf48d1dbcfe61c1ed1f64"
+    },
+    {
+      "path": "Assets/GameObject/_InviteFriendsDialog_.prefab",
+      "bytes": 504200,
+      "sha256": "09f6eecd1959b1830592564f5f7f93526cdf5f599b14ba8b5f7d1fdac5152f42"
+    },
+    {
+      "path": "Assets/GameObject/_InviteFriendsDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "3459980cec339d6c9e3509e6557b0257e65db18c739799a0580c4ac9aa18463d"
+    },
+    {
+      "path": "Assets/GameObject/_InviteToPartyDialog_.prefab",
+      "bytes": 432826,
+      "sha256": "ae16d4608425e10bca40f15ecf541374413ccb7ab4e1caeb449fef7dcfbe187f"
+    },
+    {
+      "path": "Assets/GameObject/_InviteToPartyDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7f4b9ec31320685474378057db6577fd73a284d8ff96283c1e4614c2bbb769c2"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ FreeGiftButtonConsumables.prefab",
+      "bytes": 171138,
+      "sha256": "2dc79c461fb5ed8b726a9ae2dd88dbbef7a43a7dee37e8d0b056e7740daf2e54"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ FreeGiftButtonConsumables.prefab.meta",
+      "bytes": 236,
+      "sha256": "b69335c80e63b727723707cf9cd0c119a89082f9ce1965cf2fe908a3b71223ac"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ Palette Search For Grid Picker.prefab",
+      "bytes": 173617,
+      "sha256": "5b61c5944ad3dd7ba9d9c879b653cb496ccc05d73ece791813348aeafd3cd7db"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ Palette Search For Grid Picker.prefab.meta",
+      "bytes": 236,
+      "sha256": "4e5a7741601bc68a8d1553a7dbf5c58785695dd85db3f11659e689b0beaa1fa5"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ Palette Search.prefab",
+      "bytes": 173187,
+      "sha256": "636508f47c6c719189d32e697eab86b4d1008a12c30b379db5844156a3785c3b"
+    },
+    {
+      "path": "Assets/GameObject/_ItemCard_ Palette Search.prefab.meta",
+      "bytes": 236,
+      "sha256": "35160d92aadf6d3a8c78164ef358ed72c5d856f5d58158b27e1047d424029a76"
+    },
+    {
+      "path": "Assets/GameObject/_LeaderboardView_.prefab",
+      "bytes": 87310,
+      "sha256": "328721df8686e4bc1b4de3c4331db91519a02c0350b24f1d76e3bd60f90bb047"
+    },
+    {
+      "path": "Assets/GameObject/_LeaderboardView_.prefab.meta",
+      "bytes": 236,
+      "sha256": "8db189b60c85e85645d71dba08231c27c673afee80aaffca631940c7ca0f1e5b"
+    },
+    {
+      "path": "Assets/GameObject/_ListItemWithImage_ Palette Picker.prefab",
+      "bytes": 84258,
+      "sha256": "9ff96b006d577298735413ca61985be40e4aa202bf1f9e0035dcab2b20db5b19"
+    },
+    {
+      "path": "Assets/GameObject/_ListItemWithImage_ Palette Picker.prefab.meta",
+      "bytes": 236,
+      "sha256": "ac5b4c956880a03ffd960f7c13c08dfd5a6b2847c76708877ffb5d4c17573d09"
+    },
+    {
+      "path": "Assets/GameObject/_ListPickerDialog_.prefab",
+      "bytes": 639035,
+      "sha256": "8cd336fc86d1ddfed89c887daf9f2540cb526e29ebf9b33e0d49ca45e4472b72"
+    },
+    {
+      "path": "Assets/GameObject/_ListPickerDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "c19bf20ec4ebbeeba2efccf521cbe6d57c449360fc572cb2e195d0bf01ed71ee"
+    },
+    {
+      "path": "Assets/GameObject/_LocalPlayerCombatHUD_ Screens Variant.prefab",
+      "bytes": 192383,
+      "sha256": "ebf406db40f4e284ceb157569f5e7bddc8168752f69165bf9fb2d9e8c98e5660"
+    },
+    {
+      "path": "Assets/GameObject/_LocalPlayerCombatHUD_ Screens Variant.prefab.meta",
+      "bytes": 236,
+      "sha256": "76c1dc198fc3cdad2453e491186c2a2505c6f74ba43ff03b28736e0d294f208b"
+    },
+    {
+      "path": "Assets/GameObject/_LocalPlayerCombatHUD_.prefab",
+      "bytes": 192731,
+      "sha256": "055f3aac967e4386715a991c5cdfe47a59f901d4ebdf88f87dccf4a0868711d0"
+    },
+    {
+      "path": "Assets/GameObject/_LocalPlayerCombatHUD_.prefab.meta",
+      "bytes": 236,
+      "sha256": "dfe709d7fa2c2a699d401e580a9958e1893c67d4fa032b3d1f8749ebecfeb195"
+    },
+    {
+      "path": "Assets/GameObject/_MakerPenPaletteMenu_.prefab",
+      "bytes": 88554,
+      "sha256": "ef067673ee70d89bc6c646d6a834611353743d95c363d09aaf55556a161bd0d0"
+    },
+    {
+      "path": "Assets/GameObject/_MakerPenPaletteMenu_.prefab.meta",
+      "bytes": 236,
+      "sha256": "44e735f49c534a05b25bcb5eb1f1221211c9ba7a9356cf4fcdccfdd4a40b25ec"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogPortrait_.prefab",
+      "bytes": 400931,
+      "sha256": "7a8f5b382a35f64290b4dc17f7d0cbc75dc766a230f5cbe7bf623dc0d6790407"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogPortrait_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0c9311aabf556b494bdfa76bc0f9b456bab8d4d38e74bea787e20030d4b0d38b"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogWithInputFieldPortrait_.prefab",
+      "bytes": 440598,
+      "sha256": "0a1673abebc5b462c7eb3ca91c54c9096d83379bb07dfe536da15b36114b829c"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogWithInputFieldPortrait_.prefab.meta",
+      "bytes": 236,
+      "sha256": "155649d489155e7ddc146731ff1bbb97ec625ed7664d8b33e6d763b7a3179405"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogWithInputField_.prefab",
+      "bytes": 441052,
+      "sha256": "2cbb3af5855f84f9dc8713a5d5d69071cb53fc379a2afb4d015d1aff6881be90"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialogWithInputField_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f786089219acada134c34205d660b578cb0b322cbc5e8a3ffc00f18b4499c83e"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialog_.prefab",
+      "bytes": 401365,
+      "sha256": "368eb2724b13167afa37445441c76d6f727460771350b1e412ddc494ff231905"
+    },
+    {
+      "path": "Assets/GameObject/_MessageDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "35d35472ec47c52e603c6e75a199acc4cfdf7ceacfbf8751e67bad01dc765842"
+    },
+    {
+      "path": "Assets/GameObject/_MessagesScreenItem_.prefab",
+      "bytes": 172438,
+      "sha256": "4a4d25f2dfe441fd854ca16d5237ced75ed4122e8dd65b065b07a6b4ba55645a"
+    },
+    {
+      "path": "Assets/GameObject/_MessagesScreenItem_.prefab.meta",
+      "bytes": 236,
+      "sha256": "bc62639d9a795bb186ac59dfa40d57e8a3bff7d052df2826024ef2cca1f9c932"
+    },
+    {
+      "path": "Assets/GameObject/_MonthDayYearDialogScreen_.prefab",
+      "bytes": 403744,
+      "sha256": "de9784b2649e40239fdff2d7b007806b6f4048209a7766baceb6536831b02805"
+    },
+    {
+      "path": "Assets/GameObject/_MonthDayYearDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "0884437f175bad27ddb440418f6c9d7c46d805358ecbf3e6f6d45c6b45b8b045"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ Mobile Version.prefab",
+      "bytes": 464563,
+      "sha256": "95dcc6a65acaca8c9aa42aeed78f4faac32f027a6f1cb379286ed77c5da60136"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ Mobile Version.prefab.meta",
+      "bytes": 236,
+      "sha256": "2a386202ac1b97424700ce560958270cbfc1c0b81ae8130bab07c2fdd85fb315"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ PC Console Version.prefab",
+      "bytes": 465073,
+      "sha256": "92624bbdb8108333e4f4551309a09ad2dccb2ce02adb25d29d32f96e58c5def6"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ PC Console Version.prefab.meta",
+      "bytes": 236,
+      "sha256": "30022763f9db050a66f92dcb5b511eea9c37107bc51e9aee3e095ccc391a6599"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ VR Version.prefab",
+      "bytes": 463890,
+      "sha256": "e8b0b7725587801a232e12beac859f9c11addb534fbed38db55de01ba2a9f145"
+    },
+    {
+      "path": "Assets/GameObject/_NavigationBar_ VR Version.prefab.meta",
+      "bytes": 236,
+      "sha256": "2cec9c38334d59601a341a221a513eff72e37ba7878aec60cf3c0f3fdf53010d"
+    },
+    {
+      "path": "Assets/GameObject/_NodeGroupEditable_.prefab",
+      "bytes": 48609,
+      "sha256": "68af610e54c36a23a3b8c9c9e0e9983bd240c5af9706aee140b672e09a01a730"
+    },
+    {
+      "path": "Assets/GameObject/_NodeGroupEditable_.prefab.meta",
+      "bytes": 236,
+      "sha256": "36a60f71cac27d05bbc6626259c2718f7a065da00fb330e03936d4e8aef039d2"
+    },
+    {
+      "path": "Assets/GameObject/_OneButtonMessageDialog__DO_NOT USE.prefab",
+      "bytes": 64711,
+      "sha256": "238b417774c4f16b3b0654c1267ce4ca40635df832fcd36d58a15308aeac7b99"
+    },
+    {
+      "path": "Assets/GameObject/_OneButtonMessageDialog__DO_NOT USE.prefab.meta",
+      "bytes": 236,
+      "sha256": "bed7bee3b46d85f5fea7b870bc23e441cd23b0338fcb2b17939f4045b07bca24"
+    },
+    {
+      "path": "Assets/GameObject/_PhotoCard_DialogGrid_.prefab",
+      "bytes": 93987,
+      "sha256": "0cc6e52dedf3608389a1bd2184df14f47dbaaae7ed654c50d024db0138888d07"
+    },
+    {
+      "path": "Assets/GameObject/_PhotoCard_DialogGrid_.prefab.meta",
+      "bytes": 236,
+      "sha256": "39b087c260ac08bca39c6b9bfc9a9c3cdc253a1f85e05c9e009d2eb01064eacc"
+    },
+    {
+      "path": "Assets/GameObject/_PinInfo_.prefab",
+      "bytes": 28256,
+      "sha256": "664e5a35145ae4fc1832f0b223d66eec58ff11a690c561b26c9389d2ec8f7278"
+    },
+    {
+      "path": "Assets/GameObject/_PinInfo_.prefab.meta",
+      "bytes": 236,
+      "sha256": "639fcdc26af420b8f5c4f8b7c5caf02cf24cf62df224a3263935f8d9cb95df65"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerButton3D_2_.prefab",
+      "bytes": 70962,
+      "sha256": "a527adeea8a36a89cbbe56765c0204e83b1a67fbc46dc8bdda75c04d6a3a6604"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerButton3D_2_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f1c9b262a89a72b45e508cbd7399f8041081aef9c7b5cce502649723910feb20"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerButtonWithCross_.prefab",
+      "bytes": 59514,
+      "sha256": "88727a01ac3d9e0aeef00a419d26d425db9b842d5998e46f01baf6223cb62d6f"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerButtonWithCross_.prefab.meta",
+      "bytes": 236,
+      "sha256": "91aa22879c2ae4c742c39bd5bf5b0e9b1512d1a9070396dce49415ddeaf920ab"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerCard_Grid_WithButton_.prefab",
+      "bytes": 83521,
+      "sha256": "c9ba177a10a551c89d55bc8451b5b8cc7f09fe99fe7483e11f55f08e24b7a897"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerCard_Grid_WithButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "d5d8e7b74194de21d79fa4f019059f53cb13d473f68e5cd7e8f0b4be6e042d40"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerEventButton_.prefab",
+      "bytes": 78889,
+      "sha256": "bfbf60590a36e79314109fd103fd47a5cf50404fe6c800b219e5473f7be64b09"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerEventButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "3c6305f8626124c9fed02cb7e98fd1a06bda98fc031b422dfd35c2a2b12a1e8a"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerEventGuestButton_.prefab",
+      "bytes": 40225,
+      "sha256": "2d0243878324c028e7e0bc85915eecad403d1006bc478be5ace9461777f71d10"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerEventGuestButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "92b39e86ecfcef2e8e6726df90fd93b52c67a6e3293a2dbe3260d9153fe70557"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerListButton_.prefab",
+      "bytes": 76983,
+      "sha256": "d5d02448ce2d72f0f6ddc40a016ba09690a1b7d23619d0c714462628043dde25"
+    },
+    {
+      "path": "Assets/GameObject/_PlayerListButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f3e7fa50eb74e9ff47fbc79ebb655ac72af9cf5258fc8950debd6173fff63f0b"
+    },
+    {
+      "path": "Assets/GameObject/_PortEditable_.prefab",
+      "bytes": 48512,
+      "sha256": "285ca733af03b61df7b6cb91d3d0169d66efeea9ab055322a5d2bbe5aa483062"
+    },
+    {
+      "path": "Assets/GameObject/_PortEditable_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6c062ca65a154201e36941a69ff46f8e9d4167e01cd1429cc87625230e0253c7"
+    },
+    {
+      "path": "Assets/GameObject/_Punchkeyboard_2.1_.prefab",
+      "bytes": 1580907,
+      "sha256": "27396d5c01db4aaff555a8730b776272c73f96fe8af032bc330fde91ae44c00f"
+    },
+    {
+      "path": "Assets/GameObject/_Punchkeyboard_2.1_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b1101c16562f9f209248cb55abb03bb3b51ce7edbf1ea53a1db6fb49b8092fe4"
+    },
+    {
+      "path": "Assets/GameObject/_RecRoyaleUIPrefab_.prefab",
+      "bytes": 302659,
+      "sha256": "fbc171e55a278566697441d136de9da0b0d4215cd97670648d6bba1cfc257a2f"
+    },
+    {
+      "path": "Assets/GameObject/_RecRoyaleUIPrefab_.prefab.meta",
+      "bytes": 236,
+      "sha256": "c5e605a3e3fec845f2b075de18e773e6883e7553296b945f176eb209d36f2024"
+    },
+    {
+      "path": "Assets/GameObject/_ReportEventDialogScreen_.prefab",
+      "bytes": 456061,
+      "sha256": "8b61b259dca84f0aa21af22bd041a26672698034b47260455284d1d9fd7c5bec"
+    },
+    {
+      "path": "Assets/GameObject/_ReportEventDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7aef227454014df914b1b1abcdbfe16c2efdfed77783aa3143d597411c265deb"
+    },
+    {
+      "path": "Assets/GameObject/_RoleEditDialog_.prefab",
+      "bytes": 106800,
+      "sha256": "f63fe93e7d6056736430a76429b8ef48214f3cc6bd5b6d1127f081bddee4a89a"
+    },
+    {
+      "path": "Assets/GameObject/_RoleEditDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7a6e2d534e658c4d0f2768c1fec76c595c2e8771eecdb051bf263a8ea400d24d"
+    },
+    {
+      "path": "Assets/GameObject/_RoomBanPlayerScreen_.prefab",
+      "bytes": 700270,
+      "sha256": "a1c495b383b3a150748c0b8e4fd23fa7f77b0fbb5b4098aa0dcd4e4864bba18d"
+    },
+    {
+      "path": "Assets/GameObject/_RoomBanPlayerScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "32c05b69bfe26a8ea043adfb29e047692e44523baec952a84f0e1bf59d8561a8"
+    },
+    {
+      "path": "Assets/GameObject/_RoomCommentsItem_.prefab",
+      "bytes": 68378,
+      "sha256": "0164caa89436ef2e4b0d9eab0e2c9b4b44887158cc98451bc1cb261e98c3499f"
+    },
+    {
+      "path": "Assets/GameObject/_RoomCommentsItem_.prefab.meta",
+      "bytes": 236,
+      "sha256": "839bacfda3596d86c293247830cb56cb2b788cb5da018f674a170444311328f5"
+    },
+    {
+      "path": "Assets/GameObject/_RoomInstanceRow_.prefab",
+      "bytes": 51119,
+      "sha256": "ea36d60dcd7de9dbb119292bd00a3a513688c7c9dc383729cfae747e61561256"
+    },
+    {
+      "path": "Assets/GameObject/_RoomInstanceRow_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7999aa567155c271c4dcbd2d418a06c6f5039ff6cd75b18fa95ac20c7111588a"
+    },
+    {
+      "path": "Assets/GameObject/_RoomPickerDialog_.prefab",
+      "bytes": 794207,
+      "sha256": "f240272aa1e70323f9ba56412bead2ba8a0d92efb5fb0ec5fbad144212042eb7"
+    },
+    {
+      "path": "Assets/GameObject/_RoomPickerDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1114801572b4cb5ace3cf7fe49cf6d350ac173c760392b1c2a5a19453d79736d"
+    },
+    {
+      "path": "Assets/GameObject/_RoomRoleRow_.prefab",
+      "bytes": 49339,
+      "sha256": "8881d477d41aae9d12a1e29a2dc5df91eb31b28720a91d0218a06b9dfd7123da"
+    },
+    {
+      "path": "Assets/GameObject/_RoomRoleRow_.prefab.meta",
+      "bytes": 236,
+      "sha256": "5787f8eaf203b4ca94ee75920da3e1e3b907bf8584296603404fdfa0f34fbfa7"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableBoolean_.prefab",
+      "bytes": 27768,
+      "sha256": "d63a5fd0c6c1cce62947090d6074b451b94fc56069fe6d70105a13467bbfdaac"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableBoolean_.prefab.meta",
+      "bytes": 236,
+      "sha256": "817b5356eeafd57ca17242156197aeb3a2011dda82f91ad3e8e447539097ec61"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableButton_.prefab",
+      "bytes": 28103,
+      "sha256": "c2ce29319ecc57215dbac105ad7be1def0ba5b79526060ff0ee4712dd7d9d4d5"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "60fcdc8098a9e211a5888a56b141368918ab514f2c82c479ae3e02a5164849b3"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableColor_.prefab",
+      "bytes": 29704,
+      "sha256": "1e0052ea844a22ebb84a857b54e3bc043c096d1b7b69dd2a3fc41225d4d3cfb7"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableColor_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7c8ff437051fce7d1f0b3020b5c13193b3540bf07b47e9effd0203e4ef0319c1"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableEditTagsButton_.prefab",
+      "bytes": 28113,
+      "sha256": "185f3374317ce29fd76b74bf3e01f9a16ae97cc2a590d3a42ee59f618b17c8a5"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableEditTagsButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "1cfa2173a88e6cba242e69a4b2b66692625c94e8b475d3abd03e685b8184ea92"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFloat_.prefab",
+      "bytes": 77896,
+      "sha256": "3485e4abb555b21483e26e8c45692a87ba1c2dfeb6249e2beea5df26d5267cb1"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFloat_.prefab.meta",
+      "bytes": 236,
+      "sha256": "88b372b381249ee5629664b6159aaf49c51cd6ffa35c3fed672365360523b1f4"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyFlagButton_.prefab",
+      "bytes": 19831,
+      "sha256": "8babb318a7447db390cd70d58b24c25c2ae0d501d7575fb2866fec718a877eb1"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyFlagButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7463506b6c21ef09fd5e0902a696f4bc297e3859efabe29e13e0351145eb8d7b"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyFlags_.prefab",
+      "bytes": 78462,
+      "sha256": "5adcc5f28d08bfac87be7632418748b71de879d4634b5262e2e659c306af05b9"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyFlags_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7800519b3881727eb522f8d20a573ea521f6cff0fd559ec7176a519a2637e508"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyGuidButton_.prefab",
+      "bytes": 19851,
+      "sha256": "d0d67733f8ffca35fd10cb35b461bbf765688ca9ef0322445e3fb6a8d39f6ee0"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyGuidButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "52fade0efd7668c738a12284a66806154f7e6d6b672b7f3df6773812ea647988"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyGuidSetButton_.prefab",
+      "bytes": 19832,
+      "sha256": "9b882428b5c220f786bcb4bf2fffa120c57781b8dc692c8c804f6a5e85149774"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyGuidSetButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6b20bd44e6f6b06b5be86d5f791e44ee6a4c01a16f702664df0e73e4de92512b"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyIntButton_.prefab",
+      "bytes": 19851,
+      "sha256": "028d6848ae6b0aefa1fea4f4ea0a90fc479afaad74bd812f90f4a89d692d5cd2"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyIntButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "eebe14a343b95757d2ceb2f1bd5e5071584822712f44111700ef6bacafe7df83"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyInt_.prefab",
+      "bytes": 78893,
+      "sha256": "d4baaccdce3a33634fe3ed193cefb1bcf36072db9863df71254d9d8d97fe2d07"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableFriendlyInt_.prefab.meta",
+      "bytes": 236,
+      "sha256": "adf58ca8a8d6cf31b0f9ebbd4f8ddf8a26cba6d629ea6a887b4132442ae5448f"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableIntSlider_.prefab",
+      "bytes": 49620,
+      "sha256": "6f7f6d64da64a1367bcbe0ebbebd4fccd1af219e51c848483de9d21c62970762"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableIntSlider_.prefab.meta",
+      "bytes": 236,
+      "sha256": "718ef1afcc7fb8add900dd105291d28bbb36b8edd8ef2905dfdba3a8d6bbbbf7"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableInt_.prefab",
+      "bytes": 77813,
+      "sha256": "0f4ae41e31b5df8e7c829d0d7933e3e00a3510a682e3f8dd1eaff933bfc53899"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableInt_.prefab.meta",
+      "bytes": 236,
+      "sha256": "9190c403e52126e4be420dec2727c2e6a7853ba487d1bce9284b45691f51df76"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableKeyGuid_.prefab",
+      "bytes": 163181,
+      "sha256": "7918ffad3484fa71612d102f68f5db0978bb9705a21cded7f3d30c0435243cf8"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableKeyGuid_.prefab.meta",
+      "bytes": 236,
+      "sha256": "e6c5eac187ea2b2fc99adc04effad2590a71eeed3e2006f35ef7484f97b54283"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableObject_.prefab",
+      "bytes": 29283,
+      "sha256": "a326f82b704f25035670c382a15369fd76d57cae270dff3204386665c94fdbfb"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableObject_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b8040db9bf43d4ae5742db960516c99dfb5bbfb257a084fc53f6c132117f42e2"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableRoleGuidSet_.prefab",
+      "bytes": 83147,
+      "sha256": "7ea23dfeaa85fdf75dc445b39eb0953a6727a04b9ad0cf4c085d6e165ef0f53f"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableRoleGuidSet_.prefab.meta",
+      "bytes": 236,
+      "sha256": "dda8acf4ef28888d1d94836740ef6241f28def85957afcab6b8ba823fdcdf501"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableRoleGuid_.prefab",
+      "bytes": 83620,
+      "sha256": "dd53651a4a3b345cdb5fada5d094b551ca8bf947163e2747801b49ec8372d56e"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableRoleGuid_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f8433a0c6356ecbcd0858a75ac694a11c815f274e94ba7ac93bf81d905a7f256"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableSearchId_.prefab",
+      "bytes": 29738,
+      "sha256": "ceeacbfb69feb48046b62e3eaefec6d52a73b0c7af30b3e4d7245e7cd857dce1"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableSearchId_.prefab.meta",
+      "bytes": 236,
+      "sha256": "04d961a3c27874f8b60470b2ee5cee861f4a0f952f18e05ef31f68659ad3cbea"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableString_.prefab",
+      "bytes": 35335,
+      "sha256": "46146b0fadc5aefdd714e850f4c384175bec5e5139b52c311a5663ed54a75aaa"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableString_.prefab.meta",
+      "bytes": 236,
+      "sha256": "285dd2a21cbdcaed0f7a3c9b493afec52045e38b54968c31b540924f1cae936f"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableTagInputString_.prefab",
+      "bytes": 36298,
+      "sha256": "5d11e10095c9f8b45016bcd25a60f8295ea719dbe676e2f896227f487929af99"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableTagInputString_.prefab.meta",
+      "bytes": 236,
+      "sha256": "72a743c8d4832409ab8c4334c6cb784465728cbabb710afb13a472c04a5b00cb"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableTagItem_.prefab",
+      "bytes": 31801,
+      "sha256": "e41d16f40220f976b8a6c50745589ad3850255951910cea871d44aa9239ff2bf"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableTagItem_.prefab.meta",
+      "bytes": 236,
+      "sha256": "4473acfa8a2ec223264622dd112f9cd11f720dc5607afded6278b48500d7c4ab"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableToolCleanup_.prefab",
+      "bytes": 72553,
+      "sha256": "182405497396b713e0a6efd466459a7e3c24c31532ab80697efaf56132f14b14"
+    },
+    {
+      "path": "Assets/GameObject/_SandboxEditableToolCleanup_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f9de05bb499c22d6380ebece2f4b4334fb884b8b8628df7afb1bb070f4700a37"
+    },
+    {
+      "path": "Assets/GameObject/_SavedOutfitSlotButton_.prefab",
+      "bytes": 54424,
+      "sha256": "d77546396da01b59984333d41e5797b3b3e2ca4fbb92835cc8569540b5917eb1"
+    },
+    {
+      "path": "Assets/GameObject/_SavedOutfitSlotButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "80a74d69a2531e2b5ce65642f055bffb0295d04f797c72250fb09f494f212228"
+    },
+    {
+      "path": "Assets/GameObject/_SearchButton_.prefab",
+      "bytes": 63232,
+      "sha256": "b33647a0aada5a25999bab7014b48218b975547e3d714c8486bbb106c33cc256"
+    },
+    {
+      "path": "Assets/GameObject/_SearchButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "e1dd506f3f29e5b3987795a1fc46d7ec7d735b5c66bbcfc804b78b743f00f0aa"
+    },
+    {
+      "path": "Assets/GameObject/_SearchInputDialogScreen_.prefab",
+      "bytes": 531899,
+      "sha256": "edc57c4fa47defe6633c124e35ce7bfc39886cacb1397acf29098793caab3006"
+    },
+    {
+      "path": "Assets/GameObject/_SearchInputDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "416d95a449afa2871f766742719233ae84c23e728b255f83a5d2cc460d32a31f"
+    },
+    {
+      "path": "Assets/GameObject/_SearchResultView_.prefab",
+      "bytes": 25508,
+      "sha256": "b4f11e515d2d28bc3219b569f383d67df70ba5d690ea51391bdd3c4a1138c2c2"
+    },
+    {
+      "path": "Assets/GameObject/_SearchResultView_.prefab.meta",
+      "bytes": 236,
+      "sha256": "61e03829620ff71b411aed6fc2feb0e7c059f22df72f6cba7642fc696b37d062"
+    },
+    {
+      "path": "Assets/GameObject/_SelectAccountButton_.prefab",
+      "bytes": 44890,
+      "sha256": "1876e0af2ae9c017af2b91d9c641f6476b3817e437c713ef2bd37e7de58baf12"
+    },
+    {
+      "path": "Assets/GameObject/_SelectAccountButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "4ea4096dc93e287e5940baef1cd746124fe01c13456ef008dc60ffb3e723c331"
+    },
+    {
+      "path": "Assets/GameObject/_SelectorNodeConfigSettingUI_.prefab",
+      "bytes": 101450,
+      "sha256": "12c298464a7eb45287c4a9d4b950667e43c799138e743db11dd34249595e0681"
+    },
+    {
+      "path": "Assets/GameObject/_SelectorNodeConfigSettingUI_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2d65b381b048be2fe8190bd5806d66883fe36aa0553435ac9ea2aff6ed01bf32"
+    },
+    {
+      "path": "Assets/GameObject/_SpawnableToolButton_.prefab",
+      "bytes": 26652,
+      "sha256": "fc88bc434f64d84b06290befa26983134e01c31dcdfe0d2c820609a144a42e2d"
+    },
+    {
+      "path": "Assets/GameObject/_SpawnableToolButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "755fcfea1db788dfe94e6a1b2077b0227dd8965d1567a62248fc02b86a662b17"
+    },
+    {
+      "path": "Assets/GameObject/_SubroomButton_.prefab",
+      "bytes": 30895,
+      "sha256": "91e3a983048ddd1b0fcd6fa0831723435e15ee80d5d22513c2bae34ebb4c41e2"
+    },
+    {
+      "path": "Assets/GameObject/_SubroomButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "32b1ac5cc5a07abb4d42cebdfd2f9919fe95c791795ef201ee19dc70dee236f4"
+    },
+    {
+      "path": "Assets/GameObject/_Switch_.prefab",
+      "bytes": 74170,
+      "sha256": "401cadcbe7529fcbaca65e7f9bef307285342ecf115b1c95a1ff4f49ffb621d5"
+    },
+    {
+      "path": "Assets/GameObject/_Switch_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a7d346d94e4b1c5e6de5242e736f18842ecd8dbf8f2b387060f8247830cb2dbc"
+    },
+    {
+      "path": "Assets/GameObject/_Switch_ForDynamicPicker_NoSubtext_.prefab",
+      "bytes": 66903,
+      "sha256": "a29bfb26f7c33f913de78524b941bab6f6877afd861339f858b2755a53c2a08a"
+    },
+    {
+      "path": "Assets/GameObject/_Switch_ForDynamicPicker_NoSubtext_.prefab.meta",
+      "bytes": 236,
+      "sha256": "c8083bd82b0db5029a1d6ea47ae22153652a76202335e1cbe223d1f3686b4ba2"
+    },
+    {
+      "path": "Assets/GameObject/_TagEditDialog_.prefab",
+      "bytes": 111016,
+      "sha256": "723515d715c8fc443e1403f5fe56700b152fab72e706a30ed54c43387ea78583"
+    },
+    {
+      "path": "Assets/GameObject/_TagEditDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "7dfbaa75cc96ec9c6c29d323583efa70dc0a548f8b2edf1b286d036ca7ece28d"
+    },
+    {
+      "path": "Assets/GameObject/_TagRow_.prefab",
+      "bytes": 28678,
+      "sha256": "9e5046374a5fe8c51897c620f17301da0039c44fdafc2e5b0055726d436433c8"
+    },
+    {
+      "path": "Assets/GameObject/_TagRow_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a7cf940dd4b2bc03f8c91c07f12be5f61b99b09a6878f6896ceaa76efae853fc"
+    },
+    {
+      "path": "Assets/GameObject/_TextInputDialogScreen_.prefab",
+      "bytes": 353591,
+      "sha256": "c0e2b8e8c9a3f707e824b890133dfc45afb899ed910f69d0800af466b19e3698"
+    },
+    {
+      "path": "Assets/GameObject/_TextInputDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "abef0553a40ad3580af3af6fe348e5e9f2e9b996076a90e36c0d60ca74535df1"
+    },
+    {
+      "path": "Assets/GameObject/_TextInputDialog_.prefab",
+      "bytes": 571657,
+      "sha256": "033670fe00d61aecd6d1019aeef3964f8d9d315a890dab951b48a52f4847de5a"
+    },
+    {
+      "path": "Assets/GameObject/_TextInputDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f93391253d8b8dc8e4d072229e9a7261f2300604818f09f08e3c93b828445392"
+    },
+    {
+      "path": "Assets/GameObject/_ThreeButtonMessageDialog__DO_NOT USE.prefab",
+      "bytes": 104301,
+      "sha256": "e17dd5cf3cbecb486ac4dd8b60199f317933597ab6e714733ccf333f12ff1a30"
+    },
+    {
+      "path": "Assets/GameObject/_ThreeButtonMessageDialog__DO_NOT USE.prefab.meta",
+      "bytes": 236,
+      "sha256": "17bc82f1baabd7d47530c986da0fecf76f2614479ec7df7780d37b0276c88a7a"
+    },
+    {
+      "path": "Assets/GameObject/_TierRewardSpawner_.prefab",
+      "bytes": 65426,
+      "sha256": "ac5f2499690fe3343cb6cd172fac9515153e638a397f877cebe924f429b6c7e9"
+    },
+    {
+      "path": "Assets/GameObject/_TierRewardSpawner_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a759182790c2feb6705b94d1416db654276b00c0d2d7f7b69c01fd9f543452f0"
+    },
+    {
+      "path": "Assets/GameObject/_TimeRangeDialogScreen_.prefab",
+      "bytes": 517120,
+      "sha256": "e0265962abfd1ce33e0dc6a056dbb2f215ac956a87e718356ebb8ab86590923e"
+    },
+    {
+      "path": "Assets/GameObject/_TimeRangeDialogScreen_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2c3a004457824c26d99dc3d0c9c16b569da35dd77c422b359a00b2ce6e12536f"
+    },
+    {
+      "path": "Assets/GameObject/_TitleRRUIRoot_.prefab",
+      "bytes": 394054,
+      "sha256": "6b98949635ffc84bf8d4fc994d7bb1acb25214076a607beaa2d52c399c086946"
+    },
+    {
+      "path": "Assets/GameObject/_TitleRRUIRoot_.prefab.meta",
+      "bytes": 236,
+      "sha256": "b3becd3222f4d53f0bcfccd19266be0f97a651f5a658b4129ca7ad069b399f01"
+    },
+    {
+      "path": "Assets/GameObject/_Toast_.prefab",
+      "bytes": 57710,
+      "sha256": "d26faf573c28f97afd2a93abe527be682950a4b97b2703c1bcc2129bfcb507d7"
+    },
+    {
+      "path": "Assets/GameObject/_Toast_.prefab.meta",
+      "bytes": 236,
+      "sha256": "61202764e8537a586c7a841ada7fbae7655a70d2bd506005554afb2045c467ba"
+    },
+    {
+      "path": "Assets/GameObject/_TwoButtonMessageDialogPortrait_.prefab",
+      "bytes": 87787,
+      "sha256": "c5ee07b33204b966c2fe6fd8de11946aef760ea686f15754513874aabeac70a5"
+    },
+    {
+      "path": "Assets/GameObject/_TwoButtonMessageDialogPortrait_.prefab.meta",
+      "bytes": 236,
+      "sha256": "2de6f4938a5c569b0dc0e45c54cd35c764c2076ab94ed3e50205604a41a059e0"
+    },
+    {
+      "path": "Assets/GameObject/_TwoButtonMessageDialog__DO_NOT USE.prefab",
+      "bytes": 89357,
+      "sha256": "5e5091e7da959a73c2bcb8272d556f30530f3d41a155407bff42469eb95af663"
+    },
+    {
+      "path": "Assets/GameObject/_TwoButtonMessageDialog__DO_NOT USE.prefab.meta",
+      "bytes": 236,
+      "sha256": "2a755b083a018fbb54586e4179b8b7ee5a0908b8099dfc2c194496d102f42647"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableEditItemsCarousel_.prefab",
+      "bytes": 214136,
+      "sha256": "e4017a72f0c1301734b1d83d2b457761c78afa300901df1e816fd4871bf7c30b"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableEditItemsCarousel_.prefab.meta",
+      "bytes": 236,
+      "sha256": "07e1b6c50153b616650d371c2856509d69949cebd617bd32a97c6641ebc1143d"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableHorizontalItemCard_.prefab",
+      "bytes": 69314,
+      "sha256": "67c45d80deb15a00d477b11b24698dcb21f0872f5b8187fc8a4b0d44799c7a99"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableHorizontalItemCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "45c1e32fddbcacd050000ea043af73ed776259f1130d41873405bdbafcc2632a"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableItemCard_.prefab",
+      "bytes": 184572,
+      "sha256": "5d14fc146d8912506ed36eb1b70323129d550561f19f49a2b5b5731ae2b779d7"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableItemCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "6896471eb748876321d5bf2f2fcbc5270ac48dc334443498d61c96ded8d408a4"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableRearrangeItemCard_.prefab",
+      "bytes": 225052,
+      "sha256": "1ab8d25088732a3e98fc3f79cf323db7474b3557744ac26f089caf5f91c0243e"
+    },
+    {
+      "path": "Assets/GameObject/_UGCPurchasableRearrangeItemCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a4b104723e727ec720b3d7538a9525653981374343d3978b7998ae286a2f02ec"
+    },
+    {
+      "path": "Assets/GameObject/_UGCStorefrontCarouselEditItemsDialog_.prefab",
+      "bytes": 739686,
+      "sha256": "e0cfb8b93830e5db6185a4a42b7d457c3473a114fe13b5fa36186a084a61a6be"
+    },
+    {
+      "path": "Assets/GameObject/_UGCStorefrontCarouselEditItemsDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f2e53ea276dfa7d884a51dccf5c38c86a8c89f65d4a2640a01b17457fb7f944e"
+    },
+    {
+      "path": "Assets/GameObject/_UGCStorefrontConfigDialog_.prefab",
+      "bytes": 605209,
+      "sha256": "0132b311b70edbc56eafcbffc22642df54c85d4dab3d56d15276164d2ba141d8"
+    },
+    {
+      "path": "Assets/GameObject/_UGCStorefrontConfigDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "de8298cc5aeb397fbc2a44e5f5590c778f5863e3bc4980ea5d7aa8c0ec805b39"
+    },
+    {
+      "path": "Assets/GameObject/_UpdatePlayerEventDescriptionDialog_.prefab",
+      "bytes": 311897,
+      "sha256": "cf257cff89381fee9acf2b8dfcda08334afb60c212f3b78c83928ac0472e88c7"
+    },
+    {
+      "path": "Assets/GameObject/_UpdatePlayerEventDescriptionDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "484f604317e656593d7502a7c189fdbd4c0af78683e1c11d33aec8b58351e686"
+    },
+    {
+      "path": "Assets/GameObject/_UpdatePlayerEventNameDialog_.prefab",
+      "bytes": 311856,
+      "sha256": "27740f163f2772a4b404971d7fb73702cb39a11404184f457b744aba49d7b601"
+    },
+    {
+      "path": "Assets/GameObject/_UpdatePlayerEventNameDialog_.prefab.meta",
+      "bytes": 236,
+      "sha256": "f645a7530a586c21f1363f0a739cfc85eeb8b7dd63255782e30f722a0416f722"
+    },
+    {
+      "path": "Assets/GameObject/_VoteNextSubroomButton_.prefab",
+      "bytes": 27183,
+      "sha256": "5106ab4deaf8cc0fba7d077abd614e596a516032555a5b6793f79c9747226299"
+    },
+    {
+      "path": "Assets/GameObject/_VoteNextSubroomButton_.prefab.meta",
+      "bytes": 236,
+      "sha256": "a32dec175dbc0bbceacb32f49328db4ff0ad09890547cb1838f9575c194730f8"
+    },
+    {
+      "path": "Assets/GameObject/_YoutubeBulletinCard_.prefab",
+      "bytes": 39218,
+      "sha256": "57da3f2e5f41015d00ee76bc3d43defad8fc9f209fcbe3f8c78496b8734bbd0b"
+    },
+    {
+      "path": "Assets/GameObject/_YoutubeBulletinCard_.prefab.meta",
+      "bytes": 236,
+      "sha256": "d1bf21571fd7d3de383f9756ba3c4de07bf3c33f7a3ccf87f6e3bf660d1f279f"
     },
     {
       "path": "Assets/OriginalOpenVR.meta",
@@ -3143,6 +5393,76 @@
       "path": "Assets/Plugins/x86_64/zlib1.dll.meta",
       "bytes": 662,
       "sha256": "1769e3f1c1b9580ccfb2f4ccc4ee2741f41111d4af4f6ffd7698c44f53441e31"
+    },
+    {
+      "path": "Assets/Resources.meta",
+      "bytes": 172,
+      "sha256": "9f0959d114f2aaf2074a89b2c6f3409a72db77da5c8a0ac9c536f2228139c433"
+    },
+    {
+      "path": "Assets/Resources/themes.meta",
+      "bytes": 172,
+      "sha256": "6b658d03ec5da253c587ea739569e5d6cd81e719da483845eb26af1446f4ec03"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_DarkTheme.asset",
+      "bytes": 305767,
+      "sha256": "48240b84e48db93eea338ceffe0fa7b4ebf12734b27ccfb24bf397721e9373ce"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_DarkTheme.asset.meta",
+      "bytes": 228,
+      "sha256": "c2a23d8333dade96e81c09d85ba52066a3eb36202d42e7f24267765ce43a089c"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_LightTheme.asset",
+      "bytes": 485645,
+      "sha256": "c3dd28d56087eee5be8ff8ec5e4555b7b7e5c9373fbfbf6444e70a8016941f9f"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_LightTheme.asset.meta",
+      "bytes": 228,
+      "sha256": "caea114cfb28589fcd5a5fc244ffb425c08a2f5e5933ef4b465ac2e41df50ec6"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_ProUXCreatorMenu.asset",
+      "bytes": 474786,
+      "sha256": "982e09a8820c4a8f016c1dfad7462cad0ddc902219a04f566d0785c090b0319a"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_ProUXCreatorMenu.asset.meta",
+      "bytes": 228,
+      "sha256": "b2f253444ecb6c88829c472e71957800fb545c861e092996bde317d275469768"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_PurpleTheme.asset",
+      "bytes": 189407,
+      "sha256": "4d948d2f177d6bc9d7ef4f1d8ce12b91d8579559926993c240c6eefcd74f39ca"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_PurpleTheme.asset.meta",
+      "bytes": 228,
+      "sha256": "95d204489f539e7227cc8d2845c495fe96e2867ef5c3f8210cade12ebf57df67"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_WatchMenu_LEGACY_Orange.asset",
+      "bytes": 109019,
+      "sha256": "21295e4cd84d2054605498fdb6322f86e40a10febf88613f70455656238f4d21"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_WatchMenu_LEGACY_Orange.asset.meta",
+      "bytes": 228,
+      "sha256": "d58ae11b434c4746c1230ff99a88e50279c46e5cdcb1217a24e0e923033220a8"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_WatchMenu_LEGACY_Purple.asset",
+      "bytes": 99875,
+      "sha256": "b1e84e394ab464f84ae58e9feeb5a99e3815aadb8e1aa889ed8b860a656f3517"
+    },
+    {
+      "path": "Assets/Resources/themes/Palette_WatchMenu_LEGACY_Purple.asset.meta",
+      "bytes": 228,
+      "sha256": "c8e4128ec75292fe210910c0ce8c0fb63b88843601cbf21217bd6d2d22c821b2"
     },
     {
       "path": "Assets/Scripts.meta",
