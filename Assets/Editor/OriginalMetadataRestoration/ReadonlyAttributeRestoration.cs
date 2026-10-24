@@ -53,6 +53,29 @@ namespace RR23.MetadataRestoration
             for (int i = owner.CustomAttributes.Count - 1; i >= 0; i--)
                 if (owner.CustomAttributes[i].AttributeType.FullName == AttributeName) owner.CustomAttributes.RemoveAt(i);
         }
+        // One native-backed named marker identity. The serialization provider
+        // erased this PKT; preserve its blob/ownership, not its erased identity.
+        private static MethodReference ImportNativeReadonlyMarker(ModuleDefinition target, MethodReference original)
+        {
+            const string nativeScope = "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089";
+            const string providerScope = "mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null";
+            var owner = original == null ? null : original.DeclaringType;
+            var scope = owner == null ? null : owner.Scope as AssemblyNameReference;
+            if (original == null || original is MethodSpecification || owner.FullName != AttributeName || owner.DeclaringType != null
+                || owner.IsValueType || scope == null || scope.FullName != providerScope || (int)scope.Attributes != 0
+                || original.Name != ".ctor" || !original.HasThis || original.ExplicitThis
+                || original.CallingConvention != MethodCallingConvention.Default || original.GenericParameters.Count != 0
+                || original.Parameters.Count != 0 || original.ReturnType.MetadataType != MetadataType.Void || original.ReturnType.FullName != "System.Void")
+                throw new InvalidDataException("Only the exact erased-key serialization readonly marker ctor is permitted");
+            var signed = target.AssemblyReferences.Where(r => r.FullName == nativeScope && (int)r.Attributes == 0).ToArray();
+            if (signed.Length != 1 || target.AssemblyReferences.Any(r => r.FullName == providerScope))
+                throw new InvalidDataException("Exactly one existing native signed corelib reference and no erased-key corelib are required");
+            // Do not ImportReference(original): that would first add the erased-key row.
+            var nativeType = new TypeReference("System.Runtime.CompilerServices", "IsReadOnlyAttribute", target, signed[0], false);
+            return new MethodReference(".ctor", target.TypeSystem.Void, nativeType) {
+                HasThis = true, ExplicitThis = false, CallingConvention = MethodCallingConvention.Default };
+        }
+
         public static Action Bind(ModuleDefinition compiled, ModuleDefinition raw, ModuleDefinition originalProvider,
             IEnumerable<ReadonlyAttributePlan> plans, string providerHash)
         {
@@ -81,10 +104,10 @@ namespace RR23.MetadataRestoration
                 if (compiledPropertyAttributes.Length > 1) throw new InvalidDataException("Duplicate compiler readonly property attributes");
                 foreach (var attribute in compiledPropertyAttributes) Match(attribute, plan);
                 actions.Add(() => {
-                    Remove(target); target.CustomAttributes.Add(new CustomAttribute(ExactCliMarkerConstructor.Import(compiled, originalAttribute.Constructor), originalAttribute.GetBlob()));
+                    Remove(target); target.CustomAttributes.Add(new CustomAttribute(ImportNativeReadonlyMarker(compiled, originalAttribute.Constructor), originalAttribute.GetBlob()));
                     Remove(target.GetMethod.MethodReturnType);
                     foreach (var attribute in originalReturnAttributes)
-                        target.GetMethod.MethodReturnType.CustomAttributes.Add(new CustomAttribute(ExactCliMarkerConstructor.Import(compiled, attribute.Constructor), attribute.GetBlob()));
+                        target.GetMethod.MethodReturnType.CustomAttributes.Add(new CustomAttribute(ImportNativeReadonlyMarker(compiled, attribute.Constructor), attribute.GetBlob()));
                 });
             }
             return () => { foreach (var action in actions) action(); };

@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187754806,
+  "bytes": 187761800,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -151,8 +151,8 @@
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/ExactCliMarkerConstructor.cs",
-      "bytes": 2009,
-      "sha256": "99d5bd1fe1991f741b855a19d8d9878bcc3f7d402ec5d1e9d2afad9aacbc0ba0"
+      "bytes": 4672,
+      "sha256": "ce03847419e028bb4081a35015c59365983d05097800ccbe742f78cc14ba6b82"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/ExactCliMarkerConstructor.cs.meta",
@@ -221,8 +221,8 @@
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/MetadataDefinitionRestoration.cs",
-      "bytes": 18486,
-      "sha256": "be6eee0a2d0b611e95b9d4125a9550c3ffda8cf76ed90eb3c6e08c78b0ab5a50"
+      "bytes": 20586,
+      "sha256": "419c2ea9492460ea11c01e9c852aa5e02b3e3611604f89f911f094e82b023529"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/MetadataDefinitionRestoration.cs.meta",
@@ -341,8 +341,8 @@
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/ReadonlyAttributeRestoration.cs",
-      "bytes": 6964,
-      "sha256": "7bc6e8984b3bb6d710fdbe69d01d57e75b184b06ef8e67130fdd5fd2c6d33c60"
+      "bytes": 9195,
+      "sha256": "8c28633e319721ae57341d2033a9363e77cdbb47e4285fb4e234b1a36d93b61b"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/ReadonlyAttributeRestoration.cs.meta",

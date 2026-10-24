@@ -75,6 +75,26 @@ namespace RR23.MetadataRestoration
             public readonly List<Tuple<EventDefinition, EventDefinition>> Events = new List<Tuple<EventDefinition, EventDefinition>>();
         }
 
+        // A same-module original MethodDef declaration must remain a local
+        // MethodDef. ImportReference would unnecessarily externalize this exact
+        // definition as a self-AssemblyRef/MemberRef. Generic/external MethodRefs
+        // deliberately retain the existing importer and context.
+        private static MethodReference ImportOverrideDeclaration(ModuleDefinition compiled, ModuleDefinition original,
+            MethodReference declaration, MethodDefinition context,
+            IDictionary<MethodDefinition, MethodDefinition> localDeclarations)
+        {
+            var local = declaration as MethodDefinition;
+            if (local != null && ReferenceEquals(local.Module, original))
+            {
+                MethodDefinition mapped;
+                if (localDeclarations == null || !localDeclarations.TryGetValue(local, out mapped)
+                    || !ReferenceEquals(mapped.Module, compiled) || !ReferenceEquals(context.Module, compiled))
+                    throw new InvalidDataException("Original local MethodImpl declaration lacks its exact existing compiled definition binding");
+                return mapped;
+            }
+            return compiled.ImportReference(declaration, context);
+        }
+
         /// <summary>
         /// Resolve before any reference/type renaming. Every count, selector and
         /// manifest flag is checked against pinned original metadata. The returned
@@ -168,6 +188,16 @@ namespace RR23.MetadataRestoration
                 }
                 bindings.Add(binding);
             }
+            // Bind these exact original definitions before mutating any names.
+            var localDeclarations = bindings.SelectMany(b => b.Methods).ToDictionary(p => p.Item2, p => p.Item1);
+            foreach (var pair in bindings.SelectMany(b => b.Methods))
+                foreach (var declaration in pair.Item2.Overrides.OfType<MethodDefinition>())
+                    if (ReferenceEquals(declaration.Module, original))
+                    {
+                        MethodDefinition mapped;
+                        if (!localDeclarations.TryGetValue(declaration, out mapped) || !ReferenceEquals(mapped.Module, compiled))
+                            throw new InvalidDataException("Original local MethodImpl declaration is outside the proven bindings");
+                    }
             return result =>
             {
                 foreach (var binding in bindings)
@@ -214,7 +244,7 @@ namespace RR23.MetadataRestoration
                         method.Overrides.Clear();
                         foreach (var implementation in raw.Overrides)
                         {
-                            method.Overrides.Add(compiled.ImportReference(implementation, method)); result.MethodImplementations++;
+                            method.Overrides.Add(ImportOverrideDeclaration(compiled, original, implementation, method, localDeclarations)); result.MethodImplementations++;
                         }
                         result.Methods++;
                     }
