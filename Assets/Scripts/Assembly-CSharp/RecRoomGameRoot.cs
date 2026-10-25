@@ -18,10 +18,15 @@ public class RecRoomGameRoot : GameRoot
 
 	private void Start()
 	{
+		var operation = Addressables.InstantiateAsync(startupObjectReference, transform, false, true);
+		operation.WaitForCompletion().SetActive(true);
+		HPCJAAEDLCH();
 	}
 
 	protected override void HPCJAAEDLCH()
 	{
+		base.HPCJAAEDLCH();
+		new UnityEngine.GameObject("BootSequence").AddComponent<BootSequence>();
 	}
 
 	protected override void OnDestroy()
