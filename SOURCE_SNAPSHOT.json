@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187764990,
+  "bytes": 187765502,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "7a35eadc9ff8f501ac3206a7fcd44b47d2d0e9ddaf083e8a06a27135ecf3840f"
+      "sha256": "54837136cdfe7b7e6612caabadb39e3b3fdd07f08cab9e08179647d7e604e6fa"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -4321,8 +4321,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Preferences.Runtime.dll",
-      "bytes": 18944,
-      "sha256": "4cad85e089012186c358017f2bd887bc203c7ea62b28609834fa27da5a289914"
+      "bytes": 19456,
+      "sha256": "c66eaf1e0b97aac1db7b82ea726ab52ff6e6c1c23caeee086e531350cac99baf"
     },
     {
       "path": "Assets/Plugins/RecRoom.Preferences.Runtime.dll.meta",
