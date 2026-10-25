@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "6199b3a2fc3da5d556ee3a39aa56c4bbf8b246743029b30774a11e97d513fd14"
+      "sha256": "bcac7f35dc815accc6bbdd28a44ee11de7b828870c6e0a529e6b891fa8f1cd16"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -4412,7 +4412,7 @@
     {
       "path": "Assets/Plugins/RecRoom.RRUI.Data.Runtime.dll",
       "bytes": 263168,
-      "sha256": "e4eb768fc0d0ed849e0bad5e76713736e3ed25e9db22a6aaba58faf509f2b09f"
+      "sha256": "ea838b518479d7b44bd626fe96ee64ccbd78840646f05f74948ae90981adab33"
     },
     {
       "path": "Assets/Plugins/RecRoom.RRUI.Data.Runtime.dll.meta",

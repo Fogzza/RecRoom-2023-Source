@@ -151,7 +151,7 @@ new CuratedRuntimeMetadataReference("RecRoom.Protobuf.Extensions.Runtime","35aa7
 new CuratedRuntimeMetadataReference("RecRoom.Protobuf.Runtime","93e09757e7a7957ca672aeea105e42ff61f49ba34e8515513d8d82e2dd0287d3"),
 new CuratedRuntimeMetadataReference("RecRoom.Protobuf.UnityExtensions.Runtime","7a6b0bf43cec23ec35f75ad9674ab91f9ea2f91ec0ce189250cc0b01548a6d4e"),
 new CuratedRuntimeMetadataReference("RecRoom.RRUI.Core.Runtime","fde411f80ce3506639ec278d84ad762e3db7f01bc10c1536549a3160b974c5ff"),
-new CuratedRuntimeMetadataReference("RecRoom.RRUI.Data.Runtime","e4eb768fc0d0ed849e0bad5e76713736e3ed25e9db22a6aaba58faf509f2b09f"),
+new CuratedRuntimeMetadataReference("RecRoom.RRUI.Data.Runtime","ea838b518479d7b44bd626fe96ee64ccbd78840646f05f74948ae90981adab33"),
 new CuratedRuntimeMetadataReference("RecRoom.RRUI.Navigation.Runtime","17ee755a37f4541dae9a2bf69e42c870fc1d2a83f0860c4d9eb3cb5bc46fbbef"),
 new CuratedRuntimeMetadataReference("RecRoom.RRUI.Theme.Runtime","a03a9714b2eb72f0b5d45cd640bd9015659f1b7cb485cc3d0ee10698a5f74de6"),
 new CuratedRuntimeMetadataReference("RecRoom.Rbex.Runtime","0036bbfe07d215b8269f939aacc394a2eb68f8807479b83e55f6ba8ae67d3072"),
