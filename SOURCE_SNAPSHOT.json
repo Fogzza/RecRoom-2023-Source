@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187763336,
+  "bytes": 187763848,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "533672e21f8147583ba79a571d14f0287f1e285829956a7c83ddc33ea14a2397"
+      "sha256": "6199b3a2fc3da5d556ee3a39aa56c4bbf8b246743029b30774a11e97d513fd14"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -4861,8 +4861,8 @@
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
-      "bytes": 19968,
-      "sha256": "7e5563fd5aabe05c9ba87ba31563d63a0eb152517ca8169a8b55d59cdf60bb6b"
+      "bytes": 20480,
+      "sha256": "96aa38271a4ba68a46b79f1d9ec07d09ec87306bec57dfa39fbb673fe721b255"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",
