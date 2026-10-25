@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187764113,
+  "bytes": 187764990,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "bcac7f35dc815accc6bbdd28a44ee11de7b828870c6e0a529e6b891fa8f1cd16"
+      "sha256": "7a35eadc9ff8f501ac3206a7fcd44b47d2d0e9ddaf083e8a06a27135ecf3840f"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -3421,8 +3421,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll",
-      "bytes": 12800,
-      "sha256": "b8cd2c2127f709bfbba3f7bed89cc5749fa32a40709a7b9fd864fed9fef49900"
+      "bytes": 13312,
+      "sha256": "06edcf8b6b0ae72f38b03f8c6db50c24c204add5f7bfe1579770d956798b9928"
     },
     {
       "path": "Assets/Plugins/RecRoom.AgInitialization.Runtime.dll.meta",
@@ -10531,8 +10531,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/CGJHNJMEOIF.cs",
-      "bytes": 4348,
-      "sha256": "738c0801a297c56f375087db26013663951c2517ddaf0755f6664d22a7eb715a"
+      "bytes": 4606,
+      "sha256": "aa9d4472abe2110bb76cb7196b2a6b45e9088246f9563d1f1813a0f97ad0176c"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/CGJHNJMEOIF.cs.meta",
@@ -27406,8 +27406,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/PlatformManager.cs",
-      "bytes": 24344,
-      "sha256": "501b875e015ae16eacf1f53d8d217dfa93b12f3e57d70fa8522a2c555e6d60d4"
+      "bytes": 24451,
+      "sha256": "b8aa4cf3465d34d6a835c942611cd8ea3164bcd487f53d80577ea00ff67536b2"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/PlatformManager.cs.meta",
