@@ -68,13 +68,13 @@ get 			{
 		}
 	}
 
-	private readonly EEANDDJEMJC BPCKCCPDBDE;
+	private readonly EEANDDJEMJC BPCKCCPDBDE = new EEANDDJEMJC(true, false);
 
 	private readonly BHNJIBDJFAL NJPJBDDAEFH;
 
 	private readonly global::BANDHPLOOPI<ONCCFHECNKK> DDMDANHPLOH;
 
-	private SettingDefaults CPNIIEKHLGB;
+	private SettingDefaults CPNIIEKHLGB = new SettingDefaults();
 
 	private MPKEDKHLCLJ FLHHDLJKMNM;
 
@@ -88,7 +88,7 @@ get 			{
 
 	private const string KDHAFBOEJHG = "ShowRoomCenter";
 
-	private readonly EEANDDJEMJC BMKLNOPCGJB;
+	private readonly EEANDDJEMJC BMKLNOPCGJB = new EEANDDJEMJC(true, false);
 
 	private const string BEKENLFMCKJ = "FPSMonitorEnabled";
 
@@ -136,7 +136,7 @@ get 			{
 
 	private const string JJECONFAIHD = "CONTINUOUS_ROTATION_MODE";
 
-	private readonly EEANDDJEMJC CHEKDMCMIMP;
+	private readonly EEANDDJEMJC CHEKDMCMIMP = new EEANDDJEMJC(true, false);
 
 	private const string OGIKKOCEKLH = "VR_EXTERIOR_SCROLLBAR";
 
@@ -144,7 +144,7 @@ get 			{
 
 	private const string JBLHLBPABIJ = "VR_TOOL_SCROLLBAR_SIDE";
 
-	private readonly EEANDDJEMJC JBIBIIEHJHK;
+	private readonly EEANDDJEMJC JBIBIIEHJHK = new EEANDDJEMJC(true, false);
 
 	private const string FEOKPNPAPJF = "VR_WATCH_MENU_SIZE";
 
@@ -204,7 +204,7 @@ get 			{
 
 	private const string DLOLJODCCGE = "EXPRESSO_MENU_HANDEDNESS";
 
-	private string JPKHLNLFNCB;
+	private string JPKHLNLFNCB = "COMFORT_ENABLED";
 
 	private const string CHMFAHPCANG = "COMFORT_FLY";
 
@@ -312,9 +312,9 @@ get 			{
 
 	public const string GKCCPGNPCNH = "ScreensVsyncEnabled";
 
-	private readonly string IAPMOFMAILO;
+	private readonly string IAPMOFMAILO = "PlayerSessionCount";
 
-	private readonly string JGBDONFHNOO;
+	private readonly string JGBDONFHNOO = "PlayerHasExitedDorm";
 
 	public const string AHOJHLIPEJE = "CrossPlatformWarningDisplayed";
 
@@ -1614,13 +1614,22 @@ remove {
 	}
 }
 
+	[IOFOCEAPGPD(NPBJMIOJGOK.None)]
 	private static void EDLMAOJJALF(MNALHHOLFGL FMPHDMAKDKP)
 	{
+		FMPHDMAKDKP.IFIGMJHIABP<JNKNMMDAHCF>().CLBIACAHFKJ<MKBNAPBBGPA>();
 	}
 
 	[Preserve]
-	public MKBNAPBBGPA(BHNJIBDJFAL FMMEGIJPELJ)
+	public MKBNAPBBGPA([CDOANEBODFP(null)] BHNJIBDJFAL FMMEGIJPELJ)
 	{
+		NJPJBDDAEFH = FMMEGIJPELJ;
+		NJPJBDDAEFH.NEDNGDBICFI<VRLocomotionComfortMode.SerializedSettings>(new global::ABGPJBLKOMM<VRLocomotionComfortMode.SerializedSettings>(), null);
+		NJPJBDDAEFH.LNOFPOFGLEK += new Action(BPCKCCPDBDE.LMIEJCDPBOC);
+		DDMDANHPLOH = new global::BANDHPLOOPI<ONCCFHECNKK>(NJPJBDDAEFH,
+			new global::BANDHPLOOPI<ONCCFHECNKK>.PGGKMJIMMIC(HBHOHODCLMD),
+			new global::BANDHPLOOPI<ONCCFHECNKK>.KMJHHHKMGDN(KIAODONJOMC),
+			new Action<ONCCFHECNKK>(NKENJINLDDD), null);
 	}
 
 	public void IHEKMEOIBOI(SettingDefaults GBJCAFLHNPP)

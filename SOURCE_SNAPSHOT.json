@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187765502,
+  "bytes": 187766337,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -23476,8 +23476,8 @@
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/MKBNAPBBGPA.cs",
-      "bytes": 21350,
-      "sha256": "dc0569b9f45c60abcde3bb4fc4b13bcbfcc3117f0911d2ccfa5462a13b1bf244"
+      "bytes": 22185,
+      "sha256": "526c89629b01c53930078527a918e7fbfaab6af9f890f4b8ad7f1cead5d9d2e2"
     },
     {
       "path": "Assets/Scripts/Assembly-CSharp/MKBNAPBBGPA.cs.meta",
