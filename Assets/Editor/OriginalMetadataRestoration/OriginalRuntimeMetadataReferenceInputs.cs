@@ -142,7 +142,7 @@ new CuratedRuntimeMetadataReference("RecRoom.PerformanceVisualization.Runtime","
 new CuratedRuntimeMetadataReference("RecRoom.Persistence.Runtime","13c99d005d7bd44054c1913fcaefbc916c1ab125eb485b4892b0f3a481e577cf"),
 new CuratedRuntimeMetadataReference("RecRoom.PlatformNotifications.Runtime","e464418a2802e37ad231246fd32f50f3b1bf1a0273e7a649c39430e2b202b39c"),
 new CuratedRuntimeMetadataReference("RecRoom.PrefParsers.Runtime","643da2866ec2b5dbc9e140b0e7d0fd1809aef30fbcac20da95067fbc6baf0258"),
-new CuratedRuntimeMetadataReference("RecRoom.Preferences.Runtime","c66eaf1e0b97aac1db7b82ea726ab52ff6e6c1c23caeee086e531350cac99baf"),
+new CuratedRuntimeMetadataReference("RecRoom.Preferences.Runtime","f44ab0f09515de1778c45476258f497ed73ac06409c75afddbd0eebbadb58415"),
 new CuratedRuntimeMetadataReference("RecRoom.ProgressionEvents.Interfaces","05adae234070d2526e4fbebc59304973d58797c68d089169b6fdca6fbac6bb36"),
 new CuratedRuntimeMetadataReference("RecRoom.ProgressionEvents.Runtime","4c737770f8fcf52b5c3381cf7d60b17c5fdbc0f27b612ab25eaf716dcbadd88c"),
 new CuratedRuntimeMetadataReference("RecRoom.Promises.Runtime","23c809e3d10859b1f132b9bf6d5c0dfebf7b3ed7e0d03737f7b6878739246712"),
