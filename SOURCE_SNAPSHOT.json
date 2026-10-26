@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187766337,
+  "bytes": 187766849,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "54837136cdfe7b7e6612caabadb39e3b3fdd07f08cab9e08179647d7e604e6fa"
+      "sha256": "c01dde471c9b3918f762cd4fd15ba0d3501423035450b1f11a32e2721e0662ee"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -4502,7 +4502,7 @@
     {
       "path": "Assets/Plugins/RecRoom.Scheduling.Interface.Runtime.dll",
       "bytes": 5120,
-      "sha256": "0f58eaca8a3f3670fe9e0bb258a46b59f95723ab73b387d8bde88aab925fa79f"
+      "sha256": "095326a1a0dce400e3a0a05dd410749a56e59d759fedee53a7c4cec10efee202"
     },
     {
       "path": "Assets/Plugins/RecRoom.Scheduling.Interface.Runtime.dll.meta",
@@ -4511,8 +4511,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Scheduling.Scheduler.Runtime.dll",
-      "bytes": 34304,
-      "sha256": "ff4a06a88a4c6337b347d43c748eb888c052f0b98a38f7bbf99aec8aef772059"
+      "bytes": 34816,
+      "sha256": "10731309dcb822a79434cf5e4b7ac271975aacc4e686432d13416e7473a39145"
     },
     {
       "path": "Assets/Plugins/RecRoom.Scheduling.Scheduler.Runtime.dll.meta",
