@@ -28,6 +28,7 @@ namespace SolarNet.Recovery.Editor
             public Mesh mesh;
             public Matrix4x4 matrix;
             public Material[] materials;
+            public int firstSubMesh, subMeshCount;
         }
         [Serializable] sealed class Status
         {
@@ -157,8 +158,27 @@ namespace SolarNet.Recovery.Editor
             if (mesh == null || mesh.vertexCount == 0 || renderer == null || !renderer.enabled) return;
             if (view == "dorm" && !renderer.gameObject.activeInHierarchy) return;
             if (parts.Count >= MaxParts) throw new InvalidOperationException("Preview geometry exceeds the bounded 4096 mesh limit.");
+            // Static-batch vertices already use the native renderer's matrix.
+            // The object's Transform can retain its pre-batch authoring offset.
             Matrix4x4 matrix = transform.localToWorldMatrix;
+            int firstSubMesh = 0, subMeshCount = mesh.subMeshCount;
             var local = mesh.bounds;
+            if (renderer.isPartOfStaticBatch)
+            {
+                matrix = renderer.localToWorldMatrix;
+                var state = new SerializedObject(renderer);
+                var batch = state.FindProperty("m_StaticBatchInfo");
+                var first = batch == null ? null : batch.FindPropertyRelative("firstSubMesh");
+                var count = batch == null ? null : batch.FindPropertyRelative("subMeshCount");
+                if (first == null || count == null)
+                    throw new InvalidOperationException("Original static-batch submesh range is unavailable.");
+                firstSubMesh = first.intValue; subMeshCount = count.intValue;
+                if (firstSubMesh < 0 || subMeshCount <= 0 || subMeshCount > mesh.subMeshCount || firstSubMesh > mesh.subMeshCount - subMeshCount)
+                    throw new InvalidOperationException("Original static-batch submesh range is outside its shared mesh.");
+                local = mesh.GetSubMesh(firstSubMesh).bounds;
+                for (int sub = 1; sub < subMeshCount; sub++)
+                    local.Encapsulate(mesh.GetSubMesh(firstSubMesh + sub).bounds);
+            }
             for (int i = 0; i < 8; i++)
             {
                 var corner = local.center + Vector3.Scale(local.extents, new Vector3((i & 1) == 0 ? -1 : 1, (i & 2) == 0 ? -1 : 1, (i & 4) == 0 ? -1 : 1));
@@ -168,8 +188,8 @@ namespace SolarNet.Recovery.Editor
                 if (parts.Count == 0 && i == 0) bounds = new Bounds(world, Vector3.zero);
                 else bounds.Encapsulate(world);
             }
-            parts.Add(new Part { mesh = mesh, matrix = matrix, materials = renderer.sharedMaterials });
-            submeshes += mesh.subMeshCount;
+            parts.Add(new Part { mesh = mesh, matrix = matrix, materials = renderer.sharedMaterials, firstSubMesh = firstSubMesh, subMeshCount = subMeshCount });
+            submeshes += subMeshCount;
             vertices += mesh.vertexCount;
         }
         void Select(string selected)
@@ -261,8 +281,8 @@ namespace SolarNet.Recovery.Editor
                 preview.camera.nearClipPlane = interior ? 0.05f : Mathf.Max(0.01f, distance * 0.001f);
                 preview.camera.farClipPlane = Mathf.Max(1000, distance * 5);
                 foreach (var part in parts)
-                    for (int sub = 0; sub < part.mesh.subMeshCount; sub++)
-                        preview.DrawMesh(part.mesh, part.matrix, PreviewMaterial(part.materials.Length == 0 ? null : part.materials[Mathf.Min(sub, part.materials.Length - 1)]), sub);
+                    for (int sub = 0; sub < part.subMeshCount; sub++)
+                        preview.DrawMesh(part.mesh, part.matrix, PreviewMaterial(part.materials.Length == 0 ? null : part.materials[Mathf.Min(sub, part.materials.Length - 1)]), part.firstSubMesh + sub);
                 preview.Render(false, false);
                 texture = preview.EndPreview(); begun = false;
             }

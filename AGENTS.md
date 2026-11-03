@@ -13,3 +13,9 @@ Use the fixed noreply author `Fogzza <177904833+Fogzza@users.noreply.github.com>
 The updates repository permits only `README.md`, `CHANGELOG.md`, `.gitignore`, and `.gitattributes`. Preserve its existing setup documentation; the normal publisher appends the supplied prose to the changelog. Keep the existing standard GitHub-compatible Discord webhook in the updates repository's GitHub configuration. Notifications remain clickable, and repository viewing requires authorized GitHub access. Do not replace the hook with direct Discord delivery. Never add its URL or secret to files, commits, notes, or logs.
 
 Keep `.publisher.local.json`, state, pending ledgers, notes, and caches ignored. The initial snapshot can be copied from an exact reviewed manifest and committed by the coordinating agent; run `--initialize` afterward to record file ownership for safe future removals.
+
+## User-managed documentation — November 3, 2026
+
+The user asked to remove README and CHANGELOG files and will write the documentation. This overrides the earlier automatic-note and setup-document preservation requirements. The approved removal is the source repository's root `README.md` and the updates repository's root `README.md` and `CHANGELOG.md`.
+
+Use the publisher's explicit `--remove-readme-changelog` mode for that removal. For later publications, use `--no-generated-note` to preserve any documentation the user writes; do not regenerate README or CHANGELOG content. A matching title-only updates commit may be empty when there is no document change. Keep the factual title and actual test summary, preview first, and push private source before the matching private updates commit. Both repositories must remain private. All source-manifest, credential, staging and resume safeguards still apply.

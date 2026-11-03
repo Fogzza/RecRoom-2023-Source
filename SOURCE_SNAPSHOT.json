@@ -2,7 +2,7 @@
   "schema": "SolarNet-reviewed-source-code-snapshot/v1",
   "scope": "Code, required SDKs/compiler metadata, packages, project settings, and the exact reviewed UI palette/prefab/Title-scene color serialization with original metadata. All unlisted art, scenes, audio, bundles and game data remain local.",
   "count": 11741,
-  "bytes": 187769921,
+  "bytes": 187771945,
   "files": [
     {
       "path": "Assets/Activities.meta",
@@ -292,7 +292,7 @@
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs",
       "bytes": 30811,
-      "sha256": "b0ad491c50ce8469bb3031d6b986ad8e34dc1734dc2e98e4eed61dc26bb450bd"
+      "sha256": "cb7a2dbf8a35cc8614123e37be5d3e8ff2fdc6f7024afd12a248c41716669298"
     },
     {
       "path": "Assets/Editor/OriginalMetadataRestoration/OriginalRuntimeMetadataReferenceInputs.cs.meta",
@@ -416,8 +416,8 @@
     },
     {
       "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.cs",
-      "bytes": 24333,
-      "sha256": "65c8dcbe96ee63bf3fcd78fd51227ca13092937abbfb649d09ff976383df71fb"
+      "bytes": 25845,
+      "sha256": "55899ff98e12c450ae01625e28ae7384a4c6f8793323bc4dcdf9ed575a3c00fe"
     },
     {
       "path": "Assets/Editor/RecoveredGeometry/GeometryViewer.cs.meta",
@@ -4321,8 +4321,8 @@
     },
     {
       "path": "Assets/Plugins/RecRoom.Preferences.Runtime.dll",
-      "bytes": 20480,
-      "sha256": "f44ab0f09515de1778c45476258f497ed73ac06409c75afddbd0eebbadb58415"
+      "bytes": 20992,
+      "sha256": "a612e7b5ed174e5ae05e96c5a95cac9dec407a13fe92a345f2c78874f617f824"
     },
     {
       "path": "Assets/Plugins/RecRoom.Preferences.Runtime.dll.meta",
@@ -4862,7 +4862,7 @@
     {
       "path": "Assets/Plugins/UJect.Runtime.dll",
       "bytes": 20480,
-      "sha256": "96aa38271a4ba68a46b79f1d9ec07d09ec87306bec57dfa39fbb673fe721b255"
+      "sha256": "de8dacda12aec199792aebdffc9a5cf76fe00be9bcd95617bd46c529abe85b40"
     },
     {
       "path": "Assets/Plugins/UJect.Runtime.dll.meta",

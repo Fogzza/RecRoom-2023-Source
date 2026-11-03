@@ -7,6 +7,7 @@ AUTHOR='177904833+Fogzza@users.noreply.github.com'
 PUBLIC={'README.md','CHANGELOG.md','.gitignore','.gitattributes'}
 SUPPORT={'README.md','AGENTS.md','.gitignore','.gitattributes','SOURCE_SNAPSHOT.json','RECOVERY_TOOLS_SNAPSHOT.json','tools/publish_tested_source.py','tools/test_publisher_offline.py'}
 STATE='.publisher-state.json';PENDING='.publisher-pending.json'
+SOURCE_ROOT_DOCS={'README.md'};UPDATES_ROOT_DOCS={'README.md','CHANGELOG.md'}
 class Stop(Exception):pass
 def need(v,m):
     if not v:raise Stop(m)
@@ -26,12 +27,21 @@ def no_links(path,base):
         if p==base.parent:break
         need(not p.is_symlink(),'reparse_or_symlink_refused')
         if p.exists():need(not(getattr(p.lstat(),'st_file_attributes',0)&0x400),'reparse_or_symlink_refused')
-def note_text(path,title):
+def title_text(title):
     need(isinstance(title,str) and 1<=len(title)<=120 and '\n' not in title and '\r' not in title,'explicit_one_line_title_required')
-    need(path.stat().st_size<=8192,'public_note_size_bound');text=path.read_text(encoding='utf-8-sig').strip();need(len(text)>=12,'explicit_human_public_note_required')
-    combined=title+'\n'+text
+    public_text_safe(title);return title
+def public_text_safe(combined):
     patterns=(r'`',r'(?m)^(?:diff --git|@@|--- |\+\+\+ )',r'(?i)(?:[a-z]:[\\/]|/(?:Users|home|mnt|workspace)/|file://|\\\\)',r'(?i)(?:gh[pousr]_[A-Za-z0-9]{20,}|github_pat_|-----BEGIN .*PRIVATE KEY|eyJ[A-Za-z0-9_-]{8,}\.[A-Za-z0-9_-]+\.)',r'(?i)discord(?:app)?\.com/api/webhooks/',r'(?i)(?:password|secret|access_token|api_key)\s*[:=]\s*\S+',r'(?i)(?:SolarNet-source/(?:blob|commit|tree)|https?://[^\s/]+:[^\s@]+@)',r'(?m)^\s*(?:using System|public (?:class|static)|function\s|def\s|import\s|#include)')
-    need(not any(re.search(p,combined) for p in patterns),'public_note_contains_code_diff_path_or_secret_candidate');return text
+    need(not any(re.search(p,combined) for p in patterns),'public_note_contains_code_diff_path_or_secret_candidate')
+def note_text(path,title):
+    title_text(title);need(path.stat().st_size<=8192,'public_note_size_bound');text=path.read_text(encoding='utf-8-sig').strip();need(len(text)>=12,'explicit_human_public_note_required')
+    public_text_safe(title+'\n'+text);return text
+def publication_note(title,tests,note_file,no_note):
+    need(title and tests and 1<=len(tests)<=2000,'explicit_title_and_truthful_test_summary_required');title_text(title)
+    if no_note:need(note_file is None,'note_file_refused_in_no_generated_note_mode');return None
+    need(note_file is not None,'explicit_note_file_required');return note_text(note_file,title)
+def resume_matches(state,mhash,title,notehash,tests,no_note,remove_docs):
+    return state['manifest_sha256']==mhash and state['title']==title and state['note_sha256']==notehash and state['tests']==tests and type(state.get('no_generated_note',False)) is bool and type(state.get('remove_readme_changelog',False)) is bool and state.get('no_generated_note',False)==no_note and state.get('remove_readme_changelog',False)==remove_docs
 class Git:
     def __init__(self,path,url):self.path=path;self.url=url
     def run(self,args,data=None,ok=(0,)):
@@ -56,11 +66,12 @@ class Git:
         need(changed<=allowed,'unrelated_dirty_files_refused')
     def stage(self,paths):
         if paths:self.run(['--literal-pathspecs','add','--all','--pathspec-from-file=-','--pathspec-file-nul'],b''.join(x.encode()+b'\0' for x in sorted(paths)))
-    def commit(self,title,test,identifier,allowed):
+    def commit(self,title,test,identifier,allowed,allow_empty=False):
         need(set(self.paths(['diff','--cached','--name-only','-z']))<=allowed,'unrelated_staging_refused')
-        if not self.paths(['diff','--cached','--name-only','-z']):return self.head()
+        need(not allow_empty or self.url==UPDATES_URL,'empty_commit_only_for_matching_updates')
+        if not self.paths(['diff','--cached','--name-only','-z']) and not allow_empty:return self.head()
         body=title+'\n\nPublication-ID: '+identifier+ ('\nTests: '+test if test else '')+'\n'
-        self.run(['commit','--file=-'],body.encode());return self.head()
+        self.run(['commit',*(['--allow-empty'] if allow_empty else []),'--file=-'],body.encode());return self.head()
     def push(self,commit):
         need(self.head()==commit,'HEAD_changed_before_push')
         for a in (['remote','get-url','--all','origin'],['remote','get-url','--push','--all','origin']):need(self.run(a).decode().splitlines()==[self.url],'remote_changed_before_push')
@@ -128,6 +139,15 @@ def check_snapshots(repo,rows):
         value=json.loads(path.read_bytes());expected={k:(r['bytes'],r['sha256']) for k,r in rows.items() if k.startswith('tools/recovery/') is prefix}
         actual={r['path']:(r['bytes'],r['sha256']) for r in value['files']}
         need(value['schema']==schema and len(actual)==len(value['files'])==value['count'] and actual==expected,'refresh_private_snapshot_to_exact_reviewed_manifest')
+def remove_root_documents(git,names):
+    tracked=set(git.paths(['ls-files','-z']));need(names<=SOURCE_ROOT_DOCS if git.url==SOURCE_URL else git.url==UPDATES_URL and names<=UPDATES_ROOT_DOCS,'only_exact_repository_root_documents_may_be_removed')
+    for name in sorted(names):
+        path=git.path/name;no_links(path,git.path);need(not path.exists() or name in tracked,'untracked_root_document_refused')
+        if path.exists():need(path.is_file(),'root_document_not_a_file');path.unlink()
+def sync_source(project,rows,owned,private,remove_docs=False):
+    paths=sync_scope(project,rows,owned,private.path)
+    if remove_docs:remove_root_documents(private,SOURCE_ROOT_DOCS)
+    return paths|{x for x in SUPPORT if (private.path/x).is_file()}|(set(private.paths(['ls-files','-z']))&SUPPORT)
 def transaction(private,public,state,checkpoint,sync,write_note):
     # Durable stages never automatically retry a failed command. --resume is
     # explicit; source push precedes the private updates push. Legacy public_*
@@ -144,42 +164,44 @@ def transaction(private,public,state,checkpoint,sync,write_note):
         existing=public.recovered_commit(state['public_base'],state['id'])
         if existing:state['public_commit']=existing;checkpoint()
         else:
-            write_note();paths={x for x in PUBLIC if (public.path/x).is_file()}|set(public.paths(['ls-files','-z']));state['public_stage_hashes']={x:sha(public.path/x) if (public.path/x).is_file() else None for x in paths};checkpoint();public.stage(paths);candidate=public.commit(state['title'],'',state['id'],PUBLIC);need(candidate and candidate!=state['public_base'],'new_public_note_commit_required');state['public_commit']=candidate;checkpoint()
+            write_note();paths={x for x in PUBLIC if (public.path/x).is_file()}|set(public.paths(['ls-files','-z']));state['public_stage_hashes']={x:sha(public.path/x) if (public.path/x).is_file() else None for x in paths};checkpoint();public.stage(paths);candidate=public.commit(state['title'],'',state['id'],PUBLIC,allow_empty=state.get('no_generated_note',False));need(candidate and candidate!=state['public_base'],'new_public_update_commit_required');state['public_commit']=candidate;checkpoint()
     if not state.get('public_pushed'):
         if public.remote_head()!=state['public_commit']:public.push(state['public_commit'])
         need(public.remote_head()==state['public_commit'],'public_push_not_confirmed');state['public_pushed']=True;checkpoint()
     state['status']='complete';checkpoint()
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--config',type=Path,default=ROOT/'.publisher.local.json');p.add_argument('--publish',action='store_true');p.add_argument('--resume',action='store_true');p.add_argument('--initialize',action='store_true');p.add_argument('--title');p.add_argument('--note-file',type=Path);p.add_argument('--test-summary');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--config',type=Path,default=ROOT/'.publisher.local.json');p.add_argument('--publish',action='store_true');p.add_argument('--resume',action='store_true');p.add_argument('--initialize',action='store_true');p.add_argument('--title');p.add_argument('--note-file',type=Path);p.add_argument('--test-summary');p.add_argument('--no-generated-note',action='store_true',help='Preserve user documents and publish only a matching update commit.');p.add_argument('--remove-readme-changelog',action='store_true',help='Remove the three tracked root documents once; implies --no-generated-note.');a=p.parse_args();no_note=a.no_generated_note or a.remove_readme_changelog
     cfg,project,updates,mhash,rows=load_inputs(a.config);check_snapshots(ROOT,rows);private,public=Git(ROOT,SOURCE_URL),Git(updates,UPDATES_URL)
     prior=json.loads((ROOT/STATE).read_bytes()) if (ROOT/STATE).is_file() else {'owned':{}};owned=prior.get('owned',{});pending=ROOT/PENDING
     need(not any(x.startswith('tools/recovery/') for x in owned) or cfg.get('recovery_manifest'),'previous_recovery_scope_requires_fresh_manifest')
     resumed=json.loads(pending.read_bytes()) if a.resume and pending.is_file() else {}
     private.guard(set(rows)|set(owned)|SUPPORT,resumed.get('private_stage_hashes'));public.guard(PUBLIC,resumed.get('public_stage_hashes'));need(set(public.paths(['ls-files','-z']))<=PUBLIC,'public_repository_contains_non_documentation_file')
     if a.initialize:
-        need(not a.publish and not a.resume and not pending.exists() and private.head(),'initialize_existing_private_commit_only')
+        need(not a.publish and not a.resume and not no_note and not pending.exists() and private.head(),'initialize_existing_private_commit_only')
         need(all((ROOT/k).is_file() and sha(ROOT/k)==r['sha256'] for k,r in rows.items()),'initial_private_snapshot_not_exact_manifest')
         save(ROOT/STATE,{'schema':'SolarNet-source-publication-state/v1','owned':{k:r['sha256'] for k,r in rows.items()},'private_commit':private.head(),'manifest_sha256':mhash});print(json.dumps({'status':'ownership_initialized_no_commit_or_push','files':len(rows)}));return
-    need(a.title and a.note_file and a.test_summary and 1<=len(a.test_summary)<=2000,'explicit_title_note_file_and_truthful_test_summary_required');note=note_text(a.note_file,a.title)
+    note=publication_note(a.title,a.test_summary,a.note_file,no_note)
     need(set(private.paths(['ls-files','-z']))<=set(rows)|set(owned)|SUPPORT,'tracked_private_files_outside_owned_scope_refused')
     need(owned or not any((ROOT/k).exists() and sha(ROOT/k)!=r['sha256'] for k,r in rows.items()),'initialize_previous_snapshot_before_source_changes')
-    if not a.publish:print(json.dumps({'status':'preview_no_copy_commit_push_or_credentials','source_files':len(rows),'source_bytes':sum(x['bytes'] for x in rows.values()),'remove_owned_files':len(set(owned)-set(rows)),'private_then_public':True,'private_visibility_checked_during_explicit_publish':True}));return
+    if not a.publish:print(json.dumps({'status':'preview_no_copy_commit_push_or_credentials','source_files':len(rows),'source_bytes':sum(x['bytes'] for x in rows.values()),'remove_owned_files':len(set(owned)-set(rows)),'private_then_public':True,'private_visibility_checked_during_explicit_publish':True,'no_generated_note':no_note,'remove_readme_changelog':a.remove_readme_changelog,'root_documents_to_remove':{'source':sorted(SOURCE_ROOT_DOCS&set(private.paths(['ls-files','-z']))),'updates':sorted(UPDATES_ROOT_DOCS&set(public.paths(['ls-files','-z'])))} if a.remove_readme_changelog else {}}));return
     visibility(private,public)
-    notehash=hashlib.sha256(note.encode()).hexdigest()
+    notehash=hashlib.sha256(note.encode()).hexdigest() if note is not None else None
     if pending.exists():
-        state=json.loads(pending.read_bytes());need(a.resume and state['manifest_sha256']==mhash and state['title']==a.title and state['note_sha256']==notehash and state['tests']==a.test_summary,'explicit_matching_resume_required')
+        state=json.loads(pending.read_bytes());need(a.resume and resume_matches(state,mhash,a.title,notehash,a.test_summary,no_note,a.remove_readme_changelog),'explicit_matching_resume_required')
     else:
-        need(not a.resume,'no_pending_publication_to_resume');state={'schema':'SolarNet-source-then-public-update/v1','id':uuid.uuid4().hex,'status':'starting','title':a.title,'tests':a.test_summary,'note_sha256':notehash,'manifest_sha256':mhash,'private_base':private.head(),'public_base':public.head()};save(pending,state)
+        need(not a.resume,'no_pending_publication_to_resume');state={'schema':'SolarNet-source-then-public-update/v1','id':uuid.uuid4().hex,'status':'starting','title':a.title,'tests':a.test_summary,'note_sha256':notehash,'manifest_sha256':mhash,'no_generated_note':no_note,'remove_readme_changelog':a.remove_readme_changelog,'private_base':private.head(),'public_base':public.head()};save(pending,state)
     def checkpoint():save(pending,state)
-    def sync():return sync_scope(project,rows,owned,ROOT)|{x for x in SUPPORT if (ROOT/x).is_file()}
+    def sync():return sync_source(project,rows,owned,private,a.remove_readme_changelog)
     def write_note():
+        if a.remove_readme_changelog:remove_root_documents(public,UPDATES_ROOT_DOCS)
+        if no_note:return
         path=updates/'CHANGELOG.md';old=path.read_text(encoding='utf-8') if path.exists() else '# Development updates\n'
         marker='<!-- publication: '+state['id']+' -->'
         if marker not in old:path.write_text(old.rstrip()+'\n\n## '+dt.datetime.now(dt.timezone.utc).date().isoformat()+' — '+a.title+'\n\n'+note+'\n\n'+marker+'\n',encoding='utf-8',newline='\n')
     try:transaction(private,public,state,checkpoint,sync,write_note)
     except Exception:state['status']='HOLD_inspect_pending_no_automatic_retry';checkpoint();raise
     save(ROOT/STATE,{'schema':'SolarNet-source-publication-state/v1','owned':{k:r['sha256'] for k,r in rows.items()},'manifest_sha256':mhash,'private_commit':state['private_commit'],'public_commit':state['public_commit']});archive=ROOT/'.publisher-cache';archive.mkdir(exist_ok=True);os.replace(pending,archive/(state['id']+'.json'))
-    print(json.dumps({'status':'published_private_source_then_matching_public_note','private_commit':state['private_commit'],'public_commit':state['public_commit'],'source_files':len(rows)}))
+    print(json.dumps({'status':'published_private_source_then_matching_update' if no_note else 'published_private_source_then_matching_public_note','private_commit':state['private_commit'],'public_commit':state['public_commit'],'source_files':len(rows),'no_generated_note':no_note,'remove_readme_changelog':a.remove_readme_changelog}))
 if __name__=='__main__':
     try:main()
     except (Stop,KeyError,ValueError,OSError,subprocess.SubprocessError):print(json.dumps({'status':'HOLD_no_automatic_retry','message':'Check local inputs, repository state, and the ignored pending ledger. No credential or raw Git output is printed.'}));raise SystemExit(1)

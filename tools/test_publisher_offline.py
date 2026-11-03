@@ -1,7 +1,13 @@
-"""Bounded local controls. No real commit, push, credential, or HTTP operation."""
+"""Local controls and isolated temporary Git fixtures. No live repository mutation,
+remote push, credential access or HTTP operation.
+"""
+import contextlib
 import importlib.util
+import io
 import json
 from pathlib import Path
+import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -17,7 +23,7 @@ class FakeGit:
         p.need(self.current==self.name+'1','foreign_commit');return self.current
     def stage(self,paths):self.events.append(self.name+'_stage')
     def paths(self,args):return []
-    def commit(self,*args):
+    def commit(self,*args,**kwargs):
         self.events.append(self.name+'_commit')
         if self.fail=='commit':self.fail=None;raise p.Stop('simulated_commit_failure')
         self.commits+=1;self.current=self.name+'1';return self.current
@@ -28,6 +34,104 @@ class FakeGit:
         self.remote=commit
 
 class Controls(unittest.TestCase):
+    def local_publication_fixture(self,folder,changed=True):
+        """Actual index/commit behavior, confined to disposable repositories.
+
+        Only push and remote-head operations are faked. No live clone is edited.
+        """
+        project=folder/'project';private=folder/'source-repo';public=folder/'updates-repo';events=[]
+        for directory in(project,private,public):directory.mkdir()
+        for directory in(private,public):
+            subprocess.run(['git','init','--initial-branch=main',str(directory)],capture_output=True,check=True)
+            hooks=directory/'.git/offline-no-hooks';hooks.mkdir();subprocess.run(['git','-C',str(directory),'config','core.hooksPath',str(hooks)],capture_output=True,check=True);subprocess.run(['git','-C',str(directory),'config','commit.gpgsign','false'],capture_output=True,check=True)
+            (directory/'.gitignore').write_text('.publisher*\n',encoding='utf8')
+            (directory/'README.md').write_text('User-written readme\n',encoding='utf8')
+        (public/'CHANGELOG.md').write_text('User-written changelog\n',encoding='utf8')
+        (private/'Assets').mkdir();(project/'Assets').mkdir();old=private/'Assets/a.cs';old.write_bytes(b'class Before {}\n');source=project/'Assets/a.cs';source.write_bytes(b'class After {}\n'if changed else old.read_bytes())
+        for directory,url in((private,p.SOURCE_URL),(public,p.UPDATES_URL)):
+            subprocess.run(['git','-C',str(directory),'remote','add','origin',url],capture_output=True,check=True)
+            subprocess.run(['git','-C',str(directory),'add','--all'],capture_output=True,check=True)
+            subprocess.run(['git','-C',str(directory),'-c','user.name=Offline Fixture','-c','user.email=offline@example.invalid','-c','commit.gpgsign=false','commit','-m','Temporary fixture'],capture_output=True,check=True)
+        class LocalGit(p.Git):
+            def __init__(self,path,url):
+                super().__init__(path,url);self.name='private'if url==p.SOURCE_URL else'public';self.remote=self.head();self.initial=self.head();self.fail_push=False
+            def stage(self,paths):
+                super().stage(paths);events.append({'repository':self.name,'paths':set(paths),'staged':self.run(['diff','--cached','--name-status']).decode()})
+            def push(self,commit):
+                p.need(self.head()==commit,'HEAD_changed_before_fake_push');events.append(self.name+'_push')
+                if self.fail_push:self.fail_push=False;raise p.Stop('simulated_push_failure')
+                self.remote=commit
+            def remote_head(self):return self.remote
+        a,b=LocalGit(private,p.SOURCE_URL),LocalGit(public,p.UPDATES_URL)
+        row={'path':'Assets/a.cs','bytes':source.stat().st_size,'sha256':p.sha(source)};manifest={'schema':'reviewed-Unity-code-only-publication-inputs/v1','project':str(project),'files':[row],'count':1,'bytes':row['bytes'],'exclude_all_unlisted':True,'includes_original_metas':True};mp=folder/'manifest.json';mp.write_text(json.dumps(manifest),encoding='utf8');config=folder/'config.json';config.write_text(json.dumps({'project_root':str(project),'updates_root':str(public),'manifest':str(mp),'manifest_sha256':p.sha(mp),'reviewed_manifest_sha256':p.sha(mp)}),encoding='utf8')
+        (private/p.STATE).write_text(json.dumps({'owned':{'Assets/a.cs':p.sha(old)},'private_commit':a.head(),'public_commit':b.head()}),encoding='utf8');note=folder/'note.txt';note.write_text('A human-written update about the tested change.',encoding='utf8')
+        def invoke(*flags,visibility=None):
+            args=['publisher','--config',str(config),'--title','[Fixed] Tested fixture','--test-summary','Isolated offline checks passed',*flags]
+            def factory(path,url):
+                value=a if url==p.SOURCE_URL else b;self.assertEqual(Path(path).resolve(),value.path.resolve());return value
+            with patch.object(p,'ROOT',private),patch.object(p,'Git',side_effect=factory),patch.object(p,'visibility',side_effect=visibility or(lambda *_:events.append('both_private_checked'))),patch.object(sys,'argv',args),contextlib.redirect_stdout(io.StringIO()):p.main()
+        return a,b,invoke,note,events
+
+    def test_document_removal_stages_actual_root_deletions_without_recreating_notes(self):
+        with tempfile.TemporaryDirectory()as d:
+            root=Path(d);a,b,invoke,_,events=self.local_publication_fixture(root);outside=root/'README.md';outside.write_text('Preserve unrelated document')
+            invoke('--publish','--remove-readme-changelog')
+            self.assertFalse((a.path/'README.md').exists());self.assertFalse((b.path/'README.md').exists());self.assertFalse((b.path/'CHANGELOG.md').exists());self.assertEqual(outside.read_text(),'Preserve unrelated document')
+            source_stage=next(x for x in events if isinstance(x,dict)and x['repository']=='private');updates_stage=next(x for x in events if isinstance(x,dict)and x['repository']=='public')
+            self.assertIn('README.md',source_stage['paths']);self.assertIn('D\tREADME.md',source_stage['staged']);self.assertIn('D\tREADME.md',updates_stage['staged']);self.assertIn('D\tCHANGELOG.md',updates_stage['staged']);self.assertNotIn('README.md',a.paths(['ls-tree','--name-only','-z','HEAD']));self.assertNotIn('CHANGELOG.md',b.paths(['ls-tree','--name-only','-z','HEAD']))
+            self.assertLess(events.index('both_private_checked'),events.index('private_push'));self.assertLess(events.index('private_push'),next(i for i,x in enumerate(events)if isinstance(x,dict)and x['repository']=='public'));self.assertLess(events.index('private_push'),events.index('public_push'))
+            ledger=json.loads(next((a.path/'.publisher-cache').glob('*.json')).read_bytes());self.assertTrue(ledger['no_generated_note']);self.assertTrue(ledger['remove_readme_changelog']);self.assertIsNone(ledger['note_sha256']);self.assertIsNone(ledger['private_stage_hashes']['README.md']);self.assertIsNone(ledger['public_stage_hashes']['CHANGELOG.md'])
+
+    def test_no_generated_note_preserves_user_docs_and_allows_matching_empty_update(self):
+        with tempfile.TemporaryDirectory()as d:
+            a,b,invoke,_,events=self.local_publication_fixture(Path(d));before={str(path):path.read_bytes()for path in(a.path/'README.md',b.path/'README.md',b.path/'CHANGELOG.md')};old_tree=b.run(['rev-parse','HEAD^{tree}'])
+            invoke('--publish','--no-generated-note')
+            for name,body in before.items():self.assertEqual(Path(name).read_bytes(),body)
+            self.assertNotEqual(a.head(),a.initial);self.assertNotEqual(b.head(),b.initial);self.assertEqual(b.run(['rev-parse','HEAD^{tree}']),old_tree);self.assertLess(events.index('private_push'),events.index('public_push'))
+            ledger=json.loads(next((a.path/'.publisher-cache').glob('*.json')).read_bytes());self.assertTrue(ledger['no_generated_note']);self.assertFalse(ledger['remove_readme_changelog'])
+
+    def test_document_removal_resume_binds_both_modes_and_reuses_commits(self):
+        with tempfile.TemporaryDirectory()as d:
+            a,b,invoke,_,events=self.local_publication_fixture(Path(d));b.fail_push=True
+            with self.assertRaisesRegex(p.Stop,'simulated_push_failure'):invoke('--publish','--remove-readme-changelog')
+            ledger=json.loads((a.path/p.PENDING).read_bytes());self.assertTrue(ledger['private_pushed']);heads=(a.head(),b.head())
+            with self.assertRaisesRegex(p.Stop,'explicit_matching_resume_required'):invoke('--publish','--resume','--no-generated-note')
+            with self.assertRaisesRegex(p.Stop,'explicit_matching_resume_required'):invoke('--publish','--resume','--note-file',str(Path(d)/'note.txt'))
+            self.assertEqual((a.head(),b.head()),heads);invoke('--publish','--resume','--remove-readme-changelog');self.assertEqual((a.head(),b.head()),heads);self.assertEqual(events.count('private_push'),1);self.assertEqual(events.count('public_push'),2);self.assertFalse((b.path/'CHANGELOG.md').exists());self.assertFalse((a.path/p.PENDING).exists())
+
+    def test_no_note_mode_keeps_private_visibility_gate_and_source_change_requirement(self):
+        with tempfile.TemporaryDirectory()as d:
+            a,b,invoke,_,events=self.local_publication_fixture(Path(d))
+            def reject(*_):raise p.Stop('both_repositories_private_visibility_required')
+            with self.assertRaisesRegex(p.Stop,'both_repositories_private_visibility_required'):invoke('--publish','--remove-readme-changelog',visibility=reject)
+            self.assertEqual((a.head(),b.head()),(a.initial,b.initial));self.assertTrue((a.path/'README.md').is_file());self.assertTrue((b.path/'CHANGELOG.md').is_file());self.assertNotIn('private_push',events)
+        with tempfile.TemporaryDirectory()as d:
+            a,b,invoke,_,events=self.local_publication_fixture(Path(d),changed=False)
+            with self.assertRaisesRegex(p.Stop,'new_private_checkpoint_required'):invoke('--publish','--no-generated-note')
+            self.assertEqual(b.head(),b.initial);self.assertNotIn('public_push',events)
+
+    def test_default_note_workflow_still_preserves_readmes_and_writes_changelog(self):
+        with tempfile.TemporaryDirectory()as d:
+            a,b,invoke,note,_=self.local_publication_fixture(Path(d));invoke('--publish','--note-file',str(note));self.assertTrue((a.path/'README.md').is_file());self.assertTrue((b.path/'README.md').is_file());text=(b.path/'CHANGELOG.md').read_text();self.assertIn('User-written changelog',text);self.assertIn(note.read_text(),text)
+
+    def test_no_note_inputs_title_safety_and_legacy_mode_identity(self):
+        with tempfile.TemporaryDirectory()as d:
+            note=Path(d)/'note';note.write_text('A human development note.')
+            self.assertIsNone(p.publication_note('[Fixed] Test update','Offline checks passed',None,True))
+            for title,tests,note_file in((None,'tests',None),('Title',None,None),('Two\nlines','tests',None),('C:\\Users\\person','tests',None),('password=not-for-publication','tests',None),('Title','tests',note)):
+                with self.subTest(title=title),self.assertRaises(p.Stop):p.publication_note(title,tests,note_file,True)
+            legacy={'manifest_sha256':'m','title':'Title','note_sha256':'n','tests':'tests'};self.assertTrue(p.resume_matches(legacy,'m','Title','n','tests',False,False));self.assertFalse(p.resume_matches(legacy,'m','Title','n','tests',True,False))
+            removal=dict(legacy,no_generated_note=True,remove_readme_changelog=True);self.assertFalse(p.resume_matches(removal,'m','Title','n','tests',True,False));self.assertFalse(p.resume_matches(removal,'m','Title','n','tests',False,True))
+
+    def test_empty_commits_are_updates_only_and_default_empty_update_is_refused(self):
+        with tempfile.TemporaryDirectory()as d:
+            a,b,_,_,events=self.local_publication_fixture(Path(d));state={'id':'empty-control','private_base':a.head(),'public_base':b.head(),'title':'A test update','tests':'Offline checks'}
+            with self.assertRaisesRegex(p.Stop,'empty_commit_only_for_matching_updates'):a.commit('A test update','checks','fixture',p.SUPPORT,allow_empty=True)
+            project=Path(d)/'project';source=project/'Assets/a.cs';rows={'Assets/a.cs':{'bytes':source.stat().st_size,'sha256':p.sha(source)}}
+            def sync():return p.sync_source(project,rows,{'Assets/a.cs':p.sha(a.path/'Assets/a.cs')},a)
+            with self.assertRaisesRegex(p.Stop,'new_public_update_commit_required'):p.transaction(a,b,state,lambda:None,sync,lambda:None)
+            self.assertNotIn('public_commit',state);self.assertNotIn('public_push',events)
+
     def test_both_private_visibility_metadata_gate_offline(self):
         # The credential helper and HTTPS opener are fakes; no live access.
         class FakeCredentials:
